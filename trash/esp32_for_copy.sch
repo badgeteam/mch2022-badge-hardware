@@ -1,0 +1,186 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "MCH2021 badge - ESP32 microcontroller"
+Date "2020-08-08"
+Rev "1"
+Comp "BADGE.TEAM"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	13600 1400 13950 1400
+Wire Wire Line
+	13600 1850 13600 1400
+Text GLabel 13950 1600 0    35   BiDi ~ 0
+SD_D1
+Text GLabel 13950 1500 0    35   BiDi ~ 0
+SD_D0
+Text GLabel 13950 1300 0    35   Input ~ 0
+SD_CLK
+Text GLabel 12250 1200 0    35   Input ~ 0
+PWR_SDCARD
+Connection ~ 12300 1300
+Wire Wire Line
+	12350 1300 12300 1300
+Wire Wire Line
+	12350 1350 12350 1300
+Wire Wire Line
+	12300 1300 12250 1300
+Wire Wire Line
+	12250 1300 12150 1300
+Connection ~ 12250 1300
+Wire Wire Line
+	12250 1350 12250 1300
+Wire Wire Line
+	12150 1300 12150 1350
+Connection ~ 12350 1300
+Wire Wire Line
+	12450 1300 12350 1300
+Wire Wire Line
+	12450 1350 12450 1300
+Connection ~ 12950 1300
+Wire Wire Line
+	13000 1300 12950 1300
+Wire Wire Line
+	13000 1350 13000 1300
+Wire Wire Line
+	12950 1300 12900 1300
+Wire Wire Line
+	12900 1300 12800 1300
+Connection ~ 12900 1300
+Wire Wire Line
+	12900 1350 12900 1300
+Wire Wire Line
+	12800 1300 12800 1350
+Connection ~ 13000 1300
+Wire Wire Line
+	13100 1300 13000 1300
+Wire Wire Line
+	13100 1350 13100 1300
+Text GLabel 12900 1750 3    35   UnSpc ~ 0
+SD_D1
+Text GLabel 12350 1750 3    35   UnSpc ~ 0
+SD_CLK
+Text GLabel 12800 1750 3    35   UnSpc ~ 0
+SD_D0
+Text GLabel 13950 1100 0    35   Input ~ 0
+SD_CMD
+Text GLabel 13950 1000 0    35   BiDi ~ 0
+SD_D3
+Text GLabel 13950 900  0    35   BiDi ~ 0
+SD_D2
+Text GLabel 12450 1750 3    35   UnSpc ~ 0
+SD_CMD
+Text GLabel 13100 1750 3    35   UnSpc ~ 0
+SD_D3
+Text GLabel 13000 1750 3    35   UnSpc ~ 0
+SD_D2
+$Comp
+L power:GND #PWR047
+U 1 1 6072153D
+P 15700 1850
+F 0 "#PWR047" H 15700 1600 50  0001 C CNN
+F 1 "GND" H 15705 1677 50  0000 C CNN
+F 2 "" H 15700 1850 50  0001 C CNN
+F 3 "" H 15700 1850 50  0001 C CNN
+	1    15700 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	15700 1800 15650 1800
+Wire Wire Line
+	15700 1850 15700 1800
+$Comp
+L Connector:Micro_SD_Card J4
+U 1 1 5D8199D3
+P 14850 1200
+F 0 "J4" H 14800 1917 50  0000 C CNN
+F 1 "Micro_SD_Card" H 14800 1826 50  0000 C CNN
+F 2 "corelib:MicroSD-SOFNG-TF-002-H18" H 16000 1500 50  0001 C CNN
+F 3 "http://katalog.we-online.de/em/datasheet/693072010801.pdf" H 14850 1200 50  0001 C CNN
+	1    14850 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR039
+U 1 1 605756E4
+P 13350 1850
+F 0 "#PWR039" H 13350 1600 50  0001 C CNN
+F 1 "GND" H 13355 1677 50  0000 C CNN
+F 2 "" H 13350 1850 50  0001 C CNN
+F 3 "" H 13350 1850 50  0001 C CNN
+	1    13350 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Pack04 RN4
+U 1 1 60721531
+P 13000 1550
+F 0 "RN4" V 12583 1550 50  0000 C CNN
+F 1 "10k" V 12674 1550 50  0000 C CNN
+F 2 "Resistor_SMD:R_Array_Convex_4x0603" V 13275 1550 50  0001 C CNN
+F 3 "~" H 13000 1550 50  0001 C CNN
+	1    13000 1550
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	13350 1850 13350 1700
+$Comp
+L Device:R_Pack04 RN3
+U 1 1 60721518
+P 12350 1550
+F 0 "RN3" V 11933 1550 50  0000 C CNN
+F 1 "10k" V 12024 1550 50  0000 C CNN
+F 2 "Resistor_SMD:R_Array_Convex_4x0603" V 12625 1550 50  0001 C CNN
+F 3 "~" H 12350 1550 50  0001 C CNN
+	1    12350 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C13
+U 1 1 60721517
+P 13350 1550
+F 0 "C13" H 13250 1450 50  0000 L CNN
+F 1 "22u" H 13250 1350 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 13388 1400 50  0001 C CNN
+F 3 "~" H 13350 1550 50  0001 C CNN
+	1    13350 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR041
+U 1 1 60721530
+P 13600 1850
+F 0 "#PWR041" H 13600 1600 50  0001 C CNN
+F 1 "GND" H 13605 1677 50  0000 C CNN
+F 2 "" H 13600 1850 50  0001 C CNN
+F 3 "" H 13600 1850 50  0001 C CNN
+	1    13600 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13950 1200 13350 1200
+Wire Wire Line
+	12300 1200 12300 1300
+Connection ~ 12300 1200
+Wire Wire Line
+	12300 1200 12250 1200
+Wire Wire Line
+	12950 1200 12950 1300
+Connection ~ 12950 1200
+Wire Wire Line
+	12950 1200 12300 1200
+Wire Wire Line
+	13350 1400 13350 1200
+Connection ~ 13350 1200
+Wire Wire Line
+	13350 1200 12950 1200
+Text Notes 11750 250  0    79   ~ 0
+SD card slot / JTAG port
+$EndSCHEMATC

@@ -1,0 +1,152 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 6 10
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L mch2021-rescue:MPR121Q-corelib U8
+U 1 1 60534329
+P 5800 3700
+F 0 "U8" H 6000 4250 50  0000 C CNN
+F 1 "MPR121Q" H 6000 4150 50  0000 C CNN
+F 2 "Package_DFN_QFN:QFN-20-1EP_3x3mm_P0.4mm_EP1.65x1.65mm" H 5800 3700 50  0001 C CNN
+F 3 "" H 5800 3700 50  0001 C CNN
+	1    5800 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R19
+U 1 1 605342FC
+P 5100 4700
+F 0 "R19" V 4893 4700 50  0000 C CNN
+F 1 "75k" V 4984 4700 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 5030 4700 50  0001 C CNN
+F 3 "~" H 5100 4700 50  0001 C CNN
+	1    5100 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C20
+U 1 1 6053432A
+P 5300 4700
+F 0 "C20" V 5048 4700 50  0000 C CNN
+F 1 "100n" V 5139 4700 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 5338 4550 50  0001 C CNN
+F 3 "~" H 5300 4700 50  0001 C CNN
+	1    5300 4700
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR084
+U 1 1 6053432B
+P 5100 4850
+F 0 "#PWR084" H 5100 4600 50  0001 C CNN
+F 1 "GND" H 5105 4677 50  0000 C CNN
+F 2 "" H 5100 4850 50  0001 C CNN
+F 3 "" H 5100 4850 50  0001 C CNN
+	1    5100 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR086
+U 1 1 5F90D187
+P 5750 3200
+F 0 "#PWR086" H 5750 3050 50  0001 C CNN
+F 1 "+3.3V" H 5750 3350 50  0000 C CNN
+F 2 "" H 5750 3200 50  0001 C CNN
+F 3 "" H 5750 3200 50  0001 C CNN
+	1    5750 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR083
+U 1 1 6053432E
+P 4800 4850
+F 0 "#PWR083" H 4800 4600 50  0001 C CNN
+F 1 "GND" H 4805 4677 50  0000 C CNN
+F 2 "" H 4800 4850 50  0001 C CNN
+F 3 "" H 4800 4850 50  0001 C CNN
+	1    4800 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR085
+U 1 1 6053432F
+P 5300 4850
+F 0 "#PWR085" H 5300 4600 50  0001 C CNN
+F 1 "GND" H 5305 4677 50  0000 C CNN
+F 2 "" H 5300 4850 50  0001 C CNN
+F 3 "" H 5300 4850 50  0001 C CNN
+	1    5300 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR087
+U 1 1 60534330
+P 5750 4850
+F 0 "#PWR087" H 5750 4600 50  0001 C CNN
+F 1 "GND" H 5755 4677 50  0000 C CNN
+F 2 "" H 5750 4850 50  0001 C CNN
+F 3 "" H 5750 4850 50  0001 C CNN
+	1    5750 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 4850 5750 4650
+Wire Wire Line
+	5350 4500 5300 4500
+Wire Wire Line
+	5300 4500 5300 4550
+Wire Wire Line
+	5350 4400 5100 4400
+Wire Wire Line
+	5100 4400 5100 4550
+Text GLabel 6150 3400 2    35   Input ~ 0
+TOUCH_UP
+Text GLabel 6150 3500 2    35   Input ~ 0
+TOUCH_DOWN
+Text GLabel 6150 3600 2    35   Input ~ 0
+TOUCH_LEFT
+Text GLabel 6150 3700 2    35   Input ~ 0
+TOUCH_RIGHT
+Text GLabel 6150 3800 2    35   Input ~ 0
+TOUCH_ACCEPT
+Text GLabel 6150 3900 2    35   Input ~ 0
+TOUCH_BACK
+Text GLabel 6150 4000 2    35   Input ~ 0
+TOUCH_MENU
+Text GLabel 6150 4100 2    35   Input ~ 0
+TOUCH_HOME
+Wire Wire Line
+	4800 4850 4800 3850
+Wire Wire Line
+	4800 3850 5350 3850
+Text HLabel 6150 4300 2    39   Output ~ 0
+FPGA_RESET
+Text HLabel 6150 4200 2    39   Input ~ 0
+FPGA_CDONE
+Text Notes 6600 4350 0    35   ~ 0
+Output type:\nopen drain
+Text HLabel 5350 3500 0    39   Input ~ 0
+I2C_SCL
+Text HLabel 5350 3650 0    39   BiDi ~ 0
+I2C_SDA
+Text Notes 550  700  0    79   ~ 0
+MPR121 touch button interface
+Text HLabel 6150 4400 2    39   Output ~ 0
+STM32_RESET
+Text HLabel 6150 4500 2    39   Output ~ 0
+STM32_BOOT0
+Text HLabel 5350 3400 0    39   Output ~ 0
+IRQ
+$EndSCHEMATC
