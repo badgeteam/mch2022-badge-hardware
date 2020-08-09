@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 7 10
+Sheet 6 10
 Title "MCH2021 badge - STM32 microcontroller"
 Date "2020-08-08"
 Rev "1"
@@ -664,33 +664,6 @@ Wire Wire Line
 	6650 4800 8050 4800
 Text HLabel 2700 3500 0    50   Output ~ 0
 IRQ
-$Comp
-L Device:R R?
-U 1 1 5FB3552C
-P 1400 2100
-AR Path="/5DC753C3/5FB3552C" Ref="R?"  Part="1" 
-AR Path="/5FB3552C" Ref="R?"  Part="1" 
-AR Path="/5E3BA64A/5FB3552C" Ref="R?"  Part="1" 
-AR Path="/5F51E414/5FB3552C" Ref="R26"  Part="1" 
-F 0 "R26" V 1300 2100 50  0000 C CNN
-F 1 "10k" V 1400 2100 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 1330 2100 50  0001 C CNN
-F 3 "~" H 1400 2100 50  0001 C CNN
-F 4 "C25804" H 1400 2100 50  0001 C CNN "LCSC"
-	1    1400 2100
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3.3V #PWR0101
-U 1 1 5FB36090
-P 1400 1950
-F 0 "#PWR0101" H 1400 1800 50  0001 C CNN
-F 1 "+3.3V" H 1415 2123 50  0000 C CNN
-F 2 "" H 1400 1950 50  0001 C CNN
-F 3 "" H 1400 1950 50  0001 C CNN
-	1    1400 1950
-	1    0    0    -1  
-$EndComp
 Text HLabel 8050 3500 2    50   Input ~ 0
 SENSE_VBAT
 Text HLabel 8050 3600 2    50   Input ~ 0
@@ -783,4 +756,6 @@ Wire Wire Line
 	3450 3500 5350 3500
 Text HLabel 8050 4300 2    50   Output ~ 0
 MCO
+Text Notes 700  7650 0    79   ~ 0
+if using hardware time and the aproach of DMA > TIMer Output\ncompare register you will need bridge pb15 and pb11 so we can\nselect or spi or tim
 $EndSCHEMATC

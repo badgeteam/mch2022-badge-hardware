@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 9 10
+Sheet 7 10
 Title ""
 Date ""
 Rev ""
@@ -277,9 +277,9 @@ F 3 "http://www.ti.com/lit/ds/symlink/pcm5100.pdf" H 5600 4500 50  0001 C CNN
 $EndComp
 Text Notes 550  650  0    79   ~ 0
 I2S Audio DAC
-Text HLabel 6150 3350 2    39   Output ~ 0
+Text HLabel 6550 3250 2    39   Output ~ 0
 AUDIO_L
-Text HLabel 6150 3450 2    39   Output ~ 0
+Text HLabel 6550 3550 2    39   Output ~ 0
 AUDIO_R
 Wire Wire Line
 	5050 4050 5050 3050
@@ -295,4 +295,38 @@ Wire Wire Line
 	5150 3450 4800 3450
 Wire Wire Line
 	4800 3550 5150 3550
+$Comp
+L Device:C C?
+U 1 1 5F37D2B1
+P 6400 3250
+F 0 "C?" V 6250 3200 50  0000 L CNN
+F 1 "1u" V 6350 3100 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 6438 3100 50  0001 C CNN
+F 3 "~" H 6400 3250 50  0001 C CNN
+	1    6400 3250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5F37F925
+P 6400 3550
+F 0 "C?" V 6250 3500 50  0000 L CNN
+F 1 "1u" V 6350 3400 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 6438 3400 50  0001 C CNN
+F 3 "~" H 6400 3550 50  0001 C CNN
+	1    6400 3550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6150 3350 6200 3350
+Wire Wire Line
+	6200 3350 6200 3250
+Wire Wire Line
+	6200 3250 6250 3250
+Wire Wire Line
+	6150 3450 6200 3450
+Wire Wire Line
+	6200 3450 6200 3550
+Wire Wire Line
+	6200 3550 6250 3550
 $EndSCHEMATC

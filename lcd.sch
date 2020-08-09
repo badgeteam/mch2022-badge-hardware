@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 10
+Sheet 8 10
 Title "MCH2021 badge - LCD"
 Date "2020-08-09"
 Rev "1"
