@@ -1,0 +1,271 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 5 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L FPGA_Lattice:ICE40UP5K-SG48ITR U?
+U 1 1 5F52B856
+P 1700 5950
+F 0 "U?" H 2030 6003 50  0000 L CNN
+F 1 "ICE40UP5K-SG48ITR" H 2030 5912 50  0000 L CNN
+F 2 "Package_DFN_QFN:QFN-48-1EP_7x7mm_P0.5mm_EP5.6x5.6mm" H 1700 4600 50  0001 C CNN
+F 3 "http://www.latticesemi.com/Products/FPGAandCPLD/iCE40Ultra" H 1300 6950 50  0001 C CNN
+	1    1700 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L FPGA_Lattice:ICE40UP5K-SG48ITR U?
+U 2 1 5F52DB74
+P 4800 2000
+F 0 "U?" H 4800 925 50  0000 C CNN
+F 1 "ICE40UP5K-SG48ITR" H 4800 834 50  0000 C CNN
+F 2 "Package_DFN_QFN:QFN-48-1EP_7x7mm_P0.5mm_EP5.6x5.6mm" H 4800 650 50  0001 C CNN
+F 3 "http://www.latticesemi.com/Products/FPGAandCPLD/iCE40Ultra" H 4400 3000 50  0001 C CNN
+	2    4800 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L FPGA_Lattice:ICE40UP5K-SG48ITR U?
+U 3 1 5F52F020
+P 5650 6600
+F 0 "U?" H 5980 6703 50  0000 L CNN
+F 1 "ICE40UP5K-SG48ITR" H 5980 6612 50  0000 L CNN
+F 2 "Package_DFN_QFN:QFN-48-1EP_7x7mm_P0.5mm_EP5.6x5.6mm" H 5650 5250 50  0001 C CNN
+F 3 "http://www.latticesemi.com/Products/FPGAandCPLD/iCE40Ultra" H 5250 7600 50  0001 C CNN
+	3    5650 6600
+	1    0    0    -1  
+$EndComp
+$Comp
+L FPGA_Lattice:ICE40UP5K-SG48ITR U?
+U 4 1 5F5301DA
+P 2200 1200
+F 0 "U?" V 1833 1200 50  0000 C CNN
+F 1 "ICE40UP5K-SG48ITR" V 1924 1200 50  0000 C CNN
+F 2 "Package_DFN_QFN:QFN-48-1EP_7x7mm_P0.5mm_EP5.6x5.6mm" H 2200 -150 50  0001 C CNN
+F 3 "http://www.latticesemi.com/Products/FPGAandCPLD/iCE40Ultra" H 1800 2200 50  0001 C CNN
+	4    2200 1200
+	0    -1   1    0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5F537E5C
+P 1050 1500
+F 0 "R?" V 1246 1500 50  0000 C CNN
+F 1 "100" V 1155 1500 50  0000 C CNN
+F 2 "" H 1050 1500 50  0001 C CNN
+F 3 "~" H 1050 1500 50  0001 C CNN
+	1    1050 1500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5F54E79A
+P 850 1700
+F 0 "C?" H 942 1746 50  0000 L CNN
+F 1 "100n" H 942 1655 50  0000 L CNN
+F 2 "" H 850 1700 50  0001 C CNN
+F 3 "~" H 850 1700 50  0001 C CNN
+	1    850  1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5F54FA10
+P 1250 1700
+F 0 "C?" H 1342 1746 50  0000 L CNN
+F 1 "10u" H 1342 1655 50  0000 L CNN
+F 2 "" H 1250 1700 50  0001 C CNN
+F 3 "~" H 1250 1700 50  0001 C CNN
+	1    1250 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5F551B90
+P 1650 1700
+F 0 "C?" H 1742 1746 50  0000 L CNN
+F 1 "100n" H 1742 1655 50  0000 L CNN
+F 2 "" H 1650 1700 50  0001 C CNN
+F 3 "~" H 1650 1700 50  0001 C CNN
+	1    1650 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F553535
+P 1650 1800
+F 0 "#PWR?" H 1650 1550 50  0001 C CNN
+F 1 "GND" H 1655 1627 50  0000 C CNN
+F 2 "" H 1650 1800 50  0001 C CNN
+F 3 "" H 1650 1800 50  0001 C CNN
+	1    1650 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F553952
+P 1250 1800
+F 0 "#PWR?" H 1250 1550 50  0001 C CNN
+F 1 "GND" H 1255 1627 50  0000 C CNN
+F 2 "" H 1250 1800 50  0001 C CNN
+F 3 "" H 1250 1800 50  0001 C CNN
+	1    1250 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F553E39
+P 850 1800
+F 0 "#PWR?" H 850 1550 50  0001 C CNN
+F 1 "GND" H 855 1627 50  0000 C CNN
+F 2 "" H 850 1800 50  0001 C CNN
+F 3 "" H 850 1800 50  0001 C CNN
+	1    850  1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1650 1600 1650 1500
+Wire Wire Line
+	1650 1500 1250 1500
+Wire Wire Line
+	1250 1500 1250 1600
+Wire Wire Line
+	1250 1500 1150 1500
+Connection ~ 1250 1500
+Wire Wire Line
+	950  1500 850  1500
+Wire Wire Line
+	850  1500 850  1600
+$Comp
+L power:+2V5 #PWR?
+U 1 1 5F561535
+P 1800 1100
+F 0 "#PWR?" H 1800 950 50  0001 C CNN
+F 1 "+2V5" V 1815 1228 50  0000 L CNN
+F 2 "" H 1800 1100 50  0001 C CNN
+F 3 "" H 1800 1100 50  0001 C CNN
+	1    1800 1100
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1800 1300 1650 1300
+Wire Wire Line
+	1650 1300 1650 1500
+Connection ~ 1650 1500
+Wire Wire Line
+	1800 1200 850  1200
+Wire Wire Line
+	850  1200 850  1500
+Connection ~ 850  1500
+Wire Wire Line
+	850  1200 850  1000
+Connection ~ 850  1200
+$Comp
+L power:+1V2 #PWR?
+U 1 1 5F564804
+P 850 1000
+F 0 "#PWR?" H 850 850 50  0001 C CNN
+F 1 "+1V2" H 865 1173 50  0000 C CNN
+F 2 "" H 850 1000 50  0001 C CNN
+F 3 "" H 850 1000 50  0001 C CNN
+	1    850  1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F565850
+P 2700 1800
+F 0 "#PWR?" H 2700 1550 50  0001 C CNN
+F 1 "GND" H 2705 1627 50  0000 C CNN
+F 2 "" H 2700 1800 50  0001 C CNN
+F 3 "" H 2700 1800 50  0001 C CNN
+	1    2700 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2700 1800 2700 1200
+Wire Wire Line
+	2700 1200 2600 1200
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5F57B8C0
+P 4800 900
+F 0 "#PWR?" H 4800 750 50  0001 C CNN
+F 1 "+3.3V" H 4815 1073 50  0000 C CNN
+F 2 "" H 4800 900 50  0001 C CNN
+F 3 "" H 4800 900 50  0001 C CNN
+	1    4800 900 
+	1    0    0    -1  
+$EndComp
+Text HLabel 4300 2600 0    50   Output ~ 0
+SPI_MISO
+Text HLabel 4300 2700 0    50   Input ~ 0
+SPI_MOSI
+Text HLabel 4300 2800 0    50   Input ~ 0
+SPI_SCK
+Text HLabel 4300 2900 0    50   Input ~ 0
+SPI_CS_FPGA
+Text HLabel 4300 1300 0    50   Input ~ 0
+FPGA_RESET
+Text HLabel 5300 1300 2    50   Output ~ 0
+FPGA_CDONE
+$Comp
+L power:GND #PWR?
+U 1 1 5F58383F
+P 7450 2300
+F 0 "#PWR?" H 7450 2050 50  0001 C CNN
+F 1 "GND" H 7455 2127 50  0000 C CNN
+F 2 "" H 7450 2300 50  0001 C CNN
+F 3 "" H 7450 2300 50  0001 C CNN
+	1    7450 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5F59314F
+P 7450 2200
+F 0 "R?" H 7509 2246 50  0000 L CNN
+F 1 "100k" H 7509 2155 50  0000 L CNN
+F 2 "" H 7450 2200 50  0001 C CNN
+F 3 "~" H 7450 2200 50  0001 C CNN
+	1    7450 2200
+	1    0    0    -1  
+$EndComp
+Text HLabel 7450 2100 1    50   UnSpc ~ 0
+FPGA_RESET
+$Comp
+L Device:R_Small R?
+U 1 1 5F5BBEB5
+P 7750 1850
+F 0 "R?" H 7809 1896 50  0000 L CNN
+F 1 "100k" H 7809 1805 50  0000 L CNN
+F 2 "" H 7750 1850 50  0001 C CNN
+F 3 "~" H 7750 1850 50  0001 C CNN
+	1    7750 1850
+	1    0    0    -1  
+$EndComp
+Text HLabel 7750 1950 3    50   UnSpc ~ 0
+FPGA_CDONE
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5F5BD259
+P 7750 1750
+F 0 "#PWR?" H 7750 1600 50  0001 C CNN
+F 1 "+3.3V" H 7765 1923 50  0000 C CNN
+F 2 "" H 7750 1750 50  0001 C CNN
+F 3 "" H 7750 1750 50  0001 C CNN
+	1    7750 1750
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

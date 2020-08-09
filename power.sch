@@ -1,0 +1,1140 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 5
+Title "MCH2021 badge - Power management"
+Date "2020-08-08"
+Rev "1"
+Comp "BADGE.TEAM"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:GND #PWR?
+U 1 1 60C79CC0
+P 1200 1800
+F 0 "#PWR?" H 1200 1550 50  0001 C CNN
+F 1 "GND" H 1205 1627 50  0000 C CNN
+F 2 "" H 1200 1800 50  0001 C CNN
+F 3 "" H 1200 1800 50  0001 C CNN
+	1    1200 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5CAD77B1
+P 1200 1650
+F 0 "C?" H 1000 1600 50  0000 L CNN
+F 1 "100n" H 900 1700 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 1238 1500 50  0001 C CNN
+F 3 "~" H 1200 1650 50  0001 C CNN
+	1    1200 1650
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 60C79CC2
+P 800 1650
+F 0 "C?" H 600 1600 50  0000 L CNN
+F 1 "10u" H 550 1700 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 838 1500 50  0001 C CNN
+F 3 "~" H 800 1650 50  0001 C CNN
+	1    800  1650
+	-1   0    0    1   
+$EndComp
+$Comp
+L Battery_Management:MCP73831-2-OT U?
+U 1 1 5CADC95E
+P 2050 1350
+F 0 "U?" H 1750 1600 50  0000 L CNN
+F 1 "XT4054K421MR-G" H 2100 1100 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 2100 1100 50  0001 L CIN
+F 3 "" H 1900 1300 50  0001 C CNN
+	1    2050 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5CADF1D7
+P 2050 1800
+F 0 "#PWR?" H 2050 1550 50  0001 C CNN
+F 1 "GND" H 2055 1627 50  0000 C CNN
+F 2 "" H 2050 1800 50  0001 C CNN
+F 3 "" H 2050 1800 50  0001 C CNN
+	1    2050 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Battery_Cell BT?
+U 1 1 5CAE0922
+P 3350 1700
+F 0 "BT?" H 3468 1796 50  0000 L CNN
+F 1 "LiPo" H 3468 1705 50  0000 L CNN
+F 2 "corelib:S2B-ZR" V 3350 1760 50  0001 C CNN
+F 3 "~" V 3350 1760 50  0001 C CNN
+	1    3350 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 60C79CC7
+P 1600 1650
+F 0 "R?" H 1670 1696 50  0000 L CNN
+F 1 "2k" H 1670 1605 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 1530 1650 50  0001 C CNN
+F 3 "~" H 1600 1650 50  0001 C CNN
+	1    1600 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1650 1450 1600 1450
+$Comp
+L Device:C C?
+U 1 1 60C79CC8
+P 3000 1650
+F 0 "C?" H 3115 1696 50  0000 L CNN
+F 1 "10u" H 3115 1605 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3038 1500 50  0001 C CNN
+F 3 "~" H 3000 1650 50  0001 C CNN
+	1    3000 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Pack04 RN?
+U 1 1 60C79CFF
+P 5350 7200
+F 0 "RN?" V 4933 7200 50  0000 C CNN
+F 1 "100k" V 5024 7200 50  0000 C CNN
+F 2 "Resistor_SMD:R_Array_Convex_4x0603" V 5625 7200 50  0001 C CNN
+F 3 "~" H 5350 7200 50  0001 C CNN
+	1    5350 7200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5550 7000 5550 7050
+Wire Wire Line
+	5550 7200 5550 7250
+$Comp
+L Power_Management:AAT4610BIGV-1-T1 U?
+U 1 1 60C79D08
+P 5350 3250
+F 0 "U?" H 5350 3600 50  0000 C CNN
+F 1 "SY6280AAC" H 5350 3500 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 5350 3600 50  0001 C CNN
+F 3 "" H 5300 3550 50  0001 C CNN
+	1    5350 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 60C79D09
+P 5800 3550
+F 0 "R?" H 5870 3596 50  0000 L CNN
+F 1 "3.4k" H 5870 3505 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 5730 3550 50  0001 C CNN
+F 3 "~" H 5800 3550 50  0001 C CNN
+	1    5800 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5D5E6D8C
+P 4900 3550
+F 0 "R?" V 4693 3550 50  0000 C CNN
+F 1 "10k" V 4784 3550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4830 3550 50  0001 C CNN
+F 3 "~" H 4900 3550 50  0001 C CNN
+	1    4900 3550
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5600 7250 5550 7250
+Connection ~ 5550 7250
+Wire Wire Line
+	5550 7250 5550 7300
+Wire Wire Line
+	5600 7050 5550 7050
+Connection ~ 5550 7050
+Wire Wire Line
+	5550 7050 5550 7100
+$Comp
+L power:GND #PWR?
+U 1 1 60C79D62
+P 3000 1800
+F 0 "#PWR?" H 3000 1550 50  0001 C CNN
+F 1 "GND" H 3005 1627 50  0000 C CNN
+F 2 "" H 3000 1800 50  0001 C CNN
+F 3 "" H 3000 1800 50  0001 C CNN
+	1    3000 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60C79D63
+P 3350 1800
+F 0 "#PWR?" H 3350 1550 50  0001 C CNN
+F 1 "GND" H 3355 1627 50  0000 C CNN
+F 2 "" H 3350 1800 50  0001 C CNN
+F 3 "" H 3350 1800 50  0001 C CNN
+	1    3350 1800
+	1    0    0    -1  
+$EndComp
+Connection ~ 1350 5150
+$Comp
+L power:+3.3V #PWR?
+U 1 1 60C79D61
+P 2950 5150
+F 0 "#PWR?" H 2950 5000 50  0001 C CNN
+F 1 "+3.3V" H 2950 5300 50  0000 C CNN
+F 2 "" H 2950 5150 50  0001 C CNN
+F 3 "" H 2950 5150 50  0001 C CNN
+	1    2950 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 60C79D06
+P 2650 5650
+F 0 "C?" H 2700 5850 50  0000 L CNN
+F 1 "22u" H 2700 5750 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2688 5500 50  0001 C CNN
+F 3 "~" H 2650 5650 50  0001 C CNN
+	1    2650 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 60C79D05
+P 2150 5450
+F 0 "C?" V 2250 5550 50  0000 C CNN
+F 1 "22p" V 2100 5350 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2188 5300 50  0001 C CNN
+F 3 "~" H 2150 5450 50  0001 C CNN
+	1    2150 5450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 60C79D04
+P 2150 5250
+F 0 "R?" V 2250 5350 50  0000 C CNN
+F 1 "45.3k" V 2150 5250 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2080 5250 50  0001 C CNN
+F 3 "~" H 2150 5250 50  0001 C CNN
+	1    2150 5250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5D11DFDE
+P 1950 5650
+F 0 "R?" H 2020 5696 50  0000 L CNN
+F 1 "10k" H 2020 5605 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 1880 5650 50  0001 C CNN
+F 3 "~" H 1950 5650 50  0001 C CNN
+	1    1950 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:L L?
+U 1 1 5D0F5903
+P 2150 5150
+F 0 "L?" V 2000 5150 50  0000 C CNN
+F 1 "2.2u" V 2100 5150 50  0000 C CNN
+F 2 "corelib:Inductor_MSC20FC" H 2150 5150 50  0001 C CNN
+F 3 "~" H 2150 5150 50  0001 C CNN
+	1    2150 5150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1350 5250 1350 5150
+$Comp
+L Regulator_Switching:TLV62568DBV U?
+U 1 1 5D0CD3D8
+P 1650 5250
+F 0 "U?" H 1650 5617 50  0000 C CNN
+F 1 "SY8079" H 1650 5526 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 1700 5000 50  0001 L CIN
+F 3 "" H 1400 5700 50  0001 C CNN
+	1    1650 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1150 5150 1350 5150
+$Comp
+L Device:C C?
+U 1 1 60C79CCD
+P 1150 5650
+F 0 "C?" H 1265 5696 50  0000 L CNN
+F 1 "22u" H 1265 5605 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 1188 5500 50  0001 C CNN
+F 3 "~" H 1150 5650 50  0001 C CNN
+	1    1150 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 60C79CCC
+P 2950 5650
+F 0 "C?" H 3000 5850 50  0000 L CNN
+F 1 "22u" H 3000 5750 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2988 5500 50  0001 C CNN
+F 3 "~" H 2950 5650 50  0001 C CNN
+	1    2950 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60C79CCB
+P 1650 5800
+F 0 "#PWR?" H 1650 5550 50  0001 C CNN
+F 1 "GND" H 1655 5627 50  0000 C CNN
+F 2 "" H 1650 5800 50  0001 C CNN
+F 3 "" H 1650 5800 50  0001 C CNN
+	1    1650 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_SPDT SW?
+U 1 1 5CAFB308
+P 2150 3500
+F 0 "SW?" H 2000 3650 50  0000 L CNN
+F 1 "Power switch" H 1800 3750 50  0000 L CNN
+F 2 "Button_Switch_SMD:SW_SPDT_PCM12" H 2150 3500 50  0001 C CNN
+F 3 "~" H 2150 3500 50  0001 C CNN
+	1    2150 3500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4900 1350 4900 1300
+Wire Wire Line
+	4950 1350 4900 1350
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5F9F1F18
+P 4900 1300
+F 0 "#PWR?" H 4900 1150 50  0001 C CNN
+F 1 "+3.3V" H 4900 1450 50  0000 C CNN
+F 2 "" H 4900 1300 50  0001 C CNN
+F 3 "" H 4900 1300 50  0001 C CNN
+	1    4900 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60C79D38
+P 4900 1900
+F 0 "#PWR?" H 4900 1650 50  0001 C CNN
+F 1 "GND" H 4905 1727 50  0000 C CNN
+F 2 "" H 4900 1900 50  0001 C CNN
+F 3 "" H 4900 1900 50  0001 C CNN
+	1    4900 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5D3EA6A8
+P 4900 1750
+F 0 "R?" V 4693 1750 50  0000 C CNN
+F 1 "10k" V 4784 1750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4830 1750 50  0001 C CNN
+F 3 "~" H 4900 1750 50  0001 C CNN
+	1    4900 1750
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4950 1550 4900 1550
+$Comp
+L Device:R R?
+U 1 1 60C79D0C
+P 5800 1750
+F 0 "R?" V 5593 1750 50  0000 C CNN
+F 1 "10k" V 5684 1750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 5730 1750 50  0001 C CNN
+F 3 "~" H 5800 1750 50  0001 C CNN
+	1    5800 1750
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60C79D0B
+P 5350 1900
+F 0 "#PWR?" H 5350 1650 50  0001 C CNN
+F 1 "GND" H 5355 1727 50  0000 C CNN
+F 2 "" H 5350 1900 50  0001 C CNN
+F 3 "" H 5350 1900 50  0001 C CNN
+	1    5350 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Power_Management:AAT4610BIGV-1-T1 U?
+U 1 1 60C79D0A
+P 5350 1450
+F 0 "U?" H 5350 1817 50  0000 C CNN
+F 1 "SY6280AAC" H 5350 1726 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 5350 1800 50  0001 C CNN
+F 3 "" H 5300 1750 50  0001 C CNN
+	1    5350 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F4DE729
+P 5800 3700
+F 0 "#PWR?" H 5800 3450 50  0001 C CNN
+F 1 "GND" H 5805 3527 50  0000 C CNN
+F 2 "" H 5800 3700 50  0001 C CNN
+F 3 "" H 5800 3700 50  0001 C CNN
+	1    5800 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5CB32E83
+P 5350 3700
+F 0 "#PWR?" H 5350 3450 50  0001 C CNN
+F 1 "GND" H 5355 3527 50  0000 C CNN
+F 2 "" H 5350 3700 50  0001 C CNN
+F 3 "" H 5350 3700 50  0001 C CNN
+	1    5350 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 3700 5350 3550
+Wire Wire Line
+	5750 3350 5800 3350
+Wire Wire Line
+	5800 3350 5800 3400
+Wire Wire Line
+	4900 3400 4900 3350
+Wire Wire Line
+	4900 3350 4950 3350
+$Comp
+L power:GND #PWR?
+U 1 1 5F53F3A2
+P 4900 3700
+F 0 "#PWR?" H 4900 3450 50  0001 C CNN
+F 1 "GND" H 4905 3527 50  0000 C CNN
+F 2 "" H 4900 3700 50  0001 C CNN
+F 3 "" H 4900 3700 50  0001 C CNN
+	1    4900 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 3350 4900 3350
+Connection ~ 4900 3350
+Wire Wire Line
+	5750 3150 5800 3150
+Text GLabel 5800 3150 2    35   Output ~ 0
+PWR_LED
+Wire Wire Line
+	4900 1600 4900 1550
+Wire Wire Line
+	5750 1550 5800 1550
+Wire Wire Line
+	5800 1550 5800 1600
+$Comp
+L power:GND #PWR?
+U 1 1 5F571A58
+P 5800 1900
+F 0 "#PWR?" H 5800 1650 50  0001 C CNN
+F 1 "GND" H 5805 1727 50  0000 C CNN
+F 2 "" H 5800 1900 50  0001 C CNN
+F 3 "" H 5800 1900 50  0001 C CNN
+	1    5800 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 1900 5350 1750
+Text GLabel 5750 1350 2    35   Output ~ 0
+PWR_SDCARD
+Wire Wire Line
+	4900 1550 4850 1550
+Connection ~ 4900 1550
+$Comp
+L power:GND #PWR?
+U 1 1 5F59CA35
+P 1600 1800
+F 0 "#PWR?" H 1600 1550 50  0001 C CNN
+F 1 "GND" H 1605 1627 50  0000 C CNN
+F 2 "" H 1600 1800 50  0001 C CNN
+F 3 "" H 1600 1800 50  0001 C CNN
+	1    1600 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2050 1650 2050 1800
+Wire Wire Line
+	1600 1500 1600 1450
+$Comp
+L power:GND #PWR?
+U 1 1 5F5C9C53
+P 800 1800
+F 0 "#PWR?" H 800 1550 50  0001 C CNN
+F 1 "GND" H 805 1627 50  0000 C CNN
+F 2 "" H 800 1800 50  0001 C CNN
+F 3 "" H 800 1800 50  0001 C CNN
+	1    800  1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 1500 3350 1250
+Wire Wire Line
+	2450 1250 3000 1250
+Wire Wire Line
+	3000 1500 3000 1250
+Connection ~ 3000 1250
+Wire Wire Line
+	3000 1250 3350 1250
+Text Notes 3700 2300 2    35   ~ 0
+CHARGING is an open-drain output\nthat gets pulled low when the charger\nis active (charging the battery)
+$Comp
+L vusb:VUSB #PWR?
+U 1 1 5F629D1E
+P 2050 1050
+F 0 "#PWR?" H 2060 1050 20  0001 C CNN
+F 1 "VUSB" H 2050 1146 40  0000 C CNN
+F 2 "" H 2050 1050 60  0001 C CNN
+F 3 "" H 2050 1050 60  0001 C CNN
+	1    2050 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L vusb:VUSB #PWR?
+U 1 1 5F62CA90
+P 1200 1050
+F 0 "#PWR?" H 1210 1050 20  0001 C CNN
+F 1 "VUSB" H 1200 1146 40  0000 C CNN
+F 2 "" H 1200 1050 60  0001 C CNN
+F 3 "" H 1200 1050 60  0001 C CNN
+	1    1200 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L vusb:VUSB #PWR?
+U 1 1 5F62D044
+P 800 1050
+F 0 "#PWR?" H 810 1050 20  0001 C CNN
+F 1 "VUSB" H 800 1146 40  0000 C CNN
+F 2 "" H 800 1050 60  0001 C CNN
+F 3 "" H 800 1050 60  0001 C CNN
+	1    800  1050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1200 1500 1200 1050
+Wire Wire Line
+	800  1500 800  1050
+$Comp
+L powersyms:VBAT #PWR?
+U 1 1 5F62F18A
+P 3350 1050
+F 0 "#PWR?" H 3360 1050 20  0001 C CNN
+F 1 "VBAT" H 3350 1146 40  0000 C CNN
+F 2 "" H 3350 1050 60  0001 C CNN
+F 3 "" H 3350 1050 60  0001 C CNN
+	1    3350 1050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 1250 3350 1050
+Connection ~ 3350 1250
+Text Notes 2850 700  2    118  ~ 0
+Battery & battery charger
+Text Notes 1700 2600 2    118  ~ 0
+Power switch
+$Comp
+L power:GND #PWR?
+U 1 1 5F670873
+P 2950 5800
+F 0 "#PWR?" H 2950 5550 50  0001 C CNN
+F 1 "GND" H 2955 5627 50  0000 C CNN
+F 2 "" H 2950 5800 50  0001 C CNN
+F 3 "" H 2950 5800 50  0001 C CNN
+	1    2950 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F670D74
+P 2650 5800
+F 0 "#PWR?" H 2650 5550 50  0001 C CNN
+F 1 "GND" H 2655 5627 50  0000 C CNN
+F 2 "" H 2650 5800 50  0001 C CNN
+F 3 "" H 2650 5800 50  0001 C CNN
+	1    2650 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F671282
+P 1950 5800
+F 0 "#PWR?" H 1950 5550 50  0001 C CNN
+F 1 "GND" H 1955 5627 50  0000 C CNN
+F 2 "" H 1950 5800 50  0001 C CNN
+F 3 "" H 1950 5800 50  0001 C CNN
+	1    1950 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F6728A9
+P 1150 5800
+F 0 "#PWR?" H 1150 5550 50  0001 C CNN
+F 1 "GND" H 1155 5627 50  0000 C CNN
+F 2 "" H 1150 5800 50  0001 C CNN
+F 3 "" H 1150 5800 50  0001 C CNN
+	1    1150 5800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1150 5500 1150 5150
+Wire Wire Line
+	1650 5550 1650 5800
+Wire Wire Line
+	2950 5500 2950 5150
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5F6801CE
+P 2650 5150
+F 0 "#PWR?" H 2650 5000 50  0001 C CNN
+F 1 "+3.3V" H 2650 5300 50  0000 C CNN
+F 2 "" H 2650 5150 50  0001 C CNN
+F 3 "" H 2650 5150 50  0001 C CNN
+	1    2650 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 5150 2000 5150
+Wire Wire Line
+	1950 5250 2000 5250
+Wire Wire Line
+	1950 5500 1950 5450
+Connection ~ 1950 5250
+Wire Wire Line
+	2000 5450 1950 5450
+Connection ~ 1950 5450
+Wire Wire Line
+	1950 5450 1950 5250
+$Comp
+L vin:VIN #PWR?
+U 1 1 5F696C31
+P 2400 3350
+F 0 "#PWR?" H 2410 3350 20  0001 C CNN
+F 1 "VIN" H 2400 3446 40  0000 C CNN
+F 2 "" H 2400 3350 60  0001 C CNN
+F 3 "" H 2400 3350 60  0001 C CNN
+	1    2400 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L vusb:VUSB #PWR?
+U 1 1 5F69998A
+P 1900 3350
+F 0 "#PWR?" H 1910 3350 20  0001 C CNN
+F 1 "VUSB" H 1900 3446 40  0000 C CNN
+F 2 "" H 1900 3350 60  0001 C CNN
+F 3 "" H 1900 3350 60  0001 C CNN
+	1    1900 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L powersyms:VBAT #PWR?
+U 1 1 5F69B50C
+P 1700 3350
+F 0 "#PWR?" H 1710 3350 20  0001 C CNN
+F 1 "VBAT" H 1700 3446 40  0000 C CNN
+F 2 "" H 1700 3350 60  0001 C CNN
+F 3 "" H 1700 3350 60  0001 C CNN
+	1    1700 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 3600 1700 3600
+Wire Wire Line
+	1700 3600 1700 3350
+Wire Wire Line
+	1900 3350 1900 3400
+Wire Wire Line
+	1900 3400 1950 3400
+Wire Wire Line
+	2350 3500 2400 3500
+Wire Wire Line
+	2400 3500 2400 3350
+Wire Notes Line
+	3750 500  3750 7800
+Text Notes 2850 4250 0    35   ~ 0
+The power switch never really\nturns the badge off. Instead\nit lets you choose to bypass\nthe battery when powering\nthe badge from USB. This\nincreases charging speed and\nturns the badge off completely\nwhen USB is not connected
+$Comp
+L vin:VIN #PWR?
+U 1 1 5F6DC8A4
+P 1150 5000
+F 0 "#PWR?" H 1160 5000 20  0001 C CNN
+F 1 "VIN" H 1150 5096 40  0000 C CNN
+F 2 "" H 1150 5000 60  0001 C CNN
+F 3 "" H 1150 5000 60  0001 C CNN
+	1    1150 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1150 5150 1150 5000
+Connection ~ 1150 5150
+Wire Wire Line
+	2300 5450 2350 5450
+Wire Wire Line
+	2350 5450 2350 5250
+Wire Wire Line
+	2350 5250 2300 5250
+Wire Wire Line
+	2350 5250 2350 5150
+Wire Wire Line
+	2350 5150 2300 5150
+Connection ~ 2350 5250
+Wire Wire Line
+	2650 5150 2650 5500
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5F6E2DF7
+P 2350 5150
+F 0 "#PWR?" H 2350 5000 50  0001 C CNN
+F 1 "+3.3V" H 2350 5300 50  0000 C CNN
+F 2 "" H 2350 5150 50  0001 C CNN
+F 3 "" H 2350 5150 50  0001 C CNN
+	1    2350 5150
+	1    0    0    -1  
+$EndComp
+Connection ~ 2350 5150
+Text Notes 2550 4600 2    118  ~ 0
+3.3v voltage regulator
+Connection ~ 1350 6900
+$Comp
+L Device:C C?
+U 1 1 5F6FD8CD
+P 2650 7400
+F 0 "C?" H 2700 7600 50  0000 L CNN
+F 1 "22u" H 2700 7500 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2688 7250 50  0001 C CNN
+F 3 "~" H 2650 7400 50  0001 C CNN
+	1    2650 7400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5F6FD8D3
+P 2150 7200
+F 0 "C?" V 2250 7300 50  0000 C CNN
+F 1 "22p" V 2100 7100 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2188 7050 50  0001 C CNN
+F 3 "~" H 2150 7200 50  0001 C CNN
+	1    2150 7200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F6FD8D9
+P 2150 7000
+F 0 "R?" V 2250 7100 50  0000 C CNN
+F 1 "10k" V 2150 7000 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2080 7000 50  0001 C CNN
+F 3 "~" H 2150 7000 50  0001 C CNN
+	1    2150 7000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F6FD8DF
+P 1950 7400
+F 0 "R?" H 2020 7446 50  0000 L CNN
+F 1 "10k" H 2020 7355 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 1880 7400 50  0001 C CNN
+F 3 "~" H 1950 7400 50  0001 C CNN
+	1    1950 7400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:L L?
+U 1 1 5F6FD8E5
+P 2150 6900
+F 0 "L?" V 2000 6900 50  0000 C CNN
+F 1 "2.2u" V 2100 6900 50  0000 C CNN
+F 2 "corelib:Inductor_MSC20FC" H 2150 6900 50  0001 C CNN
+F 3 "~" H 2150 6900 50  0001 C CNN
+	1    2150 6900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1350 7000 1350 6900
+$Comp
+L Regulator_Switching:TLV62568DBV U?
+U 1 1 5F6FD8EC
+P 1650 7000
+F 0 "U?" H 1650 7367 50  0000 C CNN
+F 1 "SY8079" H 1650 7276 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 1700 6750 50  0001 L CIN
+F 3 "" H 1400 7450 50  0001 C CNN
+	1    1650 7000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1150 6900 1350 6900
+$Comp
+L Device:C C?
+U 1 1 5F6FD8F3
+P 1150 7400
+F 0 "C?" H 1265 7446 50  0000 L CNN
+F 1 "22u" H 1265 7355 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 1188 7250 50  0001 C CNN
+F 3 "~" H 1150 7400 50  0001 C CNN
+	1    1150 7400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5F6FD8F9
+P 2950 7400
+F 0 "C?" H 3000 7600 50  0000 L CNN
+F 1 "22u" H 3000 7500 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2988 7250 50  0001 C CNN
+F 3 "~" H 2950 7400 50  0001 C CNN
+	1    2950 7400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F6FD8FF
+P 1650 7550
+F 0 "#PWR?" H 1650 7300 50  0001 C CNN
+F 1 "GND" H 1655 7377 50  0000 C CNN
+F 2 "" H 1650 7550 50  0001 C CNN
+F 3 "" H 1650 7550 50  0001 C CNN
+	1    1650 7550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F6FD905
+P 2950 7550
+F 0 "#PWR?" H 2950 7300 50  0001 C CNN
+F 1 "GND" H 2955 7377 50  0000 C CNN
+F 2 "" H 2950 7550 50  0001 C CNN
+F 3 "" H 2950 7550 50  0001 C CNN
+	1    2950 7550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F6FD90B
+P 2650 7550
+F 0 "#PWR?" H 2650 7300 50  0001 C CNN
+F 1 "GND" H 2655 7377 50  0000 C CNN
+F 2 "" H 2650 7550 50  0001 C CNN
+F 3 "" H 2650 7550 50  0001 C CNN
+	1    2650 7550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F6FD911
+P 1950 7550
+F 0 "#PWR?" H 1950 7300 50  0001 C CNN
+F 1 "GND" H 1955 7377 50  0000 C CNN
+F 2 "" H 1950 7550 50  0001 C CNN
+F 3 "" H 1950 7550 50  0001 C CNN
+	1    1950 7550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F6FD917
+P 1150 7550
+F 0 "#PWR?" H 1150 7300 50  0001 C CNN
+F 1 "GND" H 1155 7377 50  0000 C CNN
+F 2 "" H 1150 7550 50  0001 C CNN
+F 3 "" H 1150 7550 50  0001 C CNN
+	1    1150 7550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1150 7250 1150 6900
+Wire Wire Line
+	1650 7300 1650 7550
+Wire Wire Line
+	2950 7250 2950 6900
+Wire Wire Line
+	1950 6900 2000 6900
+Wire Wire Line
+	1950 7000 2000 7000
+Wire Wire Line
+	1950 7250 1950 7200
+Connection ~ 1950 7000
+Wire Wire Line
+	2000 7200 1950 7200
+Connection ~ 1950 7200
+Wire Wire Line
+	1950 7200 1950 7000
+$Comp
+L vin:VIN #PWR?
+U 1 1 5F6FD92D
+P 1150 6750
+F 0 "#PWR?" H 1160 6750 20  0001 C CNN
+F 1 "VIN" H 1150 6846 40  0000 C CNN
+F 2 "" H 1150 6750 60  0001 C CNN
+F 3 "" H 1150 6750 60  0001 C CNN
+	1    1150 6750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1150 6900 1150 6750
+Connection ~ 1150 6900
+Wire Wire Line
+	2300 7200 2350 7200
+Wire Wire Line
+	2350 7200 2350 7000
+Wire Wire Line
+	2350 7000 2300 7000
+Wire Wire Line
+	2350 7000 2350 6900
+Wire Wire Line
+	2350 6900 2300 6900
+Connection ~ 2350 7000
+Wire Wire Line
+	2650 6900 2650 7250
+$Comp
+L power:+1V2 #PWR?
+U 1 1 5F70268C
+P 2950 6900
+F 0 "#PWR?" H 2950 6750 50  0001 C CNN
+F 1 "+1V2" H 2965 7073 50  0000 C CNN
+F 2 "" H 2950 6900 50  0001 C CNN
+F 3 "" H 2950 6900 50  0001 C CNN
+	1    2950 6900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+1V2 #PWR?
+U 1 1 5F702A8D
+P 2650 6900
+F 0 "#PWR?" H 2650 6750 50  0001 C CNN
+F 1 "+1V2" H 2665 7073 50  0000 C CNN
+F 2 "" H 2650 6900 50  0001 C CNN
+F 3 "" H 2650 6900 50  0001 C CNN
+	1    2650 6900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+1V2 #PWR?
+U 1 1 5F702E0A
+P 2350 6900
+F 0 "#PWR?" H 2350 6750 50  0001 C CNN
+F 1 "+1V2" H 2365 7073 50  0000 C CNN
+F 2 "" H 2350 6900 50  0001 C CNN
+F 3 "" H 2350 6900 50  0001 C CNN
+	1    2350 6900
+	1    0    0    -1  
+$EndComp
+Connection ~ 2350 6900
+Text Notes 2550 6500 2    118  ~ 0
+1.2v voltage regulator
+$Comp
+L powersyms:VBAT #PWR?
+U 1 1 5F71261C
+P 5100 6950
+F 0 "#PWR?" H 5110 6950 20  0001 C CNN
+F 1 "VBAT" H 5100 7046 40  0000 C CNN
+F 2 "" H 5100 6950 60  0001 C CNN
+F 3 "" H 5100 6950 60  0001 C CNN
+	1    5100 6950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F455EBB
+P 5100 7350
+F 0 "#PWR?" H 5100 7100 50  0001 C CNN
+F 1 "GND" H 5105 7177 50  0000 C CNN
+F 2 "" H 5100 7350 50  0001 C CNN
+F 3 "" H 5100 7350 50  0001 C CNN
+	1    5100 7350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 7100 5100 7100
+Wire Wire Line
+	5100 7100 5100 7300
+Wire Wire Line
+	5150 7300 5100 7300
+Connection ~ 5100 7300
+Wire Wire Line
+	5100 7300 5100 7350
+Wire Wire Line
+	5150 7000 5100 7000
+Wire Wire Line
+	5100 7000 5100 6950
+$Comp
+L vusb:VUSB #PWR?
+U 1 1 5F720F31
+P 4900 6950
+F 0 "#PWR?" H 4910 6950 20  0001 C CNN
+F 1 "VUSB" H 4900 7046 40  0000 C CNN
+F 2 "" H 4900 6950 60  0001 C CNN
+F 3 "" H 4900 6950 60  0001 C CNN
+	1    4900 6950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 7200 4900 7200
+Wire Wire Line
+	4900 7200 4900 6950
+Text Notes 5250 6550 2    118  ~ 0
+Voltage sensing
+Wire Notes Line
+	500  6300 6950 6300
+Wire Notes Line
+	500  4350 6950 4350
+Wire Notes Line
+	6950 500  6950 6550
+Wire Notes Line
+	500  2350 6950 2350
+$Comp
+L powersyms:VBAT #PWR?
+U 1 1 5F8567D1
+P 4900 3000
+F 0 "#PWR?" H 4910 3000 20  0001 C CNN
+F 1 "VBAT" H 4900 3096 40  0000 C CNN
+F 2 "" H 4900 3000 60  0001 C CNN
+F 3 "" H 4900 3000 60  0001 C CNN
+	1    4900 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 3150 4900 3150
+Wire Wire Line
+	4900 3150 4900 3000
+Text Notes 6800 700  2    118  ~ 0
+Switched power: 3.3v for SDCARD
+Text Notes 6450 2550 2    118  ~ 0
+Switched power: Vin for LEDs
+$Comp
+L schottky:SCHOTTKY D?
+U 1 1 5F8B2558
+P 5200 5300
+F 0 "D?" H 5325 5512 50  0000 C CNN
+F 1 "CDBU0130R" H 5325 5421 50  0000 C CNN
+F 2 "" V 5350 5300 60  0001 C CNN
+F 3 "" V 5350 5300 60  0001 C CNN
+	1    5200 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5F8B4700
+P 4900 5600
+F 0 "C?" H 4950 5800 50  0000 L CNN
+F 1 "0.1u" H 4950 5700 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4938 5450 50  0001 C CNN
+F 3 "~" H 4900 5600 50  0001 C CNN
+	1    4900 5600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 5300 4900 5450
+$Comp
+L power:GND #PWR?
+U 1 1 5F8BB018
+P 4900 5750
+F 0 "#PWR?" H 4900 5500 50  0001 C CNN
+F 1 "GND" H 4905 5577 50  0000 C CNN
+F 2 "" H 4900 5750 50  0001 C CNN
+F 3 "" H 4900 5750 50  0001 C CNN
+	1    4900 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5F8BB62E
+P 4900 5250
+F 0 "#PWR?" H 4900 5100 50  0001 C CNN
+F 1 "+3.3V" H 4900 5400 50  0000 C CNN
+F 2 "" H 4900 5250 50  0001 C CNN
+F 3 "" H 4900 5250 50  0001 C CNN
+	1    4900 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 5300 5200 5300
+Wire Wire Line
+	4900 5300 4900 5250
+Connection ~ 4900 5300
+Wire Wire Line
+	5450 5300 5750 5300
+Wire Wire Line
+	5750 5300 5750 5250
+$Comp
+L power:+2V5 #PWR?
+U 1 1 5F8C3234
+P 5750 5250
+F 0 "#PWR?" H 5750 5100 50  0001 C CNN
+F 1 "+2V5" H 5765 5423 50  0000 C CNN
+F 2 "" H 5750 5250 50  0001 C CNN
+F 3 "" H 5750 5250 50  0001 C CNN
+	1    5750 5250
+	1    0    0    -1  
+$EndComp
+Text Notes 5800 4600 2    118  ~ 0
+2.5v voltage regulator
+Text Notes 6850 1600 2    39   ~ 0
+Iset = 0.68A = 6800 / 10kOhm
+Text Notes 6850 3400 2    39   ~ 0
+Iset = 2A = 6800 / 3.4kOhm
+$Comp
+L Device:R R?
+U 1 1 5F610579
+P 2750 1150
+F 0 "R?" H 2820 1196 50  0000 L CNN
+F 1 "2k" H 2820 1105 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2680 1150 50  0001 C CNN
+F 3 "~" H 2750 1150 50  0001 C CNN
+	1    2750 1150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5F612237
+P 2950 1050
+F 0 "#PWR?" H 2950 900 50  0001 C CNN
+F 1 "+3.3V" H 2950 1200 50  0000 C CNN
+F 2 "" H 2950 1050 50  0001 C CNN
+F 3 "" H 2950 1050 50  0001 C CNN
+	1    2950 1050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2950 1050 2950 1150
+Wire Wire Line
+	2950 1150 2900 1150
+Wire Wire Line
+	2600 1150 2550 1150
+Wire Wire Line
+	2550 1150 2550 1450
+Wire Wire Line
+	2550 1450 2450 1450
+Wire Wire Line
+	2550 1450 2600 1450
+Connection ~ 2550 1450
+Text HLabel 2600 1450 2    39   Output ~ 0
+CHARGING
+Text HLabel 5600 7050 2    50   Output ~ 0
+SENSE_VBAT
+Text HLabel 5600 7250 2    50   Output ~ 0
+SENSE_VUSB
+Text HLabel 4850 3350 0    39   Input ~ 0
+PWR_LED_ENABLE
+Text HLabel 4850 1550 0    39   Input ~ 0
+PWR_SDCARD_ENABLE
+Text Notes 7050 750  0    71   ~ 0
+Note:\nAll control signals are hierarchical labels while all power rails are global
+$EndSCHEMATC

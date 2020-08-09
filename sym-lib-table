@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name mch2021-rescue)(type Legacy)(uri ${KIPRJMOD}/mch2021-rescue.lib)(options "")(descr ""))
+)
