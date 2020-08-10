@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 10
+Sheet 5 9
 Title "MCH2021 badge - ESP32 microcontroller"
 Date "2020-08-08"
 Rev "1"
@@ -296,7 +296,7 @@ L Device:R_Pack04 RN2
 U 1 1 60721521
 P 8150 4750
 F 0 "RN2" H 8338 4796 50  0000 L CNN
-F 1 "4.7k" H 8338 4705 50  0000 L CNN
+F 1 "10k" H 8338 4705 50  0000 L CNN
 F 2 "Resistor_SMD:R_Array_Convex_4x0603" V 8425 4750 50  0001 C CNN
 F 3 "~" H 8150 4750 50  0001 C CNN
 	1    8150 4750
@@ -355,23 +355,21 @@ Text HLabel 4250 3300 2    39   Input ~ 0
 ESP32_RX
 Text HLabel 4250 4200 2    39   Output ~ 0
 SPI_CLK
-Text HLabel 4250 4300 2    39   Output ~ 0
+Text HLabel 4250 4900 2    39   Output ~ 0
 LCD_DC
 Text HLabel 4250 4400 2    39   Output ~ 0
 I2C_SCL
-Text HLabel 4250 4500 2    39   BiDi ~ 0
-I2C_SDA
 Text HLabel 4250 4600 2    39   Output ~ 0
 SPI_MOSI
-Text HLabel 4250 4700 2    39   Output ~ 0
+Text HLabel 4250 4300 2    39   Output ~ 0
 SPI_FPGA_CS
 Text HLabel 4250 5300 2    39   Input ~ 0
 SPI_MISO
 Text Notes 7000 3450 0    79   ~ 0
 Pull-up resistors for\n - I2C bus\n - IRQ signals\n - Download mode (IO0)\n - SDIO bus
-Text HLabel 7950 4950 3    39   UnSpc ~ 0
+Text HLabel 8600 4950 3    39   UnSpc ~ 0
 ESP32_EN
-Text HLabel 8050 4950 3    39   UnSpc ~ 0
+Text HLabel 8700 4950 3    39   UnSpc ~ 0
 ESP32_BL
 Text HLabel 8900 4950 3    39   UnSpc ~ 0
 I2C_SDA
@@ -383,46 +381,18 @@ Text Notes 550  650  0    79   ~ 0
 ESP32 microcontroller
 Text HLabel 4250 3500 2    39   Output ~ 0
 SPI_LCD_CS
-Text HLabel 4250 5200 2    39   Input ~ 0
-STM32_IRQ
-Text HLabel 4650 2900 2    39   Input ~ 0
+Text HLabel 4250 3000 2    39   Input ~ 0
 ESP32_BL
-Wire Wire Line
-	4350 2900 4350 3000
-Wire Wire Line
-	4250 3000 4350 3000
-$Comp
-L Device:R R20
-U 1 1 60721520
-P 4500 2900
-F 0 "R20" V 4400 2900 50  0000 C CNN
-F 1 "10k" V 4500 2900 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 4430 2900 50  0001 C CNN
-F 3 "~" H 4500 2900 50  0001 C CNN
-	1    4500 2900
-	0    1    1    0   
-$EndComp
-Text HLabel 4650 3000 2    39   Output ~ 0
-SPI_STM32_CS
-Connection ~ 4350 3000
-Wire Wire Line
-	4350 3000 4650 3000
-Text HLabel 8150 4950 3    39   UnSpc ~ 0
-STM32_IRQ
-Text HLabel 2800 3100 0    39   Input ~ 0
-IRQ_TOUCH
-Text HLabel 2800 3200 0    39   Input ~ 0
-IRQ_ACCEL
-Text HLabel 8600 4950 3    39   UnSpc ~ 0
-IRQ_TOUCH
-Text HLabel 8700 4950 3    39   UnSpc ~ 0
-IRQ_FPGA
-Text HLabel 4250 4800 2    39   Output ~ 0
-I2S_BCLK
-Text HLabel 4250 4900 2    39   Output ~ 0
-I2S_LRCK
 Text HLabel 4250 5000 2    39   Output ~ 0
-I2S_DATA
+SPI_STM32_CS
+Text HLabel 2800 3200 0    39   Input ~ 0
+IRQ_TOUCH
+Text HLabel 4250 5200 2    39   Input ~ 0
+IRQ_ACCEL
+Text HLabel 8050 4950 3    39   UnSpc ~ 0
+IRQ_TOUCH
+Text HLabel 8150 4950 3    39   UnSpc ~ 0
+IRQ_FPGA
 Wire Notes Line
 	6950 2800 11200 2800
 Text HLabel 4250 3200 2    39   BiDi ~ 0
@@ -442,7 +412,7 @@ L Device:R_Pack04 RN3
 U 1 1 60721515
 P 8800 4750
 F 0 "RN3" H 8988 4796 50  0000 L CNN
-F 1 "4.7k" H 8988 4705 50  0000 L CNN
+F 1 "10k" H 8988 4705 50  0000 L CNN
 F 2 "Resistor_SMD:R_Array_Convex_4x0603" V 9075 4750 50  0001 C CNN
 F 3 "~" H 8800 4750 50  0001 C CNN
 	1    8800 4750
@@ -526,19 +496,20 @@ Wire Wire Line
 Connection ~ 10050 4500
 Wire Wire Line
 	10050 4500 10100 4500
-Wire Wire Line
-	2900 3200 3050 3200
 Text HLabel 2800 3300 0    39   Input ~ 0
 IRQ_FPGA
-Wire Wire Line
-	2800 3200 2900 3200
-Connection ~ 2900 3200
-Wire Wire Line
-	2900 3100 2800 3100
-Wire Wire Line
-	2900 3100 2900 3200
 Wire Wire Line
 	2800 3000 3050 3000
 Wire Wire Line
 	2800 3300 3050 3300
+Text HLabel 4250 4500 2    39   BiDi ~ 0
+I2C_SDA
+Text HLabel 4250 4700 2    39   Output ~ 0
+AUDIO_L
+Text HLabel 4250 4800 2    39   Output ~ 0
+AUDIO_R
+Wire Wire Line
+	2800 3200 3050 3200
+Text HLabel 7950 4950 3    39   UnSpc ~ 0
+IRQ_ACCEL
 $EndSCHEMATC

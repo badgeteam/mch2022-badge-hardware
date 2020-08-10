@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 6 10
+Sheet 6 9
 Title "MCH2021 badge - STM32 microcontroller"
 Date "2020-08-08"
 Rev "1"
@@ -662,8 +662,6 @@ Wire Wire Line
 	6650 4900 8050 4900
 Wire Wire Line
 	6650 4800 8050 4800
-Text HLabel 2700 3500 0    50   Output ~ 0
-IRQ
 Text HLabel 8050 3500 2    50   Input ~ 0
 SENSE_VBAT
 Text HLabel 8050 3600 2    50   Input ~ 0
@@ -720,42 +718,22 @@ Wire Wire Line
 	2700 3600 5350 3600
 Wire Wire Line
 	6650 4300 8050 4300
-$Comp
-L Device:R R?
-U 1 1 60D92E94
-P 3450 2200
-AR Path="/5DC753C3/60D92E94" Ref="R?"  Part="1" 
-AR Path="/60D92E94" Ref="R?"  Part="1" 
-AR Path="/5E3BA64A/60D92E94" Ref="R?"  Part="1" 
-AR Path="/5F51E414/60D92E94" Ref="R27"  Part="1" 
-F 0 "R27" V 3550 2200 50  0000 C CNN
-F 1 "10k" V 3450 2200 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 3380 2200 50  0001 C CNN
-F 3 "~" H 3450 2200 50  0001 C CNN
-F 4 "C25804" H 3450 2200 50  0001 C CNN "LCSC"
-	1    3450 2200
-	-1   0    0    1   
-$EndComp
-$Comp
-L power:+3.3V #PWR0104
-U 1 1 60D92E9A
-P 3450 2050
-F 0 "#PWR0104" H 3450 1900 50  0001 C CNN
-F 1 "+3.3V" H 3465 2223 50  0000 C CNN
-F 2 "" H 3450 2050 50  0001 C CNN
-F 3 "" H 3450 2050 50  0001 C CNN
-	1    3450 2050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2700 3500 3450 3500
-Wire Wire Line
-	3450 2350 3450 3500
-Connection ~ 3450 3500
-Wire Wire Line
-	3450 3500 5350 3500
 Text HLabel 8050 4300 2    50   Output ~ 0
 MCO
 Text Notes 700  7650 0    79   ~ 0
 if using hardware time and the aproach of DMA > TIMer Output\ncompare register you will need bridge pb15 and pb11 so we can\nselect or spi or tim
+Text HLabel 2700 4500 0    50   Output ~ 0
+FPGA_RESET
+Text HLabel 2700 4600 0    50   Input ~ 0
+FPGA_CDONE
+Wire Wire Line
+	2700 4500 5350 4500
+Wire Wire Line
+	5350 4700 5200 4700
+Wire Wire Line
+	5200 4700 5200 4600
+Wire Wire Line
+	5200 4600 2700 4600
+Text Notes 750  3200 0    50   ~ 0
+The ESP32 BL pin also serves as IRQ
 $EndSCHEMATC

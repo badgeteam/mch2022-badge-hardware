@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 10 10
+Sheet 9 9
 Title ""
 Date ""
 Rev ""
@@ -16,34 +16,34 @@ $EndDescr
 $Comp
 L FPGA_Lattice:ICE40UP5K-SG48ITR U6
 U 1 1 5F52B856
-P 3600 4100
-F 0 "U6" H 3500 2950 50  0000 L CNN
-F 1 "ICE40UP5K-SG48ITR" H 3200 2850 50  0000 L CNN
-F 2 "Package_DFN_QFN:QFN-48-1EP_7x7mm_P0.5mm_EP5.6x5.6mm" H 3600 2750 50  0001 C CNN
-F 3 "http://www.latticesemi.com/Products/FPGAandCPLD/iCE40Ultra" H 3200 5100 50  0001 C CNN
-	1    3600 4100
+P 3300 6250
+F 0 "U6" H 3200 5100 50  0000 L CNN
+F 1 "ICE40UP5K-SG48ITR" H 2900 5000 50  0000 L CNN
+F 2 "Package_DFN_QFN:QFN-48-1EP_7x7mm_P0.5mm_EP5.6x5.6mm" H 3300 4900 50  0001 C CNN
+F 3 "http://www.latticesemi.com/Products/FPGAandCPLD/iCE40Ultra" H 2900 7250 50  0001 C CNN
+	1    3300 6250
 	1    0    0    -1  
 $EndComp
 $Comp
 L FPGA_Lattice:ICE40UP5K-SG48ITR U6
 U 2 1 5F52DB74
-P 5450 4100
-F 0 "U6" H 5450 3025 50  0000 C CNN
-F 1 "ICE40UP5K-SG48ITR" H 5450 2934 50  0000 C CNN
-F 2 "Package_DFN_QFN:QFN-48-1EP_7x7mm_P0.5mm_EP5.6x5.6mm" H 5450 2750 50  0001 C CNN
-F 3 "http://www.latticesemi.com/Products/FPGAandCPLD/iCE40Ultra" H 5050 5100 50  0001 C CNN
-	2    5450 4100
+P 6100 3250
+F 0 "U6" H 6100 2175 50  0000 C CNN
+F 1 "ICE40UP5K-SG48ITR" H 6100 2084 50  0000 C CNN
+F 2 "Package_DFN_QFN:QFN-48-1EP_7x7mm_P0.5mm_EP5.6x5.6mm" H 6100 1900 50  0001 C CNN
+F 3 "http://www.latticesemi.com/Products/FPGAandCPLD/iCE40Ultra" H 5700 4250 50  0001 C CNN
+	2    6100 3250
 	1    0    0    -1  
 $EndComp
 $Comp
 L FPGA_Lattice:ICE40UP5K-SG48ITR U6
 U 3 1 5F52F020
-P 7550 3750
-F 0 "U6" H 7450 3050 50  0000 L CNN
-F 1 "ICE40UP5K-SG48ITR" H 7150 2950 50  0000 L CNN
-F 2 "Package_DFN_QFN:QFN-48-1EP_7x7mm_P0.5mm_EP5.6x5.6mm" H 7550 2400 50  0001 C CNN
-F 3 "http://www.latticesemi.com/Products/FPGAandCPLD/iCE40Ultra" H 7150 4750 50  0001 C CNN
-	3    7550 3750
+P 4950 6650
+F 0 "U6" H 4850 5950 50  0000 L CNN
+F 1 "ICE40UP5K-SG48ITR" H 4550 5850 50  0000 L CNN
+F 2 "Package_DFN_QFN:QFN-48-1EP_7x7mm_P0.5mm_EP5.6x5.6mm" H 4950 5300 50  0001 C CNN
+F 3 "http://www.latticesemi.com/Products/FPGAandCPLD/iCE40Ultra" H 4550 7650 50  0001 C CNN
+	3    4950 6650
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -200,25 +200,25 @@ Wire Wire Line
 $Comp
 L power:+3.3V #PWR069
 U 1 1 5F57B8C0
-P 5450 3000
-F 0 "#PWR069" H 5450 2850 50  0001 C CNN
-F 1 "+3.3V" H 5465 3173 50  0000 C CNN
-F 2 "" H 5450 3000 50  0001 C CNN
-F 3 "" H 5450 3000 50  0001 C CNN
-	1    5450 3000
+P 6100 2150
+F 0 "#PWR069" H 6100 2000 50  0001 C CNN
+F 1 "+3.3V" H 6115 2323 50  0000 C CNN
+F 2 "" H 6100 2150 50  0001 C CNN
+F 3 "" H 6100 2150 50  0001 C CNN
+	1    6100 2150
 	1    0    0    -1  
 $EndComp
-Text HLabel 4950 4700 0    39   Output ~ 0
+Text HLabel 5600 3850 0    39   Output ~ 0
 SPI_MISO
-Text HLabel 4950 4800 0    39   Input ~ 0
+Text HLabel 5600 3950 0    39   Input ~ 0
 SPI_MOSI
-Text HLabel 4950 4900 0    39   Input ~ 0
+Text HLabel 5600 4050 0    39   Input ~ 0
 SPI_SCK
-Text HLabel 4950 5000 0    39   Input ~ 0
+Text HLabel 5600 4150 0    39   Input ~ 0
 SPI_CS
-Text HLabel 4950 3400 0    50   Input ~ 0
+Text HLabel 5600 2550 0    50   Input ~ 0
 FPGA_RESET
-Text HLabel 5950 3400 2    50   Output ~ 0
+Text HLabel 6600 2550 2    50   Output ~ 0
 FPGA_CDONE
 $Comp
 L power:GND #PWR061
@@ -268,155 +268,62 @@ F 3 "" H 1400 2600 50  0001 C CNN
 	1    1400 2600
 	1    0    0    -1  
 $EndComp
-Text HLabel 3200 3500 0    39   Output ~ 0
+Text HLabel 2900 5650 0    39   Output ~ 0
 LCD_D0
-Text HLabel 3200 3600 0    39   Output ~ 0
+Text HLabel 2900 5750 0    39   Output ~ 0
 LCD_D1
-Text HLabel 3200 3700 0    39   Output ~ 0
+Text HLabel 2900 5850 0    39   Output ~ 0
 LCD_D2
-Text HLabel 3200 3800 0    39   Output ~ 0
+Text HLabel 2900 5950 0    39   Output ~ 0
 LCD_D3
-Text HLabel 3200 3900 0    39   Output ~ 0
+Text HLabel 2900 6050 0    39   Output ~ 0
 LCD_D4
-Text HLabel 3200 4000 0    39   Output ~ 0
+Text HLabel 2900 6150 0    39   Output ~ 0
 LCD_D5
-Text HLabel 3200 4100 0    39   Output ~ 0
+Text HLabel 2900 6250 0    39   Output ~ 0
 LCD_D6
-Text HLabel 3200 4200 0    39   Output ~ 0
+Text HLabel 2900 6350 0    39   Output ~ 0
 LCD_D7
-Text HLabel 3200 4700 0    39   Output ~ 0
+Text HLabel 2900 6850 0    39   Output ~ 0
 LCD_RS
-Text HLabel 3200 4800 0    39   Output ~ 0
+Text HLabel 2900 6950 0    39   Output ~ 0
 LCD_WR
-Text HLabel 3200 4300 0    39   Input ~ 0
+Text HLabel 2900 6450 0    39   Input ~ 0
 LCD_FMARK
-Text HLabel 3200 4500 0    39   Output ~ 0
+Text HLabel 2900 6650 0    39   Output ~ 0
 LCD_ENABLE
-Text HLabel 4950 4100 0    39   Input ~ 0
-I2S_OUT_DATA
-Text HLabel 4950 4000 0    39   Input ~ 0
-I2S_OUT_LRCK
-Text HLabel 4950 3900 0    39   Input ~ 0
-I2S_OUT_BCLK
 $Comp
 L power:+3.3V #PWR072
 U 1 1 60CF7467
-P 3600 3000
-F 0 "#PWR072" H 3600 2850 50  0001 C CNN
-F 1 "+3.3V" H 3615 3173 50  0000 C CNN
-F 2 "" H 3600 3000 50  0001 C CNN
-F 3 "" H 3600 3000 50  0001 C CNN
-	1    3600 3000
+P 3300 5150
+F 0 "#PWR072" H 3300 5000 50  0001 C CNN
+F 1 "+3.3V" H 3315 5323 50  0000 C CNN
+F 2 "" H 3300 5150 50  0001 C CNN
+F 3 "" H 3300 5150 50  0001 C CNN
+	1    3300 5150
 	1    0    0    -1  
 $EndComp
-$Comp
-L Connector_Generic:Conn_02x06_Counter_Clockwise J6
-U 1 1 60CFB210
-P 9750 2800
-F 0 "J6" H 9800 3217 50  0000 C CNN
-F 1 "PMOD1" H 9800 3126 50  0000 C CNN
-F 2 "" H 9750 2800 50  0001 C CNN
-F 3 "~" H 9750 2800 50  0001 C CNN
-	1    9750 2800
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3.3V #PWR068
-U 1 1 60CFD19C
-P 9550 3100
-F 0 "#PWR068" H 9550 2950 50  0001 C CNN
-F 1 "+3.3V" V 9550 3300 50  0000 C CNN
-F 2 "" H 9550 3100 50  0001 C CNN
-F 3 "" H 9550 3100 50  0001 C CNN
-	1    9550 3100
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:+3.3V #PWR071
-U 1 1 60CFF0EA
-P 10050 3100
-F 0 "#PWR071" H 10050 2950 50  0001 C CNN
-F 1 "+3.3V" V 10050 3300 50  0000 C CNN
-F 2 "" H 10050 3100 50  0001 C CNN
-F 3 "" H 10050 3100 50  0001 C CNN
-	1    10050 3100
-	0    1    1    0   
-$EndComp
-$Comp
-L power:GND #PWR070
-U 1 1 60CFFF00
-P 10050 3000
-F 0 "#PWR070" H 10050 2750 50  0001 C CNN
-F 1 "GND" V 10055 2872 50  0000 R CNN
-F 2 "" H 10050 3000 50  0001 C CNN
-F 3 "" H 10050 3000 50  0001 C CNN
-	1    10050 3000
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:GND #PWR067
-U 1 1 60D01971
-P 9550 3000
-F 0 "#PWR067" H 9550 2750 50  0001 C CNN
-F 1 "GND" V 9555 2872 50  0000 R CNN
-F 2 "" H 9550 3000 50  0001 C CNN
-F 3 "" H 9550 3000 50  0001 C CNN
-	1    9550 3000
-	0    1    1    0   
-$EndComp
-Text GLabel 9550 2600 0    39   BiDi ~ 0
-PMOD1_IO1
-Text GLabel 9550 2700 0    39   BiDi ~ 0
-PMOD1_IO2
-Text GLabel 9550 2800 0    39   BiDi ~ 0
-PMOD1_IO3
-Text GLabel 9550 2900 0    39   BiDi ~ 0
-PMOD1_IO4
-Text GLabel 10050 2600 2    39   BiDi ~ 0
-PMOD1_IO5
-Text GLabel 10050 2700 2    39   BiDi ~ 0
-PMOD1_IO6
-Text GLabel 10050 2900 2    39   BiDi ~ 0
-PMOD1_IO8
-Text GLabel 10050 2800 2    39   BiDi ~ 0
-PMOD1_IO7
-Text GLabel 7150 3550 0    39   BiDi ~ 0
-PMOD1_IO1
-Text GLabel 7150 3650 0    39   BiDi ~ 0
-PMOD1_IO2
-Text GLabel 7150 3750 0    39   BiDi ~ 0
-PMOD1_IO3
-Text GLabel 7150 3850 0    39   BiDi ~ 0
-PMOD1_IO4
-Text GLabel 7150 3950 0    39   BiDi ~ 0
-PMOD1_IO5
-Text GLabel 7150 4050 0    39   BiDi ~ 0
-PMOD1_IO6
-Text GLabel 7150 4250 0    39   BiDi ~ 0
-PMOD1_IO8
-Text GLabel 7150 4150 0    39   BiDi ~ 0
-PMOD1_IO7
-Text HLabel 4950 3700 0    39   Input ~ 0
+Text HLabel 5600 2850 0    39   Input ~ 0
 UART_RX
-Text HLabel 4950 3800 0    39   Output ~ 0
+Text HLabel 5600 2950 0    39   Output ~ 0
 UART_TX
-Text HLabel 3200 4400 0    39   Input ~ 0
+Text HLabel 2900 6550 0    39   Input ~ 0
 CLK
-Text HLabel 3200 4900 0    39   Output ~ 0
+Text HLabel 2900 7050 0    39   Output ~ 0
 RGB0
-Text HLabel 3200 5000 0    39   Output ~ 0
+Text HLabel 2900 7150 0    39   Output ~ 0
 RGB1
-Text HLabel 3200 5100 0    39   Output ~ 0
+Text HLabel 2900 7250 0    39   Output ~ 0
 RGB2
 $Comp
 L power:+3.3V #PWR0159
 U 1 1 5F32B7AB
-P 7550 3050
-F 0 "#PWR0159" H 7550 2900 50  0001 C CNN
-F 1 "+3.3V" H 7565 3223 50  0000 C CNN
-F 2 "" H 7550 3050 50  0001 C CNN
-F 3 "" H 7550 3050 50  0001 C CNN
-	1    7550 3050
+P 4950 5950
+F 0 "#PWR0159" H 4950 5800 50  0001 C CNN
+F 1 "+3.3V" H 4965 6123 50  0000 C CNN
+F 2 "" H 4950 5950 50  0001 C CNN
+F 3 "" H 4950 5950 50  0001 C CNN
+	1    4950 5950
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -496,22 +403,22 @@ Text GLabel 9350 1650 0    39   3State ~ 0
 SPIRAM_D2
 Text GLabel 9350 1750 0    39   3State ~ 0
 SPIRAM_D3
-Text GLabel 4950 4300 0    39   Output ~ 0
+Text GLabel 5600 3450 0    39   Output ~ 0
 SPIRAM_SCK
-Text GLabel 4950 4600 0    39   3State ~ 0
+Text GLabel 5600 3750 0    39   3State ~ 0
 SPIRAM_D0
-Text GLabel 4950 4500 0    39   3State ~ 0
+Text GLabel 5600 3650 0    39   3State ~ 0
 SPIRAM_D1
-Text GLabel 4950 4400 0    39   3State ~ 0
+Text GLabel 5600 3550 0    39   3State ~ 0
 SPIRAM_D2
-Text GLabel 4950 4200 0    39   3State ~ 0
+Text GLabel 5600 3350 0    39   3State ~ 0
 SPIRAM_D3
 Text GLabel 9350 1250 0    39   Input ~ 0
 SPIRAM_CS
 Wire Wire Line
 	9450 1250 9350 1250
 Connection ~ 9450 1250
-Text GLabel 3200 4600 0    39   Output ~ 0
+Text GLabel 5600 3250 0    39   Output ~ 0
 SPIRAM_CS
 Wire Wire Line
 	9550 1350 9350 1350
@@ -712,4 +619,132 @@ F 3 "~" H 800 3050 50  0001 C CNN
 $EndComp
 Text HLabel 800  2950 1    39   UnSpc ~ 0
 SPI_CS
+Text HLabel 2900 6750 0    39   Output ~ 0
+IRQ
+$Comp
+L Device:C_Small C?
+U 1 1 5F618B63
+P 4050 3400
+F 0 "C?" H 3958 3354 50  0000 R CNN
+F 1 "C_Small" H 3958 3445 50  0000 R CNN
+F 2 "" H 4050 3400 50  0001 C CNN
+F 3 "~" H 4050 3400 50  0001 C CNN
+	1    4050 3400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5600 3050 4850 3050
+Wire Wire Line
+	5600 3150 4850 3150
+$Comp
+L Device:R_Small R?
+U 1 1 5F67E775
+P 4750 3050
+F 0 "R?" V 4850 3050 50  0000 C CNN
+F 1 "TBD" V 4750 3050 50  0000 C CNN
+F 2 "" H 4750 3050 50  0001 C CNN
+F 3 "~" H 4750 3050 50  0001 C CNN
+	1    4750 3050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5F684417
+P 4750 3150
+F 0 "R?" V 4650 3150 50  0000 C CNN
+F 1 "TBD" V 4750 3150 50  0000 C CNN
+F 2 "" H 4750 3150 50  0001 C CNN
+F 3 "~" H 4750 3150 50  0001 C CNN
+	1    4750 3150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5F688EB1
+P 4550 3400
+F 0 "C?" H 4458 3354 50  0000 R CNN
+F 1 "C_Small" H 4458 3445 50  0000 R CNN
+F 2 "" H 4550 3400 50  0001 C CNN
+F 3 "~" H 4550 3400 50  0001 C CNN
+	1    4550 3400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4650 3150 4550 3150
+Wire Wire Line
+	4550 3150 4550 3300
+Wire Wire Line
+	4650 3050 4050 3050
+Wire Wire Line
+	4050 3050 4050 3300
+$Comp
+L power:GND #PWR?
+U 1 1 5F68C71B
+P 4550 3500
+F 0 "#PWR?" H 4550 3250 50  0001 C CNN
+F 1 "GND" H 4555 3327 50  0000 C CNN
+F 2 "" H 4550 3500 50  0001 C CNN
+F 3 "" H 4550 3500 50  0001 C CNN
+	1    4550 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F68DF1A
+P 4050 3500
+F 0 "#PWR?" H 4050 3250 50  0001 C CNN
+F 1 "GND" H 4055 3327 50  0000 C CNN
+F 2 "" H 4050 3500 50  0001 C CNN
+F 3 "" H 4050 3500 50  0001 C CNN
+	1    4050 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 3150 3950 3150
+Connection ~ 4550 3150
+Wire Wire Line
+	4050 3050 3950 3050
+Connection ~ 4050 3050
+Text HLabel 3950 3050 0    39   Output ~ 0
+AUDO_L
+Text HLabel 3950 3150 0    39   Output ~ 0
+AUDO_R
+Text HLabel 4150 6450 0    50   BiDi ~ 0
+PMOD_1
+Text HLabel 4150 6550 0    50   BiDi ~ 0
+PMOD_2
+Text HLabel 4150 6650 0    50   BiDi ~ 0
+PMOD_3
+Text HLabel 4150 6750 0    50   BiDi ~ 0
+PMOD_4
+Text HLabel 4150 6850 0    50   BiDi ~ 0
+PMOD_5
+Text HLabel 4150 6950 0    50   BiDi ~ 0
+PMOD_6
+Text HLabel 4150 7050 0    50   BiDi ~ 0
+PMOD_7
+Text HLabel 4150 7150 0    50   BiDi ~ 0
+PMOD_8
+$Comp
+L Device:R_Pack04 RN?
+U 1 1 5FD85945
+P 4350 6950
+F 0 "RN?" V 4050 6950 50  0000 C CNN
+F 1 "47" V 3950 6950 50  0000 C CNN
+F 2 "" V 4625 6950 50  0001 C CNN
+F 3 "~" H 4350 6950 50  0001 C CNN
+	1    4350 6950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Pack04 RN?
+U 1 1 5FD84D43
+P 4350 6650
+F 0 "RN?" V 3933 6650 50  0000 C CNN
+F 1 "47" V 4024 6650 50  0000 C CNN
+F 2 "" V 4625 6650 50  0001 C CNN
+F 3 "~" H 4350 6650 50  0001 C CNN
+	1    4350 6650
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC

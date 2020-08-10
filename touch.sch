@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 10
+Sheet 4 9
 Title ""
 Date ""
 Rev ""
@@ -131,12 +131,6 @@ Wire Wire Line
 	4800 4850 4800 3850
 Wire Wire Line
 	4800 3850 5350 3850
-Text HLabel 6150 4300 2    39   Output ~ 0
-FPGA_RESET
-Text HLabel 6150 4200 2    39   Input ~ 0
-FPGA_CDONE
-Text Notes 6600 4350 0    35   ~ 0
-Output type:\nopen drain
 Text HLabel 5350 3500 0    39   Input ~ 0
 I2C_SCL
 Text HLabel 5350 3650 0    39   BiDi ~ 0
@@ -215,4 +209,8 @@ F 3 "" H 10550 6100 50  0001 C CNN
 	1    10550 6100
 	1    0    0    -1  
 $EndComp
+Text GLabel 6150 4200 2    35   Input ~ 0
+TOUCH_START
+Text GLabel 6150 4300 2    35   Input ~ 0
+TOUCH_SELECT
 $EndSCHEMATC
