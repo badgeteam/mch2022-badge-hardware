@@ -7,6 +7,10 @@
 *.bck
 *.kicad_pcb-bak
 *.sch-bak
+
+.svg2shenzhen-cache
+custom.pretty/.svg2shenzhen-cache
+
 *~
 _autosave-*
 *.tmp
