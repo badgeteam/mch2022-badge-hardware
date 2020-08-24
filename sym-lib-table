@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name mch2021-rescue)(type Legacy)(uri ${KIPRJMOD}/mch2021-rescue.lib)(options "")(descr ""))
+  (lib (name JS1400BFQ)(type Legacy)(uri ${KIPRJMOD}/JS1400BFQ.lib)(options "")(descr ""))
 )

@@ -1,0 +1,13 @@
+(module corelib:Battery-48x48mm (layer F.Cu) (tedit 5DCC080D)
+  (attr virtual)
+  (fp_text reference REF** (at 0 0.5) (layer F.SilkS) hide
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (fp_text value Battery-48x48mm (at 0 -0.5) (layer F.Fab)
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (fp_line (start -24 -24) (end 24 -24) (layer F.SilkS) (width 0.12))
+  (fp_line (start 24 -24) (end 24 24) (layer F.SilkS) (width 0.12))
+  (fp_line (start 24 24) (end -24 24) (layer F.SilkS) (width 0.12))
+  (fp_line (start -24 24) (end -24 -24) (layer F.SilkS) (width 0.12))
+)
