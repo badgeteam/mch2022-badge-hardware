@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 9 9
+Sheet 8 9
 Title "MCH2021 badge - ESP32 microcontroller"
 Date "2020-08-08"
 Rev "1"

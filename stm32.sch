@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 7 9
+Sheet 6 9
 Title "MCH2021 badge - STM32 microcontroller"
 Date "2020-08-08"
 Rev "1"
@@ -436,9 +436,9 @@ Wire Wire Line
 	6650 4900 7150 4900
 Wire Wire Line
 	6650 4800 7100 4800
-Text HLabel 8050 3500 2    50   Input ~ 0
-SENSE_VBAT
 Text HLabel 8050 3600 2    50   Input ~ 0
+SENSE_VBAT
+Text HLabel 8050 3500 2    50   Input ~ 0
 SENSE_VUSB
 Wire Wire Line
 	5350 4300 2700 4300
@@ -466,8 +466,6 @@ Wire Wire Line
 Wire Wire Line
 	5350 4000 2700 4000
 Wire Wire Line
-	2700 3600 5350 3600
-Wire Wire Line
 	6650 4300 8050 4300
 Text HLabel 8050 4300 2    50   Output ~ 0
 MCO
@@ -479,7 +477,7 @@ Wire Wire Line
 	5100 4700 5100 4800
 Wire Wire Line
 	5100 4800 5350 4800
-Text HLabel 2700 3600 0    50   Output ~ 0
+Text HLabel 2700 4400 0    50   Output ~ 0
 LCD_BACKLIGHT
 Wire Wire Line
 	2700 3100 5350 3100
@@ -535,9 +533,9 @@ $EndComp
 Wire Notes Line
 	2750 3850 2750 3900
 Wire Notes Line
-	2700 3600 2750 3550
+	2700 4400 2750 4350
 Wire Notes Line
-	2750 3550 2750 3600
+	2750 4350 2750 4400
 Wire Notes Line
 	2700 3200 2750 3150
 Wire Notes Line
@@ -781,4 +779,14 @@ Wire Wire Line
 	7000 3900 6650 3900
 Wire Wire Line
 	7000 2350 7000 3900
+Wire Wire Line
+	5350 4400 2700 4400
+Wire Wire Line
+	5350 3500 2700 3500
+Wire Wire Line
+	5350 3600 2700 3600
+Text HLabel 2700 3600 0    50   BiDi ~ 0
+SAO_IO2
+Text HLabel 2700 3500 0    50   BiDi ~ 0
+SAO_IO3
 $EndSCHEMATC

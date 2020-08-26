@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 6 9
+Sheet 5 9
 Title ""
 Date ""
 Rev ""
@@ -429,13 +429,13 @@ Text GLabel 9350 1650 0    39   3State ~ 0
 SPIRAM_D2
 Text GLabel 9350 1750 0    39   3State ~ 0
 SPIRAM_D3
-Text GLabel 5600 3450 0    39   Output ~ 0
+Text GLabel 5600 3550 0    39   Output ~ 0
 SPIRAM_SCK
-Text GLabel 5600 3750 0    39   3State ~ 0
-SPIRAM_D0
 Text GLabel 5600 3650 0    39   3State ~ 0
+SPIRAM_D0
+Text GLabel 5600 3250 0    39   3State ~ 0
 SPIRAM_D1
-Text GLabel 5600 3550 0    39   3State ~ 0
+Text GLabel 5600 3750 0    39   3State ~ 0
 SPIRAM_D2
 Text GLabel 5600 3350 0    39   3State ~ 0
 SPIRAM_D3
@@ -444,7 +444,7 @@ SPIRAM_CS
 Wire Wire Line
 	9450 1250 9350 1250
 Connection ~ 9450 1250
-Text GLabel 5600 3250 0    39   Output ~ 0
+Text GLabel 5600 3450 0    39   Output ~ 0
 SPIRAM_CS
 Wire Wire Line
 	9550 1350 9350 1350
