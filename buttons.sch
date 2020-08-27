@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 8 9
+Sheet 7 9
 Title ""
 Date ""
 Rev ""
@@ -67,18 +67,6 @@ F 3 "https://www.nxp.com/docs/en/data-sheet/PCA9555.pdf" H 4350 2800 50  0001 C 
 $EndComp
 Wire Wire Line
 	3850 3400 3750 3400
-Wire Wire Line
-	3750 3400 3750 3500
-Wire Wire Line
-	3750 3500 3850 3500
-Wire Wire Line
-	3850 3600 3750 3600
-Wire Wire Line
-	3750 3600 3750 3500
-Connection ~ 3750 3500
-Wire Wire Line
-	3750 3600 3750 3800
-Connection ~ 3750 3600
 $Comp
 L power:GND #PWR0155
 U 1 1 5F5EA80A
@@ -359,4 +347,26 @@ Text GLabel 4850 3400 2    50   Input ~ 0
 JOY_E
 Text HLabel 4850 2400 2    50   Input ~ 0
 CHARGING
+Wire Wire Line
+	3750 3400 3750 3800
+Wire Wire Line
+	3850 3600 3650 3600
+Wire Wire Line
+	3650 3600 3650 3500
+Wire Wire Line
+	3850 3500 3650 3500
+Connection ~ 3650 3500
+Wire Wire Line
+	3650 3500 3650 3300
+$Comp
+L power:+3.3V #PWR0175
+U 1 1 5FA973E7
+P 3650 3300
+F 0 "#PWR0175" H 3650 3150 50  0001 C CNN
+F 1 "+3.3V" H 3665 3473 50  0000 C CNN
+F 2 "" H 3650 3300 50  0001 C CNN
+F 3 "" H 3650 3300 50  0001 C CNN
+	1    3650 3300
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
