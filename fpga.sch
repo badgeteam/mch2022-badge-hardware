@@ -329,10 +329,6 @@ Text HLabel 5600 2950 0    39   Output ~ 0
 UART_TX
 Text HLabel 2900 7050 0    39   Output ~ 0
 RGB0
-Text HLabel 2900 7150 0    39   Output ~ 0
-RGB1
-Text HLabel 2900 7250 0    39   Output ~ 0
-RGB2
 $Comp
 L power:+3.3V #PWR0120
 U 1 1 5F32B7AB
@@ -911,4 +907,8 @@ Wire Wire Line
 	4750 6650 5150 6650
 Wire Wire Line
 	4550 6850 4750 6650
+Text HLabel 2900 7250 0    39   Output ~ 0
+RGB2
+Text HLabel 2900 7150 0    39   Output ~ 0
+RGB1
 $EndSCHEMATC
