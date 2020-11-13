@@ -192,12 +192,12 @@ $EndComp
 $Comp
 L power:GND #PWR088
 U 1 1 5FEDBDD6
-P 4750 6050
-F 0 "#PWR088" H 4750 5800 50  0001 C CNN
-F 1 "GND" H 4755 5877 50  0000 C CNN
-F 2 "" H 4750 6050 50  0001 C CNN
-F 3 "" H 4750 6050 50  0001 C CNN
-	1    4750 6050
+P 4850 6050
+F 0 "#PWR088" H 4850 5800 50  0001 C CNN
+F 1 "GND" H 4855 5877 50  0000 C CNN
+F 2 "" H 4850 6050 50  0001 C CNN
+F 3 "" H 4850 6050 50  0001 C CNN
+	1    4850 6050
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -337,13 +337,7 @@ Wire Wire Line
 	5400 4150 6850 4150
 Connection ~ 5500 4250
 Wire Wire Line
-	4750 6050 4750 6000
-Connection ~ 4750 6000
-Wire Wire Line
-	4750 6000 4800 6000
-Connection ~ 4800 6000
-Wire Wire Line
-	4800 6000 4900 6000
+	4800 6000 4850 6000
 Wire Wire Line
 	4800 5250 6850 5250
 Wire Wire Line
@@ -411,8 +405,6 @@ F 7 "N" H 3250 4950 50  0001 C CNN "Sponsored"
 	1    3250 4950
 	0    1    -1   0   
 $EndComp
-Wire Wire Line
-	4100 5250 4800 5250
 Connection ~ 4400 5400
 $Comp
 L Device:Q_NMOS_GSD Q3
@@ -434,8 +426,6 @@ Wire Wire Line
 Wire Wire Line
 	4100 5600 3950 5600
 Connection ~ 4100 5600
-Wire Wire Line
-	3650 5600 3600 5600
 $Comp
 L power:+3.3V #PWR086
 U 1 1 602901D6
@@ -518,11 +508,6 @@ Text Notes 3650 7650 2    118  ~ 0
 SPI: IM0 = 0, IM1 = 1, IM2 = 1\nPAR: IM0 = 1, IM1 = 0, IM2 = 0
 Wire Wire Line
 	4200 5400 4400 5400
-Connection ~ 4200 2150
-Wire Wire Line
-	4200 2150 4200 5400
-Wire Wire Line
-	4200 2150 5800 2150
 Connection ~ 4300 2000
 Connection ~ 4400 2950
 Wire Wire Line
@@ -556,13 +541,6 @@ Wire Wire Line
 	2950 2550 3550 2550
 Wire Wire Line
 	2950 2350 3550 2350
-Wire Wire Line
-	4600 5350 3600 5350
-Wire Wire Line
-	3600 5350 3600 5600
-Connection ~ 3600 5600
-Wire Wire Line
-	3600 5600 2950 5600
 Wire Wire Line
 	2950 2000 4300 2000
 Text Label 6100 2450 0    50   ~ 0
@@ -645,8 +623,6 @@ Wire Wire Line
 	4400 1700 4400 2950
 Wire Wire Line
 	4300 1700 4300 2000
-Wire Wire Line
-	4200 1700 4200 2150
 Wire Wire Line
 	4100 1700 4100 5150
 Wire Wire Line
@@ -894,38 +870,27 @@ F 7 "N" H 4800 5750 50  0001 C CNN "Sponsored"
 	1    4800 5750
 	-1   0    0    1   
 $EndComp
-$Comp
-L Device:R R?
-U 1 1 5F8D60B6
-P 4600 5750
-AR Path="/5DC753C3/5F8D60B6" Ref="R?"  Part="1" 
-AR Path="/5F8D60B6" Ref="R?"  Part="1" 
-AR Path="/5E3BA64A/5F8D60B6" Ref="R?"  Part="1" 
-AR Path="/5F51E414/5F8D60B6" Ref="R?"  Part="1" 
-AR Path="/5FDC6C76/5F8D60B6" Ref="R30"  Part="1" 
-F 0 "R30" V 4650 5950 50  0000 C CNN
-F 1 "100k" V 4600 5750 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 4530 5750 50  0001 C CNN
-F 3 "~" H 4600 5750 50  0001 C CNN
-F 4 "C15458" H 4600 5750 50  0001 C CNN "LCSC"
-F 5 "" H 4600 5750 50  0001 C CNN "Price"
-F 6 "-" H 4600 5750 50  0001 C CNN "Mouser"
-F 7 "N" H 4600 5750 50  0001 C CNN "Sponsored"
-	1    4600 5750
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	4900 5900 4900 6000
 Wire Wire Line
 	4800 5900 4800 6000
 Wire Wire Line
-	4600 6000 4750 6000
-Wire Wire Line
-	4600 5900 4600 6000
-Wire Wire Line
-	4600 5350 4600 5600
-Wire Wire Line
 	4800 5250 4800 5600
 Wire Wire Line
 	4900 2550 4900 5600
+Wire Wire Line
+	4200 1700 4200 5400
+Wire Wire Line
+	2950 5600 3650 5600
+Wire Wire Line
+	4800 5250 4800 2150
+Wire Wire Line
+	4800 2150 5800 2150
+Wire Wire Line
+	4100 5250 4800 5250
+Wire Wire Line
+	4850 6050 4850 6000
+Connection ~ 4850 6000
+Wire Wire Line
+	4850 6000 4900 6000
 $EndSCHEMATC

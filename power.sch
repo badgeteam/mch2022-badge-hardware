@@ -281,7 +281,7 @@ Wire Wire Line
 Connection ~ 3350 1250
 Text Notes 2850 700  2    118  ~ 0
 Battery & battery charger
-Text Notes 1700 2600 2    118  ~ 0
+Text Notes 1650 2550 2    118  ~ 0
 Power switch
 $Comp
 L power:GND #PWR048
@@ -356,53 +356,8 @@ Wire Wire Line
 Connection ~ 1950 5450
 Wire Wire Line
 	1950 5450 1950 5250
-$Comp
-L vin:VIN #PWR052
-U 1 1 5F696C31
-P 3200 2850
-F 0 "#PWR052" H 3210 2850 20  0001 C CNN
-F 1 "VIN" H 3200 2946 40  0000 C CNN
-F 2 "" H 3200 2850 60  0001 C CNN
-F 3 "" H 3200 2850 60  0001 C CNN
-	1    3200 2850
-	1    0    0    -1  
-$EndComp
-$Comp
-L vusb:VUSB #PWR045
-U 1 1 5F69998A
-P 2700 2850
-F 0 "#PWR045" H 2710 2850 20  0001 C CNN
-F 1 "VUSB" H 2700 2946 40  0000 C CNN
-F 2 "" H 2700 2850 60  0001 C CNN
-F 3 "" H 2700 2850 60  0001 C CNN
-	1    2700 2850
-	1    0    0    -1  
-$EndComp
-$Comp
-L powersyms:VBAT #PWR030
-U 1 1 5F69B50C
-P 1350 2850
-F 0 "#PWR030" H 1360 2850 20  0001 C CNN
-F 1 "VBAT" H 1350 2946 40  0000 C CNN
-F 2 "" H 1350 2850 60  0001 C CNN
-F 3 "" H 1350 2850 60  0001 C CNN
-	1    1350 2850
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1350 3100 1350 2850
-Wire Wire Line
-	2700 2850 2700 2900
-Wire Wire Line
-	2700 2900 2750 2900
-Wire Wire Line
-	3150 3000 3200 3000
-Wire Wire Line
-	3200 3000 3200 2850
 Wire Notes Line
 	3750 500  3750 7800
-Text Notes 2850 4300 0    35   ~ 0
-The power switch never really\nturns the badge off. Instead\nit lets you choose to bypass\nthe battery when powering\nthe badge from USB. This\nincreases charging speed and\nturns the badge off completely\nwhen USB is not connected
 $Comp
 L vin:VIN #PWR024
 U 1 1 5F6DC8A4
@@ -651,52 +606,6 @@ Text Notes 6800 700  2    118  ~ 0
 Switched power: 3.3v for SDCARD
 Text Notes 6450 2550 2    118  ~ 0
 Switched power: Vin for LEDs
-Wire Wire Line
-	4900 5300 4900 5450
-$Comp
-L power:GND #PWR060
-U 1 1 5F8BB018
-P 4900 5750
-F 0 "#PWR060" H 4900 5500 50  0001 C CNN
-F 1 "GND" H 4905 5577 50  0000 C CNN
-F 2 "" H 4900 5750 50  0001 C CNN
-F 3 "" H 4900 5750 50  0001 C CNN
-	1    4900 5750
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3.3V #PWR059
-U 1 1 5F8BB62E
-P 4900 5250
-F 0 "#PWR059" H 4900 5100 50  0001 C CNN
-F 1 "+3.3V" H 4900 5400 50  0000 C CNN
-F 2 "" H 4900 5250 50  0001 C CNN
-F 3 "" H 4900 5250 50  0001 C CNN
-	1    4900 5250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4900 5300 5200 5300
-Wire Wire Line
-	4900 5300 4900 5250
-Connection ~ 4900 5300
-Wire Wire Line
-	5400 5300 5700 5300
-Wire Wire Line
-	5700 5300 5700 5250
-$Comp
-L power:+2V5 #PWR066
-U 1 1 5F8C3234
-P 5700 5250
-F 0 "#PWR066" H 5700 5100 50  0001 C CNN
-F 1 "+2V5" H 5715 5423 50  0000 C CNN
-F 2 "" H 5700 5250 50  0001 C CNN
-F 3 "" H 5700 5250 50  0001 C CNN
-	1    5700 5250
-	1    0    0    -1  
-$EndComp
-Text Notes 5800 4600 2    118  ~ 0
-2.5v voltage regulator
 Text Notes 4800 850  2    39   ~ 0
 Iset = 0.68A = 6800 / 10kOhm
 Text Notes 4750 2700 2    39   ~ 0
@@ -774,43 +683,6 @@ Wire Wire Line
 Wire Wire Line
 	3350 1650 3350 1800
 NoConn ~ 3400 1750
-$Comp
-L power:GND #PWR036
-U 1 1 5F546335
-P 2000 4100
-F 0 "#PWR036" H 2000 3850 50  0001 C CNN
-F 1 "GND" H 2005 3927 50  0000 C CNN
-F 2 "" H 2000 4100 50  0001 C CNN
-F 3 "" H 2000 4100 50  0001 C CNN
-	1    2000 4100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2300 3200 2300 3100
-Wire Wire Line
-	2300 3100 2200 3100
-Wire Wire Line
-	2000 3400 2000 3600
-Wire Wire Line
-	2300 3500 2300 3600
-Wire Wire Line
-	2300 3600 2000 3600
-Connection ~ 2000 3600
-Wire Wire Line
-	2000 3600 2000 3800
-Wire Wire Line
-	2300 3100 2750 3100
-Connection ~ 2300 3100
-Connection ~ 2700 2900
-Connection ~ 2300 3600
-Wire Wire Line
-	2400 3600 2400 2900
-Wire Wire Line
-	2400 2900 2700 2900
-Wire Wire Line
-	2400 3600 2300 3600
-Text Notes 1000 4050 0    35   ~ 0
-This "ideal diode" circuit\nprevents the user from\naccidently powering\nthe badge through\nthe battery charing circuit.\n\nWhen the power switch\nis set to battery mode\nand USB power is available\nthen the PMOSFET will\nbypass the battery and\ncharger and instead power\nthe badge using USB power
 Connection ~ 3000 1250
 Wire Wire Line
 	2450 1250 3000 1250
@@ -825,8 +697,6 @@ F 3 "" H 3350 1050 60  0001 C CNN
 	1    3350 1050
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1350 3100 1800 3100
 Wire Wire Line
 	5150 6850 5100 6850
 $Comp
@@ -1126,21 +996,6 @@ F 6 "C5674" H 2950 5650 50  0001 C CNN "LCSC"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Switch:SW_SPDT SW1
-U 1 1 5CAFB308
-P 2950 3000
-F 0 "SW1" H 2800 3150 50  0000 L CNN
-F 1 "Power switch" H 2600 3250 50  0000 L CNN
-F 2 "Button_Switch_SMD:SW_SPDT_PCM12" H 2950 3000 50  0001 C CNN
-F 3 "~" H 2950 3000 50  0001 C CNN
-F 4 "C319020" H 2950 3000 50  0001 C CNN "LCSC"
-F 5 "-" H 2950 3000 50  0001 C CNN "Mouser"
-F 6 "" H 2950 3000 50  0001 C CNN "Price"
-F 7 "N" H 2950 3000 50  0001 C CNN "Sponsored"
-	1    2950 3000
-	-1   0    0    1   
-$EndComp
-$Comp
 L Device:R R11
 U 1 1 5D3EA6A8
 P 4900 1750
@@ -1302,36 +1157,6 @@ F 6 "C5674" H 2950 7400 50  0001 C CNN "LCSC"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Schottky_Small D3
-U 1 1 5F8B2558
-P 5300 5300
-F 0 "D3" H 5300 5100 50  0000 C CNN
-F 1 "CDBU0130R" H 5300 5200 50  0000 C CNN
-F 2 "Diode_SMD:D_0603_1608Metric" V 5450 5300 60  0001 C CNN
-F 3 "" V 5450 5300 60  0001 C CNN
-F 4 "N" H 5300 5300 50  0001 C CNN "Sponsored"
-F 5 "C383224" H 5300 5300 50  0001 C CNN "LCSC"
-F 6 "750-CDBU0130R" H 5300 5300 50  0001 C CNN "Mouser"
-F 7 "" H 5300 5300 50  0001 C CNN "Price"
-	1    5300 5300
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:C C14
-U 1 1 5F8B4700
-P 4900 5600
-F 0 "C14" H 4950 5800 50  0000 L CNN
-F 1 "100n" H 4950 5700 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 4938 5450 50  0001 C CNN
-F 3 "~" H 4900 5600 50  0001 C CNN
-F 4 "C14663" H 4900 5600 50  0001 C CNN "LCSC"
-F 5 "" H 4900 5600 50  0001 C CNN "Price"
-F 6 "-" H 4900 5600 50  0001 C CNN "Mouser"
-F 7 "N" H 4900 5600 50  0001 C CNN "Sponsored"
-	1    4900 5600
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R R10
 U 1 1 5F610579
 P 2750 1150
@@ -1373,48 +1198,7 @@ F 5 "-" H 3600 1650 50  0001 C CNN "Mouser"
 F 6 "" H 3600 1650 50  0001 C CNN "Price"
 F 7 "N" H 3600 1650 50  0001 C CNN "Sponsored"
 	1    3600 1650
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Device:Q_PMOS_GSD Q1
-U 1 1 5F53D2C8
-P 2000 3200
-F 0 "Q1" V 2342 3200 50  0000 C CNN
-F 1 "Q_PMOS_GSD" V 2251 3200 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 2200 3300 50  0001 C CNN
-F 3 "~" H 2000 3200 50  0001 C CNN
-F 4 "N" H 2000 3200 50  0001 C CNN "Sponsored"
-F 5 "C180952" H 2000 3200 50  0001 C CNN "LCSC"
-	1    2000 3200
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R R7
-U 1 1 5F544BAB
-P 2000 3950
-F 0 "R7" H 2070 3996 50  0000 L CNN
-F 1 "2k" H 2070 3905 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 1930 3950 50  0001 C CNN
-F 3 "~" H 2000 3950 50  0001 C CNN
-F 4 "" H 2000 3950 50  0001 C CNN "Price"
-F 5 "C269690" H 2000 3950 50  0001 C CNN "LCSC"
-F 6 "-" H 2000 3950 50  0001 C CNN "Mouser"
-F 7 "N" H 2000 3950 50  0001 C CNN "Sponsored"
-	1    2000 3950
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:D_Schottky D2
-U 1 1 5F56BB03
-P 2300 3350
-F 0 "D2" V 2250 3500 50  0000 L CNN
-F 1 "NSVR0320MW2T1G" V 2350 3500 50  0000 L CNN
-F 2 "Diode_SMD:D_SOD-323" H 2300 3350 50  0001 C CNN
-F 3 "~" H 2300 3350 50  0001 C CNN
-F 4 "N" H 2300 3350 50  0001 C CNN "Sponsored"
-F 5 "C232573" H 2300 3350 50  0001 C CNN "LCSC"
-	1    2300 3350
-	0    1    1    0   
+	-1   0    0    1   
 $EndComp
 $Comp
 L Device:C C45
@@ -1446,4 +1230,281 @@ F 7 "N" H 6150 7400 50  0001 C CNN "Sponsored"
 	1    6150 7400
 	1    0    0    -1  
 $EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FC2721B
+P 2950 4100
+F 0 "#PWR?" H 2950 3850 50  0001 C CNN
+F 1 "GND" H 2955 3927 50  0000 C CNN
+F 2 "" H 2950 4100 50  0001 C CNN
+F 3 "" H 2950 4100 50  0001 C CNN
+	1    2950 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FC35B7C
+P 3400 4100
+F 0 "#PWR?" H 3400 3850 50  0001 C CNN
+F 1 "GND" H 3405 3927 50  0000 C CNN
+F 2 "" H 3400 4100 50  0001 C CNN
+F 3 "" H 3400 4100 50  0001 C CNN
+	1    3400 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5FC35B86
+P 3400 3600
+F 0 "R?" H 3250 3550 50  0000 C CNN
+F 1 "10k" H 3250 3650 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3330 3600 50  0001 C CNN
+F 3 "~" H 3400 3600 50  0001 C CNN
+F 4 "" H 3400 3600 50  0001 C CNN "Price"
+F 5 "C115324" H 3400 3600 50  0001 C CNN "LCSC"
+F 6 "-" H 3400 3600 50  0001 C CNN "Mouser"
+F 7 "N" H 3400 3600 50  0001 C CNN "Sponsored"
+	1    3400 3600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3400 3450 3400 3400
+Wire Wire Line
+	3400 3400 3350 3400
+$Comp
+L vin:VIN #PWR?
+U 1 1 5FC4F90F
+P 3450 2700
+F 0 "#PWR?" H 3460 2700 20  0001 C CNN
+F 1 "VIN" H 3450 2796 40  0000 C CNN
+F 2 "" H 3450 2700 60  0001 C CNN
+F 3 "" H 3450 2700 60  0001 C CNN
+	1    3450 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 3200 3450 3200
+$Comp
+L Device:D_Schottky D?
+U 1 1 5FC55914
+P 2950 2750
+F 0 "D?" H 2900 2850 50  0000 L CNN
+F 1 "NSVR0320MW2T1G" H 2600 2650 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-323" H 2950 2750 50  0001 C CNN
+F 3 "~" H 2950 2750 50  0001 C CNN
+F 4 "N" H 2950 2750 50  0001 C CNN "Sponsored"
+F 5 "C232573" H 2950 2750 50  0001 C CNN "LCSC"
+	1    2950 2750
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3400 3750 3400 4100
+Wire Wire Line
+	2950 3600 2950 4100
+Wire Wire Line
+	3100 2750 3450 2750
+Wire Wire Line
+	3450 2750 3450 2700
+Wire Wire Line
+	3450 2750 3450 3200
+Connection ~ 3450 2750
+$Comp
+L Device:R R?
+U 1 1 5FD40AE5
+P 2450 3800
+F 0 "R?" H 2300 3750 50  0000 C CNN
+F 1 "100k" H 2300 3850 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2380 3800 50  0001 C CNN
+F 3 "~" H 2450 3800 50  0001 C CNN
+F 4 "" H 2450 3800 50  0001 C CNN "Price"
+F 5 "C115324" H 2450 3800 50  0001 C CNN "LCSC"
+F 6 "-" H 2450 3800 50  0001 C CNN "Mouser"
+F 7 "N" H 2450 3800 50  0001 C CNN "Sponsored"
+	1    2450 3800
+	-1   0    0    1   
+$EndComp
+Connection ~ 650  3200
+Wire Wire Line
+	800  3500 650  3500
+Wire Wire Line
+	1200 3400 1400 3400
+Wire Wire Line
+	1700 3400 2000 3400
+$Comp
+L Device:R R?
+U 1 1 5FC6C186
+P 1550 3400
+F 0 "R?" H 1400 3350 50  0000 C CNN
+F 1 "10k" H 1400 3450 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 1480 3400 50  0001 C CNN
+F 3 "~" H 1550 3400 50  0001 C CNN
+F 4 "" H 1550 3400 50  0001 C CNN "Price"
+F 5 "C115324" H 1550 3400 50  0001 C CNN "LCSC"
+F 6 "-" H 1550 3400 50  0001 C CNN "Mouser"
+F 7 "N" H 1550 3400 50  0001 C CNN "Sponsored"
+	1    1550 3400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_SPDT SW1
+U 1 1 5CAFB308
+P 1000 3500
+F 0 "SW1" H 850 3650 50  0000 L CNN
+F 1 "Power switch" H 650 3750 50  0000 L CNN
+F 2 "Button_Switch_SMD:SW_SPDT_PCM12" H 1000 3500 50  0001 C CNN
+F 3 "~" H 1000 3500 50  0001 C CNN
+F 4 "C319020" H 1000 3500 50  0001 C CNN "LCSC"
+F 5 "-" H 1000 3500 50  0001 C CNN "Mouser"
+F 6 "" H 1000 3500 50  0001 C CNN "Price"
+F 7 "N" H 1000 3500 50  0001 C CNN "Sponsored"
+	1    1000 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L powersyms:VBAT #PWR?
+U 1 1 5FC464F4
+P 650 2700
+F 0 "#PWR?" H 660 2700 20  0001 C CNN
+F 1 "VBAT" H 650 2796 40  0000 C CNN
+F 2 "" H 650 2700 60  0001 C CNN
+F 3 "" H 650 2700 60  0001 C CNN
+	1    650  2700
+	1    0    0    -1  
+$EndComp
+Connection ~ 1300 3800
+$Comp
+L Device:R R?
+U 1 1 5FCE7654
+P 1300 3950
+F 0 "R?" H 1150 3900 50  0000 C CNN
+F 1 "10k" H 1150 4000 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 1230 3950 50  0001 C CNN
+F 3 "~" H 1300 3950 50  0001 C CNN
+F 4 "" H 1300 3950 50  0001 C CNN "Price"
+F 5 "C115324" H 1300 3950 50  0001 C CNN "LCSC"
+F 6 "-" H 1300 3950 50  0001 C CNN "Mouser"
+F 7 "N" H 1300 3950 50  0001 C CNN "Sponsored"
+	1    1300 3950
+	1    0    0    -1  
+$EndComp
+Connection ~ 1300 2750
+Wire Wire Line
+	1300 2750 1300 3800
+Wire Wire Line
+	1300 2750 1300 2700
+$Comp
+L power:GND #PWR?
+U 1 1 5FCC13F7
+P 1300 4100
+F 0 "#PWR?" H 1300 3850 50  0001 C CNN
+F 1 "GND" H 1305 3927 50  0000 C CNN
+F 2 "" H 1300 4100 50  0001 C CNN
+F 3 "" H 1300 4100 50  0001 C CNN
+	1    1300 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5FCB5BEC
+P 1550 3800
+F 0 "R?" H 1400 3750 50  0000 C CNN
+F 1 "10k" H 1400 3850 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 1480 3800 50  0001 C CNN
+F 3 "~" H 1550 3800 50  0001 C CNN
+F 4 "" H 1550 3800 50  0001 C CNN "Price"
+F 5 "C115324" H 1550 3800 50  0001 C CNN "LCSC"
+F 6 "-" H 1550 3800 50  0001 C CNN "Mouser"
+F 7 "N" H 1550 3800 50  0001 C CNN "Sponsored"
+	1    1550 3800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FCA3FDA
+P 2000 4100
+F 0 "#PWR?" H 2000 3850 50  0001 C CNN
+F 1 "GND" H 2005 3927 50  0000 C CNN
+F 2 "" H 2000 4100 50  0001 C CNN
+F 3 "" H 2000 4100 50  0001 C CNN
+	1    2000 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_NMOS_GSD Q?
+U 1 1 5FC8BD8A
+P 1900 3800
+AR Path="/5FDC6C76/5FC8BD8A" Ref="Q?"  Part="1" 
+AR Path="/60C789DE/5FC8BD8A" Ref="Q?"  Part="1" 
+F 0 "Q?" V 2150 3800 50  0000 C CNN
+F 1 "Q_NMOS_GSD" V 2250 3800 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 2100 3900 50  0001 C CNN
+F 3 "~" H 1900 3800 50  0001 C CNN
+F 4 "C406812" H 1900 3800 50  0001 C CNN "LCSC"
+F 5 "-" H 1900 3800 50  0001 C CNN "Mouser"
+F 6 "" H 1900 3800 50  0001 C CNN "Price"
+F 7 "N" H 1900 3800 50  0001 C CNN "Sponsored"
+	1    1900 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L vusb:VUSB #PWR?
+U 1 1 5FC5FBC2
+P 1300 2700
+F 0 "#PWR?" H 1310 2700 20  0001 C CNN
+F 1 "VUSB" H 1300 2796 40  0000 C CNN
+F 2 "" H 1300 2700 60  0001 C CNN
+F 3 "" H 1300 2700 60  0001 C CNN
+	1    1300 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Power_Management:AAT4610BIGV-1-T1 U?
+U 1 1 5FC24F91
+P 2950 3300
+F 0 "U?" H 2950 3650 50  0000 C CNN
+F 1 "SY6280AAC" H 2950 3550 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 2950 3650 50  0001 C CNN
+F 3 "" H 2900 3600 50  0001 C CNN
+F 4 "C55136" H 2950 3300 50  0001 C CNN "LCSC"
+F 5 "-" H 2950 3300 50  0001 C CNN "Mouser"
+F 6 "" H 2950 3300 50  0001 C CNN "Price"
+F 7 "N" H 2950 3300 50  0001 C CNN "Sponsored"
+	1    2950 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 4100 2000 4000
+Wire Wire Line
+	2000 3600 2000 3400
+Wire Wire Line
+	2000 3400 2450 3400
+Connection ~ 2000 3400
+Wire Wire Line
+	650  3200 2550 3200
+Wire Wire Line
+	1300 2750 2800 2750
+Wire Wire Line
+	2450 3650 2450 3400
+Connection ~ 2450 3400
+Wire Wire Line
+	2450 3400 2550 3400
+$Comp
+L power:GND #PWR?
+U 1 1 5FD7F71E
+P 2450 4100
+F 0 "#PWR?" H 2450 3850 50  0001 C CNN
+F 1 "GND" H 2455 3927 50  0000 C CNN
+F 2 "" H 2450 4100 50  0001 C CNN
+F 3 "" H 2450 4100 50  0001 C CNN
+	1    2450 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 4100 2450 3950
+Wire Wire Line
+	650  3200 650  2700
+Wire Wire Line
+	650  3200 650  3500
+Wire Wire Line
+	1400 3800 1300 3800
 $EndSCHEMATC
