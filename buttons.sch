@@ -3,11 +3,11 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 7 9
+Sheet 6 9
 Title ""
-Date ""
-Rev ""
-Comp ""
+Date "2020-11-22"
+Rev "2"
+Comp "BADGE.TEAM"
 Comment1 ""
 Comment2 ""
 Comment3 ""
@@ -371,8 +371,6 @@ Text GLabel 4850 3300 2    50   Input ~ 0
 JOY_D
 Text GLabel 4850 3400 2    50   Input ~ 0
 JOY_E
-Text HLabel 4850 2400 2    50   Input ~ 0
-CHARGING
 Wire Wire Line
 	3750 3400 3750 3800
 Wire Wire Line
@@ -410,4 +408,6 @@ Wire Wire Line
 	4150 5700 4050 5700
 Wire Wire Line
 	4050 5700 4050 5800
+Text HLabel 4850 2400 2    50   Output ~ 0
+BNO055_RESET
 $EndSCHEMATC

@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 5 9
 Title "MCH2021 badge - STM32 microcontroller"
-Date "2020-08-08"
-Rev "1"
+Date "2020-11-22"
+Rev "2"
 Comp "BADGE.TEAM"
 Comment1 ""
 Comment2 ""
@@ -114,14 +114,6 @@ Wire Wire Line
 	6650 4700 6700 4700
 Text HLabel 2700 4500 0    50   Input ~ 0
 I2C_SCL
-Text HLabel 8050 4400 2    50   Output ~ 0
-FPGA_RX
-Text HLabel 8050 4500 2    50   Input ~ 0
-FPGA_TX
-Text HLabel 8050 3700 2    50   Output ~ 0
-ESP32_RX
-Text HLabel 8050 3800 2    50   Input ~ 0
-ESP32_TX
 $Comp
 L Device:Crystal_GND24_Small Y1
 U 1 1 5E3ED918
@@ -334,7 +326,7 @@ Wire Wire Line
 	6700 4700 6700 2350
 Connection ~ 6700 4700
 Wire Wire Line
-	6700 4700 8050 4700
+	6700 4700 7550 4700
 Text Notes 550  650  0    79   ~ 0
 STM32 microcontroller
 $Comp
@@ -596,7 +588,7 @@ AR Path="/5E4109CF" Ref="R?"  Part="1"
 AR Path="/5E3BA64A/5E4109CF" Ref="R?"  Part="1" 
 AR Path="/5F51E414/5E4109CF" Ref="R43"  Part="1" 
 F 0 "R43" V 6600 2200 50  0000 C CNN
-F 1 "10k" V 6700 2200 50  0000 C CNN
+F 1 "DNP" V 6700 2200 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 6630 2200 50  0001 C CNN
 F 3 "~" H 6700 2200 50  0001 C CNN
 F 4 "C115324" H 6700 2200 50  0001 C CNN "LCSC"
@@ -706,8 +698,8 @@ P 3250 3600
 AR Path="/5DC753C3/6015B06D" Ref="R?"  Part="1" 
 AR Path="/6015B06D" Ref="R?"  Part="1" 
 AR Path="/5E3BA64A/6015B06D" Ref="R?"  Part="1" 
-AR Path="/5F51E414/6015B06D" Ref="R?"  Part="1" 
-F 0 "R?" V 3300 3750 50  0000 C CNN
+AR Path="/5F51E414/6015B06D" Ref="R62"  Part="1" 
+F 0 "R62" V 3300 3750 50  0000 C CNN
 F 1 "47" V 3250 3600 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 3180 3600 50  0001 C CNN
 F 3 "~" H 3250 3600 50  0001 C CNN
@@ -719,10 +711,10 @@ F 7 "N" H 3250 3600 50  0001 C CNN "Sponsored"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:Crystal_Small Y?
+L Device:Crystal_Small Y2
 U 1 1 5FC777BF
 P 4350 3250
-F 0 "Y?" V 4304 3338 50  0000 L CNN
+F 0 "Y2" V 4304 3338 50  0000 L CNN
 F 1 "32kHz" V 4395 3338 50  0000 L CNN
 F 2 "" H 4350 3250 50  0001 C CNN
 F 3 "~" H 4350 3250 50  0001 C CNN
@@ -761,8 +753,8 @@ P 4650 5200
 AR Path="/5DC753C3/5FCCE7C7" Ref="C?"  Part="1" 
 AR Path="/5FCCE7C7" Ref="C?"  Part="1" 
 AR Path="/5E3BA64A/5FCCE7C7" Ref="C?"  Part="1" 
-AR Path="/5F51E414/5FCCE7C7" Ref="C?"  Part="1" 
-F 0 "C?" H 4650 5300 50  0000 L CNN
+AR Path="/5F51E414/5FCCE7C7" Ref="C14"  Part="1" 
+F 0 "C14" H 4650 5300 50  0000 L CNN
 F 1 "22p" H 4650 5100 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 4688 5050 50  0001 C CNN
 F 3 "~" H 4650 5200 50  0001 C CNN
@@ -779,8 +771,8 @@ P 4450 5200
 AR Path="/5DC753C3/5FCCE7D0" Ref="C?"  Part="1" 
 AR Path="/5FCCE7D0" Ref="C?"  Part="1" 
 AR Path="/5E3BA64A/5FCCE7D0" Ref="C?"  Part="1" 
-AR Path="/5F51E414/5FCCE7D0" Ref="C?"  Part="1" 
-F 0 "C?" H 4300 5300 50  0000 L CNN
+AR Path="/5F51E414/5FCCE7D0" Ref="C2"  Part="1" 
+F 0 "C2" H 4300 5300 50  0000 L CNN
 F 1 "22p" H 4250 5100 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 4488 5050 50  0001 C CNN
 F 3 "~" H 4450 5200 50  0001 C CNN
@@ -791,10 +783,10 @@ F 6 "N" H 4450 5200 50  0001 C CNN "Sponsored"
 	-1   0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0191
 U 1 1 5FCCE7D6
 P 4650 5350
-F 0 "#PWR?" H 4650 5100 50  0001 C CNN
+F 0 "#PWR0191" H 4650 5100 50  0001 C CNN
 F 1 "GND" H 4655 5177 50  0000 C CNN
 F 2 "" H 4650 5350 50  0001 C CNN
 F 3 "" H 4650 5350 50  0001 C CNN
@@ -802,10 +794,10 @@ F 3 "" H 4650 5350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0192
 U 1 1 5FCCE7DC
 P 4450 5350
-F 0 "#PWR?" H 4450 5100 50  0001 C CNN
+F 0 "#PWR0192" H 4450 5100 50  0001 C CNN
 F 1 "GND" H 4455 5177 50  0000 C CNN
 F 2 "" H 4450 5350 50  0001 C CNN
 F 3 "" H 4450 5350 50  0001 C CNN
@@ -846,4 +838,129 @@ Wire Wire Line
 	5350 3600 3400 3600
 Text GLabel 5850 2200 1    50   Input ~ 0
 BAT_3.3
+$Comp
+L Device:R R?
+U 1 1 5FB263DC
+P 7550 4850
+AR Path="/5DC753C3/5FB263DC" Ref="R?"  Part="1" 
+AR Path="/5FB263DC" Ref="R?"  Part="1" 
+AR Path="/5E3BA64A/5FB263DC" Ref="R?"  Part="1" 
+AR Path="/5F51E414/5FB263DC" Ref="R64"  Part="1" 
+F 0 "R64" V 7450 4850 50  0000 C CNN
+F 1 "10k" V 7550 4850 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 7480 4850 50  0001 C CNN
+F 3 "~" H 7550 4850 50  0001 C CNN
+F 4 "C115324" H 7550 4850 50  0001 C CNN "LCSC"
+F 5 "" H 7550 4850 50  0001 C CNN "Price"
+F 6 "-" H 7550 4850 50  0001 C CNN "Mouser"
+F 7 "N" H 7550 4850 50  0001 C CNN "Sponsored"
+	1    7550 4850
+	1    0    0    -1  
+$EndComp
+Connection ~ 7550 4700
+Wire Wire Line
+	7550 4700 8050 4700
+Wire Wire Line
+	7550 5000 6650 5000
+Text HLabel 8050 4400 2    50   Output ~ 0
+ESP32_RX
+Text HLabel 8050 4500 2    50   Input ~ 0
+ESP32_TX
+Text HLabel 8050 3700 2    50   Output ~ 0
+FPGA_RX
+Text HLabel 8050 3800 2    50   Input ~ 0
+FPGA_TX
+Wire Notes Line
+	8500 4350 8500 4550
+Text Notes 8550 4450 0    50   ~ 0
+Bootloader UART
+Wire Wire Line
+	5350 3100 3500 3100
+$Comp
+L Device:R R?
+U 1 1 5FB5E63D
+P 3050 6250
+AR Path="/5DC753C3/5FB5E63D" Ref="R?"  Part="1" 
+AR Path="/5FB5E63D" Ref="R?"  Part="1" 
+AR Path="/5E3BA64A/5FB5E63D" Ref="R?"  Part="1" 
+AR Path="/5F51E414/5FB5E63D" Ref="R61"  Part="1" 
+AR Path="/5FDC6C76/5FB5E63D" Ref="R?"  Part="1" 
+F 0 "R61" V 2950 6250 50  0000 C CNN
+F 1 "47" V 3050 6250 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2980 6250 50  0001 C CNN
+F 3 "~" H 3050 6250 50  0001 C CNN
+F 4 "C1211" H 3050 6250 50  0001 C CNN "LCSC"
+F 5 "" H 3050 6250 50  0001 C CNN "Price"
+F 6 "-" H 3050 6250 50  0001 C CNN "Mouser"
+F 7 "N" H 3050 6250 50  0001 C CNN "Sponsored"
+	1    3050 6250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Q_NMOS_GSD Q?
+U 1 1 5FB5E630
+P 3400 6250
+AR Path="/5FDC6C76/5FB5E630" Ref="Q?"  Part="1" 
+AR Path="/5F51E414/5FB5E630" Ref="Q4"  Part="1" 
+F 0 "Q4" H 3350 6050 50  0000 C CNN
+F 1 "Q_NMOS_GSD" H 3150 6150 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 3600 6350 50  0001 C CNN
+F 3 "~" H 3400 6250 50  0001 C CNN
+F 4 "C406812" H 3400 6250 50  0001 C CNN "LCSC"
+F 5 "-" H 3400 6250 50  0001 C CNN "Mouser"
+F 6 "" H 3400 6250 50  0001 C CNN "Price"
+F 7 "N" H 3400 6250 50  0001 C CNN "Sponsored"
+	1    3400 6250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5FB7AAB6
+P 3500 2200
+AR Path="/5DC753C3/5FB7AAB6" Ref="R?"  Part="1" 
+AR Path="/5FB7AAB6" Ref="R?"  Part="1" 
+AR Path="/5E3BA64A/5FB7AAB6" Ref="R?"  Part="1" 
+AR Path="/5F51E414/5FB7AAB6" Ref="R63"  Part="1" 
+F 0 "R63" V 3600 2200 50  0000 C CNN
+F 1 "10k" V 3500 2200 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3430 2200 50  0001 C CNN
+F 3 "~" H 3500 2200 50  0001 C CNN
+F 4 "C115324" H 3500 2200 50  0001 C CNN "LCSC"
+F 5 "" H 3500 2200 50  0001 C CNN "Price"
+F 6 "-" H 3500 2200 50  0001 C CNN "Mouser"
+F 7 "N" H 3500 2200 50  0001 C CNN "Sponsored"
+	1    3500 2200
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+3.3V #PWR0193
+U 1 1 5FB7E8B5
+P 3500 2050
+F 0 "#PWR0193" H 3500 1900 50  0001 C CNN
+F 1 "+3.3V" H 3515 2223 50  0000 C CNN
+F 2 "" H 3500 2050 50  0001 C CNN
+F 3 "" H 3500 2050 50  0001 C CNN
+	1    3500 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 2350 3500 3100
+Wire Wire Line
+	3500 3100 3500 6050
+Connection ~ 3500 3100
+$Comp
+L power:GND #PWR0194
+U 1 1 5FB9040E
+P 3500 6450
+F 0 "#PWR0194" H 3500 6200 50  0001 C CNN
+F 1 "GND" H 3505 6277 50  0000 C CNN
+F 2 "" H 3500 6450 50  0001 C CNN
+F 3 "" H 3500 6450 50  0001 C CNN
+	1    3500 6450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2700 6250 2900 6250
+Text HLabel 2700 6250 0    50   Input ~ 0
+USB_DET
 $EndSCHEMATC

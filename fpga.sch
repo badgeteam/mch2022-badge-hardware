@@ -3,11 +3,11 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 8 9
+Sheet 7 9
 Title ""
-Date ""
-Rev ""
-Comp ""
+Date "2020-11-22"
+Rev "2"
+Comp "BADGE.TEAM"
 Comment1 ""
 Comment2 ""
 Comment3 ""
@@ -800,14 +800,16 @@ F 3 "" H 2050 2600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3.3V #PWR?
+L power:+3.3V #PWR0195
 U 1 1 5F8E28AC
 P 1800 1100
-F 0 "#PWR?" H 1800 950 50  0001 C CNN
+F 0 "#PWR0195" H 1800 950 50  0001 C CNN
 F 1 "+3.3V" H 1815 1273 50  0000 C CNN
 F 2 "" H 1800 1100 50  0001 C CNN
 F 3 "" H 1800 1100 50  0001 C CNN
 	1    1800 1100
 	0    -1   -1   0   
 $EndComp
+Text Notes 7500 4150 3    50   ~ 0
+Sorry, will clean this up later :-)
 $EndSCHEMATC
