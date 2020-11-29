@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 5 9
 Title "MCH2021 badge - STM32 microcontroller"
-Date "2020-11-22"
+Date "2020-11-29"
 Rev "2"
 Comp "BADGE.TEAM"
 Comment1 ""
@@ -963,4 +963,20 @@ Wire Wire Line
 	2700 6250 2900 6250
 Text HLabel 2700 6250 0    50   Input ~ 0
 USB_DET
+Wire Wire Line
+	5350 3800 2700 3800
+Text HLabel 2700 3800 0    50   Output ~ 0
+ESP32_WK
+Wire Wire Line
+	5350 4300 3300 4300
+Wire Wire Line
+	3300 4300 3300 5600
+Wire Wire Line
+	3300 5600 1150 5600
+Wire Wire Line
+	1150 5500 3200 5500
+Wire Wire Line
+	3200 5500 3200 4200
+Wire Wire Line
+	3200 4200 5350 4200
 $EndSCHEMATC

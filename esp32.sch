@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 8 9
 Title "MCH2021 badge - ESP32 microcontroller"
-Date "2020-11-22"
+Date "2020-11-29"
 Rev "2"
 Comp "BADGE.TEAM"
 Comment1 ""
@@ -266,9 +266,7 @@ SD_CMD
 Text HLabel 2800 3300 0    39   Input ~ 0
 IRQ_FPGA
 Wire Wire Line
-	2800 3000 2950 3000
-Wire Wire Line
-	2800 3300 3050 3300
+	2800 3000 2850 3000
 Text HLabel 6700 4500 2    39   BiDi ~ 0
 I2C_SDA
 Text Notes 3450 3150 0    20   ~ 0
@@ -302,8 +300,6 @@ Wire Notes Line
 	3600 3150 3600 3350
 Wire Notes Line
 	3600 3350 3150 3350
-Wire Wire Line
-	2800 3200 3050 3200
 $Comp
 L Device:R R52
 U 1 1 5F472114
@@ -504,49 +500,37 @@ F 3 "" H 5550 2550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4350 3000 6700 3000
+	4350 3000 6650 3000
 Wire Wire Line
-	4250 3100 6700 3100
+	4250 3100 6650 3100
 Wire Wire Line
-	4250 3300 6700 3300
+	4250 3300 6650 3300
 Wire Wire Line
-	4250 3400 6700 3400
+	4250 3700 6650 3700
 Wire Wire Line
-	4250 3500 6700 3500
+	4250 4200 6650 4200
 Wire Wire Line
-	4650 3600 6700 3600
-Wire Wire Line
-	4250 3700 6700 3700
-Wire Wire Line
-	4250 4200 6700 4200
-Wire Wire Line
-	4250 4300 6700 4300
-Wire Wire Line
-	5250 4400 6700 4400
+	4250 4300 6650 4300
 Wire Wire Line
 	5550 4500 6700 4500
 Wire Wire Line
-	4250 4600 6700 4600
+	4250 4600 6650 4600
 Wire Wire Line
-	4250 4900 6700 4900
+	4250 4900 6650 4900
 Wire Wire Line
-	4250 5000 6700 5000
+	4250 5000 6650 5000
 Wire Wire Line
-	4250 5300 6700 5300
+	4250 5200 6650 5200
 Wire Wire Line
-	4250 5200 6700 5200
-Wire Wire Line
-	4250 5100 6700 5100
+	4250 5100 6650 5100
 Wire Wire Line
 	4250 4700 6700 4700
 Wire Wire Line
 	4250 4800 6700 4800
 Wire Wire Line
-	4950 3900 6700 3900
+	4950 3900 6650 3900
 Wire Wire Line
-	4250 3800 6700 3800
-Wire Wire Line
-	4350 3200 6700 3200
+	4250 3800 6650 3800
 Wire Notes Line
 	6700 3350 6750 3350
 Wire Notes Line
@@ -569,4 +553,272 @@ Wire Notes Line
 	7950 3550 7950 3800
 Text Notes 7650 3900 0    50   ~ 0
 Reserved for I2S
+$Comp
+L Connector:TestPoint_Small TP?
+U 1 1 5FC845F7
+P 6650 3000
+F 0 "TP?" H 6600 3050 50  0000 L CNN
+F 1 "ESP32 BL" H 6600 2950 50  0001 L CNN
+F 2 "" H 6850 3000 50  0001 C CNN
+F 3 "~" H 6850 3000 50  0001 C CNN
+	1    6650 3000
+	1    0    0    -1  
+$EndComp
+Connection ~ 6650 3000
+Wire Wire Line
+	6650 3000 6700 3000
+$Comp
+L Connector:TestPoint_Small TP?
+U 1 1 5FC85F9F
+P 6650 3100
+F 0 "TP?" H 6600 3150 50  0000 L CNN
+F 1 "ESP32 TX" H 6600 3050 50  0001 L CNN
+F 2 "" H 6850 3100 50  0001 C CNN
+F 3 "~" H 6850 3100 50  0001 C CNN
+	1    6650 3100
+	1    0    0    -1  
+$EndComp
+Connection ~ 6650 3100
+Wire Wire Line
+	6650 3100 6700 3100
+$Comp
+L Connector:TestPoint_Small TP?
+U 1 1 5FC86156
+P 6650 3300
+F 0 "TP?" H 6600 3350 50  0000 L CNN
+F 1 "ESP32 RX" H 6600 3250 50  0001 L CNN
+F 2 "" H 6850 3300 50  0001 C CNN
+F 3 "~" H 6850 3300 50  0001 C CNN
+	1    6650 3300
+	1    0    0    -1  
+$EndComp
+Connection ~ 6650 3300
+Wire Wire Line
+	6650 3300 6700 3300
+$Comp
+L Connector:TestPoint_Small TP?
+U 1 1 5FC86773
+P 2850 3000
+F 0 "TP?" H 2800 3050 50  0000 L CNN
+F 1 "ESP EN" H 2800 2950 50  0001 L CNN
+F 2 "" H 3050 3000 50  0001 C CNN
+F 3 "~" H 3050 3000 50  0001 C CNN
+	1    2850 3000
+	1    0    0    -1  
+$EndComp
+Connection ~ 2850 3000
+Wire Wire Line
+	2850 3000 2950 3000
+Wire Wire Line
+	4350 3200 6700 3200
+$Comp
+L Connector:TestPoint_Small TP?
+U 1 1 5FC8AC1B
+P 6650 4200
+F 0 "TP?" H 6600 4250 50  0000 L CNN
+F 1 "SPI CLK" H 6600 4150 50  0001 L CNN
+F 2 "" H 6850 4200 50  0001 C CNN
+F 3 "~" H 6850 4200 50  0001 C CNN
+	1    6650 4200
+	1    0    0    -1  
+$EndComp
+Connection ~ 6650 4200
+Wire Wire Line
+	6650 4200 6700 4200
+Wire Wire Line
+	5250 4400 6700 4400
+$Comp
+L Connector:TestPoint_Small TP?
+U 1 1 5FC8BA3B
+P 6650 4600
+F 0 "TP?" H 6600 4650 50  0000 L CNN
+F 1 "SPI MOSI" H 6600 4550 50  0001 L CNN
+F 2 "" H 6850 4600 50  0001 C CNN
+F 3 "~" H 6850 4600 50  0001 C CNN
+	1    6650 4600
+	1    0    0    -1  
+$EndComp
+Connection ~ 6650 4600
+Wire Wire Line
+	6650 4600 6700 4600
+Wire Wire Line
+	4250 5300 6650 5300
+Wire Wire Line
+	2800 3200 2850 3200
+Wire Wire Line
+	2800 3300 2850 3300
+$Comp
+L Connector:TestPoint_Small TP?
+U 1 1 5FC8F275
+P 6650 5300
+F 0 "TP?" H 6600 5350 50  0000 L CNN
+F 1 "SPI MISO" H 6600 5250 50  0001 L CNN
+F 2 "" H 6850 5300 50  0001 C CNN
+F 3 "~" H 6850 5300 50  0001 C CNN
+	1    6650 5300
+	1    0    0    -1  
+$EndComp
+Connection ~ 6650 5300
+Wire Wire Line
+	6650 5300 6700 5300
+$Comp
+L Connector:TestPoint_Small TP?
+U 1 1 5FC8F51C
+P 6650 5100
+F 0 "TP?" H 6600 5150 50  0000 L CNN
+F 1 "LCD DC" H 6600 5050 50  0001 L CNN
+F 2 "" H 6850 5100 50  0001 C CNN
+F 3 "~" H 6850 5100 50  0001 C CNN
+	1    6650 5100
+	1    0    0    -1  
+$EndComp
+Connection ~ 6650 5100
+Wire Wire Line
+	6650 5100 6700 5100
+$Comp
+L Connector:TestPoint_Small TP?
+U 1 1 5FC8F804
+P 6650 5000
+F 0 "TP?" H 6600 5050 50  0000 L CNN
+F 1 "SPI CS LCD" H 6600 4950 50  0001 L CNN
+F 2 "" H 6850 5000 50  0001 C CNN
+F 3 "~" H 6850 5000 50  0001 C CNN
+	1    6650 5000
+	1    0    0    -1  
+$EndComp
+Connection ~ 6650 5000
+Wire Wire Line
+	6650 5000 6700 5000
+$Comp
+L Connector:TestPoint_Small TP?
+U 1 1 5FC8FA62
+P 6650 4900
+F 0 "TP?" H 6600 4950 50  0000 L CNN
+F 1 "SPI CS FPGA" H 6600 4850 50  0001 L CNN
+F 2 "" H 6850 4900 50  0001 C CNN
+F 3 "~" H 6850 4900 50  0001 C CNN
+	1    6650 4900
+	1    0    0    -1  
+$EndComp
+Connection ~ 6650 4900
+Wire Wire Line
+	6650 4900 6700 4900
+$Comp
+L Connector:TestPoint_Small TP?
+U 1 1 5FC90344
+P 6650 4300
+F 0 "TP?" H 6600 4350 50  0000 L CNN
+F 1 "SPI CS STM32" H 6600 4250 50  0001 L CNN
+F 2 "" H 6850 4300 50  0001 C CNN
+F 3 "~" H 6850 4300 50  0001 C CNN
+	1    6650 4300
+	1    0    0    -1  
+$EndComp
+Connection ~ 6650 4300
+Wire Wire Line
+	6650 4300 6700 4300
+$Comp
+L Connector:TestPoint_Small TP?
+U 1 1 5FC908B3
+P 6650 5200
+F 0 "TP?" H 6600 5250 50  0000 L CNN
+F 1 "IRQ BTN" H 6600 5150 50  0001 L CNN
+F 2 "" H 6850 5200 50  0001 C CNN
+F 3 "~" H 6850 5200 50  0001 C CNN
+	1    6650 5200
+	1    0    0    -1  
+$EndComp
+Connection ~ 6650 5200
+Wire Wire Line
+	6650 5200 6700 5200
+$Comp
+L Connector:TestPoint_Small TP?
+U 1 1 5FC90D64
+P 2850 3200
+F 0 "TP?" H 2800 3250 50  0000 L CNN
+F 1 "IRQ SENSOR" H 2800 3150 50  0001 L CNN
+F 2 "" H 3050 3200 50  0001 C CNN
+F 3 "~" H 3050 3200 50  0001 C CNN
+	1    2850 3200
+	1    0    0    -1  
+$EndComp
+Connection ~ 2850 3200
+Wire Wire Line
+	2850 3200 3050 3200
+$Comp
+L Connector:TestPoint_Small TP?
+U 1 1 5FC9223F
+P 2850 3300
+F 0 "TP?" H 2800 3350 50  0000 L CNN
+F 1 "IRQ FPGA" H 2800 3250 50  0001 L CNN
+F 2 "" H 3050 3300 50  0001 C CNN
+F 3 "~" H 3050 3300 50  0001 C CNN
+	1    2850 3300
+	1    0    0    -1  
+$EndComp
+Connection ~ 2850 3300
+Wire Wire Line
+	2850 3300 3050 3300
+Wire Wire Line
+	4650 3600 6650 3600
+Wire Wire Line
+	4250 3500 6700 3500
+Wire Wire Line
+	4250 3400 6700 3400
+$Comp
+L Connector:TestPoint_Small TP?
+U 1 1 5FC96B90
+P 6650 3600
+F 0 "TP?" H 6600 3650 50  0000 L CNN
+F 1 "ESP32 TDI" H 6600 3550 50  0001 L CNN
+F 2 "" H 6850 3600 50  0001 C CNN
+F 3 "~" H 6850 3600 50  0001 C CNN
+	1    6650 3600
+	1    0    0    -1  
+$EndComp
+Connection ~ 6650 3600
+Wire Wire Line
+	6650 3600 6700 3600
+$Comp
+L Connector:TestPoint_Small TP?
+U 1 1 5FC97340
+P 6650 3700
+F 0 "TP?" H 6600 3750 50  0000 L CNN
+F 1 "ESP32 TCK" H 6600 3650 50  0001 L CNN
+F 2 "" H 6850 3700 50  0001 C CNN
+F 3 "~" H 6850 3700 50  0001 C CNN
+	1    6650 3700
+	1    0    0    -1  
+$EndComp
+Connection ~ 6650 3700
+Wire Wire Line
+	6650 3700 6700 3700
+$Comp
+L Connector:TestPoint_Small TP?
+U 1 1 5FC9783B
+P 6650 3800
+F 0 "TP?" H 6600 3850 50  0000 L CNN
+F 1 "ESP32 TMS" H 6600 3750 50  0001 L CNN
+F 2 "" H 6850 3800 50  0001 C CNN
+F 3 "~" H 6850 3800 50  0001 C CNN
+	1    6650 3800
+	1    0    0    -1  
+$EndComp
+Connection ~ 6650 3800
+Wire Wire Line
+	6650 3800 6700 3800
+$Comp
+L Connector:TestPoint_Small TP?
+U 1 1 5FC97C76
+P 6650 3900
+F 0 "TP?" H 6600 3950 50  0000 L CNN
+F 1 "ESP32 TDO" H 6600 3850 50  0001 L CNN
+F 2 "" H 6850 3900 50  0001 C CNN
+F 3 "~" H 6850 3900 50  0001 C CNN
+	1    6650 3900
+	1    0    0    -1  
+$EndComp
+Connection ~ 6650 3900
+Wire Wire Line
+	6650 3900 6700 3900
 $EndSCHEMATC

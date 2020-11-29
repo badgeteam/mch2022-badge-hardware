@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 9
 Title "MCH2021 badge - Overview"
-Date "2020-11-22"
+Date "2020-11-29"
 Rev "2"
 Comp "BADGE.TEAM"
 Comment1 ""
@@ -118,27 +118,27 @@ Wire Wire Line
 $Comp
 L power:GND #PWR012
 U 1 1 6077A2BE
-P 2250 7450
-F 0 "#PWR012" H 2250 7200 50  0001 C CNN
-F 1 "GND" H 2255 7277 50  0000 C CNN
-F 2 "" H 2250 7450 50  0001 C CNN
-F 3 "" H 2250 7450 50  0001 C CNN
-	1    2250 7450
+P 1200 7500
+F 0 "#PWR012" H 1200 7250 50  0001 C CNN
+F 1 "GND" H 1205 7327 50  0000 C CNN
+F 2 "" H 1200 7500 50  0001 C CNN
+F 3 "" H 1200 7500 50  0001 C CNN
+	1    1200 7500
 	1    0    0    -1  
 $EndComp
 $Comp
 L Connector:AudioJack3 J3
 U 1 1 6072152E
-P 1950 7300
-F 0 "J3" H 1932 7625 50  0000 C CNN
-F 1 "AudioJack3" H 1932 7534 50  0000 C CNN
-F 2 "custom:Boom-audiojack-PJ-320B" H 1950 7300 50  0001 C CNN
-F 3 "~" H 1950 7300 50  0001 C CNN
-F 4 "C18594" H 1950 7300 50  0001 C CNN "LCSC"
-F 5 "-" H 1950 7300 50  0001 C CNN "Mouser"
-F 6 "" H 1950 7300 50  0001 C CNN "Price"
-F 7 "N" H 1950 7300 50  0001 C CNN "Sponsored"
-	1    1950 7300
+P 900 7350
+F 0 "J3" H 882 7675 50  0000 C CNN
+F 1 "AudioJack3" H 882 7584 50  0000 C CNN
+F 2 "custom:Boom-audiojack-PJ-320B" H 900 7350 50  0001 C CNN
+F 3 "~" H 900 7350 50  0001 C CNN
+F 4 "C18594" H 900 7350 50  0001 C CNN "LCSC"
+F 5 "-" H 900 7350 50  0001 C CNN "Mouser"
+F 6 "" H 900 7350 50  0001 C CNN "Price"
+F 7 "N" H 900 7350 50  0001 C CNN "Sponsored"
+	1    900  7350
 	1    0    0    1   
 $EndComp
 Wire Wire Line
@@ -160,9 +160,9 @@ Wire Wire Line
 Wire Wire Line
 	6800 2600 6800 3000
 Wire Wire Line
-	2150 7400 2250 7400
+	1100 7450 1200 7450
 Wire Wire Line
-	2250 7400 2250 7450
+	1200 7450 1200 7500
 $Sheet
 S 6900 2900 1700 1300
 U 5FDC6C76
@@ -525,110 +525,6 @@ Wire Wire Line
 	6900 4550 6400 4550
 Wire Wire Line
 	6900 4650 6300 4650
-$Comp
-L Mechanical:MountingHole_Pad H4
-U 1 1 5FE7CD04
-P 1250 7400
-F 0 "H4" H 1300 7600 50  0000 R CNN
-F 1 "MountingHole_Pad" H 1150 7448 50  0001 R CNN
-F 2 "corecode:HOLE-M3-COND" H 1250 7400 50  0001 C CNN
-F 3 "~" H 1250 7400 50  0001 C CNN
-F 4 "-" H 1250 7400 50  0001 C CNN "LCSC"
-F 5 "-" H 1250 7400 50  0001 C CNN "Mouser"
-F 6 "" H 1250 7400 50  0001 C CNN "Price"
-F 7 "-" H 1250 7400 50  0001 C CNN "Sponsored"
-	1    1250 7400
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole_Pad H3
-U 1 1 5FE7D527
-P 1050 7400
-F 0 "H3" H 1100 7600 50  0000 R CNN
-F 1 "MountingHole_Pad" H 950 7448 50  0001 R CNN
-F 2 "corecode:HOLE-M3-COND" H 1050 7400 50  0001 C CNN
-F 3 "~" H 1050 7400 50  0001 C CNN
-F 4 "-" H 1050 7400 50  0001 C CNN "LCSC"
-F 5 "-" H 1050 7400 50  0001 C CNN "Mouser"
-F 6 "" H 1050 7400 50  0001 C CNN "Price"
-F 7 "-" H 1050 7400 50  0001 C CNN "Sponsored"
-	1    1050 7400
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole_Pad H2
-U 1 1 5FE7D771
-P 850 7400
-F 0 "H2" H 900 7600 50  0000 R CNN
-F 1 "MountingHole_Pad" H 750 7448 50  0001 R CNN
-F 2 "corecode:HOLE-M3-COND" H 850 7400 50  0001 C CNN
-F 3 "~" H 850 7400 50  0001 C CNN
-F 4 "-" H 850 7400 50  0001 C CNN "LCSC"
-F 5 "-" H 850 7400 50  0001 C CNN "Mouser"
-F 6 "" H 850 7400 50  0001 C CNN "Price"
-F 7 "-" H 850 7400 50  0001 C CNN "Sponsored"
-	1    850  7400
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole_Pad H1
-U 1 1 5FE7D93E
-P 650 7400
-F 0 "H1" H 700 7600 50  0000 R CNN
-F 1 "MountingHole_Pad" H 550 7448 50  0001 R CNN
-F 2 "corecode:HOLE-M3-COND" H 650 7400 50  0001 C CNN
-F 3 "~" H 650 7400 50  0001 C CNN
-F 4 "-" H 650 7400 50  0001 C CNN "LCSC"
-F 5 "-" H 650 7400 50  0001 C CNN "Mouser"
-F 6 "" H 650 7400 50  0001 C CNN "Price"
-F 7 "-" H 650 7400 50  0001 C CNN "Sponsored"
-	1    650  7400
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR01
-U 1 1 5FE90364
-P 650 7500
-F 0 "#PWR01" H 650 7250 50  0001 C CNN
-F 1 "GND" H 655 7327 50  0000 C CNN
-F 2 "" H 650 7500 50  0001 C CNN
-F 3 "" H 650 7500 50  0001 C CNN
-	1    650  7500
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR03
-U 1 1 5FE903E2
-P 850 7500
-F 0 "#PWR03" H 850 7250 50  0001 C CNN
-F 1 "GND" H 855 7327 50  0000 C CNN
-F 2 "" H 850 7500 50  0001 C CNN
-F 3 "" H 850 7500 50  0001 C CNN
-	1    850  7500
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR05
-U 1 1 5FE9054E
-P 1050 7500
-F 0 "#PWR05" H 1050 7250 50  0001 C CNN
-F 1 "GND" H 1055 7327 50  0000 C CNN
-F 2 "" H 1050 7500 50  0001 C CNN
-F 3 "" H 1050 7500 50  0001 C CNN
-	1    1050 7500
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR06
-U 1 1 5FE90BF5
-P 1250 7500
-F 0 "#PWR06" H 1250 7250 50  0001 C CNN
-F 1 "GND" H 1255 7327 50  0000 C CNN
-F 2 "" H 1250 7500 50  0001 C CNN
-F 3 "" H 1250 7500 50  0001 C CNN
-	1    1250 7500
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6900 3200 6300 3200
 Connection ~ 6300 3200
@@ -697,6 +593,7 @@ F27 "SENSE_VBAT" I L 3650 850 50
 F28 "SENSE_VUSB" I L 3650 950 50 
 F29 "PWR_SDCARD_ENABLE" O L 3650 1150 50 
 F30 "USB_DET" I L 3650 1600 50 
+F31 "ESP32_WK" O R 5400 2250 50 
 $EndSheet
 $Sheet
 S 3650 3700 1750 550 
@@ -846,8 +743,6 @@ F 3 "" H 5800 6650 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5850 6000 6500 6000
-Text Notes 4400 7650 0    79   ~ 0
-To-do:\n - I2S DAC\n - Lusjes van CZ19 badge\n - Connect STM32 to ESP32 RTC INPUT
 Wire Wire Line
 	9150 1750 9150 2150
 $Comp
@@ -1138,16 +1033,12 @@ Wire Wire Line
 Wire Wire Line
 	2550 1400 3650 1400
 Wire Wire Line
-	3650 1600 2600 1600
-Wire Wire Line
 	2150 1600 2150 1150
 Wire Wire Line
 	2150 1150 1700 1150
 Wire Wire Line
 	1700 1150 1700 1300
 Connection ~ 1700 1300
-Wire Wire Line
-	3350 2650 3350 5750
 Wire Wire Line
 	3250 2550 3250 5650
 Wire Wire Line
@@ -1288,4 +1179,132 @@ Wire Wire Line
 Connection ~ 3550 3200
 Wire Wire Line
 	3550 3200 3550 3900
+Wire Wire Line
+	3650 1600 2600 1600
+$Comp
+L Connector:TestPoint_Small TP?
+U 1 1 5FCA324A
+P 1500 700
+F 0 "TP?" H 1300 700 50  0000 L CNN
+F 1 "LED OUT" H 1548 655 50  0001 L CNN
+F 2 "" H 1700 700 50  0001 C CNN
+F 3 "~" H 1700 700 50  0001 C CNN
+	1    1500 700 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 700  1500 700 
+$Comp
+L Connector:TestPoint_Small TP?
+U 1 1 5FCB97D0
+P 2550 1400
+F 0 "TP?" H 2350 1400 50  0000 L CNN
+F 1 "LED IN" H 2598 1355 50  0001 L CNN
+F 2 "" H 2750 1400 50  0001 C CNN
+F 3 "~" H 2750 1400 50  0001 C CNN
+	1    2550 1400
+	1    0    0    -1  
+$EndComp
+Connection ~ 2550 1400
+$Comp
+L Connector:TestPoint_Small TP?
+U 1 1 5FCBE4D6
+P 2950 2050
+F 0 "TP?" H 2750 2050 50  0000 L CNN
+F 1 "LCD BACKLIGHT" H 2998 2005 50  0001 L CNN
+F 2 "" H 3150 2050 50  0001 C CNN
+F 3 "~" H 3150 2050 50  0001 C CNN
+	1    2950 2050
+	1    0    0    -1  
+$EndComp
+Connection ~ 2950 2050
+$Comp
+L Connector:TestPoint_Small TP?
+U 1 1 5FCBF6DF
+P 2900 2150
+F 0 "TP?" H 2700 2150 50  0000 L CNN
+F 1 "LCD RESET" H 2948 2105 50  0001 L CNN
+F 2 "" H 3100 2150 50  0001 C CNN
+F 3 "~" H 3100 2150 50  0001 C CNN
+	1    2900 2150
+	1    0    0    -1  
+$EndComp
+Connection ~ 2900 2150
+$Comp
+L Connector:TestPoint_Small TP?
+U 1 1 5FCBFB06
+P 2850 2250
+F 0 "TP?" H 2650 2250 50  0000 L CNN
+F 1 "LCD MODE" H 2898 2205 50  0001 L CNN
+F 2 "" H 3050 2250 50  0001 C CNN
+F 3 "~" H 3050 2250 50  0001 C CNN
+	1    2850 2250
+	1    0    0    -1  
+$EndComp
+Connection ~ 2850 2250
+$Comp
+L Connector:TestPoint_Small TP?
+U 1 1 5FCC18D1
+P 3150 2450
+F 0 "TP?" H 2950 2450 50  0000 L CNN
+F 1 "FPGA RX" H 3198 2405 50  0001 L CNN
+F 2 "" H 3350 2450 50  0001 C CNN
+F 3 "~" H 3350 2450 50  0001 C CNN
+	1    3150 2450
+	1    0    0    -1  
+$EndComp
+Connection ~ 3150 2450
+$Comp
+L Connector:TestPoint_Small TP?
+U 1 1 5FCC2040
+P 3250 2550
+F 0 "TP?" H 3050 2550 50  0000 L CNN
+F 1 "FPGA TX" H 3298 2505 50  0001 L CNN
+F 2 "" H 3450 2550 50  0001 C CNN
+F 3 "~" H 3450 2550 50  0001 C CNN
+	1    3250 2550
+	1    0    0    -1  
+$EndComp
+Connection ~ 3250 2550
+Wire Wire Line
+	3350 2650 3350 5750
+$Comp
+L Connector:TestPoint_Small TP?
+U 1 1 5FCC2CE2
+P 3350 2650
+F 0 "TP?" H 3150 2650 50  0000 L CNN
+F 1 "MCO" H 3398 2605 50  0001 L CNN
+F 2 "" H 3550 2650 50  0001 C CNN
+F 3 "~" H 3550 2650 50  0001 C CNN
+	1    3350 2650
+	1    0    0    -1  
+$EndComp
+Connection ~ 3350 2650
+$Comp
+L Connector:TestPoint_Small TP?
+U 1 1 5FCC3139
+P 3450 2750
+F 0 "TP?" H 3250 2750 50  0000 L CNN
+F 1 "STM32 RESET" H 3498 2705 50  0001 L CNN
+F 2 "" H 3650 2750 50  0001 C CNN
+F 3 "~" H 3650 2750 50  0001 C CNN
+	1    3450 2750
+	1    0    0    -1  
+$EndComp
+Connection ~ 3450 2750
+$Comp
+L Connector:TestPoint_Small TP?
+U 1 1 5FCC361C
+P 3550 2850
+F 0 "TP?" H 3350 2850 50  0000 L CNN
+F 1 "STM32 BOOT0" H 3598 2805 50  0001 L CNN
+F 2 "" H 3750 2850 50  0001 C CNN
+F 3 "~" H 3750 2850 50  0001 C CNN
+	1    3550 2850
+	1    0    0    -1  
+$EndComp
+Connection ~ 3550 2850
+Wire Wire Line
+	6050 2250 5400 2250
+Connection ~ 6050 2250
 $EndSCHEMATC
