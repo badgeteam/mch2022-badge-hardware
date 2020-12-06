@@ -812,4 +812,10 @@ F 3 "" H 1800 1100 50  0001 C CNN
 $EndComp
 Text Notes 7500 4150 3    50   ~ 0
 Sorry, will clean this up later :-)
+Text HLabel 3250 4650 0    39   Output ~ 0
+I2S_DATA
+Text HLabel 3250 4750 0    39   Output ~ 0
+I2S_CLK
+Text HLabel 3250 4850 0    39   Output ~ 0
+I2S_LR
 $EndSCHEMATC

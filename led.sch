@@ -345,8 +345,127 @@ Text GLabel 10900 5900 1    39   Input ~ 0
 PWR_LED
 Text Notes 1400 650  2    79   ~ 0
 WS2812B LEDs
-Text HLabel 4000 4050 0    79   Input ~ 0
-DATA_IN
+Text HLabel 2000 3950 0    79   Input ~ 0
+DATA_IN1
 Text HLabel 7600 4050 2    79   Output ~ 0
 DATA_OUT
+$Comp
+L power:GND #PWR?
+U 1 1 60345F64
+P 2800 4350
+AR Path="/5F51E414/60345F64" Ref="#PWR?"  Part="1" 
+AR Path="/612408B6/60345F64" Ref="#PWR0211"  Part="1" 
+F 0 "#PWR0211" H 2800 4100 50  0001 C CNN
+F 1 "GND" H 2805 4177 50  0000 C CNN
+F 2 "" H 2800 4350 50  0001 C CNN
+F 3 "" H 2800 4350 50  0001 C CNN
+	1    2800 4350
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2850 3850 2800 3850
+$Comp
+L dk_Logic-Buffers-Drivers-Receivers-Transceivers:SN74LVC1G125DCKR U?
+U 1 1 60345F5C
+P 3150 3950
+AR Path="/5F51E414/60345F5C" Ref="U?"  Part="1" 
+AR Path="/612408B6/60345F5C" Ref="U10"  Part="1" 
+F 0 "U10" H 3400 4150 60  0000 C CNN
+F 1 "74LVC1G125" H 3600 4050 60  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-353_SC-70-5" H 3350 4150 60  0001 L CNN
+F 3 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fsn74lvc1g125" H 3350 4250 60  0001 L CNN
+F 4 "296-11604-1-ND" H 3350 4350 60  0001 L CNN "Digi-Key_PN"
+F 5 "SN74LVC1G125DCKR" H 3350 4450 60  0001 L CNN "MPN"
+F 6 "Integrated Circuits (ICs)" H 3350 4550 60  0001 L CNN "Category"
+F 7 "Logic - Buffers, Drivers, Receivers, Transceivers" H 3350 4650 60  0001 L CNN "Family"
+F 8 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fsn74lvc1g125" H 3350 4750 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/texas-instruments/SN74LVC1G125DCKR/296-11604-1-ND/385743" H 3350 4850 60  0001 L CNN "DK_Detail_Page"
+F 10 "IC BUF NON-INVERT 5.5V SC70-5" H 3350 4950 60  0001 L CNN "Description"
+F 11 "Texas Instruments" H 3350 5050 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 3350 5150 60  0001 L CNN "Status"
+F 13 "N" H 3150 3950 50  0001 C CNN "Sponsored"
+F 14 "C7833" H 3150 3950 50  0001 C CNN "LCSC"
+F 15 "" H 3150 3950 50  0001 C CNN "Price"
+	1    3150 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L vin:VIN #PWR?
+U 1 1 60345F4A
+P 3150 3650
+AR Path="/5F51E414/60345F4A" Ref="#PWR?"  Part="1" 
+AR Path="/612408B6/60345F4A" Ref="#PWR0212"  Part="1" 
+F 0 "#PWR0212" H 3160 3650 20  0001 C CNN
+F 1 "VIN" H 3150 3746 40  0000 C CNN
+F 2 "" H 3150 3650 60  0001 C CNN
+F 3 "" H 3150 3650 60  0001 C CNN
+	1    3150 3650
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60345F44
+P 3150 4350
+AR Path="/5F51E414/60345F44" Ref="#PWR?"  Part="1" 
+AR Path="/612408B6/60345F44" Ref="#PWR0213"  Part="1" 
+F 0 "#PWR0213" H 3150 4100 50  0001 C CNN
+F 1 "GND" H 3155 4177 50  0000 C CNN
+F 2 "" H 3150 4350 50  0001 C CNN
+F 3 "" H 3150 4350 50  0001 C CNN
+	1    3150 4350
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 3850 2800 4350
+Wire Wire Line
+	3150 4250 3150 4350
+Wire Wire Line
+	3350 4050 4000 4050
+Wire Wire Line
+	2850 4050 2250 4050
+$Comp
+L Device:R_Small R?
+U 1 1 6035A383
+P 2100 3950
+AR Path="/6035A383" Ref="R?"  Part="1" 
+AR Path="/612408B6/6035A383" Ref="R67"  Part="1" 
+F 0 "R67" V 2000 3950 50  0000 C CNN
+F 1 "47" V 2100 3950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 2100 3950 50  0001 C CNN
+F 3 "~" H 2100 3950 50  0001 C CNN
+F 4 "" H 2100 3950 50  0001 C CNN "Price"
+F 5 "C269696" H 2100 3950 50  0001 C CNN "LCSC"
+F 6 "-" H 2100 3950 50  0001 C CNN "Mouser"
+F 7 "N" H 2100 3950 50  0001 C CNN "Sponsored"
+	1    2100 3950
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 6035C296
+P 2100 4150
+AR Path="/6035C296" Ref="R?"  Part="1" 
+AR Path="/612408B6/6035C296" Ref="R68"  Part="1" 
+F 0 "R68" V 2000 4150 50  0000 C CNN
+F 1 "47" V 2100 4150 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 2100 4150 50  0001 C CNN
+F 3 "~" H 2100 4150 50  0001 C CNN
+F 4 "" H 2100 4150 50  0001 C CNN "Price"
+F 5 "C269696" H 2100 4150 50  0001 C CNN "LCSC"
+F 6 "-" H 2100 4150 50  0001 C CNN "Mouser"
+F 7 "N" H 2100 4150 50  0001 C CNN "Sponsored"
+	1    2100 4150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2200 3950 2250 3950
+Wire Wire Line
+	2250 3950 2250 4050
+Wire Wire Line
+	2250 4050 2250 4150
+Wire Wire Line
+	2250 4150 2200 4150
+Connection ~ 2250 4050
+Text HLabel 2000 4150 0    79   Input ~ 0
+DATA_IN2
 $EndSCHEMATC

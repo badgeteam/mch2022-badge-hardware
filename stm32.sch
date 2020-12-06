@@ -374,8 +374,6 @@ Text HLabel 8050 4100 2    50   Output ~ 0
 SPI_MISO
 Text HLabel 8050 4200 2    50   Input ~ 0
 SPI_MOSI
-Text HLabel 1050 4100 0    50   Output ~ 0
-LED_DATA
 Text HLabel 2700 4900 0    50   Output ~ 0
 PWR_LED_ENABLE
 Wire Wire Line
@@ -450,17 +448,6 @@ F 7 "N" H 5300 2200 50  0001 C CNN "Sponsored"
 	1    5300 2200
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:GND #PWR0138
-U 1 1 5F9F3DCC
-P 1350 4300
-F 0 "#PWR0138" H 1350 4050 50  0001 C CNN
-F 1 "GND" H 1355 4127 50  0000 C CNN
-F 2 "" H 1350 4300 50  0001 C CNN
-F 3 "" H 1350 4300 50  0001 C CNN
-	1    1350 4300
-	1    0    0    -1  
-$EndComp
 Wire Notes Line
 	2750 3850 2750 3900
 Wire Notes Line
@@ -478,19 +465,6 @@ Wire Notes Line
 Wire Notes Line
 	2800 4050 2750 4000
 $Comp
-L Connector_Generic:Conn_01x06 J8
-U 1 1 5F5C2047
-P 950 5600
-F 0 "J8" H 1058 5881 50  0000 C CNN
-F 1 "GPIO" H 1058 5790 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 950 5600 50  0001 C CNN
-F 3 "~" H 950 5600 50  0001 C CNN
-F 4 "N" H 950 5600 50  0001 C CNN "Sponsored"
-F 5 "-" H 950 5600 50  0001 C CNN "LCSC"
-	1    950  5600
-	-1   0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR0136
 U 1 1 5F5CB973
 P 1250 6000
@@ -501,21 +475,6 @@ F 3 "" H 1250 6000 50  0001 C CNN
 	1    1250 6000
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:+3.3V #PWR0135
-U 1 1 5F5CC1A1
-P 1250 5300
-F 0 "#PWR0135" H 1250 5150 50  0001 C CNN
-F 1 "+3.3V" H 1265 5473 50  0000 C CNN
-F 2 "" H 1250 5300 50  0001 C CNN
-F 3 "" H 1250 5300 50  0001 C CNN
-	1    1250 5300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1250 5400 1250 5300
-Wire Wire Line
-	1250 5400 1150 5400
 Wire Wire Line
 	1150 5900 1250 5900
 Wire Wire Line
@@ -524,44 +483,6 @@ Wire Wire Line
 	7100 4800 7100 5700
 Wire Wire Line
 	7150 5800 7150 4900
-$Comp
-L vin:VIN #PWR0137
-U 1 1 5F61F3B1
-P 1350 3700
-F 0 "#PWR0137" H 1360 3700 20  0001 C CNN
-F 1 "VIN" H 1350 3796 40  0000 C CNN
-F 2 "" H 1350 3700 60  0001 C CNN
-F 3 "" H 1350 3700 60  0001 C CNN
-	1    1350 3700
-	1    0    0    -1  
-$EndComp
-$Comp
-L dk_Logic-Buffers-Drivers-Receivers-Transceivers:SN74LVC1G125DCKR U10
-U 1 1 5F6503C3
-P 1350 4000
-F 0 "U10" H 1600 4200 60  0000 C CNN
-F 1 "74LVC1G125" H 1800 4100 60  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-353_SC-70-5" H 1550 4200 60  0001 L CNN
-F 3 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fsn74lvc1g125" H 1550 4300 60  0001 L CNN
-F 4 "296-11604-1-ND" H 1550 4400 60  0001 L CNN "Digi-Key_PN"
-F 5 "SN74LVC1G125DCKR" H 1550 4500 60  0001 L CNN "MPN"
-F 6 "Integrated Circuits (ICs)" H 1550 4600 60  0001 L CNN "Category"
-F 7 "Logic - Buffers, Drivers, Receivers, Transceivers" H 1550 4700 60  0001 L CNN "Family"
-F 8 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fsn74lvc1g125" H 1550 4800 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/texas-instruments/SN74LVC1G125DCKR/296-11604-1-ND/385743" H 1550 4900 60  0001 L CNN "DK_Detail_Page"
-F 10 "IC BUF NON-INVERT 5.5V SC70-5" H 1550 5000 60  0001 L CNN "Description"
-F 11 "Texas Instruments" H 1550 5100 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 1550 5200 60  0001 L CNN "Status"
-F 13 "N" H 1350 4000 50  0001 C CNN "Sponsored"
-F 14 "C7833" H 1350 4000 50  0001 C CNN "LCSC"
-F 15 "" H 1350 4000 50  0001 C CNN "Price"
-	1    1350 4000
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	1150 4100 1050 4100
-Wire Wire Line
-	1650 3900 1700 3900
 Wire Wire Line
 	2700 4500 5350 4500
 Wire Notes Line
@@ -652,19 +573,6 @@ Wire Wire Line
 	7000 2350 7000 3900
 Wire Wire Line
 	5350 4400 2700 4400
-$Comp
-L power:GND #PWR0182
-U 1 1 5F8A4D62
-P 1700 4300
-F 0 "#PWR0182" H 1700 4050 50  0001 C CNN
-F 1 "GND" H 1705 4127 50  0000 C CNN
-F 2 "" H 1700 4300 50  0001 C CNN
-F 3 "" H 1700 4300 50  0001 C CNN
-	1    1700 4300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1700 3900 1700 4300
 Text HLabel 2700 3700 0    50   Input ~ 0
 CHARGING
 Wire Wire Line
@@ -675,8 +583,6 @@ Wire Wire Line
 	1150 5800 7150 5800
 Wire Wire Line
 	1150 5700 7100 5700
-Wire Wire Line
-	1650 4100 5350 4100
 Wire Notes Line
 	5450 3000 5700 3000
 Wire Notes Line
@@ -968,15 +874,47 @@ Wire Wire Line
 Text HLabel 2700 3800 0    50   Output ~ 0
 ESP32_WK
 Wire Wire Line
+	5350 4100 2700 4100
+Text HLabel 2700 4100 0    50   Output ~ 0
+LED_DATA
+Wire Wire Line
 	5350 4300 3300 4300
 Wire Wire Line
+	3200 4200 5350 4200
+Wire Wire Line
+	3200 5500 3200 4200
+Wire Wire Line
 	3300 4300 3300 5600
+$Comp
+L power:+3.3V #PWR0135
+U 1 1 5F5CC1A1
+P 1250 5300
+F 0 "#PWR0135" H 1250 5150 50  0001 C CNN
+F 1 "+3.3V" H 1265 5473 50  0000 C CNN
+F 2 "" H 1250 5300 50  0001 C CNN
+F 3 "" H 1250 5300 50  0001 C CNN
+	1    1250 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1250 5400 1250 5300
+Wire Wire Line
+	1250 5400 1150 5400
+$Comp
+L Connector_Generic:Conn_01x06 J8
+U 1 1 5F5C2047
+P 950 5600
+F 0 "J8" H 1058 5881 50  0000 C CNN
+F 1 "GPIO" H 1058 5790 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 950 5600 50  0001 C CNN
+F 3 "~" H 950 5600 50  0001 C CNN
+F 4 "N" H 950 5600 50  0001 C CNN "Sponsored"
+F 5 "-" H 950 5600 50  0001 C CNN "LCSC"
+	1    950  5600
+	-1   0    0    -1  
+$EndComp
 Wire Wire Line
 	3300 5600 1150 5600
 Wire Wire Line
 	1150 5500 3200 5500
-Wire Wire Line
-	3200 5500 3200 4200
-Wire Wire Line
-	3200 4200 5350 4200
 $EndSCHEMATC
