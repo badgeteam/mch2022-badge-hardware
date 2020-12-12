@@ -143,7 +143,7 @@ F 7 "N" H 4950 5550 50  0001 C CNN "Sponsored"
 	1    0    0    -1  
 $EndComp
 Text Notes 600  7650 0    50   ~ 0
-* Bootstrapping pins\nIO 0:Low for UART DL mode, pull high for normal boot\nIO 2: Pull down to select UART DL mode when GPIO 0 is LOW\nIO 12: Selects internal flash/ram voltage. Pull-up for 3.3v, pull-down for 1.8v\nIO 15: Pull down for silent bootloader
+* Bootstrapping pins\nIO 0:Low for UART DL mode, pull high for normal boot\nIO 2: Pull down to select UART DL mode when GPIO 0 is LOW\nIO 12: Selects internal flash/ram voltage. Pull-up for 1.8v, pull-down for 3.3v\nIO 15: Pull down for silent bootloader
 $Comp
 L Device:R R46
 U 1 1 6072151D
@@ -171,32 +171,21 @@ F 3 "" H 4350 5700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3.3V #PWR0170
-U 1 1 60721533
-P 4650 2550
-F 0 "#PWR0170" H 4650 2400 50  0001 C CNN
-F 1 "+3.3V" H 4650 2700 50  0000 C CNN
-F 2 "" H 4650 2550 50  0001 C CNN
-F 3 "" H 4650 2550 50  0001 C CNN
-	1    4650 2550
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R R49
 U 1 1 60721539
-P 4650 2700
-F 0 "R49" V 4550 2700 50  0000 C CNN
-F 1 "4.7k" V 4750 2700 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 4580 2700 50  0001 C CNN
-F 3 "~" H 4650 2700 50  0001 C CNN
-F 4 "" H 4650 2700 50  0001 C CNN "Price"
-F 5 "C23058" H 4650 2700 50  0001 C CNN "LCSC"
-F 6 "-" H 4650 2700 50  0001 C CNN "Mouser"
-F 7 "N" H 4650 2700 50  0001 C CNN "Sponsored"
-	1    4650 2700
+P 4650 5550
+F 0 "R49" V 4550 5550 50  0000 C CNN
+F 1 "4.7k" V 4750 5550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4580 5550 50  0001 C CNN
+F 3 "~" H 4650 5550 50  0001 C CNN
+F 4 "" H 4650 5550 50  0001 C CNN "Price"
+F 5 "C23058" H 4650 5550 50  0001 C CNN "LCSC"
+F 6 "-" H 4650 5550 50  0001 C CNN "Mouser"
+F 7 "N" H 4650 5550 50  0001 C CNN "Sponsored"
+	1    4650 5550
 	1    0    0    -1  
 $EndComp
-Text HLabel 2800 3000 0    39   Input ~ 0
+Text HLabel 2250 3000 0    39   Input ~ 0
 ESP32_EN
 Text HLabel 6700 3100 2    39   Output ~ 0
 ESP32_TX
@@ -218,7 +207,7 @@ Text HLabel 6700 3000 2    39   Input ~ 0
 ESP32_BL
 Text HLabel 6700 5200 2    39   Input ~ 0
 IRQ_TOUCH
-Text HLabel 2800 3200 0    39   Input ~ 0
+Text HLabel 2250 3200 0    39   Input ~ 0
 IRQ_ACCEL
 Text HLabel 6700 3200 2    39   BiDi ~ 0
 SD_D0
@@ -226,10 +215,10 @@ Text HLabel 6700 3800 2    39   Output ~ 0
 SD_CLK
 Text HLabel 6700 3900 2    39   Output ~ 0
 SD_CMD
-Text HLabel 2800 3300 0    39   Input ~ 0
+Text HLabel 2250 3300 0    39   Input ~ 0
 IRQ_FPGA
 Wire Wire Line
-	2800 3000 2850 3000
+	2250 3000 2300 3000
 Text HLabel 6700 4500 2    39   BiDi ~ 0
 I2C_SDA
 Text Notes 3450 3150 0    20   ~ 0
@@ -268,7 +257,7 @@ L Device:R R52
 U 1 1 5F472114
 P 5550 2700
 F 0 "R52" V 5450 2700 50  0000 C CNN
-F 1 "10k" V 5650 2700 50  0000 C CNN
+F 1 "4.7k" V 5650 2700 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 5480 2700 50  0001 C CNN
 F 3 "~" H 5550 2700 50  0001 C CNN
 F 4 "" H 5550 2700 50  0001 C CNN "Price"
@@ -283,7 +272,7 @@ L Device:R R51
 U 1 1 5F47253D
 P 5250 2700
 F 0 "R51" V 5150 2700 50  0000 C CNN
-F 1 "10k" V 5350 2700 50  0000 C CNN
+F 1 "4.7k" V 5350 2700 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 5180 2700 50  0001 C CNN
 F 3 "~" H 5250 2700 50  0001 C CNN
 F 4 "" H 5250 2700 50  0001 C CNN "Price"
@@ -369,11 +358,6 @@ Wire Wire Line
 Connection ~ 4350 3200
 Wire Wire Line
 	4350 3200 4250 3200
-Connection ~ 4650 3600
-Wire Wire Line
-	4650 3600 4250 3600
-Wire Wire Line
-	4650 3600 4650 2850
 Wire Wire Line
 	3650 2800 3650 2550
 Wire Wire Line
@@ -408,7 +392,6 @@ F 3 "" H 2950 2500 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2950 2800 2950 3000
-Connection ~ 2950 3000
 Wire Wire Line
 	2950 3000 3050 3000
 Wire Wire Line
@@ -450,8 +433,6 @@ Wire Wire Line
 Wire Wire Line
 	4250 3300 6650 3300
 Wire Wire Line
-	4250 3700 5850 3700
-Wire Wire Line
 	4250 4200 6650 4200
 Wire Wire Line
 	4250 4300 6650 4300
@@ -460,17 +441,15 @@ Wire Wire Line
 Wire Wire Line
 	4250 4600 6650 4600
 Wire Wire Line
-	4250 4900 6650 4900
-Wire Wire Line
 	4250 5000 6650 5000
 Wire Wire Line
 	4250 5200 6650 5200
 Wire Wire Line
 	4250 5100 6650 5100
 Wire Wire Line
-	4250 4700 6650 4700
+	4250 4700 5850 4700
 Wire Wire Line
-	4250 4800 6650 4800
+	4250 4800 6150 4800
 Wire Wire Line
 	4950 3900 6650 3900
 Wire Wire Line
@@ -520,17 +499,15 @@ Wire Wire Line
 $Comp
 L Connector:TestPoint_Small TP12
 U 1 1 5FC86773
-P 2850 3000
-F 0 "TP12" H 2800 3050 50  0000 L CNN
-F 1 "ESP EN" H 2800 2950 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 3050 3000 50  0001 C CNN
-F 3 "~" H 3050 3000 50  0001 C CNN
-	1    2850 3000
+P 2300 3000
+F 0 "TP12" H 2250 3050 50  0000 L CNN
+F 1 "ESP EN" H 2250 2950 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 2500 3000 50  0001 C CNN
+F 3 "~" H 2500 3000 50  0001 C CNN
+	1    2300 3000
 	1    0    0    -1  
 $EndComp
-Connection ~ 2850 3000
-Wire Wire Line
-	2850 3000 2950 3000
+Connection ~ 2300 3000
 Wire Wire Line
 	4350 3200 6700 3200
 $Comp
@@ -566,9 +543,9 @@ Wire Wire Line
 Wire Wire Line
 	4250 5300 6650 5300
 Wire Wire Line
-	2800 3200 2850 3200
+	2250 3200 2300 3200
 Wire Wire Line
-	2800 3300 2850 3300
+	2250 3300 2300 3300
 $Comp
 L Connector:TestPoint_Small TP33
 U 1 1 5FC8F275
@@ -612,20 +589,6 @@ Connection ~ 6650 5000
 Wire Wire Line
 	6650 5000 6700 5000
 $Comp
-L Connector:TestPoint_Small TP29
-U 1 1 5FC8FA62
-P 6650 4900
-F 0 "TP29" H 6600 4950 50  0000 L CNN
-F 1 "SPI CS FPGA" H 6600 4850 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 6850 4900 50  0001 C CNN
-F 3 "~" H 6850 4900 50  0001 C CNN
-	1    6650 4900
-	1    0    0    -1  
-$EndComp
-Connection ~ 6650 4900
-Wire Wire Line
-	6650 4900 6700 4900
-$Comp
 L Connector:TestPoint_Small TP25
 U 1 1 5FC90344
 P 6650 4300
@@ -656,33 +619,27 @@ Wire Wire Line
 $Comp
 L Connector:TestPoint_Small TP13
 U 1 1 5FC90D64
-P 2850 3200
-F 0 "TP13" H 2800 3250 50  0000 L CNN
-F 1 "IRQ SENSOR" H 2800 3150 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 3050 3200 50  0001 C CNN
-F 3 "~" H 3050 3200 50  0001 C CNN
-	1    2850 3200
+P 2300 3200
+F 0 "TP13" H 2250 3250 50  0000 L CNN
+F 1 "IRQ SENSOR" H 2250 3150 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 2500 3200 50  0001 C CNN
+F 3 "~" H 2500 3200 50  0001 C CNN
+	1    2300 3200
 	1    0    0    -1  
 $EndComp
-Connection ~ 2850 3200
-Wire Wire Line
-	2850 3200 3050 3200
+Connection ~ 2300 3200
 $Comp
 L Connector:TestPoint_Small TP14
 U 1 1 5FC9223F
-P 2850 3300
-F 0 "TP14" H 2800 3350 50  0000 L CNN
-F 1 "IRQ FPGA" H 2800 3250 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 3050 3300 50  0001 C CNN
-F 3 "~" H 3050 3300 50  0001 C CNN
-	1    2850 3300
+P 2300 3300
+F 0 "TP14" H 2250 3350 50  0000 L CNN
+F 1 "IRQ FPGA" H 2250 3250 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 2500 3300 50  0001 C CNN
+F 3 "~" H 2500 3300 50  0001 C CNN
+	1    2300 3300
 	1    0    0    -1  
 $EndComp
-Connection ~ 2850 3300
-Wire Wire Line
-	2850 3300 3050 3300
-Wire Wire Line
-	4650 3600 6650 3600
+Connection ~ 2300 3300
 Wire Wire Line
 	4250 3500 6650 3500
 Wire Wire Line
@@ -749,38 +706,10 @@ Text Notes 4700 3600 0    39   ~ 0
 SD_D2
 Text Notes 4700 3700 0    39   ~ 0
 SD_D3
-Text HLabel 6700 4700 2    39   Output ~ 0
+Text HLabel 6700 3600 2    39   Output ~ 0
 I2S_CLK
-Text HLabel 6700 4800 2    39   Output ~ 0
+Text HLabel 6700 3700 2    39   Output ~ 0
 I2S_DATA
-$Comp
-L Connector:TestPoint_Small TP27
-U 1 1 60022777
-P 6650 4700
-F 0 "TP27" H 6600 4750 50  0000 L CNN
-F 1 "SPI MOSI" H 6600 4650 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 6850 4700 50  0001 C CNN
-F 3 "~" H 6850 4700 50  0001 C CNN
-	1    6650 4700
-	1    0    0    -1  
-$EndComp
-Connection ~ 6650 4700
-Wire Wire Line
-	6650 4700 6700 4700
-$Comp
-L Connector:TestPoint_Small TP28
-U 1 1 60022B94
-P 6650 4800
-F 0 "TP28" H 6600 4850 50  0000 L CNN
-F 1 "SPI MOSI" H 6600 4750 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 6850 4800 50  0001 C CNN
-F 3 "~" H 6850 4800 50  0001 C CNN
-	1    6650 4800
-	1    0    0    -1  
-$EndComp
-Connection ~ 6650 4800
-Wire Wire Line
-	6650 4800 6700 4800
 $Comp
 L Connector:TestPoint_Small TP19
 U 1 1 60024A43
@@ -867,13 +796,120 @@ F 3 "" H 5850 2550 50  0001 C CNN
 	1    5850 2550
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5850 2850 5850 3700
-Connection ~ 5850 3700
-Wire Wire Line
-	5850 3700 6650 3700
-Text HLabel 6700 3600 2    39   Output ~ 0
+Text HLabel 6700 4800 2    39   Output ~ 0
 EXT_I2C_SDA
-Text HLabel 6700 3700 2    39   Output ~ 0
+Text HLabel 6700 4700 2    39   Output ~ 0
 EXT_I2C_SCL
+$Comp
+L power:GND #PWR?
+U 1 1 5FDD9C6F
+P 4650 5700
+F 0 "#PWR?" H 4650 5450 50  0001 C CNN
+F 1 "GND" H 4655 5527 50  0000 C CNN
+F 2 "" H 4650 5700 50  0001 C CNN
+F 3 "" H 4650 5700 50  0001 C CNN
+	1    4650 5700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 3600 4650 3600
+Wire Wire Line
+	4650 5400 4650 3600
+Connection ~ 4650 3600
+Wire Wire Line
+	4650 3600 6650 3600
+Wire Wire Line
+	4250 3700 6650 3700
+Wire Wire Line
+	5850 2850 5850 4700
+Connection ~ 5850 4700
+$Comp
+L Device:R R?
+U 1 1 5FDFAB98
+P 6150 2700
+F 0 "R?" V 6050 2700 50  0000 C CNN
+F 1 "4.7k" V 6250 2700 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 6080 2700 50  0001 C CNN
+F 3 "~" H 6150 2700 50  0001 C CNN
+F 4 "" H 6150 2700 50  0001 C CNN "Price"
+F 5 "C23058" H 6150 2700 50  0001 C CNN "LCSC"
+F 6 "-" H 6150 2700 50  0001 C CNN "Mouser"
+F 7 "N" H 6150 2700 50  0001 C CNN "Sponsored"
+	1    6150 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5FDFB48F
+P 6150 2550
+F 0 "#PWR?" H 6150 2400 50  0001 C CNN
+F 1 "+3.3V" H 6150 2700 50  0000 C CNN
+F 2 "" H 6150 2550 50  0001 C CNN
+F 3 "" H 6150 2550 50  0001 C CNN
+	1    6150 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6150 2850 6150 4800
+Connection ~ 6150 4800
+Wire Wire Line
+	6150 4800 6700 4800
+$Comp
+L Connector:TestPoint_Small TP29
+U 1 1 5FC8FA62
+P 6650 4900
+F 0 "TP29" H 6600 4950 50  0000 L CNN
+F 1 "SPI CS FPGA" H 6600 4850 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 6850 4900 50  0001 C CNN
+F 3 "~" H 6850 4900 50  0001 C CNN
+	1    6650 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6650 4900 6700 4900
+Wire Wire Line
+	4250 4900 6650 4900
+Connection ~ 6650 4900
+Wire Wire Line
+	5850 4700 6700 4700
+$Comp
+L Device:C C?
+U 1 1 5FE0AEBE
+P 2550 3750
+F 0 "C?" H 2665 3796 50  0000 L CNN
+F 1 "100n" H 2665 3705 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2588 3600 50  0001 C CNN
+F 3 "~" H 2550 3750 50  0001 C CNN
+F 4 "C14663" H 2550 3750 50  0001 C CNN "LCSC"
+F 5 "" H 2550 3750 50  0001 C CNN "Price"
+F 6 "-" H 2550 3750 50  0001 C CNN "Mouser"
+F 7 "N" H 2550 3750 50  0001 C CNN "Sponsored"
+	1    2550 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2300 3300 3050 3300
+Wire Wire Line
+	2300 3200 3050 3200
+Connection ~ 2950 3000
+Wire Wire Line
+	2550 3600 2550 3000
+Wire Wire Line
+	2300 3000 2550 3000
+Connection ~ 2550 3000
+Wire Wire Line
+	2550 3000 2950 3000
+$Comp
+L power:GND #PWR?
+U 1 1 5FE22DD7
+P 2550 5700
+F 0 "#PWR?" H 2550 5450 50  0001 C CNN
+F 1 "GND" H 2555 5527 50  0000 C CNN
+F 2 "" H 2550 5700 50  0001 C CNN
+F 3 "" H 2550 5700 50  0001 C CNN
+	1    2550 5700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 3900 2550 5700
 $EndSCHEMATC

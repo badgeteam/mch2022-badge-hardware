@@ -670,13 +670,13 @@ Text HLabel 3250 4250 0    39   Output ~ 0
 LCD_D5
 Text HLabel 3250 3750 0    39   Output ~ 0
 LCD_D1
-Text HLabel 3250 4450 0    39   Output ~ 0
+Text HLabel 3250 4550 0    39   Output ~ 0
 LCD_D6
 Text HLabel 3250 3850 0    39   Output ~ 0
 LCD_D0
-Text HLabel 3250 4550 0    39   Output ~ 0
+Text HLabel 3250 4350 0    39   Output ~ 0
 LCD_D7
-Text HLabel 3250 4350 0    39   Input ~ 0
+Text HLabel 3250 4450 0    39   Input ~ 0
 CLK
 Text HLabel 1750 2800 3    50   UnSpc ~ 0
 IRQ
