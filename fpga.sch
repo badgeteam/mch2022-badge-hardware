@@ -46,16 +46,16 @@ $EndComp
 $Comp
 L FPGA_Lattice:ICE40UP5K-SG48ITR U8
 U 3 1 5F52F020
-P 8200 3700
-F 0 "U8" H 8100 3000 50  0000 L CNN
-F 1 "ICE40UP5K-SG48ITR" H 7800 2900 50  0000 L CNN
-F 2 "Package_DFN_QFN:QFN-48-1EP_7x7mm_P0.5mm_EP5.6x5.6mm" H 8200 2350 50  0001 C CNN
-F 3 "http://www.latticesemi.com/Products/FPGAandCPLD/iCE40Ultra" H 7800 4700 50  0001 C CNN
-F 4 "-" H 8200 3700 50  0001 C CNN "LCSC"
-F 5 "842-40UP5KSG48ITR" H 8200 3700 50  0001 C CNN "Mouser"
-F 6 "" H 8200 3700 50  0001 C CNN "Price"
-F 7 "N" H 8200 3700 50  0001 C CNN "Sponsored"
-	3    8200 3700
+P 9000 3900
+F 0 "U8" H 8900 3200 50  0000 L CNN
+F 1 "ICE40UP5K-SG48ITR" H 8600 3100 50  0000 L CNN
+F 2 "Package_DFN_QFN:QFN-48-1EP_7x7mm_P0.5mm_EP5.6x5.6mm" H 9000 2550 50  0001 C CNN
+F 3 "http://www.latticesemi.com/Products/FPGAandCPLD/iCE40Ultra" H 8600 4900 50  0001 C CNN
+F 4 "-" H 9000 3900 50  0001 C CNN "LCSC"
+F 5 "842-40UP5KSG48ITR" H 9000 3900 50  0001 C CNN "Mouser"
+F 6 "" H 9000 3900 50  0001 C CNN "Price"
+F 7 "N" H 9000 3900 50  0001 C CNN "Sponsored"
+	3    9000 3900
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -322,12 +322,12 @@ RGB0
 $Comp
 L power:+3.3V #PWR0120
 U 1 1 5F32B7AB
-P 8200 3000
-F 0 "#PWR0120" H 8200 2850 50  0001 C CNN
-F 1 "+3.3V" H 8215 3173 50  0000 C CNN
-F 2 "" H 8200 3000 50  0001 C CNN
-F 3 "" H 8200 3000 50  0001 C CNN
-	1    8200 3000
+P 9000 3200
+F 0 "#PWR0120" H 9000 3050 50  0001 C CNN
+F 1 "+3.3V" H 9015 3373 50  0000 C CNN
+F 2 "" H 9000 3200 50  0001 C CNN
+F 3 "" H 9000 3200 50  0001 C CNN
+	1    9000 3200
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -415,22 +415,22 @@ Text GLabel 9350 1650 0    39   3State ~ 0
 SPIRAM_D2
 Text GLabel 9350 1750 0    39   3State ~ 0
 SPIRAM_D3
-Text GLabel 4750 4450 0    39   Output ~ 0
+Text GLabel 4750 4550 0    39   Output ~ 0
 SPIRAM_SCK
-Text GLabel 4750 4550 0    39   3State ~ 0
-SPIRAM_D0
-Text GLabel 4750 4150 0    39   3State ~ 0
-SPIRAM_D1
-Text GLabel 4750 4650 0    39   3State ~ 0
-SPIRAM_D2
 Text GLabel 4750 4250 0    39   3State ~ 0
+SPIRAM_D0
+Text GLabel 4750 4350 0    39   3State ~ 0
+SPIRAM_D1
+Text GLabel 4750 4150 0    39   3State ~ 0
+SPIRAM_D2
+Text GLabel 4750 4450 0    39   3State ~ 0
 SPIRAM_D3
 Text GLabel 9350 1250 0    39   Input ~ 0
 SPIRAM_CS
 Wire Wire Line
 	9450 1250 9350 1250
 Connection ~ 9450 1250
-Text GLabel 4750 4350 0    39   Output ~ 0
+Text GLabel 4750 4650 0    39   Output ~ 0
 SPIRAM_CS
 Wire Wire Line
 	9550 1350 9350 1350
@@ -618,63 +618,48 @@ F 3 "" H 9300 6250 50  0001 C CNN
 $EndComp
 Text HLabel 4750 3950 0    39   Output ~ 0
 IRQ
-Text HLabel 6800 3800 0    50   BiDi ~ 0
+Text HLabel 7100 3800 0    50   BiDi ~ 0
 PMOD_1
-Text HLabel 6800 3600 0    50   BiDi ~ 0
+Text HLabel 7100 3900 0    50   BiDi ~ 0
 PMOD_2
-Text HLabel 6800 4000 0    50   BiDi ~ 0
+Text HLabel 7100 4400 0    50   BiDi ~ 0
 PMOD_4
-Text HLabel 6800 3500 0    50   BiDi ~ 0
-PMOD_6
-Text HLabel 6800 4100 0    50   BiDi ~ 0
+Text HLabel 7100 4300 0    50   BiDi ~ 0
+PMOD_10
+Text HLabel 7100 3700 0    50   BiDi ~ 0
 PMOD_7
 $Comp
 L Device:R_Pack04 RN6
 U 1 1 5FD85945
-P 7000 4000
-F 0 "RN6" V 6700 4000 50  0000 C CNN
-F 1 "47" V 6600 4000 50  0000 C CNN
-F 2 "Resistor_SMD:R_Array_Convex_4x0603" V 7275 4000 50  0001 C CNN
-F 3 "~" H 7000 4000 50  0001 C CNN
-F 4 "C327045" H 7000 4000 50  0001 C CNN "LCSC"
-F 5 "-" H 7000 4000 50  0001 C CNN "Mouser"
-F 6 "" H 7000 4000 50  0001 C CNN "Price"
-F 7 "N" H 7000 4000 50  0001 C CNN "Sponsored"
-	1    7000 4000
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R_Pack04 RN5
-U 1 1 5FD84D43
-P 7000 3700
-F 0 "RN5" V 6583 3700 50  0000 C CNN
-F 1 "47" V 6674 3700 50  0000 C CNN
-F 2 "Resistor_SMD:R_Array_Convex_4x0603" V 7275 3700 50  0001 C CNN
-F 3 "~" H 7000 3700 50  0001 C CNN
-F 4 "C327045" H 7000 3700 50  0001 C CNN "LCSC"
-F 5 "-" H 7000 3700 50  0001 C CNN "Mouser"
-F 6 "" H 7000 3700 50  0001 C CNN "Price"
-F 7 "N" H 7000 3700 50  0001 C CNN "Sponsored"
-	1    7000 3700
+P 7300 4300
+F 0 "RN6" V 7500 4300 50  0000 C CNN
+F 1 "47" V 7600 4300 50  0000 C CNN
+F 2 "Resistor_SMD:R_Array_Convex_4x0603" V 7575 4300 50  0001 C CNN
+F 3 "~" H 7300 4300 50  0001 C CNN
+F 4 "C327045" H 7300 4300 50  0001 C CNN "LCSC"
+F 5 "-" H 7300 4300 50  0001 C CNN "Mouser"
+F 6 "" H 7300 4300 50  0001 C CNN "Price"
+F 7 "N" H 7300 4300 50  0001 C CNN "Sponsored"
+	1    7300 4300
 	0    1    1    0   
 $EndComp
-Text HLabel 6800 3900 0    50   BiDi ~ 0
+Text HLabel 7100 4000 0    50   BiDi ~ 0
 PMOD_8
-Text HLabel 3250 4050 0    39   Output ~ 0
-LCD_D3
 Text HLabel 3250 4150 0    39   Output ~ 0
-LCD_D4
-Text HLabel 3250 3950 0    39   Output ~ 0
-LCD_D2
+LCD_D3
 Text HLabel 3250 4250 0    39   Output ~ 0
+LCD_D4
+Text HLabel 3250 4050 0    39   Output ~ 0
+LCD_D2
+Text HLabel 3250 4350 0    39   Output ~ 0
 LCD_D5
 Text HLabel 3250 3750 0    39   Output ~ 0
 LCD_D1
-Text HLabel 3250 4550 0    39   Output ~ 0
+Text HLabel 3250 4750 0    39   Output ~ 0
 LCD_D6
 Text HLabel 3250 3850 0    39   Output ~ 0
 LCD_D0
-Text HLabel 3250 4350 0    39   Output ~ 0
+Text HLabel 3250 4850 0    39   Output ~ 0
 LCD_D7
 Text HLabel 3250 4450 0    39   Input ~ 0
 CLK
@@ -717,56 +702,10 @@ F 3 "" H 9300 6050 50  0001 C CNN
 	1    9300 6050
 	1    0    0    -1  
 $EndComp
-Text HLabel 6800 3700 0    50   BiDi ~ 0
-PMOD_5
-Text HLabel 6800 4200 0    50   BiDi ~ 0
+Text HLabel 7100 4100 0    50   BiDi ~ 0
+PMOD_9
+Text HLabel 7100 4200 0    50   BiDi ~ 0
 PMOD_3
-Wire Wire Line
-	7200 3800 7350 3800
-Wire Wire Line
-	7350 3800 7550 4100
-Wire Wire Line
-	7550 4100 7800 4100
-Wire Wire Line
-	7800 4200 7700 4200
-Wire Wire Line
-	7350 3700 7200 3700
-Wire Wire Line
-	7350 3700 7700 4200
-Wire Wire Line
-	7800 4000 7650 4000
-Wire Wire Line
-	7650 4000 7400 3600
-Wire Wire Line
-	7400 3600 7200 3600
-Wire Wire Line
-	7800 3800 7650 3800
-Wire Wire Line
-	7650 3800 7450 3500
-Wire Wire Line
-	7450 3500 7200 3500
-Wire Wire Line
-	7800 3600 7700 3600
-Wire Wire Line
-	7700 3600 7350 4200
-Wire Wire Line
-	7350 4200 7200 4200
-Wire Wire Line
-	7650 3500 7300 4100
-Wire Wire Line
-	7300 4100 7200 4100
-Wire Wire Line
-	7650 3500 7800 3500
-Wire Wire Line
-	7800 3900 7350 3900
-Wire Wire Line
-	7350 3900 7250 4000
-Wire Wire Line
-	7250 4000 7200 4000
-Wire Wire Line
-	7400 3700 7800 3700
-Wire Wire Line
-	7200 3900 7400 3700
 Text HLabel 3250 5150 0    39   Output ~ 0
 RGB2
 Text HLabel 3250 5050 0    39   Output ~ 0
@@ -810,12 +749,89 @@ F 3 "" H 1800 1100 50  0001 C CNN
 	1    1800 1100
 	0    -1   -1   0   
 $EndComp
-Text Notes 7500 4150 3    50   ~ 0
-Sorry, will clean this up later :-)
-Text HLabel 3250 4650 0    39   Output ~ 0
+Text HLabel 3250 4550 0    39   Output ~ 0
 I2S_DATA
-Text HLabel 3250 4750 0    39   Output ~ 0
+Text HLabel 3250 3950 0    39   Output ~ 0
 I2S_CLK
-Text HLabel 3250 4850 0    39   Output ~ 0
+Text HLabel 3250 4650 0    39   Output ~ 0
 I2S_LR
+$Comp
+L Device:R_Pack04 RN5
+U 1 1 5FD84D43
+P 7300 3900
+F 0 "RN5" V 6900 3900 50  0000 C CNN
+F 1 "47" V 7000 3900 50  0000 C CNN
+F 2 "Resistor_SMD:R_Array_Convex_4x0603" V 7575 3900 50  0001 C CNN
+F 3 "~" H 7300 3900 50  0001 C CNN
+F 4 "C327045" H 7300 3900 50  0001 C CNN "LCSC"
+F 5 "-" H 7300 3900 50  0001 C CNN "Mouser"
+F 6 "" H 7300 3900 50  0001 C CNN "Price"
+F 7 "N" H 7300 3900 50  0001 C CNN "Sponsored"
+	1    7300 3900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7500 3700 7900 3700
+Wire Wire Line
+	7500 3800 7900 3800
+Wire Wire Line
+	7500 3900 7900 3900
+Wire Wire Line
+	7500 4000 7900 4000
+Wire Wire Line
+	7500 4100 7900 4100
+Wire Wire Line
+	7500 4200 7900 4200
+Wire Wire Line
+	7500 4300 7900 4300
+Wire Wire Line
+	7500 4400 7900 4400
+Wire Wire Line
+	8600 3700 8200 3700
+Wire Wire Line
+	8600 3800 8200 3800
+Wire Wire Line
+	8600 3900 8200 3900
+Wire Wire Line
+	8600 4000 8200 4000
+Wire Wire Line
+	8600 4100 8200 4100
+Wire Wire Line
+	8600 4200 8200 4200
+Wire Wire Line
+	8600 4300 8200 4300
+Wire Wire Line
+	8600 4400 8200 4400
+Text Label 7900 3700 2    50   ~ 0
+PMOD_7i
+Text Label 7900 3800 2    50   ~ 0
+PMOD_1i
+Text Label 7900 3900 2    50   ~ 0
+PMOD_2i
+Text Label 7900 4000 2    50   ~ 0
+PMOD_8i
+Text Label 7900 4100 2    50   ~ 0
+PMOD_9i
+Text Label 7900 4200 2    50   ~ 0
+PMOD_3i
+Text Label 7900 4300 2    50   ~ 0
+PMOD_10i
+Text Label 7900 4400 2    50   ~ 0
+PMOD_4i
+Text Label 8200 3800 0    50   ~ 0
+PMOD_1i
+Text Label 8200 3900 0    50   ~ 0
+PMOD_7i
+Text Label 8200 4000 0    50   ~ 0
+PMOD_2i
+Text Label 8200 4100 0    50   ~ 0
+PMOD_8i
+Text Label 8200 4300 0    50   ~ 0
+PMOD_3i
+Text Label 8200 4400 0    50   ~ 0
+PMOD_9i
+Text Label 8200 3700 0    50   ~ 0
+PMOD_10i
+Text Label 8200 4200 0    50   ~ 0
+PMOD_4i
 $EndSCHEMATC
