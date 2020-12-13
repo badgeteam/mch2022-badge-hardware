@@ -2,4 +2,5 @@
   (lib (name mch2021-rescue)(type Legacy)(uri ${KIPRJMOD}/mch2021-rescue.lib)(options "")(descr ""))
   (lib (name JS1400BFQ)(type Legacy)(uri ${KIPRJMOD}/JS1400BFQ.lib)(options "")(descr ""))
   (lib (name Simple_Addon_v2)(type Legacy)(uri ${KIPRJMOD}/SAOv2/Simple_Addon_v2.lib)(options "")(descr ""))
+  (lib (name L_Core_Ferrite_Coupled_Small_GND)(type Legacy)(uri ${KIPRJMOD}/L_Core_Ferrite_Coupled_Small_GND.lib)(options "")(descr ""))
 )
