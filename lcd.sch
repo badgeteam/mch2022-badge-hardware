@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 3 9
 Title "MCH2021 badge - LCD"
-Date "2020-11-29"
+Date "2020-12-13"
 Rev "2"
 Comp "BADGE.TEAM"
 Comment1 ""
