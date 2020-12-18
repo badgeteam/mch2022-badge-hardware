@@ -407,7 +407,7 @@ F25 "CHARGING" I L 3650 750 50
 F26 "SENSE_VBAT" I L 3650 850 50 
 F27 "SENSE_VUSB" I L 3650 950 50 
 F28 "PWR_SDCARD_ENABLE" O L 3650 1150 50 
-F29 "USB_DET" I L 3650 1600 50 
+F29 "USB_DET" I L 3650 1550 50 
 F30 "ESP32_WK" O R 5400 2250 50 
 F31 "LED_DATA" O L 3650 1400 50 
 $EndSheet
@@ -1587,16 +1587,12 @@ F 7 "N" H 1800 1400 50  0001 C CNN "Sponsored"
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	2200 3100 2500 3100
+	2200 3100 2450 3100
 Wire Wire Line
 	2200 3000 2200 3100
 Connection ~ 1700 1300
 Wire Wire Line
 	1700 1150 1700 1300
-Wire Wire Line
-	2150 1150 1700 1150
-Wire Wire Line
-	2150 1600 2150 1150
 Wire Wire Line
 	2550 1400 3650 1400
 Wire Wire Line
@@ -1636,7 +1632,7 @@ L dk_TVS-Diodes:USBLC6-4SC6 D10
 U 1 1 5F4F4DAF
 P 2000 2500
 F 0 "D10" H 1750 2900 60  0000 R CNN
-F 1 "USBLC6-4SC6" H 2250 2050 60  0000 R CNN
+F 1 "USBLC6-4SC6" H 2300 1950 60  0000 R CNN
 F 2 "digikey-footprints:SOT23-6L" H 2200 2700 60  0001 L CNN
 F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/9a/e6/1c/4f/b6/9a/44/e6/CD00047494.pdf/files/CD00047494.pdf/jcr:content/translations/en.CD00047494.pdf" H 2200 2800 60  0001 L CNN
 F 4 "497-4492-1-ND" H 2200 2900 60  0001 L CNN "Digi-Key_PN"
@@ -1775,9 +1771,7 @@ F5 "PWR_LED_ENABLE" I R 3550 1050 50
 F6 "PWR_SDCARD_ENABLE" I R 3550 1150 50 
 $EndSheet
 Wire Wire Line
-	3650 1800 2750 1800
-Wire Wire Line
-	1800 1700 2550 1700
+	3650 1800 2800 1800
 $Comp
 L L_Core_Ferrite_Coupled_Small_GND:L_Core_Ferrite_Coupled_Small_GND L?
 U 1 1 5FE1DDB4
@@ -1790,13 +1784,6 @@ F 4 "C315726" H 2650 1750 50  0001 C CNN "LCSC"
 	1    2650 1750
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2500 1600 2500 3100
-Connection ~ 2500 1600
-Wire Wire Line
-	2500 1600 2150 1600
-Wire Wire Line
-	2500 1600 3650 1600
 $Comp
 L power:GND #PWR?
 U 1 1 5FE5FD21
@@ -1809,16 +1796,16 @@ F 3 "" H 2650 3000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2750 1700 3650 1700
+	2750 1700 2800 1700
 Wire Wire Line
-	2550 1800 2200 1800
+	2550 1800 2500 1800
 Wire Wire Line
 	2650 3000 2650 1950
 $Comp
 L Device:L_Core_Ferrite_Coupled_Small_1243 L?
 U 1 1 5FE90F71
 P 1050 2850
-F 0 "L?" V 1050 2944 50  0000 L CNN
+F 0 "L?" V 1250 2600 50  0000 L CNN
 F 1 "L_Core_Ferrite_Coupled_Small_1243" V 1095 2944 50  0001 L CNN
 F 2 "" H 1050 2850 50  0001 C CNN
 F 3 "~" H 1050 2850 50  0001 C CNN
@@ -1832,15 +1819,124 @@ VUSB_EXT
 Wire Wire Line
 	1200 2550 1100 2550
 Wire Wire Line
-	1100 2550 1100 2750
+	1100 2550 1100 2700
 Wire Wire Line
-	1000 2600 1000 2750
+	1000 2600 1000 2700
 Wire Wire Line
-	1000 2950 1000 3050
+	1000 2950 1000 3000
+$Comp
+L Device:Jumper_NO_Small JP?
+U 1 1 5FF4CB69
+P 2650 1600
+F 0 "JP?" H 2400 1650 50  0000 C CNN
+F 1 "Jumper_NO_Small" H 2650 1506 50  0001 C CNN
+F 2 "" H 2650 1600 50  0001 C CNN
+F 3 "~" H 2650 1600 50  0001 C CNN
+	1    2650 1600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1700 1150 2450 1150
+$Comp
+L Device:Jumper_NO_Small JP?
+U 1 1 5FFB3A8B
+P 2650 1950
+F 0 "JP?" H 2400 1850 50  0000 C CNN
+F 1 "Jumper_NO_Small" H 2650 1856 50  0001 C CNN
+F 2 "" H 2650 1950 50  0001 C CNN
+F 3 "~" H 2650 1950 50  0001 C CNN
+	1    2650 1950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1800 1700 2500 1700
+Wire Wire Line
+	2450 3100 2450 1550
+Wire Wire Line
+	2500 1700 2500 1600
+Wire Wire Line
+	2500 1600 2550 1600
+Connection ~ 2500 1700
+Wire Wire Line
+	2500 1700 2550 1700
+Wire Wire Line
+	2500 1800 2500 1950
+Wire Wire Line
+	2500 1950 2550 1950
+Connection ~ 2500 1800
+Wire Wire Line
+	2500 1800 2200 1800
+Wire Wire Line
+	2750 1950 2800 1950
+Wire Wire Line
+	2800 1950 2800 1800
+Connection ~ 2800 1800
+Wire Wire Line
+	2800 1800 2750 1800
+Wire Wire Line
+	2800 1700 2800 1600
+Wire Wire Line
+	2800 1600 2750 1600
+Connection ~ 2800 1700
+Wire Wire Line
+	2800 1700 3650 1700
+Wire Wire Line
+	3650 1550 2450 1550
+Connection ~ 2450 1550
+Wire Wire Line
+	2450 1150 2450 1550
+$Comp
+L Device:Jumper_NO_Small JP?
+U 1 1 600F350C
+P 900 2850
+F 0 "JP?" H 900 2950 50  0000 C CNN
+F 1 "Jumper_NO_Small" H 900 2756 50  0001 C CNN
+F 2 "" H 900 2850 50  0001 C CNN
+F 3 "~" H 900 2850 50  0001 C CNN
+	1    900  2850
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	900  2750 900  2700
+Wire Wire Line
+	900  2700 1000 2700
+Connection ~ 1000 2700
+Wire Wire Line
+	1000 2700 1000 2750
+Wire Wire Line
+	900  2950 900  3000
+Wire Wire Line
+	900  3000 1000 3000
+Connection ~ 1000 3000
+Wire Wire Line
+	1000 3000 1000 3050
+$Comp
+L Device:Jumper_NO_Small JP?
+U 1 1 60139684
+P 1150 2850
+F 0 "JP?" H 1150 2950 50  0000 C CNN
+F 1 "Jumper_NO_Small" H 1150 2756 50  0001 C CNN
+F 2 "" H 1150 2850 50  0001 C CNN
+F 3 "~" H 1150 2850 50  0001 C CNN
+	1    1150 2850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1150 2750 1150 2700
+Wire Wire Line
+	1150 2700 1100 2700
+Connection ~ 1100 2700
+Wire Wire Line
+	1100 2700 1100 2750
 Wire Wire Line
 	1350 2750 1350 3000
 Wire Wire Line
-	1350 3000 1100 3000
+	1150 2950 1150 3000
 Wire Wire Line
-	1100 3000 1100 2950
+	1100 2950 1100 3000
+Wire Wire Line
+	1150 3000 1100 3000
+Wire Wire Line
+	1150 3000 1350 3000
+Connection ~ 1150 3000
 $EndSCHEMATC
