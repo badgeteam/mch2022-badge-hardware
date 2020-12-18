@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 9
+Sheet 8 9
 Title ""
 Date "2020-12-13"
 Rev "2"
@@ -309,19 +309,6 @@ F 15 "" H 3150 3950 50  0001 C CNN "Price"
 	1    0    0    -1  
 $EndComp
 $Comp
-L vin:VIN #PWR?
-U 1 1 60345F4A
-P 3150 3650
-AR Path="/5F51E414/60345F4A" Ref="#PWR?"  Part="1" 
-AR Path="/612408B6/60345F4A" Ref="#PWR0212"  Part="1" 
-F 0 "#PWR0212" H 3160 3650 20  0001 C CNN
-F 1 "VIN" H 3150 3746 40  0000 C CNN
-F 2 "" H 3150 3650 60  0001 C CNN
-F 3 "" H 3150 3650 60  0001 C CNN
-	1    3150 3650
-	-1   0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR?
 U 1 1 60345F44
 P 3150 4350
@@ -387,4 +374,6 @@ Wire Wire Line
 Connection ~ 2250 4050
 Text HLabel 2000 4150 0    79   Input ~ 0
 DATA_IN2
+Text GLabel 3150 3650 1    39   Input ~ 0
+PWR_LED
 $EndSCHEMATC

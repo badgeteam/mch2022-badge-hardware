@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 9
+Sheet 9 9
 Title "MCH2021 badge - Power management"
 Date "2020-12-13"
 Rev "2"

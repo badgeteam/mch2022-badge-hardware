@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 9
 Title "MCH2021 badge - Overview"
-Date "2020-12-13"
+Date "2020-12-18"
 Rev "2"
 Comp "BADGE.TEAM"
 Comment1 ""
@@ -13,88 +13,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Sheet
-S 2600 650  950  600 
-U 60C789DE
-F0 "POWER" 50
-F1 "power.sch" 50
-F2 "CHARGING" O R 3550 750 50 
-F3 "SENSE_VBAT" O R 3550 850 50 
-F4 "SENSE_VUSB" O R 3550 950 50 
-F5 "PWR_LED_ENABLE" I R 3550 1050 50 
-F6 "PWR_SDCARD_ENABLE" I R 3550 1150 50 
-$EndSheet
-$Comp
-L power:GND #PWR04
-U 1 1 5E9E7D43
-P 1000 2600
-F 0 "#PWR04" H 1000 2350 50  0001 C CNN
-F 1 "GND" H 1005 2427 50  0000 C CNN
-F 2 "" H 1000 2600 50  0001 C CNN
-F 3 "" H 1000 2600 50  0001 C CNN
-	1    1000 2600
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small R1
-U 1 1 5E9EB87A
-P 1800 1300
-F 0 "R1" V 1700 1300 50  0000 C CNN
-F 1 "5k1" V 1800 1300 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 1800 1300 50  0001 C CNN
-F 3 "~" H 1800 1300 50  0001 C CNN
-F 4 "" H 1800 1300 50  0001 C CNN "Price"
-F 5 "C269696" H 1800 1300 50  0001 C CNN "LCSC"
-F 6 "-" H 1800 1300 50  0001 C CNN "Mouser"
-F 7 "N" H 1800 1300 50  0001 C CNN "Sponsored"
-	1    1800 1300
-	0    1    1    0   
-$EndComp
-Text Label 1600 1300 0    20   ~ 0
-CC1
-Text Label 1600 1400 0    20   ~ 0
-CC2
-Wire Wire Line
-	1600 1400 1700 1400
-Wire Wire Line
-	1600 1300 1700 1300
-Wire Wire Line
-	2000 1400 2000 1300
-Wire Wire Line
-	1900 1400 2000 1400
-Wire Wire Line
-	2000 1300 1900 1300
-Connection ~ 2000 1400
-Wire Wire Line
-	2000 1450 2000 1400
-$Comp
-L power:GND #PWR09
-U 1 1 5E9FE4E2
-P 2000 1450
-F 0 "#PWR09" H 2000 1200 50  0001 C CNN
-F 1 "GND" H 2005 1277 50  0000 C CNN
-F 2 "" H 2000 1450 50  0001 C CNN
-F 3 "" H 2000 1450 50  0001 C CNN
-	1    2000 1450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1600 1700 1800 1700
-$Comp
-L vusb:VUSB #PWR07
-U 1 1 5FCD69E4
-P 1650 1050
-F 0 "#PWR07" H 1660 1050 20  0001 C CNN
-F 1 "VUSB" H 1650 1146 40  0000 C CNN
-F 2 "" H 1650 1050 60  0001 C CNN
-F 3 "" H 1650 1050 60  0001 C CNN
-	1    1650 1050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1600 1100 1650 1100
-Wire Wire Line
-	1650 1100 1650 1050
 Connection ~ 6500 1550
 Connection ~ 6300 1750
 Wire Wire Line
@@ -107,12 +25,6 @@ Wire Wire Line
 Connection ~ 5850 1350
 Wire Wire Line
 	5850 1350 6900 1350
-Wire Wire Line
-	1600 1800 1600 1900
-Wire Wire Line
-	3650 1800 2200 1800
-Wire Wire Line
-	1600 1600 1600 1700
 Wire Wire Line
 	3650 2250 2850 2250
 $Comp
@@ -238,23 +150,6 @@ Wire Wire Line
 	9200 3500 9200 4850
 Wire Wire Line
 	9000 3300 9000 4650
-Connection ~ 1600 1700
-Connection ~ 1600 1800
-$Comp
-L Connector:USB_C_Receptacle_USB2.0 J1
-U 1 1 5E94CF38
-P 1000 1700
-F 0 "J1" H 1107 2567 50  0000 C CNN
-F 1 "USB_C_Receptacle_USB2.0" H 1107 2476 50  0000 C CNN
-F 2 "Connector_USB:USB_C_Receptacle_HRO_TYPE-C-31-M-12" H 1150 1700 50  0001 C CNN
-F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 1150 1700 50  0001 C CNN
-F 4 "C165948" H 1000 1700 50  0001 C CNN "LCSC"
-F 5 "-" H 1000 1700 50  0001 C CNN "Mouser"
-F 6 "" H 1000 1700 50  0001 C CNN "Price"
-F 7 "N" H 1000 1700 50  0001 C CNN "Sponsored"
-	1    1000 1700
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2850 4400 2850 2250
 Wire Wire Line
@@ -302,26 +197,6 @@ Wire Wire Line
 	6750 5250 6900 5250
 Wire Wire Line
 	6900 5350 6750 5350
-$Sheet
-S 1600 650  900  200 
-U 612408B6
-F0 "LED" 39
-F1 "led.sch" 39
-F2 "DATA_OUT" O L 1600 700 50 
-F3 "DATA_IN1" I R 2500 700 50 
-F4 "DATA_IN2" I R 2500 800 50 
-$EndSheet
-$Comp
-L power:GND #PWR02
-U 1 1 5F329148
-P 700 2600
-F 0 "#PWR02" H 700 2350 50  0001 C CNN
-F 1 "GND" H 705 2427 50  0000 C CNN
-F 2 "" H 700 2600 50  0001 C CNN
-F 3 "" H 700 2600 50  0001 C CNN
-	1    700  2600
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5400 4000 6050 4000
 Wire Wire Line
@@ -576,50 +451,6 @@ Wire Wire Line
 	6900 1850 5400 1850
 Wire Wire Line
 	6900 4750 6200 4750
-$Comp
-L dk_TVS-Diodes:USBLC6-4SC6 D10
-U 1 1 5F4F4DAF
-P 2000 2500
-F 0 "D10" H 1750 2900 60  0000 R CNN
-F 1 "USBLC6-4SC6" H 2250 2050 60  0000 R CNN
-F 2 "digikey-footprints:SOT23-6L" H 2200 2700 60  0001 L CNN
-F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/9a/e6/1c/4f/b6/9a/44/e6/CD00047494.pdf/files/CD00047494.pdf/jcr:content/translations/en.CD00047494.pdf" H 2200 2800 60  0001 L CNN
-F 4 "497-4492-1-ND" H 2200 2900 60  0001 L CNN "Digi-Key_PN"
-F 5 "USBLC6-4SC6" H 2200 3000 60  0001 L CNN "MPN"
-F 6 "Circuit Protection" H 2200 3100 60  0001 L CNN "Category"
-F 7 "TVS - Diodes" H 2200 3200 60  0001 L CNN "Family"
-F 8 "http://www.st.com/content/ccc/resource/technical/document/datasheet/9a/e6/1c/4f/b6/9a/44/e6/CD00047494.pdf/files/CD00047494.pdf/jcr:content/translations/en.CD00047494.pdf" H 2200 3300 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/stmicroelectronics/USBLC6-4SC6/497-4492-1-ND/725667" H 2200 3400 60  0001 L CNN "DK_Detail_Page"
-F 10 "TVS DIODE 5.25V 17V SOT23-6" H 2200 3500 60  0001 L CNN "Description"
-F 11 "STMicroelectronics" H 2200 3600 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 2200 3700 60  0001 L CNN "Status"
-F 13 "C558419" H 2000 2500 50  0001 C CNN "LCSC"
-F 14 "N" H 2000 2500 50  0001 C CNN "Sponsored"
-	1    2000 2500
-	0    -1   -1   0   
-$EndComp
-$Comp
-L vusb:VUSB #PWR0177
-U 1 1 5F50A06B
-P 2000 2000
-F 0 "#PWR0177" H 2010 2000 20  0001 C CNN
-F 1 "VUSB" H 2000 2096 40  0000 C CNN
-F 2 "" H 2000 2000 60  0001 C CNN
-F 3 "" H 2000 2000 60  0001 C CNN
-	1    2000 2000
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0178
-U 1 1 5F5141F6
-P 2000 3000
-F 0 "#PWR0178" H 2000 2750 50  0001 C CNN
-F 1 "GND" H 2005 2827 50  0000 C CNN
-F 2 "" H 2000 3000 50  0001 C CNN
-F 3 "" H 2000 3000 50  0001 C CNN
-	1    2000 3000
-	1    0    0    -1  
-$EndComp
 $Sheet
 S 6900 4400 1700 2000
 U 5F526357
@@ -661,8 +492,6 @@ F34 "I2S_DATA" O L 6900 6050 50
 F35 "I2S_CLK" O L 6900 6150 50 
 F36 "I2S_LR" O L 6900 6250 50 
 $EndSheet
-NoConn ~ 1600 2200
-NoConn ~ 1600 2300
 Wire Wire Line
 	9150 1750 9150 2150
 $Comp
@@ -934,16 +763,6 @@ Wire Wire Line
 	3650 2550 3250 2550
 Wire Wire Line
 	3650 2450 3150 2450
-Connection ~ 2200 1800
-Wire Wire Line
-	1600 1800 2200 1800
-Connection ~ 1800 1700
-Wire Wire Line
-	1800 1700 3650 1700
-Wire Wire Line
-	2200 1800 2200 2000
-Wire Wire Line
-	1800 1700 1800 2000
 Wire Wire Line
 	6900 4950 3550 4950
 Wire Wire Line
@@ -955,46 +774,13 @@ Wire Wire Line
 Wire Wire Line
 	2500 700  2550 700 
 Wire Wire Line
-	2550 1400 3650 1400
-Wire Wire Line
-	2150 1600 2150 1150
-Wire Wire Line
-	2150 1150 1700 1150
-Wire Wire Line
-	1700 1150 1700 1300
-Connection ~ 1700 1300
-Wire Wire Line
 	3250 2550 3250 5650
 Wire Wire Line
 	3250 5650 6900 5650
 Wire Wire Line
 	3150 2450 3150 5550
 Wire Wire Line
-	2200 3000 2200 3100
-Wire Wire Line
-	2200 3100 2600 3100
-Wire Wire Line
-	2600 3100 2600 1600
-Connection ~ 2600 1600
-Wire Wire Line
-	2600 1600 2150 1600
-Wire Wire Line
 	8600 2600 9900 2600
-$Comp
-L Device:R_Small R2
-U 1 1 5E9EADAA
-P 1800 1400
-F 0 "R2" V 1900 1400 50  0000 C CNN
-F 1 "5k1" V 1800 1400 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 1800 1400 50  0001 C CNN
-F 3 "~" H 1800 1400 50  0001 C CNN
-F 4 "" H 1800 1400 50  0001 C CNN "Price"
-F 5 "C269696" H 1800 1400 50  0001 C CNN "LCSC"
-F 6 "-" H 1800 1400 50  0001 C CNN "Mouser"
-F 7 "N" H 1800 1400 50  0001 C CNN "Sponsored"
-	1    1800 1400
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	5450 6150 5550 6150
 $Comp
@@ -1044,8 +830,6 @@ Wire Wire Line
 Connection ~ 3550 3200
 Wire Wire Line
 	3550 3200 3550 3900
-Wire Wire Line
-	3650 1600 2600 1600
 $Comp
 L Connector:TestPoint_Small TP1
 U 1 1 5FCA324A
@@ -1652,10 +1436,7 @@ Wire Wire Line
 Wire Wire Line
 	2550 500  2550 700 
 Wire Wire Line
-	2550 1400 2550 800 
-Wire Wire Line
 	2550 800  2500 800 
-Connection ~ 2550 800 
 $Comp
 L Connector:TestPoint_Small TP2
 U 1 1 6037DA85
@@ -1787,4 +1568,279 @@ Text GLabel 10800 3500 1    50   BiDi ~ 0
 SAO0
 Text GLabel 10800 4600 3    50   BiDi ~ 0
 SAO1
+Connection ~ 2550 800 
+Wire Wire Line
+	2550 1400 2550 800 
+$Comp
+L Device:R_Small R2
+U 1 1 5E9EADAA
+P 1800 1400
+F 0 "R2" V 1900 1400 50  0000 C CNN
+F 1 "5k1" V 1800 1400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 1800 1400 50  0001 C CNN
+F 3 "~" H 1800 1400 50  0001 C CNN
+F 4 "" H 1800 1400 50  0001 C CNN "Price"
+F 5 "C269696" H 1800 1400 50  0001 C CNN "LCSC"
+F 6 "-" H 1800 1400 50  0001 C CNN "Mouser"
+F 7 "N" H 1800 1400 50  0001 C CNN "Sponsored"
+	1    1800 1400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2200 3100 2500 3100
+Wire Wire Line
+	2200 3000 2200 3100
+Connection ~ 1700 1300
+Wire Wire Line
+	1700 1150 1700 1300
+Wire Wire Line
+	2150 1150 1700 1150
+Wire Wire Line
+	2150 1600 2150 1150
+Wire Wire Line
+	2550 1400 3650 1400
+Wire Wire Line
+	1800 1700 1800 2000
+Wire Wire Line
+	2200 1800 2200 2000
+Connection ~ 1800 1700
+Wire Wire Line
+	1600 1800 2200 1800
+Connection ~ 2200 1800
+NoConn ~ 1600 2300
+NoConn ~ 1600 2200
+$Comp
+L power:GND #PWR0178
+U 1 1 5F5141F6
+P 2000 3000
+F 0 "#PWR0178" H 2000 2750 50  0001 C CNN
+F 1 "GND" H 2005 2827 50  0000 C CNN
+F 2 "" H 2000 3000 50  0001 C CNN
+F 3 "" H 2000 3000 50  0001 C CNN
+	1    2000 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L vusb:VUSB #PWR0177
+U 1 1 5F50A06B
+P 2000 2000
+F 0 "#PWR0177" H 2010 2000 20  0001 C CNN
+F 1 "VUSB" H 2000 2096 40  0000 C CNN
+F 2 "" H 2000 2000 60  0001 C CNN
+F 3 "" H 2000 2000 60  0001 C CNN
+	1    2000 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L dk_TVS-Diodes:USBLC6-4SC6 D10
+U 1 1 5F4F4DAF
+P 2000 2500
+F 0 "D10" H 1750 2900 60  0000 R CNN
+F 1 "USBLC6-4SC6" H 2250 2050 60  0000 R CNN
+F 2 "digikey-footprints:SOT23-6L" H 2200 2700 60  0001 L CNN
+F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/9a/e6/1c/4f/b6/9a/44/e6/CD00047494.pdf/files/CD00047494.pdf/jcr:content/translations/en.CD00047494.pdf" H 2200 2800 60  0001 L CNN
+F 4 "497-4492-1-ND" H 2200 2900 60  0001 L CNN "Digi-Key_PN"
+F 5 "USBLC6-4SC6" H 2200 3000 60  0001 L CNN "MPN"
+F 6 "Circuit Protection" H 2200 3100 60  0001 L CNN "Category"
+F 7 "TVS - Diodes" H 2200 3200 60  0001 L CNN "Family"
+F 8 "http://www.st.com/content/ccc/resource/technical/document/datasheet/9a/e6/1c/4f/b6/9a/44/e6/CD00047494.pdf/files/CD00047494.pdf/jcr:content/translations/en.CD00047494.pdf" H 2200 3300 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/stmicroelectronics/USBLC6-4SC6/497-4492-1-ND/725667" H 2200 3400 60  0001 L CNN "DK_Detail_Page"
+F 10 "TVS DIODE 5.25V 17V SOT23-6" H 2200 3500 60  0001 L CNN "Description"
+F 11 "STMicroelectronics" H 2200 3600 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 2200 3700 60  0001 L CNN "Status"
+F 13 "C558419" H 2000 2500 50  0001 C CNN "LCSC"
+F 14 "N" H 2000 2500 50  0001 C CNN "Sponsored"
+	1    2000 2500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 5F329148
+P 50 2800
+F 0 "#PWR02" H 50  2550 50  0001 C CNN
+F 1 "GND" H 55  2627 50  0000 C CNN
+F 2 "" H 50  2800 50  0001 C CNN
+F 3 "" H 50  2800 50  0001 C CNN
+	1    50   2800
+	1    0    0    -1  
+$EndComp
+$Sheet
+S 1600 650  900  200 
+U 612408B6
+F0 "LED" 39
+F1 "led.sch" 39
+F2 "DATA_OUT" O L 1600 700 50 
+F3 "DATA_IN1" I R 2500 700 50 
+F4 "DATA_IN2" I R 2500 800 50 
+$EndSheet
+$Comp
+L Connector:USB_C_Receptacle_USB2.0 J1
+U 1 1 5E94CF38
+P 1000 1700
+F 0 "J1" H 1107 2567 50  0000 C CNN
+F 1 "USB_C_Receptacle_USB2.0" H 1107 2476 50  0000 C CNN
+F 2 "Connector_USB:USB_C_Receptacle_HRO_TYPE-C-31-M-12" H 1150 1700 50  0001 C CNN
+F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 1150 1700 50  0001 C CNN
+F 4 "C165948" H 1000 1700 50  0001 C CNN "LCSC"
+F 5 "-" H 1000 1700 50  0001 C CNN "Mouser"
+F 6 "" H 1000 1700 50  0001 C CNN "Price"
+F 7 "N" H 1000 1700 50  0001 C CNN "Sponsored"
+	1    1000 1700
+	1    0    0    -1  
+$EndComp
+Connection ~ 1600 1800
+Connection ~ 1600 1700
+Wire Wire Line
+	1600 1600 1600 1700
+Wire Wire Line
+	1600 1800 1600 1900
+Wire Wire Line
+	1600 1100 1650 1100
+$Comp
+L vusb:VUSB #PWR07
+U 1 1 5FCD69E4
+P 1350 2750
+F 0 "#PWR07" H 1360 2750 20  0001 C CNN
+F 1 "VUSB" H 1350 2846 40  0000 C CNN
+F 2 "" H 1350 2750 60  0001 C CNN
+F 3 "" H 1350 2750 60  0001 C CNN
+	1    1350 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 1700 1800 1700
+$Comp
+L power:GND #PWR09
+U 1 1 5E9FE4E2
+P 2000 1450
+F 0 "#PWR09" H 2000 1200 50  0001 C CNN
+F 1 "GND" H 2005 1277 50  0000 C CNN
+F 2 "" H 2000 1450 50  0001 C CNN
+F 3 "" H 2000 1450 50  0001 C CNN
+	1    2000 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 1450 2000 1400
+Connection ~ 2000 1400
+Wire Wire Line
+	2000 1300 1900 1300
+Wire Wire Line
+	1900 1400 2000 1400
+Wire Wire Line
+	2000 1400 2000 1300
+Wire Wire Line
+	1600 1300 1700 1300
+Wire Wire Line
+	1600 1400 1700 1400
+Text Label 1600 1400 0    20   ~ 0
+CC2
+Text Label 1600 1300 0    20   ~ 0
+CC1
+$Comp
+L Device:R_Small R1
+U 1 1 5E9EB87A
+P 1800 1300
+F 0 "R1" V 1700 1300 50  0000 C CNN
+F 1 "5k1" V 1800 1300 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 1800 1300 50  0001 C CNN
+F 3 "~" H 1800 1300 50  0001 C CNN
+F 4 "" H 1800 1300 50  0001 C CNN "Price"
+F 5 "C269696" H 1800 1300 50  0001 C CNN "LCSC"
+F 6 "-" H 1800 1300 50  0001 C CNN "Mouser"
+F 7 "N" H 1800 1300 50  0001 C CNN "Sponsored"
+	1    1800 1300
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR04
+U 1 1 5E9E7D43
+P 1000 3050
+F 0 "#PWR04" H 1000 2800 50  0001 C CNN
+F 1 "GND" H 1005 2877 50  0000 C CNN
+F 2 "" H 1000 3050 50  0001 C CNN
+F 3 "" H 1000 3050 50  0001 C CNN
+	1    1000 3050
+	1    0    0    -1  
+$EndComp
+$Sheet
+S 2600 650  950  600 
+U 60C789DE
+F0 "POWER" 50
+F1 "power.sch" 50
+F2 "CHARGING" O R 3550 750 50 
+F3 "SENSE_VBAT" O R 3550 850 50 
+F4 "SENSE_VUSB" O R 3550 950 50 
+F5 "PWR_LED_ENABLE" I R 3550 1050 50 
+F6 "PWR_SDCARD_ENABLE" I R 3550 1150 50 
+$EndSheet
+Wire Wire Line
+	3650 1800 2750 1800
+Wire Wire Line
+	1800 1700 2550 1700
+$Comp
+L L_Core_Ferrite_Coupled_Small_GND:L_Core_Ferrite_Coupled_Small_GND L?
+U 1 1 5FE1DDB4
+P 2650 1750
+F 0 "L?" H 2650 1850 50  0000 C CNN
+F 1 "L_Core_Ferrite_Coupled_Small_GND" H 2650 1890 50  0001 C CNN
+F 2 "custom:MCE1012E900FBP" H 2650 1750 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/1912111437_INPAQ-MCE1012E900FBP_C315726.pdf" H 2650 1750 50  0001 C CNN
+F 4 "C315726" H 2650 1750 50  0001 C CNN "LCSC"
+	1    2650 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2500 1600 2500 3100
+Connection ~ 2500 1600
+Wire Wire Line
+	2500 1600 2150 1600
+Wire Wire Line
+	2500 1600 3650 1600
+$Comp
+L power:GND #PWR?
+U 1 1 5FE5FD21
+P 2650 3000
+F 0 "#PWR?" H 2650 2750 50  0001 C CNN
+F 1 "GND" H 2655 2827 50  0000 C CNN
+F 2 "" H 2650 3000 50  0001 C CNN
+F 3 "" H 2650 3000 50  0001 C CNN
+	1    2650 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2750 1700 3650 1700
+Wire Wire Line
+	2550 1800 2200 1800
+Wire Wire Line
+	2650 3000 2650 1950
+$Comp
+L Device:L_Core_Ferrite_Coupled_Small_1243 L?
+U 1 1 5FE90F71
+P 1050 2850
+F 0 "L?" V 1050 2944 50  0000 L CNN
+F 1 "L_Core_Ferrite_Coupled_Small_1243" V 1095 2944 50  0001 L CNN
+F 2 "" H 1050 2850 50  0001 C CNN
+F 3 "~" H 1050 2850 50  0001 C CNN
+	1    1050 2850
+	0    1    1    0   
+$EndComp
+Text GLabel 1650 1100 2    39   Output ~ 0
+VUSB_EXT
+Text GLabel 1200 2550 2    39   Input ~ 0
+VUSB_EXT
+Wire Wire Line
+	1200 2550 1100 2550
+Wire Wire Line
+	1100 2550 1100 2750
+Wire Wire Line
+	1000 2600 1000 2750
+Wire Wire Line
+	1000 2950 1000 3050
+Wire Wire Line
+	1350 2750 1350 3000
+Wire Wire Line
+	1350 3000 1100 3000
+Wire Wire Line
+	1100 3000 1100 2950
 $EndSCHEMATC
