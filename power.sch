@@ -1714,4 +1714,6 @@ Wire Wire Line
 Wire Wire Line
 	1150 6900 1500 6900
 Connection ~ 1150 6900
+Text Label 1200 6900 0    20   ~ 0
+1V2REG_VIN
 $EndSCHEMATC
