@@ -1716,4 +1716,6 @@ Wire Wire Line
 Connection ~ 1150 6900
 Text Label 1200 6900 0    20   ~ 0
 1V2REG_VIN
+Text Label 1200 5150 0    20   ~ 0
+3V3REG_VIN
 $EndSCHEMATC
