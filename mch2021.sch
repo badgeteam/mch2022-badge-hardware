@@ -151,7 +151,7 @@ Wire Wire Line
 Wire Wire Line
 	2850 4400 6800 4400
 $Comp
-L led:RGB-5050 D2
+L mch2021-rescue:RGB-5050-led D2
 U 1 1 611CFAC6
 P 6500 5250
 F 0 "D2" V 6350 5350 50  0000 C CNN
@@ -793,7 +793,7 @@ $EndComp
 Wire Wire Line
 	5550 6150 5550 6250
 $Comp
-L SparkFun-Connectors:QWIIC_CONNECTORJS-1MM J3
+L mch2021-rescue:QWIIC_CONNECTORJS-1MM-SparkFun-Connectors J3
 U 1 1 5FC35963
 P 5550 6350
 F 0 "J3" H 5400 6750 45  0000 C CNN
@@ -1383,7 +1383,7 @@ Wire Wire Line
 Wire Wire Line
 	10350 2550 10450 2550
 $Comp
-L SparkFun-Connectors:QWIIC_CONNECTORJS-1MM J6
+L mch2021-rescue:QWIIC_CONNECTORJS-1MM-SparkFun-Connectors J6
 U 1 1 604137E0
 P 10550 2550
 F 0 "J6" H 10400 2950 45  0000 C CNN
@@ -1511,17 +1511,6 @@ F 3 "" H 2000 3000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L vusb:VUSB #PWR08
-U 1 1 5F50A06B
-P 2000 2000
-F 0 "#PWR08" H 2010 2000 20  0001 C CNN
-F 1 "VUSB" H 2000 2096 40  0000 C CNN
-F 2 "" H 2000 2000 60  0001 C CNN
-F 3 "" H 2000 2000 60  0001 C CNN
-	1    2000 2000
-	1    0    0    -1  
-$EndComp
-$Comp
 L dk_TVS-Diodes:USBLC6-4SC6 D1
 U 1 1 5F4F4DAF
 P 2000 2500
@@ -1557,7 +1546,7 @@ Wire Wire Line
 Wire Wire Line
 	1600 1800 1600 1900
 $Comp
-L vusb:VUSB #PWR012
+L mch2021-rescue:VUSB-vusb #PWR012
 U 1 1 5FCD69E4
 P 2350 1050
 F 0 "#PWR012" H 2360 1050 20  0001 C CNN
@@ -1662,7 +1651,7 @@ $EndComp
 Connection ~ 1600 1700
 Connection ~ 1600 1800
 $Comp
-L Connector:USB_C_Receptacle_USB2.0 J2
+L mch2021-rescue:USB_C_Receptacle_USB2.0-Connector J2
 U 1 1 5E94CF38
 P 1000 1700
 F 0 "J2" H 1107 2567 50  0000 C CNN
@@ -2105,9 +2094,18 @@ U 1 1 5FF5B20D
 P 6250 7550
 F 0 "N2" H 6403 7584 50  0000 L CNN
 F 1 "Artwork" H 6403 7493 50  0000 L CNN
-F 2 "custom:vector4" H 6300 7600 50  0001 C CNN
+F 2 "custom:vector5" H 6300 7600 50  0001 C CNN
 F 3 "~" H 6300 7600 50  0001 C CNN
 	1    6250 7550
 	1    0    0    -1  
 $EndComp
+Text Label 1750 1050 2    50   ~ 0
+USB_VBUS
+Wire Wire Line
+	1750 1050 1750 1100
+Connection ~ 1750 1100
+Text Label 2000 1900 0    50   ~ 0
+USB_VBUS
+Wire Wire Line
+	2000 1900 2000 2000
 $EndSCHEMATC

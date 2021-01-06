@@ -240,7 +240,7 @@ Wire Wire Line
 Text Notes 3700 2300 2    35   ~ 0
 CHARGING is an open-drain output\nthat gets pulled low when the charger\nis active (charging the battery)
 $Comp
-L vusb:VUSB #PWR0170
+L mch2021-rescue:VUSB-vusb #PWR0170
 U 1 1 5F629D1E
 P 2050 1050
 F 0 "#PWR0170" H 2060 1050 20  0001 C CNN
@@ -251,7 +251,7 @@ F 3 "" H 2050 1050 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L vusb:VUSB #PWR0160
+L mch2021-rescue:VUSB-vusb #PWR0160
 U 1 1 5F62CA90
 P 1200 1050
 F 0 "#PWR0160" H 1210 1050 20  0001 C CNN
@@ -262,7 +262,7 @@ F 3 "" H 1200 1050 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L vusb:VUSB #PWR0156
+L mch2021-rescue:VUSB-vusb #PWR0156
 U 1 1 5F62D044
 P 800 1050
 F 0 "#PWR0156" H 810 1050 20  0001 C CNN
@@ -359,7 +359,7 @@ Wire Wire Line
 Wire Notes Line
 	3750 500  3750 7800
 $Comp
-L vin:VIN #PWR0154
+L mch2021-rescue:VIN-vin #PWR0154
 U 1 1 5F6DC8A4
 P 650 5000
 F 0 "#PWR0154" H 660 5000 20  0001 C CNN
@@ -526,7 +526,7 @@ Connection ~ 2700 6900
 Text Notes 2550 6500 2    118  ~ 0
 1.2v voltage regulator
 $Comp
-L powersyms:VBAT #PWR0198
+L mch2021-rescue:VBAT-powersyms #PWR0198
 U 1 1 5F71261C
 P 5100 6800
 F 0 "#PWR0198" H 5110 6800 20  0001 C CNN
@@ -559,7 +559,7 @@ Wire Wire Line
 Wire Wire Line
 	5100 6850 5100 6800
 $Comp
-L vusb:VUSB #PWR0197
+L mch2021-rescue:VUSB-vusb #PWR0197
 U 1 1 5F720F31
 P 4900 6800
 F 0 "#PWR0197" H 4910 6800 20  0001 C CNN
@@ -672,7 +672,7 @@ Connection ~ 3000 1250
 Wire Wire Line
 	2450 1250 3000 1250
 $Comp
-L powersyms:VBAT #PWR0188
+L mch2021-rescue:VBAT-powersyms #PWR0188
 U 1 1 5F62F18A
 P 3350 1050
 F 0 "#PWR0188" H 3360 1050 20  0001 C CNN
@@ -685,7 +685,7 @@ $EndComp
 Wire Wire Line
 	5150 6850 5100 6850
 $Comp
-L vin:VIN #PWR0195
+L mch2021-rescue:VIN-vin #PWR0195
 U 1 1 5F6C79A2
 P 4900 3000
 F 0 "#PWR0195" H 4910 3000 20  0001 C CNN
@@ -1257,7 +1257,7 @@ Wire Wire Line
 Wire Wire Line
 	3400 3400 3350 3400
 $Comp
-L vin:VIN #PWR0191
+L mch2021-rescue:VIN-vin #PWR0191
 U 1 1 5FC4F90F
 P 3450 2700
 F 0 "#PWR0191" H 3460 2700 20  0001 C CNN
@@ -1346,7 +1346,7 @@ F 7 "N" H 1000 3500 50  0001 C CNN "Sponsored"
 	1    0    0    -1  
 $EndComp
 $Comp
-L powersyms:VBAT #PWR0153
+L mch2021-rescue:VBAT-powersyms #PWR0153
 U 1 1 5FC464F4
 P 650 2700
 F 0 "#PWR0153" H 660 2700 20  0001 C CNN
@@ -1432,7 +1432,7 @@ F 7 "N" H 1900 3800 50  0001 C CNN "Sponsored"
 	1    0    0    -1  
 $EndComp
 $Comp
-L vusb:VUSB #PWR0162
+L mch2021-rescue:VUSB-vusb #PWR0162
 U 1 1 5FC5FBC2
 P 1300 2700
 F 0 "#PWR0162" H 1310 2700 20  0001 C CNN
@@ -1495,7 +1495,7 @@ Wire Wire Line
 Text Notes 6700 4600 2    98   ~ 0
 3.3v voltage regulator for RTC backup
 $Comp
-L powersyms:VBAT #PWR0192
+L mch2021-rescue:VBAT-powersyms #PWR0192
 U 1 1 5FC609DB
 P 4400 4900
 F 0 "#PWR0192" H 4410 4900 20  0001 C CNN
@@ -1653,7 +1653,7 @@ Wire Wire Line
 	1150 5150 1500 5150
 Connection ~ 1150 5150
 $Comp
-L vin:VIN #PWR0155
+L mch2021-rescue:VIN-vin #PWR0155
 U 1 1 5FF503D5
 P 650 6750
 F 0 "#PWR0155" H 660 6750 20  0001 C CNN
