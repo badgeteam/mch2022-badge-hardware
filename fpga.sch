@@ -319,7 +319,7 @@ F 3 "" H 9000 3200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L spiflash:SPIFLASH_QSPI U6
+L mch2021-rescue:SPIFLASH_QSPI-spiflash U6
 U 1 1 5F39A7E9
 P 10000 1500
 F 0 "U6" H 10000 2015 50  0000 C CNN
