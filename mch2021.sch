@@ -2094,7 +2094,7 @@ U 1 1 5FF5B20D
 P 6250 7550
 F 0 "N2" H 6403 7584 50  0000 L CNN
 F 1 "Artwork" H 6403 7493 50  0000 L CNN
-F 2 "custom:vector5" H 6300 7600 50  0001 C CNN
+F 2 "custom:vector6" H 6300 7600 50  0001 C CNN
 F 3 "~" H 6300 7600 50  0001 C CNN
 	1    6250 7550
 	1    0    0    -1  
@@ -2108,4 +2108,45 @@ Text Label 2000 1900 0    50   ~ 0
 USB_VBUS
 Wire Wire Line
 	2000 1900 2000 2000
+$Comp
+L Connector:TestPoint_Small TP12
+U 1 1 600A5D31
+P 750 600
+F 0 "TP12" H 550 600 50  0000 L CNN
+F 1 "LED OUT" H 798 555 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 950 600 50  0001 C CNN
+F 3 "~" H 950 600 50  0001 C CNN
+	1    750  600 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint_Small TP13
+U 1 1 600A6E9D
+P 1050 600
+F 0 "TP13" H 850 600 50  0000 L CNN
+F 1 "LED OUT" H 1098 555 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 1250 600 50  0001 C CNN
+F 3 "~" H 1250 600 50  0001 C CNN
+	1    1050 600 
+	1    0    0    -1  
+$EndComp
+Text GLabel 1100 550  2    31   Input ~ 0
+PWR_LED
+Wire Wire Line
+	1100 550  1050 550 
+Wire Wire Line
+	1050 550  1050 600 
+Wire Wire Line
+	750  600  750  650 
+$Comp
+L power:GND #PWR0220
+U 1 1 600F1D69
+P 750 650
+F 0 "#PWR0220" H 750 400 50  0001 C CNN
+F 1 "GND" H 755 477 50  0000 C CNN
+F 2 "" H 750 650 50  0001 C CNN
+F 3 "" H 750 650 50  0001 C CNN
+	1    750  650 
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
