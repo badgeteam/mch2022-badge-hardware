@@ -38,21 +38,6 @@ F 3 "" H 1000 7500 50  0001 C CNN
 	1    1000 7500
 	1    0    0    -1  
 $EndComp
-$Comp
-L Connector:AudioJack3 J1
-U 1 1 6072152E
-P 800 6400
-F 0 "J1" H 782 6725 50  0000 C CNN
-F 1 "AudioJack3" H 782 6634 50  0000 C CNN
-F 2 "custom:Boom-audiojack-PJ-320B" H 800 6400 50  0001 C CNN
-F 3 "~" H 800 6400 50  0001 C CNN
-F 4 "C18594" H 800 6400 50  0001 C CNN "LCSC"
-F 5 "-" H 800 6400 50  0001 C CNN "Mouser"
-F 6 "" H 800 6400 50  0001 C CNN "Price"
-F 7 "N" H 800 6400 50  0001 C CNN "Sponsored"
-	1    800  6400
-	1    0    0    1   
-$EndComp
 Wire Wire Line
 	5400 750  6900 750 
 Wire Wire Line
@@ -228,9 +213,9 @@ Wire Wire Line
 Connection ~ 5850 3900
 Connection ~ 5750 3800
 Wire Wire Line
-	6900 5750 3350 5750
+	6900 5750 5450 5750
 Wire Wire Line
-	6900 5550 3150 5550
+	6900 5550 5650 5550
 Wire Wire Line
 	9600 3900 9600 5250
 Wire Wire Line
@@ -770,11 +755,9 @@ Wire Wire Line
 Wire Wire Line
 	2500 700  2550 700 
 Wire Wire Line
-	3250 2550 3250 5650
+	3250 2550 3250 5150
 Wire Wire Line
-	3250 5650 6900 5650
-Wire Wire Line
-	3150 2450 3150 5550
+	3150 2450 3150 5050
 Wire Wire Line
 	8600 2600 9900 2600
 Wire Wire Line
@@ -911,7 +894,7 @@ F 3 "~" H 3450 2550 50  0001 C CNN
 $EndComp
 Connection ~ 3250 2550
 Wire Wire Line
-	3350 2650 3350 5750
+	3350 2650 3350 5250
 $Comp
 L Connector:TestPoint_Small TP9
 U 1 1 5FCC2CE2
@@ -1085,7 +1068,7 @@ $Comp
 L Audio:PCM5100 U1
 U 1 1 5FCFC64D
 P 3600 6700
-F 0 "U1" H 3950 7250 50  0000 C CNN
+F 0 "U1" H 3250 7250 50  0000 C CNN
 F 1 "PCM5100" H 3600 6650 50  0000 C CNN
 F 2 "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm" H 3550 7450 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/pcm5100.pdf" H 3550 7450 50  0001 C CNN
@@ -1408,11 +1391,11 @@ F 3 "" H 10350 2450 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	10100 2400 8600 2400
+	10100 2400 9700 2400
 Wire Wire Line
 	10100 2400 10100 2750
 Wire Wire Line
-	8600 2500 10000 2500
+	8600 2500 9700 2500
 Wire Wire Line
 	10000 2500 10000 2850
 Wire Wire Line
@@ -1465,9 +1448,7 @@ Wire Wire Line
 	10000 4750 10600 4750
 Connection ~ 10000 2850
 Wire Wire Line
-	5750 3800 5750 6250
-Wire Wire Line
-	5850 3900 5850 6250
+	5850 3900 5850 4450
 Text GLabel 5400 2750 2    50   BiDi ~ 0
 SAO0
 Text GLabel 5400 2850 2    50   BiDi ~ 0
@@ -1712,27 +1693,14 @@ Wire Wire Line
 $Comp
 L Mechanical:Housing N1
 U 1 1 600B192E
-P 6300 7150
-F 0 "N1" H 6453 7184 50  0000 L CNN
-F 1 "Badge.team" H 6453 7093 50  0000 L CNN
-F 2 "custom:badgeteam" H 6350 7200 50  0001 C CNN
-F 3 "~" H 6350 7200 50  0001 C CNN
-	1    6300 7150
+P 6500 7200
+F 0 "N1" H 6653 7234 50  0000 L CNN
+F 1 "Logo" H 6653 7143 50  0000 L CNN
+F 2 "custom:badgeteam" H 6550 7250 50  0001 C CNN
+F 3 "~" H 6550 7250 50  0001 C CNN
+	1    6500 7200
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:GND #PWR020
-U 1 1 5FEF0000
-P 5750 7500
-F 0 "#PWR020" H 5750 7250 50  0001 C CNN
-F 1 "GND" H 5755 7327 50  0000 C CNN
-F 2 "" H 5750 7500 50  0001 C CNN
-F 3 "" H 5750 7500 50  0001 C CNN
-	1    5750 7500
-	-1   0    0    -1  
-$EndComp
-Text GLabel 5750 7500 1    50   Input ~ 0
-GND
 Text Label 3100 7200 2    20   ~ 0
 PCM5100_VNEG
 Text Label 2850 7100 0    20   ~ 0
@@ -1969,15 +1937,13 @@ Wire Wire Line
 Wire Wire Line
 	1000 6300 1300 6300
 Wire Wire Line
-	1000 6400 1600 6400
-Wire Wire Line
 	1600 7200 1600 6400
 Connection ~ 1600 6400
 Wire Wire Line
 	1300 7200 1300 6300
 Connection ~ 1300 6300
 Wire Wire Line
-	1300 6300 1600 6300
+	1300 6300 1350 6300
 $Comp
 L Device:C C54
 U 1 1 5FFFE42C
@@ -2091,12 +2057,12 @@ Wire Wire Line
 $Comp
 L Mechanical:Housing N2
 U 1 1 5FF5B20D
-P 6250 7550
-F 0 "N2" H 6403 7584 50  0000 L CNN
-F 1 "Artwork" H 6403 7493 50  0000 L CNN
-F 2 "custom:vector6" H 6300 7600 50  0001 C CNN
-F 3 "~" H 6300 7600 50  0001 C CNN
-	1    6250 7550
+P 6500 7550
+F 0 "N2" H 6653 7584 50  0000 L CNN
+F 1 "Artwork" H 6653 7493 50  0000 L CNN
+F 2 "custom:vector7" H 6550 7600 50  0001 C CNN
+F 3 "~" H 6550 7600 50  0001 C CNN
+	1    6500 7550
 	1    0    0    -1  
 $EndComp
 Text Label 1750 1050 2    50   ~ 0
@@ -2149,4 +2115,273 @@ F 3 "" H 750 650 50  0001 C CNN
 	1    750  650 
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	3150 5050 5650 5050
+Wire Wire Line
+	5650 5050 5650 5550
+Wire Wire Line
+	3250 5150 5550 5150
+Wire Wire Line
+	5550 5150 5550 5650
+Wire Wire Line
+	5550 5650 6900 5650
+Wire Wire Line
+	3350 5250 5450 5250
+Wire Wire Line
+	5450 5250 5450 5750
+Connection ~ 5750 4500
+Wire Wire Line
+	5750 4500 5750 6250
+Wire Wire Line
+	5750 3800 5750 4500
+Connection ~ 5850 4450
+Wire Wire Line
+	5850 4450 5850 6250
+Text GLabel 1400 6250 2    20   Input ~ 0
+AUDIO_L
+Text GLabel 1400 6450 2    20   Input ~ 0
+AUDIO_R
+Wire Wire Line
+	1400 6450 1350 6450
+Wire Wire Line
+	1350 6450 1350 6400
+Connection ~ 1350 6400
+Wire Wire Line
+	1350 6400 1600 6400
+Wire Wire Line
+	1400 6250 1350 6250
+Wire Wire Line
+	1350 6250 1350 6300
+Connection ~ 1350 6300
+Wire Wire Line
+	1350 6300 1600 6300
+$Comp
+L power:+3.3V #PWR0221
+U 1 1 607F0453
+P 1800 4700
+F 0 "#PWR0221" H 1800 4550 50  0001 C CNN
+F 1 "+3.3V" H 1800 4850 50  0000 C CNN
+F 2 "" H 1800 4700 50  0001 C CNN
+F 3 "" H 1800 4700 50  0001 C CNN
+	1    1800 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:AudioJack3 J1
+U 1 1 6072152E
+P 800 6400
+F 0 "J1" H 782 6725 50  0000 C CNN
+F 1 "AudioJack3" H 782 6634 50  0000 C CNN
+F 2 "custom:Boom-audiojack-PJ-320B" H 800 6400 50  0001 C CNN
+F 3 "~" H 800 6400 50  0001 C CNN
+F 4 "C18594" H 800 6400 50  0001 C CNN "LCSC"
+F 5 "-" H 800 6400 50  0001 C CNN "Mouser"
+F 6 "" H 800 6400 50  0001 C CNN "Price"
+F 7 "N" H 800 6400 50  0001 C CNN "Sponsored"
+	1    800  6400
+	1    0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0222
+U 1 1 60127D00
+P 1800 5400
+F 0 "#PWR0222" H 1800 5150 50  0001 C CNN
+F 1 "GND" H 1805 5227 50  0000 C CNN
+F 2 "" H 1800 5400 50  0001 C CNN
+F 3 "" H 1800 5400 50  0001 C CNN
+	1    1800 5400
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0223
+U 1 1 600A735F
+P 5900 7500
+F 0 "#PWR0223" H 5900 7250 50  0001 C CNN
+F 1 "GND" H 5905 7327 50  0000 C CNN
+F 2 "" H 5900 7500 50  0001 C CNN
+F 3 "" H 5900 7500 50  0001 C CNN
+	1    5900 7500
+	-1   0    0    -1  
+$EndComp
+Text GLabel 5650 7500 1    50   Input ~ 0
+GND
+$Comp
+L power:GND #PWR020
+U 1 1 5FEF0000
+P 5650 7500
+F 0 "#PWR020" H 5650 7250 50  0001 C CNN
+F 1 "GND" H 5655 7327 50  0000 C CNN
+F 2 "" H 5650 7500 50  0001 C CNN
+F 3 "" H 5650 7500 50  0001 C CNN
+	1    5650 7500
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:C C57
+U 1 1 601E141C
+P 5900 7350
+F 0 "C57" H 5950 7450 50  0000 L CNN
+F 1 "100n" H 5900 7250 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 5938 7200 50  0001 C CNN
+F 3 "" H 5900 7350 50  0001 C CNN
+F 4 "C83056 " H 5900 7350 50  0001 C CNN "LCSC"
+	1    5900 7350
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 601E4811
+P 6050 7350
+AR Path="/60C794CB/601E4811" Ref="R?"  Part="1" 
+AR Path="/601E4811" Ref="R75"  Part="1" 
+F 0 "R75" H 5950 7250 50  0000 C CNN
+F 1 "10k" V 6050 7350 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 5980 7350 50  0001 C CNN
+F 3 "~" H 6050 7350 50  0001 C CNN
+F 4 "" H 6050 7350 50  0001 C CNN "Price"
+F 5 "" H 6050 7350 50  0001 C CNN "LCSC"
+F 6 "-" H 6050 7350 50  0001 C CNN "Mouser"
+F 7 "N" H 6050 7350 50  0001 C CNN "Sponsored"
+	1    6050 7350
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0224
+U 1 1 6020C2A6
+P 6050 7500
+F 0 "#PWR0224" H 6050 7250 50  0001 C CNN
+F 1 "GND" H 6055 7327 50  0000 C CNN
+F 2 "" H 6050 7500 50  0001 C CNN
+F 3 "" H 6050 7500 50  0001 C CNN
+	1    6050 7500
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6050 7200 6050 7100
+Wire Wire Line
+	5900 7100 5900 7200
+Text GLabel 6000 6950 2    50   Input ~ 0
+ARTWORK
+Wire Wire Line
+	6050 7100 5900 7100
+Wire Wire Line
+	6000 6950 5900 6950
+Wire Wire Line
+	5900 6950 5900 7100
+Connection ~ 5900 7100
+Wire Wire Line
+	1250 6400 1250 5250
+Connection ~ 1250 6400
+Wire Wire Line
+	1250 6400 1350 6400
+Wire Wire Line
+	1000 6400 1250 6400
+Wire Wire Line
+	1650 4500 5750 4500
+Wire Wire Line
+	1600 4450 5850 4450
+Wire Wire Line
+	1850 5350 1300 5350
+Wire Wire Line
+	1300 5350 1300 6300
+Wire Wire Line
+	1850 5250 1250 5250
+Wire Wire Line
+	1800 4700 1800 4750
+Wire Wire Line
+	1800 4750 1850 4750
+Wire Wire Line
+	1850 4950 1800 4950
+Wire Wire Line
+	1800 4950 1800 5400
+$Comp
+L power:GND #PWR0225
+U 1 1 6047C3BC
+P 2550 5400
+F 0 "#PWR0225" H 2550 5150 50  0001 C CNN
+F 1 "GND" H 2555 5227 50  0000 C CNN
+F 2 "" H 2550 5400 50  0001 C CNN
+F 3 "" H 2550 5400 50  0001 C CNN
+	1    2550 5400
+	-1   0    0    -1  
+$EndComp
+$Comp
+L conn-3:CONN-3 J10
+U 1 1 605D364A
+P 2600 5100
+F 0 "J10" H 2828 5146 50  0000 L CNN
+F 1 "CONN-3" H 2828 5055 50  0000 L CNN
+F 2 "custom:1x3_smd_row" H 2700 4950 60  0001 C CNN
+F 3 "" H 2700 4950 60  0001 C CNN
+	1    2600 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 5000 2600 5000
+Wire Wire Line
+	2550 5200 2600 5200
+Wire Wire Line
+	2550 5200 2550 5400
+$Comp
+L conn-7:CONN-7 J9
+U 1 1 6062BB06
+P 1850 5050
+F 0 "J9" H 2078 5096 50  0000 L CNN
+F 1 "CONN-7" H 2078 5005 50  0000 L CNN
+F 2 "custom:1x7_smd_row" H 1950 5100 60  0001 C CNN
+F 3 "" H 1950 5100 60  0001 C CNN
+	1    1850 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L mch2021-rescue:VIN-vin #PWR?
+U 1 1 606AEDEB
+P 1500 4650
+AR Path="/60C789DE/606AEDEB" Ref="#PWR?"  Part="1" 
+AR Path="/606AEDEB" Ref="#PWR0226"  Part="1" 
+F 0 "#PWR0226" H 1510 4650 20  0001 C CNN
+F 1 "VIN" H 1500 4746 40  0000 C CNN
+F 2 "" H 1500 4650 60  0001 C CNN
+F 3 "" H 1500 4650 60  0001 C CNN
+	1    1500 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1850 4850 1500 4850
+Wire Wire Line
+	1500 4850 1500 4650
+Wire Wire Line
+	2600 5100 2550 5100
+Wire Wire Line
+	2550 5100 2550 5200
+Connection ~ 2550 5200
+Wire Wire Line
+	2550 5000 2550 5100
+Connection ~ 2550 5100
+Text GLabel 9750 2450 2    20   Input ~ 0
+EXT_SDA
+Text GLabel 9750 2550 2    20   Input ~ 0
+EXT_SCL
+Wire Wire Line
+	9750 2450 9700 2450
+Wire Wire Line
+	9700 2450 9700 2400
+Connection ~ 9700 2400
+Wire Wire Line
+	9700 2400 8600 2400
+Wire Wire Line
+	9750 2550 9700 2550
+Wire Wire Line
+	9700 2550 9700 2500
+Connection ~ 9700 2500
+Wire Wire Line
+	9700 2500 10000 2500
+Wire Wire Line
+	1850 5050 1500 5050
+Wire Wire Line
+	1850 5150 1500 5150
+Text GLabel 1500 5050 0    50   BiDi ~ 0
+EXT_SDA
+Text GLabel 1500 5150 0    50   Input ~ 0
+EXT_SCL
 $EndSCHEMATC
