@@ -310,7 +310,7 @@ Text HLabel 2700 2400 0    50   Input ~ 0
 STM32_RESET
 Text HLabel 2700 3500 0    50   Output ~ 0
 ESP32_EN
-Text HLabel 2700 3600 0    50   Output ~ 0
+Text HLabel 2700 4300 0    50   Output ~ 0
 ESP32_BL
 Wire Wire Line
 	6650 3700 8050 3700
@@ -380,9 +380,9 @@ Text HLabel 8050 3600 2    50   Input ~ 0
 SENSE_VBAT
 Text HLabel 8050 3500 2    50   Input ~ 0
 SENSE_VUSB
-Text HLabel 2700 4700 0    50   BiDi ~ 0
-SAO_IO0
 Text HLabel 2700 4800 0    50   BiDi ~ 0
+SAO_IO0
+Text HLabel 2700 4700 0    50   BiDi ~ 0
 SAO_IO1
 Wire Wire Line
 	6650 3500 8050 3500
@@ -406,8 +406,6 @@ Text Notes 750  3200 0    50   ~ 0
 The ESP32 BL pin also serves as IRQ
 Text HLabel 2700 4400 0    50   Output ~ 0
 LCD_BACKLIGHT
-Wire Wire Line
-	2700 3600 3100 3600
 Wire Wire Line
 	2700 2400 2800 2400
 Wire Wire Line
@@ -571,20 +569,20 @@ Wire Wire Line
 $Comp
 L Device:R R?
 U 1 1 6015B06D
-P 3250 3600
+P 3250 4300
 AR Path="/5DC753C3/6015B06D" Ref="R?"  Part="1" 
 AR Path="/6015B06D" Ref="R?"  Part="1" 
 AR Path="/5E3BA64A/6015B06D" Ref="R?"  Part="1" 
 AR Path="/5F51E414/6015B06D" Ref="R23"  Part="1" 
-F 0 "R23" V 3300 3750 50  0000 C CNN
-F 1 "47" V 3250 3600 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 3180 3600 50  0001 C CNN
-F 3 "~" H 3250 3600 50  0001 C CNN
-F 4 "" H 3250 3600 50  0001 C CNN "LCSC"
-F 5 "" H 3250 3600 50  0001 C CNN "Price"
-F 6 "-" H 3250 3600 50  0001 C CNN "Mouser"
-F 7 "N" H 3250 3600 50  0001 C CNN "Sponsored"
-	1    3250 3600
+F 0 "R23" V 3300 4450 50  0000 C CNN
+F 1 "47" V 3250 4300 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 3180 4300 50  0001 C CNN
+F 3 "~" H 3250 4300 50  0001 C CNN
+F 4 "" H 3250 4300 50  0001 C CNN "LCSC"
+F 5 "" H 3250 4300 50  0001 C CNN "Price"
+F 6 "-" H 3250 4300 50  0001 C CNN "Mouser"
+F 7 "N" H 3250 4300 50  0001 C CNN "Sponsored"
+	1    3250 4300
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -711,8 +709,6 @@ Wire Wire Line
 	5350 3500 2700 3500
 Wire Wire Line
 	2700 3700 5350 3700
-Wire Wire Line
-	5350 3600 3400 3600
 Text GLabel 5850 2000 1    31   Input ~ 0
 BAT_3.3
 $Comp
@@ -899,9 +895,7 @@ NoConn ~ 9650 1950
 Wire Wire Line
 	5350 4400 2700 4400
 Wire Wire Line
-	2700 4300 5350 4300
-Wire Wire Line
-	2700 4200 5350 4200
+	2700 4300 3100 4300
 Text GLabel 6650 4800 2    31   Input ~ 0
 STM32_SWDIO
 Text GLabel 6650 4900 2    31   Input ~ 0
@@ -917,4 +911,14 @@ Wire Wire Line
 	2800 2400 5300 2400
 Wire Wire Line
 	5850 2200 5850 2000
+Wire Wire Line
+	2700 3600 5350 3600
+Wire Wire Line
+	3400 4300 5350 4300
+Text HLabel 2700 3600 0    50   Input ~ 0
+BATT_TEMP
+Wire Wire Line
+	2700 4200 5350 4200
+Text GLabel 2700 4200 0    50   BiDi ~ 0
+SAO_IO2
 $EndSCHEMATC
