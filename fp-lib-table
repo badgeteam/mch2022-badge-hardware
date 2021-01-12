@@ -1,6 +1,6 @@
 (fp_lib_table
   (lib (name custom)(type KiCad)(uri ${KIPRJMOD}/custom.pretty)(options "")(descr ""))
   (lib (name SAOv2)(type KiCad)(uri ${KIPRJMOD}/SAOv2)(options "")(descr ""))
-  (lib (name git)(type KiCad)(uri /home/renze/Documents/Badge.team/MCH2021-badge/Hardware/git)(options "")(descr ""))
+  (lib (name git)(type KiCad)(uri ${KIPRJMOD})(options "")(descr ""))
   (lib (name Simple_Addon_v2)(type KiCad)(uri ${KIPRJMOD}/SAOv2/Simple_Addon_v2.pretty)(options "")(descr ""))
 )
