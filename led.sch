@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 8 9
+Sheet 7 9
 Title ""
 Date "2020-12-13"
 Rev "2"
@@ -358,6 +358,29 @@ F 3 "" H 6100 5250 50  0001 C CNN
 $EndComp
 Text GLabel 6100 4950 1    39   Input ~ 0
 PWR_LED
+Text Label 3550 4050 0    50   ~ 0
+LED1_DATA
+Text Label 4600 4050 3    20   ~ 0
+LED2_DATA
+Text Label 5200 4050 3    20   ~ 0
+LED3_DATA
+Text Label 5800 4050 3    20   ~ 0
+LED4_DATA
+Text Label 6400 4050 3    20   ~ 0
+LED5_DATA
+Text GLabel 6700 4950 1    39   Input ~ 0
+PWR_LED
+$Comp
+L power:GND #PWR0219
+U 1 1 60028770
+P 6700 5250
+F 0 "#PWR0219" H 6700 5000 50  0001 C CNN
+F 1 "GND" H 6705 5077 50  0000 C CNN
+F 2 "" H 6700 5250 50  0001 C CNN
+F 3 "" H 6700 5250 50  0001 C CNN
+	1    6700 5250
+	1    0    0    -1  
+$EndComp
 $Comp
 L Device:C C56
 U 1 1 6002876A
@@ -372,27 +395,4 @@ F 6 "C107372" H 6700 5100 50  0001 C CNN "LCSC"
 	1    6700 5100
 	-1   0    0    -1  
 $EndComp
-$Comp
-L power:GND #PWR0219
-U 1 1 60028770
-P 6700 5250
-F 0 "#PWR0219" H 6700 5000 50  0001 C CNN
-F 1 "GND" H 6705 5077 50  0000 C CNN
-F 2 "" H 6700 5250 50  0001 C CNN
-F 3 "" H 6700 5250 50  0001 C CNN
-	1    6700 5250
-	1    0    0    -1  
-$EndComp
-Text GLabel 6700 4950 1    39   Input ~ 0
-PWR_LED
-Text Label 3550 4050 0    50   ~ 0
-LED1_DATA
-Text Label 4600 4050 3    20   ~ 0
-LED2_DATA
-Text Label 5200 4050 3    20   ~ 0
-LED3_DATA
-Text Label 5800 4050 3    20   ~ 0
-LED4_DATA
-Text Label 6400 4050 3    20   ~ 0
-LED5_DATA
 $EndSCHEMATC

@@ -2306,7 +2306,7 @@ L Mechanical:Housing N3
 U 1 1 6002C7D5
 P 3200 5500
 F 0 "N3" H 3353 5534 50  0000 L CNN
-F 1 "Prototyping area 1" H 3353 5443 50  0000 L CNN
+F 1 "May Contain Hardware" H 3353 5443 50  0000 L CNN
 F 2 "custom:protoboard-squares" H 3250 5550 50  0001 C CNN
 F 3 "~" H 3250 5550 50  0001 C CNN
 	1    3200 5500
@@ -2317,7 +2317,7 @@ L Mechanical:Housing N4
 U 1 1 6005D855
 P 4400 5500
 F 0 "N4" H 4553 5534 50  0000 L CNN
-F 1 "Prototyping area 2" H 4553 5443 50  0000 L CNN
+F 1 "More Cool Hardware" H 4553 5443 50  0000 L CNN
 F 2 "custom:protoboard-squares-big" H 4450 5550 50  0001 C CNN
 F 3 "~" H 4450 5550 50  0001 C CNN
 	1    4400 5500
