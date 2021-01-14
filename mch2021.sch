@@ -2482,10 +2482,10 @@ Wire Wire Line
 Wire Wire Line
 	1600 4500 5750 4500
 $Comp
-L Mechanical:Housing N?
+L Mechanical:Housing N5
 U 1 1 600E8BB4
 P 2200 5900
-F 0 "N?" H 2353 5934 50  0000 L CNN
+F 0 "N5" H 2353 5934 50  0000 L CNN
 F 1 "Logo" H 2353 5843 50  0000 L CNN
 F 2 "custom:badgeteam" H 2250 5950 50  0001 C CNN
 F 3 "~" H 2250 5950 50  0001 C CNN
