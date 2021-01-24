@@ -1,0 +1,13 @@
+### Module positions - created on Thu Jan 21 01:12:02 2021 ###
+### Printed by Pcbnew version kicad 5.1.9
+## Unit = mm, Angle = deg.
+## Side : top
+# Ref     Val          Package                                              PosX       PosY       Rot  Side
+D2        RGB-5050     LED_RGB_5050-6                                    33.8900    11.9000   90.0000  top
+D3        SK6812-EC15  LED_SK6812_EC15_1.5x1.5mm                        -40.4414    25.5536    0.0000  top
+D4        SK6812-EC15  LED_SK6812_EC15_1.5x1.5mm                        -37.1267    33.6105  270.0000  top
+D5        SK6812-EC15  LED_SK6812_EC15_1.5x1.5mm                        -49.7682    39.5338  270.0000  top
+D6        SK6812-EC15  LED_SK6812_EC15_1.5x1.5mm                        -33.3598    41.3600   90.0000  top
+D7        SK6812-EC15  LED_SK6812_EC15_1.5x1.5mm                        -17.2334    25.6247    0.0000  top
+U9        BME680       Bosch_LGA-8_3x3mm_P0.8mm_ClockwisePinNumbering    29.3100    20.9400  270.0000  top
+## End
