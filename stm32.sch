@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 3 9
 Title "MCH2021 badge - STM32 microcontroller"
-Date "2021-01-14"
-Rev "2"
+Date "2021-10-09"
+Rev "3"
 Comp "BADGE.TEAM"
 Comment1 ""
 Comment2 ""
@@ -110,8 +110,6 @@ Text HLabel 8050 4700 2    50   BiDi ~ 0
 USB_D+
 Text HLabel 8050 4600 2    50   BiDi ~ 0
 USB_D-
-Wire Wire Line
-	6650 4700 6700 4700
 Text HLabel 2700 4500 0    50   Input ~ 0
 I2C_SCL
 $Comp
@@ -317,16 +315,11 @@ Wire Wire Line
 Wire Wire Line
 	6650 3800 8050 3800
 Wire Wire Line
-	6650 4600 8050 4600
+	6650 4600 7700 4600
 Wire Wire Line
 	6650 4500 8050 4500
 Wire Wire Line
 	6650 4400 8050 4400
-Wire Wire Line
-	6700 4700 6700 2350
-Connection ~ 6700 4700
-Wire Wire Line
-	6700 4700 7550 4700
 Text Notes 550  650  0    79   ~ 0
 STM32 microcontroller
 $Comp
@@ -465,36 +458,6 @@ Wire Notes Line
 Text HLabel 8050 3900 2    50   Input ~ 0
 SPI_CS
 $Comp
-L power:+3.3V #PWR057
-U 1 1 5F85DFEF
-P 6700 2050
-F 0 "#PWR057" H 6700 1900 50  0001 C CNN
-F 1 "+3.3V" H 6715 2223 50  0000 C CNN
-F 2 "" H 6700 2050 50  0001 C CNN
-F 3 "" H 6700 2050 50  0001 C CNN
-	1    6700 2050
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 5E4109CF
-P 6700 2200
-AR Path="/5DC753C3/5E4109CF" Ref="R?"  Part="1" 
-AR Path="/5E4109CF" Ref="R?"  Part="1" 
-AR Path="/5E3BA64A/5E4109CF" Ref="R?"  Part="1" 
-AR Path="/5F51E414/5E4109CF" Ref="R27"  Part="1" 
-F 0 "R27" V 6600 2200 50  0000 C CNN
-F 1 "DNP" V 6700 2200 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 6630 2200 50  0001 C CNN
-F 3 "~" H 6700 2200 50  0001 C CNN
-F 4 "" H 6700 2200 50  0001 C CNN "LCSC"
-F 5 "" H 6700 2200 50  0001 C CNN "Price"
-F 6 "-" H 6700 2200 50  0001 C CNN "Mouser"
-F 7 "N" H 6700 2200 50  0001 C CNN "Sponsored"
-	1    6700 2200
-	1    0    0    -1  
-$EndComp
-$Comp
 L MCU_ST_STM32F1:STM32F103C8Tx U3
 U 1 1 5E3BAF1D
 P 6050 3700
@@ -560,8 +523,6 @@ Wire Notes Line
 	5700 3350 5450 3350
 Text Notes 5800 3350 1    39   ~ 0
 Sink only
-Text HLabel 2700 5000 0    50   Output ~ 0
-PWR_SDCARD_ENABLE
 Wire Wire Line
 	5350 5000 2700 5000
 Wire Wire Line
@@ -715,27 +676,22 @@ BAT_3.3
 $Comp
 L Device:R R?
 U 1 1 5FB263DC
-P 7550 4850
+P 7950 4850
 AR Path="/5DC753C3/5FB263DC" Ref="R?"  Part="1" 
 AR Path="/5FB263DC" Ref="R?"  Part="1" 
 AR Path="/5E3BA64A/5FB263DC" Ref="R?"  Part="1" 
 AR Path="/5F51E414/5FB263DC" Ref="R29"  Part="1" 
-F 0 "R29" V 7450 4850 50  0000 C CNN
-F 1 "10k" V 7550 4850 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 7480 4850 50  0001 C CNN
-F 3 "~" H 7550 4850 50  0001 C CNN
-F 4 "" H 7550 4850 50  0001 C CNN "LCSC"
-F 5 "" H 7550 4850 50  0001 C CNN "Price"
-F 6 "-" H 7550 4850 50  0001 C CNN "Mouser"
-F 7 "N" H 7550 4850 50  0001 C CNN "Sponsored"
-	1    7550 4850
+F 0 "R29" V 7850 4850 50  0000 C CNN
+F 1 "10k" V 7950 4850 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 7880 4850 50  0001 C CNN
+F 3 "~" H 7950 4850 50  0001 C CNN
+F 4 "" H 7950 4850 50  0001 C CNN "LCSC"
+F 5 "" H 7950 4850 50  0001 C CNN "Price"
+F 6 "-" H 7950 4850 50  0001 C CNN "Mouser"
+F 7 "N" H 7950 4850 50  0001 C CNN "Sponsored"
+	1    7950 4850
 	1    0    0    -1  
 $EndComp
-Connection ~ 7550 4700
-Wire Wire Line
-	7550 4700 8050 4700
-Wire Wire Line
-	7550 5000 6650 5000
 Text HLabel 8050 4400 2    50   Output ~ 0
 ESP32_RX
 Text HLabel 8050 4500 2    50   Input ~ 0
@@ -922,4 +878,60 @@ Wire Wire Line
 	2700 4200 5350 4200
 Text GLabel 2700 4200 0    50   BiDi ~ 0
 SAO_IO2
+$Comp
+L Connector:TestPoint TP14
+U 1 1 6173E651
+P 2700 5000
+F 0 "TP14" H 2642 5026 50  0000 R CNN
+F 1 "UNUSED PIN" H 2642 5117 50  0000 R CNN
+F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 2900 5000 50  0001 C CNN
+F 3 "~" H 2900 5000 50  0001 C CNN
+	1    2700 5000
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 61BC9ED7
+P 7800 4600
+AR Path="/61BC9ED7" Ref="R?"  Part="1" 
+AR Path="/5F51E414/61BC9ED7" Ref="R6"  Part="1" 
+F 0 "R6" V 7750 4450 50  0000 C CNN
+F 1 "22" V 7800 4600 35  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 7800 4600 50  0001 C CNN
+F 3 "~" H 7800 4600 50  0001 C CNN
+F 4 "" H 7800 4600 50  0001 C CNN "Price"
+F 5 "C103086" H 7800 4600 50  0001 C CNN "LCSC"
+F 6 "-" H 7800 4600 50  0001 C CNN "Mouser"
+F 7 "N" H 7800 4600 50  0001 C CNN "Sponsored"
+	1    7800 4600
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 61BC9EE1
+P 7800 4700
+AR Path="/61BC9EE1" Ref="R?"  Part="1" 
+AR Path="/5F51E414/61BC9EE1" Ref="R7"  Part="1" 
+F 0 "R7" V 7850 4850 50  0000 C CNN
+F 1 "22" V 7800 4700 35  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 7800 4700 50  0001 C CNN
+F 3 "~" H 7800 4700 50  0001 C CNN
+F 4 "" H 7800 4700 50  0001 C CNN "Price"
+F 5 "C103086" H 7800 4700 50  0001 C CNN "LCSC"
+F 6 "-" H 7800 4700 50  0001 C CNN "Mouser"
+F 7 "N" H 7800 4700 50  0001 C CNN "Sponsored"
+	1    7800 4700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7900 4600 8050 4600
+Wire Wire Line
+	7900 4700 7950 4700
+Connection ~ 7950 4700
+Wire Wire Line
+	7950 4700 8050 4700
+Wire Wire Line
+	6650 5000 7950 5000
+Wire Wire Line
+	6650 4700 7700 4700
 $EndSCHEMATC

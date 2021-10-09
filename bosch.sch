@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 6 9
 Title "MCH2021 badge - BOSCH"
-Date "2021-01-14"
-Rev "2"
+Date "2021-10-09"
+Rev "3"
 Comp "BADGE.TEAM"
 Comment1 ""
 Comment2 ""
@@ -488,8 +488,6 @@ Wire Wire Line
 Connection ~ 3050 3750
 Wire Wire Line
 	3050 3750 3050 4350
-Text HLabel 2850 3650 0    50   Input ~ 0
-BOOT
 Text HLabel 2850 3750 0    50   Input ~ 0
 RESET
 $Comp
@@ -578,4 +576,15 @@ Text Label 5000 3950 0    20   ~ 0
 BNO055_XIN32
 Text Label 5000 3850 0    20   ~ 0
 BNO055_XOUT32
+$Comp
+L Connector:TestPoint TP15
+U 1 1 61C1AC47
+P 2850 3650
+F 0 "TP15" V 3045 3722 50  0000 C CNN
+F 1 "BL" V 2954 3722 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 3050 3650 50  0001 C CNN
+F 3 "~" H 3050 3650 50  0001 C CNN
+	1    2850 3650
+	0    -1   -1   0   
+$EndComp
 $EndSCHEMATC

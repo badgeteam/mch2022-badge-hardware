@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 5 9
 Title "MCH2021 badge - ESP32 microcontroller"
-Date "2021-01-14"
-Rev "2"
+Date "2021-10-09"
+Rev "3"
 Comp "BADGE.TEAM"
 Comment1 ""
 Comment2 ""
@@ -209,12 +209,6 @@ Text HLabel 6700 5200 2    39   Input ~ 0
 IRQ_TOUCH
 Text HLabel 2250 3200 0    39   Input ~ 0
 IRQ_ACCEL
-Text HLabel 6700 3200 2    39   BiDi ~ 0
-SD_D0
-Text HLabel 6700 3800 2    39   Output ~ 0
-SD_CLK
-Text HLabel 6700 3900 2    39   Output ~ 0
-SD_CMD
 Text HLabel 2250 3300 0    39   Input ~ 0
 IRQ_FPGA
 Text HLabel 6700 4500 2    39   BiDi ~ 0
@@ -447,7 +441,7 @@ I2S_DATA
 Text HLabel 6700 3400 2    39   Output ~ 0
 I2S_LR
 Text HLabel 6700 3500 2    39   Output ~ 0
-LED_DATA
+SD_POWER
 Wire Wire Line
 	4950 3900 4950 2850
 $Comp
@@ -632,4 +626,240 @@ Wire Wire Line
 	2250 3200 3050 3200
 Wire Wire Line
 	2250 3000 2550 3000
+Wire Wire Line
+	8750 1700 8750 2100
+$Comp
+L power:GND #PWR?
+U 1 1 61828AAB
+P 8750 2100
+AR Path="/61828AAB" Ref="#PWR?"  Part="1" 
+AR Path="/60C794CB/61828AAB" Ref="#PWR0231"  Part="1" 
+F 0 "#PWR0231" H 8750 1850 50  0001 C CNN
+F 1 "GND" H 8755 1927 50  0000 C CNN
+F 2 "" H 8750 2100 50  0001 C CNN
+F 3 "" H 8750 2100 50  0001 C CNN
+	1    8750 2100
+	1    0    0    -1  
+$EndComp
+Text GLabel 9100 800  2    35   Input ~ 0
+PWR_SDCARD
+$Comp
+L Connector:Micro_SD_Card J?
+U 1 1 61828AB6
+P 9850 1500
+AR Path="/61828AB6" Ref="J?"  Part="1" 
+AR Path="/60C794CB/61828AB6" Ref="J5"  Part="1" 
+F 0 "J5" H 9150 2100 50  0000 C CNN
+F 1 "Micro SD card" H 10100 1500 50  0000 C CNN
+F 2 "custom:MicroSD-SOFNG-TF-002-H18" H 11000 1800 50  0001 C CNN
+F 3 "http://katalog.we-online.de/em/datasheet/693072010801.pdf" H 9850 1500 50  0001 C CNN
+F 4 "C125814" H 9850 1500 50  0001 C CNN "LCSC"
+F 5 "-" H 9850 1500 50  0001 C CNN "Mouser"
+F 6 "" H 9850 1500 50  0001 C CNN "Price"
+F 7 "N" H 9850 1500 50  0001 C CNN "Sponsored"
+	1    9850 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10700 2150 10700 2100
+Wire Wire Line
+	10700 2100 10650 2100
+$Comp
+L power:GND #PWR?
+U 1 1 61828ABE
+P 10700 2150
+AR Path="/61828ABE" Ref="#PWR?"  Part="1" 
+AR Path="/60C794CB/61828ABE" Ref="#PWR0232"  Part="1" 
+F 0 "#PWR0232" H 10700 1900 50  0001 C CNN
+F 1 "GND" H 10705 1977 50  0000 C CNN
+F 2 "" H 10700 2150 50  0001 C CNN
+F 3 "" H 10700 2150 50  0001 C CNN
+	1    10700 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R77
+U 1 1 61828AC8
+P 8800 1000
+AR Path="/60C794CB/61828AC8" Ref="R77"  Part="1" 
+AR Path="/61828AC8" Ref="R?"  Part="1" 
+F 0 "R77" V 8850 850 50  0000 C CNN
+F 1 "10k" V 8800 1000 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 8730 1000 50  0001 C CNN
+F 3 "~" H 8800 1000 50  0001 C CNN
+F 4 "" H 8800 1000 50  0001 C CNN "Price"
+F 5 "" H 8800 1000 50  0001 C CNN "LCSC"
+F 6 "-" H 8800 1000 50  0001 C CNN "Mouser"
+F 7 "N" H 8800 1000 50  0001 C CNN "Sponsored"
+	1    8800 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R50
+U 1 1 61828AD2
+P 8700 1000
+AR Path="/60C794CB/61828AD2" Ref="R50"  Part="1" 
+AR Path="/61828AD2" Ref="R?"  Part="1" 
+F 0 "R50" V 8750 850 50  0000 C CNN
+F 1 "10k" V 8700 1000 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 8630 1000 50  0001 C CNN
+F 3 "~" H 8700 1000 50  0001 C CNN
+F 4 "" H 8700 1000 50  0001 C CNN "Price"
+F 5 "" H 8700 1000 50  0001 C CNN "LCSC"
+F 6 "-" H 8700 1000 50  0001 C CNN "Mouser"
+F 7 "N" H 8700 1000 50  0001 C CNN "Sponsored"
+	1    8700 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R11
+U 1 1 61828ADC
+P 8600 1000
+AR Path="/60C794CB/61828ADC" Ref="R11"  Part="1" 
+AR Path="/61828ADC" Ref="R?"  Part="1" 
+F 0 "R11" V 8650 850 50  0000 C CNN
+F 1 "10k" V 8600 1000 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 8530 1000 50  0001 C CNN
+F 3 "~" H 8600 1000 50  0001 C CNN
+F 4 "" H 8600 1000 50  0001 C CNN "Price"
+F 5 "" H 8600 1000 50  0001 C CNN "LCSC"
+F 6 "-" H 8600 1000 50  0001 C CNN "Mouser"
+F 7 "N" H 8600 1000 50  0001 C CNN "Sponsored"
+	1    8600 1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8800 800  8800 850 
+Wire Wire Line
+	8800 800  8700 800 
+Wire Wire Line
+	8600 800  8600 850 
+Connection ~ 8800 800 
+Wire Wire Line
+	8600 800  8500 800 
+Wire Wire Line
+	8400 800  8400 850 
+Connection ~ 8600 800 
+Wire Wire Line
+	8200 1800 8400 1800
+Wire Wire Line
+	8750 1700 8950 1700
+Wire Wire Line
+	8700 850  8700 800 
+Connection ~ 8700 800 
+Wire Wire Line
+	8700 800  8600 800 
+$Comp
+L Device:R R9
+U 1 1 61828AF2
+P 8400 1000
+AR Path="/60C794CB/61828AF2" Ref="R9"  Part="1" 
+AR Path="/61828AF2" Ref="R?"  Part="1" 
+F 0 "R9" V 8450 850 50  0000 C CNN
+F 1 "10k" V 8400 1000 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 8330 1000 50  0001 C CNN
+F 3 "~" H 8400 1000 50  0001 C CNN
+F 4 "" H 8400 1000 50  0001 C CNN "Price"
+F 5 "" H 8400 1000 50  0001 C CNN "LCSC"
+F 6 "-" H 8400 1000 50  0001 C CNN "Mouser"
+F 7 "N" H 8400 1000 50  0001 C CNN "Sponsored"
+	1    8400 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R10
+U 1 1 61828AFC
+P 8500 1000
+AR Path="/60C794CB/61828AFC" Ref="R10"  Part="1" 
+AR Path="/61828AFC" Ref="R?"  Part="1" 
+F 0 "R10" V 8550 850 50  0000 C CNN
+F 1 "10k" V 8500 1000 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 8430 1000 50  0001 C CNN
+F 3 "~" H 8500 1000 50  0001 C CNN
+F 4 "" H 8500 1000 50  0001 C CNN "Price"
+F 5 "" H 8500 1000 50  0001 C CNN "LCSC"
+F 6 "-" H 8500 1000 50  0001 C CNN "Mouser"
+F 7 "N" H 8500 1000 50  0001 C CNN "Sponsored"
+	1    8500 1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8500 850  8500 800 
+Connection ~ 8500 800 
+Wire Wire Line
+	8500 800  8400 800 
+$Comp
+L Device:R R8
+U 1 1 61828B09
+P 8300 1000
+AR Path="/60C794CB/61828B09" Ref="R8"  Part="1" 
+AR Path="/61828B09" Ref="R?"  Part="1" 
+F 0 "R8" V 8350 850 50  0000 C CNN
+F 1 "10k" V 8300 1000 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 8230 1000 50  0001 C CNN
+F 3 "~" H 8300 1000 50  0001 C CNN
+F 4 "" H 8300 1000 50  0001 C CNN "Price"
+F 5 "" H 8300 1000 50  0001 C CNN "LCSC"
+F 6 "-" H 8300 1000 50  0001 C CNN "Mouser"
+F 7 "N" H 8300 1000 50  0001 C CNN "Sponsored"
+	1    8300 1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8300 850  8300 800 
+Wire Wire Line
+	8300 800  8400 800 
+Connection ~ 8400 800 
+Wire Wire Line
+	8200 1400 8600 1400
+Wire Wire Line
+	8200 1600 8500 1600
+Wire Wire Line
+	8800 800  8900 800 
+Wire Wire Line
+	8900 1500 8900 800 
+Connection ~ 8900 800 
+Wire Wire Line
+	8900 800  9100 800 
+Wire Wire Line
+	8950 1500 8900 1500
+Wire Wire Line
+	8950 1200 8800 1200
+Wire Wire Line
+	8800 1200 8800 1150
+Wire Wire Line
+	8950 1300 8700 1300
+Wire Wire Line
+	8700 1300 8700 1150
+Wire Wire Line
+	8600 1150 8600 1400
+Connection ~ 8600 1400
+Wire Wire Line
+	8600 1400 8950 1400
+Wire Wire Line
+	8500 1150 8500 1600
+Connection ~ 8500 1600
+Wire Wire Line
+	8500 1600 8950 1600
+Wire Wire Line
+	8400 1150 8400 1800
+Connection ~ 8400 1800
+Wire Wire Line
+	8400 1800 8950 1800
+Wire Wire Line
+	8300 1150 8300 1900
+Wire Wire Line
+	8300 1900 8950 1900
+Text GLabel 6700 3900 2    39   Output ~ 0
+SD_CMD
+Text GLabel 8200 1400 0    39   Input ~ 0
+SD_CMD
+Text GLabel 6700 3800 2    39   Output ~ 0
+SD_CLK
+Text GLabel 6700 3200 2    39   BiDi ~ 0
+SD_D0
+Text GLabel 8200 1600 0    39   Input ~ 0
+SD_CLK
+Text GLabel 8200 1800 0    39   BiDi ~ 0
+SD_D0
 $EndSCHEMATC
