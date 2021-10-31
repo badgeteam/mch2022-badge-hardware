@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Device:C C?
+L mch2021-rescue:C-Device C?
 U 1 1 5E3D7D7C
 P 9600 5950
 AR Path="/5DC753C3/5E3D7D7C" Ref="C?"  Part="1" 
@@ -33,7 +33,7 @@ F 7 "N" H 9600 5950 50  0001 C CNN "Sponsored"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C?
+L mch2021-rescue:C-Device C?
 U 1 1 5E3D85DB
 P 10100 5950
 AR Path="/5DC753C3/5E3D85DB" Ref="C?"  Part="1" 
@@ -52,7 +52,7 @@ F 7 "N" H 10100 5950 50  0001 C CNN "Sponsored"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C?
+L mch2021-rescue:C-Device C?
 U 1 1 5E3D8A4A
 P 10600 5950
 AR Path="/5DC753C3/5E3D8A4A" Ref="C?"  Part="1" 
@@ -71,7 +71,7 @@ F 7 "N" H 10600 5950 50  0001 C CNN "Sponsored"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C?
+L mch2021-rescue:C-Device C?
 U 1 1 5E3EFF6B
 P 5250 5200
 AR Path="/5DC753C3/5E3EFF6B" Ref="C?"  Part="1" 
@@ -89,7 +89,7 @@ F 6 "N" H 5250 5200 50  0001 C CNN "Sponsored"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C?
+L mch2021-rescue:C-Device C?
 U 1 1 5E3F1F93
 P 5050 5200
 AR Path="/5DC753C3/5E3F1F93" Ref="C?"  Part="1" 
@@ -113,7 +113,7 @@ USB_D-
 Text HLabel 2700 4500 0    50   Input ~ 0
 I2C_SCL
 $Comp
-L Device:Crystal_GND24_Small Y2
+L mch2021-rescue:Crystal_GND24_Small-Device Y2
 U 1 1 5E3ED918
 P 4850 2850
 F 0 "Y2" V 4800 3000 50  0000 L CNN
@@ -130,7 +130,7 @@ $EndComp
 Text HLabel 2700 4600 0    50   3State ~ 0
 I2C_SDA
 $Comp
-L power:GND #PWR064
+L mch2021-rescue:GND-power #PWR064
 U 1 1 5F837C54
 P 10600 6100
 F 0 "#PWR064" H 10600 5850 50  0001 C CNN
@@ -141,7 +141,7 @@ F 3 "" H 10600 6100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR062
+L mch2021-rescue:GND-power #PWR062
 U 1 1 5F837D54
 P 10100 6100
 F 0 "#PWR062" H 10100 5850 50  0001 C CNN
@@ -152,7 +152,7 @@ F 3 "" H 10100 6100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR060
+L mch2021-rescue:GND-power #PWR060
 U 1 1 5F837F7F
 P 9600 6100
 F 0 "#PWR060" H 9600 5850 50  0001 C CNN
@@ -163,7 +163,7 @@ F 3 "" H 9600 6100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3.3V #PWR063
+L mch2021-rescue:+3.3V-power #PWR063
 U 1 1 5F838F37
 P 10600 5800
 F 0 "#PWR063" H 10600 5650 50  0001 C CNN
@@ -174,7 +174,7 @@ F 3 "" H 10600 5800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3.3V #PWR061
+L mch2021-rescue:+3.3V-power #PWR061
 U 1 1 5F839325
 P 10100 5800
 F 0 "#PWR061" H 10100 5650 50  0001 C CNN
@@ -185,7 +185,7 @@ F 3 "" H 10100 5800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3.3V #PWR059
+L mch2021-rescue:+3.3V-power #PWR059
 U 1 1 5F839665
 P 9600 5800
 F 0 "#PWR059" H 9600 5650 50  0001 C CNN
@@ -196,7 +196,7 @@ F 3 "" H 9600 5800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR055
+L mch2021-rescue:GND-power #PWR055
 U 1 1 5F8436B6
 P 6000 5350
 F 0 "#PWR055" H 6000 5100 50  0001 C CNN
@@ -242,7 +242,7 @@ Connection ~ 6150 2150
 Wire Wire Line
 	6150 2150 6050 2150
 $Comp
-L power:+3.3V #PWR056
+L mch2021-rescue:+3.3V-power #PWR056
 U 1 1 5F8580CC
 P 6050 2050
 F 0 "#PWR056" H 6050 1900 50  0001 C CNN
@@ -253,7 +253,7 @@ F 3 "" H 6050 2050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR053
+L mch2021-rescue:GND-power #PWR053
 U 1 1 5F889C9A
 P 5250 5350
 F 0 "#PWR053" H 5250 5100 50  0001 C CNN
@@ -278,7 +278,7 @@ Wire Wire Line
 Wire Wire Line
 	5300 2900 5300 2950
 $Comp
-L power:GND #PWR052
+L mch2021-rescue:GND-power #PWR052
 U 1 1 5F8DD03C
 P 5050 5350
 F 0 "#PWR052" H 5050 5100 50  0001 C CNN
@@ -291,7 +291,7 @@ $EndComp
 Wire Wire Line
 	6000 5250 6000 5350
 $Comp
-L power:GND #PWR051
+L mch2021-rescue:GND-power #PWR051
 U 1 1 5F916F4B
 P 4850 5350
 F 0 "#PWR051" H 4850 5100 50  0001 C CNN
@@ -323,7 +323,7 @@ Wire Wire Line
 Text Notes 550  650  0    79   ~ 0
 STM32 microcontroller
 $Comp
-L Device:R R?
+L mch2021-rescue:R-Device R?
 U 1 1 5F9B952F
 P 3650 5200
 AR Path="/5DC753C3/5F9B952F" Ref="R?"  Part="1" 
@@ -342,7 +342,7 @@ F 7 "N" H 3650 5200 50  0001 C CNN "Sponsored"
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:GND #PWR048
+L mch2021-rescue:GND-power #PWR048
 U 1 1 5F9BA337
 P 3650 5350
 F 0 "#PWR048" H 3650 5100 50  0001 C CNN
@@ -406,7 +406,7 @@ Wire Wire Line
 Wire Notes Line
 	2750 2600 2800 2650
 $Comp
-L power:+3.3V #PWR054
+L mch2021-rescue:+3.3V-power #PWR054
 U 1 1 5F86D644
 P 5300 2050
 F 0 "#PWR054" H 5300 1900 50  0001 C CNN
@@ -417,7 +417,7 @@ F 3 "" H 5300 2050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R?
+L mch2021-rescue:R-Device R?
 U 1 1 5E3DFB2E
 P 5300 2200
 AR Path="/5DC753C3/5E3DFB2E" Ref="R?"  Part="1" 
@@ -458,7 +458,7 @@ Wire Notes Line
 Text HLabel 8050 3900 2    50   Input ~ 0
 SPI_CS
 $Comp
-L MCU_ST_STM32F1:STM32F103C8Tx U3
+L mch2021-rescue:STM32F103C8Tx-MCU_ST_STM32F1 U3
 U 1 1 5E3BAF1D
 P 6050 3700
 F 0 "U3" H 6300 2250 50  0000 C CNN
@@ -473,7 +473,7 @@ F 7 "N" H 6050 3700 50  0001 C CNN "Sponsored"
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3.3V #PWR058
+L mch2021-rescue:+3.3V-power #PWR058
 U 1 1 5F7D9ABF
 P 7000 2050
 F 0 "#PWR058" H 7000 1900 50  0001 C CNN
@@ -484,7 +484,7 @@ F 3 "" H 7000 2050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R?
+L mch2021-rescue:R-Device R?
 U 1 1 5F7D9AC9
 P 7000 2200
 AR Path="/5DC753C3/5F7D9AC9" Ref="R?"  Part="1" 
@@ -528,7 +528,7 @@ Wire Wire Line
 Wire Wire Line
 	3650 2600 5350 2600
 $Comp
-L Device:R R?
+L mch2021-rescue:R-Device R?
 U 1 1 6015B06D
 P 3250 4300
 AR Path="/5DC753C3/6015B06D" Ref="R?"  Part="1" 
@@ -547,7 +547,7 @@ F 7 "N" H 3250 4300 50  0001 C CNN "Sponsored"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:Crystal_Small Y1
+L mch2021-rescue:Crystal_Small-Device Y1
 U 1 1 5FC777BF
 P 4350 3250
 F 0 "Y1" V 4304 3338 50  0000 L CNN
@@ -584,7 +584,7 @@ Connection ~ 4850 3050
 Wire Wire Line
 	4850 3050 4750 3050
 $Comp
-L Device:C C?
+L mch2021-rescue:C-Device C?
 U 1 1 5FCCE7C7
 P 4650 5200
 AR Path="/5DC753C3/5FCCE7C7" Ref="C?"  Part="1" 
@@ -602,7 +602,7 @@ F 6 "N" H 4650 5200 50  0001 C CNN "Sponsored"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C?
+L mch2021-rescue:C-Device C?
 U 1 1 5FCCE7D0
 P 4450 5200
 AR Path="/5DC753C3/5FCCE7D0" Ref="C?"  Part="1" 
@@ -620,7 +620,7 @@ F 6 "N" H 4450 5200 50  0001 C CNN "Sponsored"
 	-1   0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR050
+L mch2021-rescue:GND-power #PWR050
 U 1 1 5FCCE7D6
 P 4650 5350
 F 0 "#PWR050" H 4650 5100 50  0001 C CNN
@@ -631,7 +631,7 @@ F 3 "" H 4650 5350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR049
+L mch2021-rescue:GND-power #PWR049
 U 1 1 5FCCE7DC
 P 4450 5350
 F 0 "#PWR049" H 4450 5100 50  0001 C CNN
@@ -674,7 +674,7 @@ Wire Wire Line
 Text GLabel 5850 2000 1    31   Input ~ 0
 BAT_3.3
 $Comp
-L Device:R R?
+L mch2021-rescue:R-Device R?
 U 1 1 5FB263DC
 P 7950 4850
 AR Path="/5DC753C3/5FB263DC" Ref="R?"  Part="1" 
@@ -707,7 +707,7 @@ Bootloader UART
 Wire Wire Line
 	5350 3100 3500 3100
 $Comp
-L Device:R R?
+L mch2021-rescue:R-Device R?
 U 1 1 5FB5E63D
 P 3050 6250
 AR Path="/5DC753C3/5FB5E63D" Ref="R?"  Part="1" 
@@ -727,7 +727,7 @@ F 7 "N" H 3050 6250 50  0001 C CNN "Sponsored"
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:Q_NMOS_GSD Q?
+L mch2021-rescue:Q_NMOS_GSD-Device Q?
 U 1 1 5FB5E630
 P 3400 6250
 AR Path="/5FDC6C76/5FB5E630" Ref="Q?"  Part="1" 
@@ -744,7 +744,7 @@ F 7 "N" H 3400 6250 50  0001 C CNN "Sponsored"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R?
+L mch2021-rescue:R-Device R?
 U 1 1 5FB7AAB6
 P 3500 2200
 AR Path="/5DC753C3/5FB7AAB6" Ref="R?"  Part="1" 
@@ -763,7 +763,7 @@ F 7 "N" H 3500 2200 50  0001 C CNN "Sponsored"
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:+3.3V #PWR046
+L mch2021-rescue:+3.3V-power #PWR046
 U 1 1 5FB7E8B5
 P 3500 2050
 F 0 "#PWR046" H 3500 1900 50  0001 C CNN
@@ -779,7 +779,7 @@ Wire Wire Line
 	3500 3100 3500 6050
 Connection ~ 3500 3100
 $Comp
-L power:GND #PWR047
+L mch2021-rescue:GND-power #PWR047
 U 1 1 5FB9040E
 P 3500 6450
 F 0 "#PWR047" H 3500 6200 50  0001 C CNN
@@ -802,7 +802,7 @@ Wire Wire Line
 Text HLabel 2700 4100 0    50   Output ~ 0
 LED_DATA
 $Comp
-L Connector_Generic:Conn_02x03_Odd_Even J8
+L mch2021-rescue:Conn_02x03_Odd_Even-Connector_Generic J8
 U 1 1 5FF4BC2C
 P 9350 1850
 F 0 "J8" H 9400 2167 50  0000 C CNN
@@ -813,7 +813,7 @@ F 3 "~" H 9350 1850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3.3V #PWR0217
+L mch2021-rescue:+3.3V-power #PWR0217
 U 1 1 5FF4D564
 P 9100 1700
 F 0 "#PWR0217" H 9100 1550 50  0001 C CNN
@@ -824,7 +824,7 @@ F 3 "" H 9100 1700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0218
+L mch2021-rescue:GND-power #PWR0218
 U 1 1 5FF4E6B4
 P 9100 2000
 F 0 "#PWR0218" H 9100 1750 50  0001 C CNN
@@ -879,7 +879,7 @@ Wire Wire Line
 Text GLabel 2700 4200 0    50   BiDi ~ 0
 SAO_IO2
 $Comp
-L Connector:TestPoint TP14
+L mch2021-rescue:TestPoint-Connector TP14
 U 1 1 6173E651
 P 2700 5000
 F 0 "TP14" H 2642 5026 50  0000 R CNN
@@ -890,7 +890,7 @@ F 3 "~" H 2900 5000 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:R_Small R?
+L mch2021-rescue:R_Small-Device R?
 U 1 1 61BC9ED7
 P 7800 4600
 AR Path="/61BC9ED7" Ref="R?"  Part="1" 
@@ -907,7 +907,7 @@ F 7 "N" H 7800 4600 50  0001 C CNN "Sponsored"
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_Small R?
+L mch2021-rescue:R_Small-Device R?
 U 1 1 61BC9EE1
 P 7800 4700
 AR Path="/61BC9EE1" Ref="R?"  Part="1" 

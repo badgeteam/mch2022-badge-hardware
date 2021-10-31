@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L LED:WS2812B D3
+L mch2021-rescue:WS2812B-LED D3
 U 1 1 5F7D8169
 P 4300 4050
 F 0 "D3" H 4100 4300 50  0000 L CNN
@@ -29,7 +29,7 @@ F 7 "N" H 4300 4050 50  0001 C CNN "Sponsored"
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0144
+L mch2021-rescue:GND-power #PWR0144
 U 1 1 612C7A49
 P 4300 4350
 F 0 "#PWR0144" H 4300 4100 50  0001 C CNN
@@ -42,7 +42,7 @@ $EndComp
 Text GLabel 4300 3750 1    39   Input ~ 0
 PWR_LED
 $Comp
-L LED:WS2812B D4
+L mch2021-rescue:WS2812B-LED D4
 U 1 1 612CEAF2
 P 4900 4050
 F 0 "D4" H 4700 4300 50  0000 L CNN
@@ -57,7 +57,7 @@ F 7 "N" H 4900 4050 50  0001 C CNN "Sponsored"
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0145
+L mch2021-rescue:GND-power #PWR0145
 U 1 1 612CEAF8
 P 4900 4350
 F 0 "#PWR0145" H 4900 4100 50  0001 C CNN
@@ -70,7 +70,7 @@ $EndComp
 Text GLabel 4900 3750 1    39   Input ~ 0
 PWR_LED
 $Comp
-L LED:WS2812B D5
+L mch2021-rescue:WS2812B-LED D5
 U 1 1 612CEE91
 P 5500 4050
 F 0 "D5" H 5300 4300 50  0000 L CNN
@@ -85,7 +85,7 @@ F 7 "N" H 5500 4050 50  0001 C CNN "Sponsored"
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0146
+L mch2021-rescue:GND-power #PWR0146
 U 1 1 612CEE97
 P 5500 4350
 F 0 "#PWR0146" H 5500 4100 50  0001 C CNN
@@ -98,7 +98,7 @@ $EndComp
 Text GLabel 5500 3750 1    39   Input ~ 0
 PWR_LED
 $Comp
-L LED:WS2812B D6
+L mch2021-rescue:WS2812B-LED D6
 U 1 1 612CF6E4
 P 6100 4050
 F 0 "D6" H 5900 4300 50  0000 L CNN
@@ -113,7 +113,7 @@ F 7 "N" H 6100 4050 50  0001 C CNN "Sponsored"
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0147
+L mch2021-rescue:GND-power #PWR0147
 U 1 1 612CF6EA
 P 6100 4350
 F 0 "#PWR0147" H 6100 4100 50  0001 C CNN
@@ -126,7 +126,7 @@ $EndComp
 Text GLabel 6100 3750 1    39   Input ~ 0
 PWR_LED
 $Comp
-L LED:WS2812B D7
+L mch2021-rescue:WS2812B-LED D7
 U 1 1 612CFE55
 P 6700 4050
 F 0 "D7" H 6500 4300 50  0000 L CNN
@@ -141,7 +141,7 @@ F 7 "N" H 6700 4050 50  0001 C CNN "Sponsored"
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0148
+L mch2021-rescue:GND-power #PWR0148
 U 1 1 612CFE5B
 P 6700 4350
 F 0 "#PWR0148" H 6700 4100 50  0001 C CNN
@@ -154,7 +154,7 @@ $EndComp
 Text GLabel 6700 3750 1    39   Input ~ 0
 PWR_LED
 $Comp
-L Device:C C31
+L mch2021-rescue:C-Device C31
 U 1 1 612D0DFB
 P 4300 5100
 F 0 "C31" H 4415 5146 50  0000 L CNN
@@ -168,7 +168,7 @@ F 6 "C107372" H 4300 5100 50  0001 C CNN "LCSC"
 	-1   0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0150
+L mch2021-rescue:GND-power #PWR0150
 U 1 1 612D0F05
 P 4300 5250
 F 0 "#PWR0150" H 4300 5000 50  0001 C CNN
@@ -181,7 +181,7 @@ $EndComp
 Text GLabel 4300 4950 1    39   Input ~ 0
 PWR_LED
 $Comp
-L Device:C C32
+L mch2021-rescue:C-Device C32
 U 1 1 612D2985
 P 4900 5100
 F 0 "C32" H 5015 5146 50  0000 L CNN
@@ -195,7 +195,7 @@ F 6 "C107372" H 4900 5100 50  0001 C CNN "LCSC"
 	-1   0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0151
+L mch2021-rescue:GND-power #PWR0151
 U 1 1 612D298B
 P 4900 5250
 F 0 "#PWR0151" H 4900 5000 50  0001 C CNN
@@ -208,7 +208,7 @@ $EndComp
 Text GLabel 4900 4950 1    39   Input ~ 0
 PWR_LED
 $Comp
-L Device:C C33
+L mch2021-rescue:C-Device C33
 U 1 1 612D3CA5
 P 5500 5100
 F 0 "C33" H 5615 5146 50  0000 L CNN
@@ -222,7 +222,7 @@ F 6 "C107372" H 5500 5100 50  0001 C CNN "LCSC"
 	-1   0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0152
+L mch2021-rescue:GND-power #PWR0152
 U 1 1 612D3CAB
 P 5500 5250
 F 0 "#PWR0152" H 5500 5000 50  0001 C CNN
@@ -239,7 +239,7 @@ WS2812B LEDs
 Text HLabel 7000 4050 2    79   Output ~ 0
 DATA_OUT
 $Comp
-L power:GND #PWR?
+L mch2021-rescue:GND-power #PWR?
 U 1 1 60345F64
 P 2800 4350
 AR Path="/5F51E414/60345F64" Ref="#PWR?"  Part="1" 
@@ -254,7 +254,7 @@ $EndComp
 Wire Wire Line
 	2850 3850 2800 3850
 $Comp
-L dk_Logic-Buffers-Drivers-Receivers-Transceivers:SN74LVC1G125DCKR U?
+L mch2021-rescue:SN74LVC1G125DCKR-dk_Logic-Buffers-Drivers-Receivers-Transceivers U?
 U 1 1 60345F5C
 P 3150 3950
 AR Path="/5F51E414/60345F5C" Ref="U?"  Part="1" 
@@ -279,7 +279,7 @@ F 15 "" H 3150 3950 50  0001 C CNN "Price"
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L mch2021-rescue:GND-power #PWR?
 U 1 1 60345F44
 P 3150 4350
 AR Path="/5F51E414/60345F44" Ref="#PWR?"  Part="1" 
@@ -304,7 +304,7 @@ DATA_IN
 Text GLabel 3150 3650 1    39   Input ~ 0
 PWR_LED
 $Comp
-L Device:C C55
+L mch2021-rescue:C-Device C55
 U 1 1 60027D12
 P 6100 5100
 F 0 "C55" H 6215 5146 50  0000 L CNN
@@ -318,7 +318,7 @@ F 6 "C107372" H 6100 5100 50  0001 C CNN "LCSC"
 	-1   0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0149
+L mch2021-rescue:GND-power #PWR0149
 U 1 1 60027D18
 P 6100 5250
 F 0 "#PWR0149" H 6100 5000 50  0001 C CNN
@@ -343,7 +343,7 @@ LED5_DATA
 Text GLabel 6700 4950 1    39   Input ~ 0
 PWR_LED
 $Comp
-L power:GND #PWR0219
+L mch2021-rescue:GND-power #PWR0219
 U 1 1 60028770
 P 6700 5250
 F 0 "#PWR0219" H 6700 5000 50  0001 C CNN
@@ -354,7 +354,7 @@ F 3 "" H 6700 5250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C56
+L mch2021-rescue:C-Device C56
 U 1 1 6002876A
 P 6700 5100
 F 0 "C56" H 6815 5146 50  0000 L CNN
@@ -368,7 +368,7 @@ F 6 "C107372" H 6700 5100 50  0001 C CNN "LCSC"
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Connector:TestPoint TP2
+L mch2021-rescue:TestPoint-Connector TP2
 U 1 1 6165A2F6
 P 3450 4050
 F 0 "TP2" H 3400 4100 50  0000 R CNN
@@ -382,7 +382,7 @@ Connection ~ 3450 4050
 Wire Wire Line
 	3450 4050 4000 4050
 $Comp
-L Connector:TestPoint TP3
+L mch2021-rescue:TestPoint-Connector TP3
 U 1 1 6168BD17
 P 2350 4050
 F 0 "TP3" H 2300 4100 50  0000 R CNN

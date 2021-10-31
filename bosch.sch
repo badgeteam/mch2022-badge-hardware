@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Sensor:BME680 U9
+L mch2021-rescue:BME680-Sensor U9
 U 1 1 5FDA6CD0
 P 7700 4250
 F 0 "U9" H 7300 4800 50  0000 R CNN
@@ -29,7 +29,7 @@ Wire Wire Line
 Wire Wire Line
 	8400 3950 8400 3650
 $Comp
-L power:+3.3V #PWR0136
+L mch2021-rescue:+3.3V-power #PWR0136
 U 1 1 5FDAD653
 P 7600 3650
 F 0 "#PWR0136" H 7600 3500 50  0001 C CNN
@@ -40,7 +40,7 @@ F 3 "" H 7600 3650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3.3V #PWR0138
+L mch2021-rescue:+3.3V-power #PWR0138
 U 1 1 5FDADA74
 P 7800 3650
 F 0 "#PWR0138" H 7800 3500 50  0001 C CNN
@@ -51,7 +51,7 @@ F 3 "" H 7800 3650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3.3V #PWR0140
+L mch2021-rescue:+3.3V-power #PWR0140
 U 1 1 5FDADCA9
 P 8400 3650
 F 0 "#PWR0140" H 8400 3500 50  0001 C CNN
@@ -62,7 +62,7 @@ F 3 "" H 8400 3650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3.3V #PWR0141
+L mch2021-rescue:+3.3V-power #PWR0141
 U 1 1 5FDAE00D
 P 8700 3650
 F 0 "#PWR0141" H 8700 3500 50  0001 C CNN
@@ -85,7 +85,7 @@ SCL
 Text HLabel 9150 4350 2    50   BiDi ~ 0
 SDA
 $Comp
-L power:GND #PWR0137
+L mch2021-rescue:GND-power #PWR0137
 U 1 1 5FDB054C
 P 7600 4850
 F 0 "#PWR0137" H 7600 4600 50  0001 C CNN
@@ -96,7 +96,7 @@ F 3 "" H 7600 4850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0139
+L mch2021-rescue:GND-power #PWR0139
 U 1 1 5FDB0857
 P 7800 4850
 F 0 "#PWR0139" H 7800 4600 50  0001 C CNN
@@ -107,7 +107,7 @@ F 3 "" H 7800 4850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3.3V #PWR0128
+L mch2021-rescue:+3.3V-power #PWR0128
 U 1 1 5FDB4B11
 P 4450 3350
 F 0 "#PWR0128" H 4450 3200 50  0001 C CNN
@@ -118,7 +118,7 @@ F 3 "" H 4450 3350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3.3V #PWR0126
+L mch2021-rescue:+3.3V-power #PWR0126
 U 1 1 5FDB5755
 P 4350 3350
 F 0 "#PWR0126" H 4350 3200 50  0001 C CNN
@@ -133,7 +133,7 @@ SCL
 Text HLabel 2850 4250 0    50   BiDi ~ 0
 SDA
 $Comp
-L dk_Motion-Sensors-IMUs-Inertial-Measurement-Units:BNO055 U8
+L mch2021-rescue:BNO055-dk_Motion-Sensors-IMUs-Inertial-Measurement-Units U8
 U 1 1 5FDBA21A
 P 4250 4050
 F 0 "U8" H 3700 4600 50  0000 C CNN
@@ -153,7 +153,7 @@ F 12 "Active" H 4450 5250 60  0001 L CNN "Status"
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0127
+L mch2021-rescue:GND-power #PWR0127
 U 1 1 5FDC2D52
 P 4350 4850
 F 0 "#PWR0127" H 4350 4600 50  0001 C CNN
@@ -164,7 +164,7 @@ F 3 "" H 4350 4850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0123
+L mch2021-rescue:GND-power #PWR0123
 U 1 1 5FDC3E74
 P 4050 4850
 F 0 "#PWR0123" H 4050 4600 50  0001 C CNN
@@ -175,7 +175,7 @@ F 3 "" H 4050 4850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0124
+L mch2021-rescue:GND-power #PWR0124
 U 1 1 5FDC40F7
 P 4150 4850
 F 0 "#PWR0124" H 4150 4600 50  0001 C CNN
@@ -186,7 +186,7 @@ F 3 "" H 4150 4850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0125
+L mch2021-rescue:GND-power #PWR0125
 U 1 1 5FDC4313
 P 4250 4850
 F 0 "#PWR0125" H 4250 4600 50  0001 C CNN
@@ -201,7 +201,7 @@ Wire Wire Line
 Wire Wire Line
 	3450 4050 3450 4850
 $Comp
-L power:GND #PWR0122
+L mch2021-rescue:GND-power #PWR0122
 U 1 1 5FDC69E0
 P 3450 4850
 F 0 "#PWR0122" H 3450 4600 50  0001 C CNN
@@ -228,7 +228,7 @@ Wire Wire Line
 Text HLabel 5550 3750 2    50   Output ~ 0
 INT
 $Comp
-L Device:C C?
+L mch2021-rescue:C-Device C?
 U 1 1 5FDD510F
 P 5050 4700
 AR Path="/60C789DE/5FDD510F" Ref="C?"  Part="1" 
@@ -245,7 +245,7 @@ F 7 "N" H 5050 4700 50  0001 C CNN "Sponsored"
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0129
+L mch2021-rescue:GND-power #PWR0129
 U 1 1 5FDD53C2
 P 5050 4850
 F 0 "#PWR0129" H 5050 4600 50  0001 C CNN
@@ -262,7 +262,7 @@ Wire Wire Line
 Wire Wire Line
 	5550 3750 5400 3750
 $Comp
-L Device:R_Small R?
+L mch2021-rescue:R_Small-Device R?
 U 1 1 5FDDF192
 P 5400 3450
 AR Path="/6057522A/5FDDF192" Ref="R?"  Part="1" 
@@ -281,7 +281,7 @@ $EndComp
 Wire Wire Line
 	5400 3550 5400 3750
 $Comp
-L power:+3.3V #PWR?
+L mch2021-rescue:+3.3V-power #PWR?
 U 1 1 5FDDF199
 P 5400 3350
 AR Path="/6057522A/5FDDF199" Ref="#PWR?"  Part="1" 
@@ -302,7 +302,7 @@ Connection ~ 3450 3950
 Wire Wire Line
 	3450 3950 3450 4050
 $Comp
-L Device:R_Small R?
+L mch2021-rescue:R_Small-Device R?
 U 1 1 5FDE4845
 P 3350 3450
 AR Path="/6057522A/5FDE4845" Ref="R?"  Part="1" 
@@ -319,7 +319,7 @@ F 7 "N" H 3350 3450 50  0001 C CNN "Sponsored"
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3.3V #PWR?
+L mch2021-rescue:+3.3V-power #PWR?
 U 1 1 5FDE484C
 P 3350 3350
 AR Path="/6057522A/5FDE484C" Ref="#PWR?"  Part="1" 
@@ -344,7 +344,7 @@ Wire Wire Line
 Wire Wire Line
 	5300 3650 5300 4850
 $Comp
-L power:GND #PWR0130
+L mch2021-rescue:GND-power #PWR0130
 U 1 1 5FDF8481
 P 5300 4850
 F 0 "#PWR0130" H 5300 4600 50  0001 C CNN
@@ -355,7 +355,7 @@ F 3 "" H 5300 4850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C?
+L mch2021-rescue:C-Device C?
 U 1 1 5FDFF3EC
 P 5500 4700
 AR Path="/5DC753C3/5FDFF3EC" Ref="C?"  Part="1" 
@@ -374,7 +374,7 @@ F 6 "N" H 5500 4700 50  0001 C CNN "Sponsored"
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Device:C C?
+L mch2021-rescue:C-Device C?
 U 1 1 5FDFF81E
 P 5900 4700
 AR Path="/5DC753C3/5FDFF81E" Ref="C?"  Part="1" 
@@ -393,7 +393,7 @@ F 6 "N" H 5900 4700 50  0001 C CNN "Sponsored"
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Device:Crystal_Small Y?
+L mch2021-rescue:Crystal_Small-Device Y?
 U 1 1 5FE05137
 P 5700 4050
 AR Path="/5F51E414/5FE05137" Ref="Y?"  Part="1" 
@@ -407,7 +407,7 @@ F 4 "C271654" H 5700 4050 50  0001 C CNN "LCSC"
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:GND #PWR0132
+L mch2021-rescue:GND-power #PWR0132
 U 1 1 5FE114D2
 P 5500 4850
 F 0 "#PWR0132" H 5500 4600 50  0001 C CNN
@@ -418,7 +418,7 @@ F 3 "" H 5500 4850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0133
+L mch2021-rescue:GND-power #PWR0133
 U 1 1 5FE1191E
 P 5900 4850
 F 0 "#PWR0133" H 5900 4600 50  0001 C CNN
@@ -447,7 +447,7 @@ Wire Wire Line
 	5900 3850 5900 4050
 Connection ~ 5900 4050
 $Comp
-L Device:R_Small R?
+L mch2021-rescue:R_Small-Device R?
 U 1 1 5FE17C0C
 P 3050 3450
 AR Path="/6057522A/5FE17C0C" Ref="R?"  Part="1" 
@@ -464,7 +464,7 @@ F 7 "N" H 3050 3450 50  0001 C CNN "Sponsored"
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3.3V #PWR?
+L mch2021-rescue:+3.3V-power #PWR?
 U 1 1 5FE17C12
 P 3050 3350
 AR Path="/6057522A/5FE17C12" Ref="#PWR?"  Part="1" 
@@ -491,7 +491,7 @@ Wire Wire Line
 Text HLabel 2850 3750 0    50   Input ~ 0
 RESET
 $Comp
-L Device:C C?
+L mch2021-rescue:C-Device C?
 U 1 1 5FE44369
 P 7000 4700
 AR Path="/60C789DE/5FE44369" Ref="C?"  Part="1" 
@@ -508,7 +508,7 @@ F 7 "N" H 7000 4700 50  0001 C CNN "Sponsored"
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0135
+L mch2021-rescue:GND-power #PWR0135
 U 1 1 5FE4436F
 P 7000 4850
 F 0 "#PWR0135" H 7000 4600 50  0001 C CNN
@@ -519,7 +519,7 @@ F 3 "" H 7000 4850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3.3V #PWR0134
+L mch2021-rescue:+3.3V-power #PWR0134
 U 1 1 5FE4A185
 P 7000 4550
 F 0 "#PWR0134" H 7000 4400 50  0001 C CNN
@@ -530,7 +530,7 @@ F 3 "" H 7000 4550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C?
+L mch2021-rescue:C-Device C?
 U 1 1 5FE5AFEB
 P 2400 4700
 AR Path="/60C789DE/5FE5AFEB" Ref="C?"  Part="1" 
@@ -547,7 +547,7 @@ F 7 "N" H 2400 4700 50  0001 C CNN "Sponsored"
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0119
+L mch2021-rescue:GND-power #PWR0119
 U 1 1 5FE5AFF1
 P 2400 4850
 F 0 "#PWR0119" H 2400 4600 50  0001 C CNN
@@ -558,7 +558,7 @@ F 3 "" H 2400 4850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3.3V #PWR0118
+L mch2021-rescue:+3.3V-power #PWR0118
 U 1 1 5FE5AFF7
 P 2400 4550
 F 0 "#PWR0118" H 2400 4400 50  0001 C CNN
@@ -577,7 +577,7 @@ BNO055_XIN32
 Text Label 5000 3850 0    20   ~ 0
 BNO055_XOUT32
 $Comp
-L Connector:TestPoint TP15
+L mch2021-rescue:TestPoint-Connector TP15
 U 1 1 61C1AC47
 P 2850 3650
 F 0 "TP15" V 3045 3722 50  0000 C CNN

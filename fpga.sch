@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L FPGA_Lattice:ICE40UP5K-SG48ITR U5
+L mch2021-rescue:ICE40UP5K-SG48ITR-FPGA_Lattice U5
 U 1 1 5F52B856
 P 1850 6100
 F 0 "U5" H 1750 4950 50  0000 L CNN
@@ -29,7 +29,7 @@ F 7 "N" H 1850 6100 50  0001 C CNN "Sponsored"
 	1    0    0    -1  
 $EndComp
 $Comp
-L FPGA_Lattice:ICE40UP5K-SG48ITR U5
+L mch2021-rescue:ICE40UP5K-SG48ITR-FPGA_Lattice U5
 U 2 1 5F52DB74
 P 3500 6100
 F 0 "U5" H 3500 5025 50  0000 C CNN
@@ -44,7 +44,7 @@ F 7 "N" H 3500 6100 50  0001 C CNN "Sponsored"
 	1    0    0    -1  
 $EndComp
 $Comp
-L FPGA_Lattice:ICE40UP5K-SG48ITR U5
+L mch2021-rescue:ICE40UP5K-SG48ITR-FPGA_Lattice U5
 U 3 1 5F52F020
 P 9000 3900
 F 0 "U5" H 8900 3200 50  0000 L CNN
@@ -59,7 +59,7 @@ F 7 "N" H 9000 3900 50  0001 C CNN "Sponsored"
 	1    0    0    -1  
 $EndComp
 $Comp
-L FPGA_Lattice:ICE40UP5K-SG48ITR U5
+L mch2021-rescue:ICE40UP5K-SG48ITR-FPGA_Lattice U5
 U 4 1 5F5301DA
 P 2650 1200
 F 0 "U5" V 2283 1200 50  0000 C CNN
@@ -74,7 +74,7 @@ F 7 "N" H 2650 1200 50  0001 C CNN "Sponsored"
 	0    -1   1    0   
 $EndComp
 $Comp
-L Device:R_Small R33
+L mch2021-rescue:R_Small-Device R33
 U 1 1 5F537E5C
 P 1700 1350
 F 0 "R33" V 1896 1350 50  0000 C CNN
@@ -89,7 +89,7 @@ F 7 "N" H 1700 1350 50  0001 C CNN "Sponsored"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C16
+L mch2021-rescue:C_Small-Device C16
 U 1 1 5F54E79A
 P 1300 1700
 F 0 "C16" H 1392 1746 50  0000 L CNN
@@ -104,7 +104,7 @@ F 7 "N" H 1300 1700 50  0001 C CNN "Sponsored"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C17
+L mch2021-rescue:C_Small-Device C17
 U 1 1 5F54FA10
 P 1700 1700
 F 0 "C17" H 1792 1746 50  0000 L CNN
@@ -118,7 +118,7 @@ F 6 "C15525" H 1700 1700 50  0001 C CNN "LCSC"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C18
+L mch2021-rescue:C_Small-Device C18
 U 1 1 5F551B90
 P 2100 1700
 F 0 "C18" H 2192 1746 50  0000 L CNN
@@ -133,7 +133,7 @@ F 7 "N" H 2100 1700 50  0001 C CNN "Sponsored"
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR084
+L mch2021-rescue:GND-power #PWR084
 U 1 1 5F553535
 P 2100 1800
 F 0 "#PWR084" H 2100 1550 50  0001 C CNN
@@ -144,7 +144,7 @@ F 3 "" H 2100 1800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR080
+L mch2021-rescue:GND-power #PWR080
 U 1 1 5F553952
 P 1700 1800
 F 0 "#PWR080" H 1700 1550 50  0001 C CNN
@@ -155,7 +155,7 @@ F 3 "" H 1700 1800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR078
+L mch2021-rescue:GND-power #PWR078
 U 1 1 5F553E39
 P 1300 1800
 F 0 "#PWR078" H 1300 1550 50  0001 C CNN
@@ -180,7 +180,7 @@ Wire Wire Line
 	2250 1200 1700 1200
 Connection ~ 1300 1200
 $Comp
-L power:+1V2 #PWR075
+L mch2021-rescue:+1V2-power #PWR075
 U 1 1 5F564804
 P 900 1000
 F 0 "#PWR075" H 900 850 50  0001 C CNN
@@ -191,7 +191,7 @@ F 3 "" H 900 1000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR088
+L mch2021-rescue:GND-power #PWR088
 U 1 1 5F565850
 P 3150 1800
 F 0 "#PWR088" H 3150 1550 50  0001 C CNN
@@ -206,7 +206,7 @@ Wire Wire Line
 Wire Wire Line
 	3150 1200 3050 1200
 $Comp
-L power:+3.3V #PWR091
+L mch2021-rescue:+3.3V-power #PWR091
 U 1 1 5F57B8C0
 P 3500 5000
 F 0 "#PWR091" H 3500 4850 50  0001 C CNN
@@ -229,7 +229,7 @@ FPGA_RESET
 Text HLabel 4000 5400 2    50   Output ~ 0
 FPGA_CDONE
 $Comp
-L power:GND #PWR077
+L mch2021-rescue:GND-power #PWR077
 U 1 1 5F58383F
 P 1100 3150
 F 0 "#PWR077" H 1100 2900 50  0001 C CNN
@@ -240,7 +240,7 @@ F 3 "" H 1100 3150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small R31
+L mch2021-rescue:R_Small-Device R31
 U 1 1 5F59314F
 P 1100 3050
 F 0 "R31" H 1159 3096 50  0000 L CNN
@@ -257,7 +257,7 @@ $EndComp
 Text HLabel 1100 2950 1    50   UnSpc ~ 0
 FPGA_RESET
 $Comp
-L Device:R_Small R32
+L mch2021-rescue:R_Small-Device R32
 U 1 1 5F5BBEB5
 P 1400 2700
 F 0 "R32" H 1459 2746 50  0000 L CNN
@@ -274,7 +274,7 @@ $EndComp
 Text HLabel 1400 2800 3    50   UnSpc ~ 0
 FPGA_CDONE
 $Comp
-L power:+3.3V #PWR079
+L mch2021-rescue:+3.3V-power #PWR079
 U 1 1 5F5BD259
 P 1400 2600
 F 0 "#PWR079" H 1400 2450 50  0001 C CNN
@@ -291,7 +291,7 @@ LCD_WR
 Text HLabel 1450 5500 0    39   Input ~ 0
 LCD_FMARK
 $Comp
-L power:+3.3V #PWR082
+L mch2021-rescue:+3.3V-power #PWR082
 U 1 1 60CF7467
 P 1850 5000
 F 0 "#PWR082" H 1850 4850 50  0001 C CNN
@@ -308,7 +308,7 @@ UART_TX
 Text HLabel 1450 6900 0    39   Output ~ 0
 RGB0
 $Comp
-L power:+3.3V #PWR094
+L mch2021-rescue:+3.3V-power #PWR094
 U 1 1 5F32B7AB
 P 9000 3200
 F 0 "#PWR094" H 9000 3050 50  0001 C CNN
@@ -340,7 +340,7 @@ Wire Wire Line
 Wire Wire Line
 	10500 1750 10500 1800
 $Comp
-L power:GND #PWR099
+L mch2021-rescue:GND-power #PWR099
 U 1 1 5F3AAB21
 P 10500 1800
 F 0 "#PWR099" H 10500 1550 50  0001 C CNN
@@ -351,7 +351,7 @@ F 3 "" H 10500 1800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small R36
+L mch2021-rescue:R_Small-Device R36
 U 1 1 5F436AA9
 P 9450 1050
 F 0 "R36" H 9509 1096 50  0000 L CNN
@@ -370,7 +370,7 @@ Wire Wire Line
 Wire Wire Line
 	9450 1250 9450 1150
 $Comp
-L power:+3.3V #PWR095
+L mch2021-rescue:+3.3V-power #PWR095
 U 1 1 5F439DDC
 P 9450 950
 F 0 "#PWR095" H 9450 800 50  0001 C CNN
@@ -381,7 +381,7 @@ F 3 "" H 9450 950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3.3V #PWR098
+L mch2021-rescue:+3.3V-power #PWR098
 U 1 1 5F43A076
 P 10500 950
 F 0 "#PWR098" H 10500 800 50  0001 C CNN
@@ -431,7 +431,7 @@ Wire Wire Line
 Wire Wire Line
 	9550 1750 9350 1750
 $Comp
-L Device:C_Small C21
+L mch2021-rescue:C_Small-Device C21
 U 1 1 5F472EE7
 P 4700 5100
 F 0 "C21" H 4792 5146 50  0000 L CNN
@@ -446,7 +446,7 @@ F 7 "N" H 4700 5100 50  0001 C CNN "Sponsored"
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR093
+L mch2021-rescue:GND-power #PWR093
 U 1 1 5F473D9D
 P 4700 5200
 F 0 "#PWR093" H 4700 4950 50  0001 C CNN
@@ -457,7 +457,7 @@ F 3 "" H 4700 5200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3.3V #PWR092
+L mch2021-rescue:+3.3V-power #PWR092
 U 1 1 5F473F7E
 P 4700 5000
 F 0 "#PWR092" H 4700 4850 50  0001 C CNN
@@ -468,7 +468,7 @@ F 3 "" H 4700 5000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C22
+L mch2021-rescue:C_Small-Device C22
 U 1 1 5F47D064
 P 9550 3300
 F 0 "C22" H 9642 3346 50  0000 L CNN
@@ -483,7 +483,7 @@ F 7 "N" H 9550 3300 50  0001 C CNN "Sponsored"
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR097
+L mch2021-rescue:GND-power #PWR097
 U 1 1 5F47D06A
 P 9550 3400
 F 0 "#PWR097" H 9550 3150 50  0001 C CNN
@@ -494,7 +494,7 @@ F 3 "" H 9550 3400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3.3V #PWR096
+L mch2021-rescue:+3.3V-power #PWR096
 U 1 1 5F47D070
 P 9550 3200
 F 0 "#PWR096" H 9550 3050 50  0001 C CNN
@@ -505,7 +505,7 @@ F 3 "" H 9550 3200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C20
+L mch2021-rescue:C_Small-Device C20
 U 1 1 5F47E26A
 P 3450 1700
 F 0 "C20" H 3542 1746 50  0000 L CNN
@@ -520,7 +520,7 @@ F 7 "N" H 3450 1700 50  0001 C CNN "Sponsored"
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR090
+L mch2021-rescue:GND-power #PWR090
 U 1 1 5F47E270
 P 3450 1800
 F 0 "#PWR090" H 3450 1550 50  0001 C CNN
@@ -531,7 +531,7 @@ F 3 "" H 3450 1800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3.3V #PWR089
+L mch2021-rescue:+3.3V-power #PWR089
 U 1 1 5F47E276
 P 3450 1600
 F 0 "#PWR089" H 3450 1450 50  0001 C CNN
@@ -542,7 +542,7 @@ F 3 "" H 3450 1600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C19
+L mch2021-rescue:C_Small-Device C19
 U 1 1 5F489EE6
 P 2300 5100
 F 0 "C19" H 2392 5146 50  0000 L CNN
@@ -557,7 +557,7 @@ F 7 "N" H 2300 5100 50  0001 C CNN "Sponsored"
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR087
+L mch2021-rescue:GND-power #PWR087
 U 1 1 5F489EEC
 P 2300 5200
 F 0 "#PWR087" H 2300 4950 50  0001 C CNN
@@ -568,7 +568,7 @@ F 3 "" H 2300 5200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3.3V #PWR086
+L mch2021-rescue:+3.3V-power #PWR086
 U 1 1 5F489EF2
 P 2300 5000
 F 0 "#PWR086" H 2300 4850 50  0001 C CNN
@@ -579,7 +579,7 @@ F 3 "" H 2300 5000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C15
+L mch2021-rescue:C_Small-Device C15
 U 1 1 5F48A8F4
 P 900 1700
 F 0 "C15" H 992 1746 50  0000 L CNN
@@ -594,7 +594,7 @@ F 7 "N" H 900 1700 50  0001 C CNN "Sponsored"
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR076
+L mch2021-rescue:GND-power #PWR076
 U 1 1 5F48A8FA
 P 900 1800
 F 0 "#PWR076" H 900 1550 50  0001 C CNN
@@ -617,7 +617,7 @@ PMOD_10
 Text HLabel 7100 3700 0    50   BiDi ~ 0
 PMOD_7
 $Comp
-L Device:R_Pack04 RN5
+L mch2021-rescue:R_Pack04-Device RN5
 U 1 1 5FD85945
 P 7300 4300
 F 0 "RN5" V 7500 4300 50  0000 C CNN
@@ -654,7 +654,7 @@ CLK
 Text HLabel 1750 2800 3    50   UnSpc ~ 0
 IRQ
 $Comp
-L Device:R_Small R34
+L mch2021-rescue:R_Small-Device R34
 U 1 1 5F54C08B
 P 1750 2700
 F 0 "R34" H 1809 2746 50  0000 L CNN
@@ -669,7 +669,7 @@ F 7 "N" H 1750 2700 50  0001 C CNN "Sponsored"
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3.3V #PWR081
+L mch2021-rescue:+3.3V-power #PWR081
 U 1 1 5F54C091
 P 1750 2600
 F 0 "#PWR081" H 1750 2450 50  0001 C CNN
@@ -688,7 +688,7 @@ RGB2
 Text HLabel 1450 7000 0    39   Output ~ 0
 RGB1
 $Comp
-L Device:R_Small R35
+L mch2021-rescue:R_Small-Device R35
 U 1 1 5F503F4E
 P 2050 2700
 F 0 "R35" H 2109 2746 50  0000 L CNN
@@ -705,7 +705,7 @@ $EndComp
 Text HLabel 2050 2800 3    39   UnSpc ~ 0
 SPI_CS
 $Comp
-L power:+3.3V #PWR083
+L mch2021-rescue:+3.3V-power #PWR083
 U 1 1 5F89A681
 P 2050 2600
 F 0 "#PWR083" H 2050 2450 50  0001 C CNN
@@ -716,7 +716,7 @@ F 3 "" H 2050 2600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3.3V #PWR085
+L mch2021-rescue:+3.3V-power #PWR085
 U 1 1 5F8E28AC
 P 2250 1100
 F 0 "#PWR085" H 2250 950 50  0001 C CNN
@@ -733,7 +733,7 @@ I2S_CLK
 Text HLabel 1450 6600 0    39   Output ~ 0
 I2S_LR
 $Comp
-L Device:R_Pack04 RN4
+L mch2021-rescue:R_Pack04-Device RN4
 U 1 1 5FD84D43
 P 7300 3900
 F 0 "RN4" V 6900 3900 50  0000 C CNN

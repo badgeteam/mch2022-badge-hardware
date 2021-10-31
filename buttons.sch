@@ -18,7 +18,7 @@ I2C I/O expander
 Text HLabel 4850 2100 2    50   Output ~ 0
 STM32_BOOT0
 $Comp
-L Device:C_Small C14
+L mch2021-rescue:C_Small-Device C14
 U 1 1 5F33C3B2
 P 10900 6200
 F 0 "C14" H 10992 6246 50  0000 L CNN
@@ -33,7 +33,7 @@ F 7 "N" H 10900 6200 50  0001 C CNN "Sponsored"
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR074
+L mch2021-rescue:GND-power #PWR074
 U 1 1 5F33C3B8
 P 10900 6300
 F 0 "#PWR074" H 10900 6050 50  0001 C CNN
@@ -44,7 +44,7 @@ F 3 "" H 10900 6300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3.3V #PWR073
+L mch2021-rescue:+3.3V-power #PWR073
 U 1 1 5F33C3BE
 P 10900 6100
 F 0 "#PWR073" H 10900 5950 50  0001 C CNN
@@ -55,7 +55,7 @@ F 3 "" H 10900 6100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Interface_Expansion:PCA9555PW U4
+L mch2021-rescue:PCA9555PW-Interface_Expansion U4
 U 1 1 5F5BEEA4
 P 4350 2800
 F 0 "U4" H 4000 1850 50  0000 C CNN
@@ -71,7 +71,7 @@ $EndComp
 Wire Wire Line
 	3850 3400 3750 3400
 $Comp
-L power:GND #PWR066
+L mch2021-rescue:GND-power #PWR066
 U 1 1 5F5EA80A
 P 3750 3800
 F 0 "#PWR066" H 3750 3550 50  0001 C CNN
@@ -82,7 +82,7 @@ F 3 "" H 3750 3800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR070
+L mch2021-rescue:GND-power #PWR070
 U 1 1 5F5EABC3
 P 4350 3800
 F 0 "#PWR070" H 4350 3550 50  0001 C CNN
@@ -109,7 +109,7 @@ F 8 "N" H 4450 5500 50  0001 C CNN "Sponsored"
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR071
+L mch2021-rescue:GND-power #PWR071
 U 1 1 5F61B54E
 P 5150 5800
 F 0 "#PWR071" H 5150 5550 50  0001 C CNN
@@ -120,7 +120,7 @@ F 3 "" H 5150 5800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3.3V #PWR069
+L mch2021-rescue:+3.3V-power #PWR069
 U 1 1 5F48E130
 P 4350 1700
 F 0 "#PWR069" H 4350 1550 50  0001 C CNN
@@ -131,7 +131,7 @@ F 3 "" H 4350 1700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3.3V #PWR067
+L mch2021-rescue:+3.3V-power #PWR067
 U 1 1 5F48EC4C
 P 3800 1700
 F 0 "#PWR067" H 3800 1550 50  0001 C CNN
@@ -142,7 +142,7 @@ F 3 "" H 3800 1700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small R30
+L mch2021-rescue:R_Small-Device R30
 U 1 1 5F4989F8
 P 3800 1800
 F 0 "R30" H 3859 1846 50  0000 L CNN
@@ -178,7 +178,7 @@ Wire Wire Line
 Wire Wire Line
 	4850 2700 5600 2700
 $Comp
-L Switch:SW_Push SW4
+L mch2021-rescue:SW_Push-Switch SW4
 U 1 1 5F5F70AF
 P 9050 4150
 F 0 "SW4" H 9050 4435 50  0000 C CNN
@@ -192,7 +192,7 @@ F 6 "" H 9050 4150 50  0001 C CNN "Price"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Switch:SW_Push SW1
+L mch2021-rescue:SW_Push-Switch SW1
 U 1 1 5F601049
 P 9050 2950
 F 0 "SW1" H 9050 3235 50  0000 C CNN
@@ -206,7 +206,7 @@ F 6 "" H 9050 2950 50  0001 C CNN "Price"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Switch:SW_Push SW5
+L mch2021-rescue:SW_Push-Switch SW5
 U 1 1 5F5F70A3
 P 9050 4550
 F 0 "SW5" H 9050 4835 50  0000 C CNN
@@ -220,7 +220,7 @@ F 6 "" H 9050 4550 50  0001 C CNN "Price"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Switch:SW_Push SW6
+L mch2021-rescue:SW_Push-Switch SW6
 U 1 1 5F5F709D
 P 9050 4950
 F 0 "SW6" H 9050 5235 50  0000 C CNN
@@ -234,7 +234,7 @@ F 6 "" H 9050 4950 50  0001 C CNN "Price"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Switch:SW_Push SW2
+L mch2021-rescue:SW_Push-Switch SW2
 U 1 1 5F60575E
 P 9050 3350
 F 0 "SW2" H 9050 3635 50  0000 C CNN
@@ -257,7 +257,7 @@ Wire Wire Line
 	9350 4950 9350 5000
 Connection ~ 9350 4950
 $Comp
-L power:GND #PWR072
+L mch2021-rescue:GND-power #PWR072
 U 1 1 5F64058E
 P 9350 5000
 F 0 "#PWR072" H 9350 4750 50  0001 C CNN
@@ -292,7 +292,7 @@ Wire Wire Line
 Wire Wire Line
 	9250 3750 9350 3750
 $Comp
-L Switch:SW_Push SW3
+L mch2021-rescue:SW_Push-Switch SW3
 U 1 1 5F5F70A9
 P 9050 3750
 F 0 "SW3" H 9050 4035 50  0000 C CNN
@@ -383,7 +383,7 @@ Connection ~ 3650 3500
 Wire Wire Line
 	3650 3500 3650 3300
 $Comp
-L power:+3.3V #PWR065
+L mch2021-rescue:+3.3V-power #PWR065
 U 1 1 5FA973E7
 P 3650 3300
 F 0 "#PWR065" H 3650 3150 50  0001 C CNN
@@ -394,7 +394,7 @@ F 3 "" H 3650 3300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR068
+L mch2021-rescue:GND-power #PWR068
 U 1 1 5FBEF4DF
 P 4050 5800
 F 0 "#PWR068" H 4050 5550 50  0001 C CNN
