@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 9
 Title "MCH2021 badge - Overview"
-Date "2021-10-09"
+Date "2021-11-13"
 Rev "3"
 Comp "BADGE.TEAM"
 Comment1 ""
@@ -136,7 +136,7 @@ Wire Wire Line
 Wire Wire Line
 	2850 4400 6800 4400
 $Comp
-L mch2021-rescue:RGB-5050-led D2
+L custom:RGB-5050-MCH D2
 U 1 1 611CFAC6
 P 6500 5250
 F 0 "D2" V 6350 5350 50  0000 C CNN

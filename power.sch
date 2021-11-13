@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 8 9
 Title "MCH2021 badge - Power management"
-Date "2021-10-09"
+Date "2021-11-13"
 Rev "3"
 Comp "BADGE.TEAM"
 Comment1 ""
