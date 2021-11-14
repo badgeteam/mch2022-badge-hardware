@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 9
 Title "MCH2021 badge - Overview"
-Date "2021-11-13"
+Date "2021-11-14"
 Rev "3"
 Comp "BADGE.TEAM"
 Comment1 ""
@@ -2184,4 +2184,32 @@ Wire Wire Line
 Connection ~ 2550 5100
 Wire Wire Line
 	2550 5100 2550 5200
+$Comp
+L Connector_Generic:Conn_01x01 J13
+U 1 1 61937729
+P 2750 4850
+F 0 "J13" H 2830 4892 50  0000 L CNN
+F 1 "Hook 2" H 2830 4801 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Keystone_5019_Minature" H 2750 4850 50  0001 C CNN
+F 3 "~" H 2750 4850 50  0001 C CNN
+	1    2750 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J12
+U 1 1 61937DD9
+P 2750 4650
+F 0 "J12" H 2830 4692 50  0000 L CNN
+F 1 "Hook 1" H 2830 4601 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Keystone_5019_Minature" H 2750 4650 50  0001 C CNN
+F 3 "~" H 2750 4650 50  0001 C CNN
+	1    2750 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 4850 2550 5000
+Connection ~ 2550 5000
+Wire Wire Line
+	2550 4650 2550 4850
+Connection ~ 2550 4850
 $EndSCHEMATC

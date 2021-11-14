@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 3 9
 Title "MCH2021 badge - STM32 microcontroller"
-Date "2021-11-13"
+Date "2021-11-14"
 Rev "3"
 Comp "BADGE.TEAM"
 Comment1 ""
