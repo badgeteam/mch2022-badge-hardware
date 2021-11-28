@@ -1,0 +1,887 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 9
+Title "MCH2021 badge - RP2040 microcontroller"
+Date "2021-11-14"
+Rev "3"
+Comp "BADGE.TEAM"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L mch2021-rescue:C-Device C?
+U 1 1 5E3D7D7C
+P 9600 5950
+AR Path="/5DC753C3/5E3D7D7C" Ref="C?"  Part="1" 
+AR Path="/5E3D7D7C" Ref="C?"  Part="1" 
+AR Path="/5E3BA64A/5E3D7D7C" Ref="C?"  Part="1" 
+AR Path="/5F51E414/5E3D7D7C" Ref="C11"  Part="1" 
+F 0 "C11" H 9715 5996 50  0000 L CNN
+F 1 "100n" H 9715 5905 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 9638 5800 50  0001 C CNN
+F 3 "" H 9600 5950 50  0001 C CNN
+F 4 "C83056 " H 9600 5950 50  0001 C CNN "LCSC"
+F 5 "" H 9600 5950 50  0001 C CNN "Price"
+F 6 "-" H 9600 5950 50  0001 C CNN "Mouser"
+F 7 "N" H 9600 5950 50  0001 C CNN "Sponsored"
+	1    9600 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L mch2021-rescue:C-Device C?
+U 1 1 5E3D85DB
+P 10100 5950
+AR Path="/5DC753C3/5E3D85DB" Ref="C?"  Part="1" 
+AR Path="/5E3D85DB" Ref="C?"  Part="1" 
+AR Path="/5E3BA64A/5E3D85DB" Ref="C?"  Part="1" 
+AR Path="/5F51E414/5E3D85DB" Ref="C12"  Part="1" 
+F 0 "C12" H 10215 5996 50  0000 L CNN
+F 1 "100n" H 10215 5905 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 10138 5800 50  0001 C CNN
+F 3 "" H 10100 5950 50  0001 C CNN
+F 4 "C83056 " H 10100 5950 50  0001 C CNN "LCSC"
+F 5 "" H 10100 5950 50  0001 C CNN "Price"
+F 6 "-" H 10100 5950 50  0001 C CNN "Mouser"
+F 7 "N" H 10100 5950 50  0001 C CNN "Sponsored"
+	1    10100 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L mch2021-rescue:C-Device C?
+U 1 1 5E3D8A4A
+P 10000 2750
+AR Path="/5DC753C3/5E3D8A4A" Ref="C?"  Part="1" 
+AR Path="/5E3D8A4A" Ref="C?"  Part="1" 
+AR Path="/5E3BA64A/5E3D8A4A" Ref="C?"  Part="1" 
+AR Path="/5F51E414/5E3D8A4A" Ref="C13"  Part="1" 
+F 0 "C13" H 10115 2796 50  0000 L CNN
+F 1 "100n" H 10115 2705 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 10038 2600 50  0001 C CNN
+F 3 "" H 10000 2750 50  0001 C CNN
+F 4 "C83056 " H 10000 2750 50  0001 C CNN "LCSC"
+F 5 "" H 10000 2750 50  0001 C CNN "Price"
+F 6 "-" H 10000 2750 50  0001 C CNN "Mouser"
+F 7 "N" H 10000 2750 50  0001 C CNN "Sponsored"
+	1    10000 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L mch2021-rescue:C-Device C?
+U 1 1 5E3EFF6B
+P 4500 3150
+AR Path="/5DC753C3/5E3EFF6B" Ref="C?"  Part="1" 
+AR Path="/5E3EFF6B" Ref="C?"  Part="1" 
+AR Path="/5E3BA64A/5E3EFF6B" Ref="C?"  Part="1" 
+AR Path="/5F51E414/5E3EFF6B" Ref="C10"  Part="1" 
+F 0 "C10" H 4500 3250 50  0000 L CNN
+F 1 "22p" H 4500 3050 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 4538 3000 50  0001 C CNN
+F 3 "" H 4500 3150 50  0001 C CNN
+F 4 "C696906" H 4500 3150 50  0001 C CNN "LCSC"
+F 5 "" H 4500 3150 50  0001 C CNN "Price"
+F 6 "N" H 4500 3150 50  0001 C CNN "Sponsored"
+	1    4500 3150
+	0    1    1    0   
+$EndComp
+$Comp
+L mch2021-rescue:C-Device C?
+U 1 1 5E3F1F93
+P 4500 3350
+AR Path="/5DC753C3/5E3F1F93" Ref="C?"  Part="1" 
+AR Path="/5E3F1F93" Ref="C?"  Part="1" 
+AR Path="/5E3BA64A/5E3F1F93" Ref="C?"  Part="1" 
+AR Path="/5F51E414/5E3F1F93" Ref="C9"  Part="1" 
+F 0 "C9" H 4350 3450 50  0000 L CNN
+F 1 "22p" H 4300 3250 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 4538 3200 50  0001 C CNN
+F 3 "" H 4500 3350 50  0001 C CNN
+F 4 "C696906" H 4500 3350 50  0001 C CNN "LCSC"
+F 5 "" H 4500 3350 50  0001 C CNN "Price"
+F 6 "N" H 4500 3350 50  0001 C CNN "Sponsored"
+	1    4500 3350
+	0    1    -1   0   
+$EndComp
+Text HLabel 7850 3300 2    50   BiDi ~ 0
+USB_D-
+Text HLabel 5400 3900 0    50   Input ~ 0
+I2C_SCL
+$Comp
+L mch2021-rescue:Crystal_GND24_Small-Device Y2
+U 1 1 5E3ED918
+P 4850 3250
+F 0 "Y2" V 4800 3400 50  0000 L CNN
+F 1 "12MHz" V 4900 3400 50  0000 L CNN
+F 2 "Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm" H 4850 3250 50  0001 C CNN
+F 3 "~" H 4850 3250 50  0001 C CNN
+F 4 "C13738" H 4850 3250 50  0001 C CNN "LCSC"
+F 5 "" H 4850 3250 50  0001 C CNN "Price"
+F 6 "-" H 4850 3250 50  0001 C CNN "Mouser"
+F 7 "N" H 4850 3250 50  0001 C CNN "Sponsored"
+	1    4850 3250
+	0    1    1    0   
+$EndComp
+Text HLabel 5400 3800 0    50   3State ~ 0
+I2C_SDA
+$Comp
+L mch2021-rescue:GND-power #PWR064
+U 1 1 5F837C54
+P 10000 3100
+F 0 "#PWR064" H 10000 2850 50  0001 C CNN
+F 1 "GND" H 10005 2927 50  0000 C CNN
+F 2 "" H 10000 3100 50  0001 C CNN
+F 3 "" H 10000 3100 50  0001 C CNN
+	1    10000 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L mch2021-rescue:GND-power #PWR062
+U 1 1 5F837D54
+P 10100 6100
+F 0 "#PWR062" H 10100 5850 50  0001 C CNN
+F 1 "GND" H 10105 5927 50  0000 C CNN
+F 2 "" H 10100 6100 50  0001 C CNN
+F 3 "" H 10100 6100 50  0001 C CNN
+	1    10100 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L mch2021-rescue:GND-power #PWR060
+U 1 1 5F837F7F
+P 9600 6100
+F 0 "#PWR060" H 9600 5850 50  0001 C CNN
+F 1 "GND" H 9605 5927 50  0000 C CNN
+F 2 "" H 9600 6100 50  0001 C CNN
+F 3 "" H 9600 6100 50  0001 C CNN
+	1    9600 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L mch2021-rescue:+3.3V-power #PWR063
+U 1 1 5F838F37
+P 10000 2400
+F 0 "#PWR063" H 10000 2250 50  0001 C CNN
+F 1 "+3.3V" H 10015 2573 50  0000 C CNN
+F 2 "" H 10000 2400 50  0001 C CNN
+F 3 "" H 10000 2400 50  0001 C CNN
+	1    10000 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L mch2021-rescue:+3.3V-power #PWR061
+U 1 1 5F839325
+P 10100 5800
+F 0 "#PWR061" H 10100 5650 50  0001 C CNN
+F 1 "+3.3V" H 10115 5973 50  0000 C CNN
+F 2 "" H 10100 5800 50  0001 C CNN
+F 3 "" H 10100 5800 50  0001 C CNN
+	1    10100 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L mch2021-rescue:+3.3V-power #PWR059
+U 1 1 5F839665
+P 9600 5800
+F 0 "#PWR059" H 9600 5650 50  0001 C CNN
+F 1 "+3.3V" H 9615 5973 50  0000 C CNN
+F 2 "" H 9600 5800 50  0001 C CNN
+F 3 "" H 9600 5800 50  0001 C CNN
+	1    9600 5800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5450 2600 5450 2550
+$Comp
+L mch2021-rescue:GND-power #PWR051
+U 1 1 5F916F4B
+P 4250 3650
+F 0 "#PWR051" H 4250 3400 50  0001 C CNN
+F 1 "GND" H 4255 3477 50  0000 C CNN
+F 2 "" H 4250 3650 50  0001 C CNN
+F 3 "" H 4250 3650 50  0001 C CNN
+	1    4250 3650
+	1    0    0    -1  
+$EndComp
+Connection ~ 5450 2600
+Text HLabel 8750 1600 0    50   Input ~ 0
+STM32_BOOT0
+Text HLabel 2850 2600 0    50   Input ~ 0
+STM32_RESET
+Text HLabel 5400 4900 0    50   Output ~ 0
+ESP32_EN
+Text Notes 550  650  0    79   ~ 0
+RP2040 microcontroller
+$Comp
+L mch2021-rescue:R-Device R?
+U 1 1 5F9B952F
+P 8950 1800
+AR Path="/5DC753C3/5F9B952F" Ref="R?"  Part="1" 
+AR Path="/5F9B952F" Ref="R?"  Part="1" 
+AR Path="/5E3BA64A/5F9B952F" Ref="R?"  Part="1" 
+AR Path="/5F51E414/5F9B952F" Ref="R25"  Part="1" 
+F 0 "R25" V 9050 1800 50  0000 C CNN
+F 1 "10k" V 8950 1800 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 8880 1800 50  0001 C CNN
+F 3 "~" H 8950 1800 50  0001 C CNN
+F 4 "" H 8950 1800 50  0001 C CNN "LCSC"
+F 5 "" H 8950 1800 50  0001 C CNN "Price"
+F 6 "-" H 8950 1800 50  0001 C CNN "Mouser"
+F 7 "N" H 8950 1800 50  0001 C CNN "Sponsored"
+	1    8950 1800
+	-1   0    0    1   
+$EndComp
+$Comp
+L mch2021-rescue:GND-power #PWR048
+U 1 1 5F9BA337
+P 8950 1950
+F 0 "#PWR048" H 8950 1700 50  0001 C CNN
+F 1 "GND" H 8955 1777 50  0000 C CNN
+F 2 "" H 8950 1950 50  0001 C CNN
+F 3 "" H 8950 1950 50  0001 C CNN
+	1    8950 1950
+	1    0    0    -1  
+$EndComp
+Text HLabel 7850 3900 2    50   Input ~ 0
+SPI_SCK
+Text HLabel 7850 4000 2    50   Output ~ 0
+SPI_MISO
+Text HLabel 7850 4100 2    50   Input ~ 0
+SPI_MOSI
+Text HLabel 7850 4500 2    50   Output ~ 0
+PWR_LED_ENABLE
+Text HLabel 7850 4800 2    50   Input ~ 0
+SENSE_VBAT
+Text HLabel 7850 4900 2    50   Input ~ 0
+SENSE_VUSB
+Text HLabel 5400 4200 0    50   BiDi ~ 0
+SAO_IO0
+Text HLabel 5400 4300 0    50   BiDi ~ 0
+SAO_IO1
+Text HLabel 5400 4600 0    50   Output ~ 0
+LCD_RESET
+Text HLabel 5400 4500 0    50   Output ~ 0
+LCD_MODE
+Text HLabel 950  7250 2    50   Output ~ 0
+MCO
+Text HLabel 5400 4400 0    50   Output ~ 0
+LCD_BACKLIGHT
+Wire Wire Line
+	2850 2600 2950 2600
+Wire Notes Line
+	8800 1600 8850 1650
+$Comp
+L mch2021-rescue:+3.3V-power #PWR054
+U 1 1 5F86D644
+P 5450 2250
+F 0 "#PWR054" H 5450 2100 50  0001 C CNN
+F 1 "+3.3V" H 5465 2423 50  0000 C CNN
+F 2 "" H 5450 2250 50  0001 C CNN
+F 3 "" H 5450 2250 50  0001 C CNN
+	1    5450 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L mch2021-rescue:R-Device R?
+U 1 1 5E3DFB2E
+P 5450 2400
+AR Path="/5DC753C3/5E3DFB2E" Ref="R?"  Part="1" 
+AR Path="/5E3DFB2E" Ref="R?"  Part="1" 
+AR Path="/5E3BA64A/5E3DFB2E" Ref="R?"  Part="1" 
+AR Path="/5F51E414/5E3DFB2E" Ref="R26"  Part="1" 
+F 0 "R26" V 5350 2400 50  0000 C CNN
+F 1 "10k" V 5450 2400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 5380 2400 50  0001 C CNN
+F 3 "~" H 5450 2400 50  0001 C CNN
+F 4 "" H 5450 2400 50  0001 C CNN "LCSC"
+F 5 "" H 5450 2400 50  0001 C CNN "Price"
+F 6 "-" H 5450 2400 50  0001 C CNN "Mouser"
+F 7 "N" H 5450 2400 50  0001 C CNN "Sponsored"
+	1    5450 2400
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	8850 1650 8850 1600
+Wire Notes Line
+	2850 2600 2900 2550
+Wire Notes Line
+	2900 2550 2900 2600
+Text HLabel 8550 4200 2    50   Input ~ 0
+SPI_CS
+$Comp
+L mch2021-rescue:+3.3V-power #PWR058
+U 1 1 5F7D9ABF
+P 8450 3850
+F 0 "#PWR058" H 8450 3700 50  0001 C CNN
+F 1 "+3.3V" H 8465 4023 50  0000 C CNN
+F 2 "" H 8450 3850 50  0001 C CNN
+F 3 "" H 8450 3850 50  0001 C CNN
+	1    8450 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L mch2021-rescue:R-Device R?
+U 1 1 5F7D9AC9
+P 8450 4000
+AR Path="/5DC753C3/5F7D9AC9" Ref="R?"  Part="1" 
+AR Path="/5F7D9AC9" Ref="R?"  Part="1" 
+AR Path="/5E3BA64A/5F7D9AC9" Ref="R?"  Part="1" 
+AR Path="/5F51E414/5F7D9AC9" Ref="R28"  Part="1" 
+F 0 "R28" V 8350 4000 50  0000 C CNN
+F 1 "100k" V 8450 4000 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 8380 4000 50  0001 C CNN
+F 3 "~" H 8450 4000 50  0001 C CNN
+F 4 "" H 8450 4000 50  0001 C CNN "LCSC"
+F 5 "" H 8450 4000 50  0001 C CNN "Price"
+F 6 "-" H 8450 4000 50  0001 C CNN "Mouser"
+F 7 "N" H 8450 4000 50  0001 C CNN "Sponsored"
+	1    8450 4000
+	1    0    0    -1  
+$EndComp
+Text HLabel 7850 4600 2    50   Input ~ 0
+CHARGING
+Text GLabel 2100 7250 1    31   Input ~ 0
+BAT_3.3
+Text HLabel 5400 3600 0    50   Output ~ 0
+ESP32_RX
+Text HLabel 5400 3700 0    50   Input ~ 0
+ESP32_TX
+Text HLabel 5400 4000 0    50   Output ~ 0
+FPGA_RX
+Text HLabel 5400 4100 0    50   Input ~ 0
+FPGA_TX
+$Comp
+L mch2021-rescue:R-Device R?
+U 1 1 5FB5E63D
+P 9950 3900
+AR Path="/5DC753C3/5FB5E63D" Ref="R?"  Part="1" 
+AR Path="/5FB5E63D" Ref="R?"  Part="1" 
+AR Path="/5E3BA64A/5FB5E63D" Ref="R?"  Part="1" 
+AR Path="/5F51E414/5FB5E63D" Ref="R22"  Part="1" 
+AR Path="/5FDC6C76/5FB5E63D" Ref="R?"  Part="1" 
+F 0 "R22" V 9850 3900 50  0000 C CNN
+F 1 "47" V 9950 3900 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 9880 3900 50  0001 C CNN
+F 3 "~" H 9950 3900 50  0001 C CNN
+F 4 "" H 9950 3900 50  0001 C CNN "LCSC"
+F 5 "" H 9950 3900 50  0001 C CNN "Price"
+F 6 "-" H 9950 3900 50  0001 C CNN "Mouser"
+F 7 "N" H 9950 3900 50  0001 C CNN "Sponsored"
+	1    9950 3900
+	0    1    1    0   
+$EndComp
+$Comp
+L mch2021-rescue:Q_NMOS_GSD-Device Q?
+U 1 1 5FB5E630
+P 10300 3900
+AR Path="/5FDC6C76/5FB5E630" Ref="Q?"  Part="1" 
+AR Path="/5F51E414/5FB5E630" Ref="Q3"  Part="1" 
+F 0 "Q3" H 10250 3700 50  0000 C CNN
+F 1 "Q_NMOS_GSD" H 10050 3800 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 10500 4000 50  0001 C CNN
+F 3 "~" H 10300 3900 50  0001 C CNN
+F 4 "C406812" H 10300 3900 50  0001 C CNN "LCSC"
+F 5 "-" H 10300 3900 50  0001 C CNN "Mouser"
+F 6 "" H 10300 3900 50  0001 C CNN "Price"
+F 7 "N" H 10300 3900 50  0001 C CNN "Sponsored"
+	1    10300 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L mch2021-rescue:R-Device R?
+U 1 1 5FB7AAB6
+P 10400 3550
+AR Path="/5DC753C3/5FB7AAB6" Ref="R?"  Part="1" 
+AR Path="/5FB7AAB6" Ref="R?"  Part="1" 
+AR Path="/5E3BA64A/5FB7AAB6" Ref="R?"  Part="1" 
+AR Path="/5F51E414/5FB7AAB6" Ref="R24"  Part="1" 
+F 0 "R24" V 10500 3550 50  0000 C CNN
+F 1 "10k" V 10400 3550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 10330 3550 50  0001 C CNN
+F 3 "~" H 10400 3550 50  0001 C CNN
+F 4 "" H 10400 3550 50  0001 C CNN "LCSC"
+F 5 "" H 10400 3550 50  0001 C CNN "Price"
+F 6 "-" H 10400 3550 50  0001 C CNN "Mouser"
+F 7 "N" H 10400 3550 50  0001 C CNN "Sponsored"
+	1    10400 3550
+	-1   0    0    1   
+$EndComp
+$Comp
+L mch2021-rescue:+3.3V-power #PWR046
+U 1 1 5FB7E8B5
+P 10400 3400
+F 0 "#PWR046" H 10400 3250 50  0001 C CNN
+F 1 "+3.3V" H 10415 3573 50  0000 C CNN
+F 2 "" H 10400 3400 50  0001 C CNN
+F 3 "" H 10400 3400 50  0001 C CNN
+	1    10400 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L mch2021-rescue:GND-power #PWR047
+U 1 1 5FB9040E
+P 10400 4100
+F 0 "#PWR047" H 10400 3850 50  0001 C CNN
+F 1 "GND" H 10405 3927 50  0000 C CNN
+F 2 "" H 10400 4100 50  0001 C CNN
+F 3 "" H 10400 4100 50  0001 C CNN
+	1    10400 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9600 3900 9800 3900
+Text HLabel 9600 3900 0    50   Input ~ 0
+USB_DET
+Text HLabel 5400 5000 0    50   Output ~ 0
+ESP32_WK
+Text HLabel 5400 4700 0    50   Output ~ 0
+LED_DATA
+Text GLabel 5700 2900 0    31   Input ~ 0
+STM32_SWDIO
+Text GLabel 5700 2800 0    31   Input ~ 0
+STM32_SWCLK
+Text GLabel 2850 2700 0    31   Input ~ 0
+STM32_RESET
+Wire Wire Line
+	2850 2700 2950 2700
+Wire Wire Line
+	2950 2700 2950 2600
+Connection ~ 2950 2600
+Wire Wire Line
+	2950 2600 5450 2600
+Wire Wire Line
+	2100 7450 2100 7250
+Text HLabel 7850 4700 2    50   Input ~ 0
+BATT_TEMP
+Text GLabel 1800 7250 0    50   BiDi ~ 0
+SAO_IO2
+$Comp
+L mch2021-rescue:R_Small-Device R?
+U 1 1 61BC9ED7
+P 7600 3300
+AR Path="/61BC9ED7" Ref="R?"  Part="1" 
+AR Path="/5F51E414/61BC9ED7" Ref="R6"  Part="1" 
+F 0 "R6" V 7550 3450 50  0000 C CNN
+F 1 "27" V 7600 3300 35  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 7600 3300 50  0001 C CNN
+F 3 "~" H 7600 3300 50  0001 C CNN
+F 4 "" H 7600 3300 50  0001 C CNN "Price"
+F 5 "C103086" H 7600 3300 50  0001 C CNN "LCSC"
+F 6 "-" H 7600 3300 50  0001 C CNN "Mouser"
+F 7 "N" H 7600 3300 50  0001 C CNN "Sponsored"
+	1    7600 3300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7700 3300 7850 3300
+$Comp
+L RP2040:RP2040 U?
+U 1 1 6193F092
+P 6600 3700
+F 0 "U?" H 6600 5767 50  0000 C CNN
+F 1 "RP2040" H 6600 5676 50  0000 C CNN
+F 2 "QFN40P700X700X90-57N" H 6600 3700 50  0001 L BNN
+F 3 "" H 6600 3700 50  0001 L BNN
+F 4 "1.6.1" H 6600 3700 50  0001 L BNN "PARTREV"
+F 5 "0.9 mm" H 6600 3700 50  0001 L BNN "MAXIMUM_PACKAGE_HEIGHT"
+F 6 "IPC 7351B" H 6600 3700 50  0001 L BNN "STANDARD"
+F 7 "Raspberry Pi" H 6600 3700 50  0001 L BNN "MANUFACTURER"
+	1    6600 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L mch2021-rescue:+3.3V-power #PWR?
+U 1 1 6194A365
+P 7600 1800
+F 0 "#PWR?" H 7600 1650 50  0001 C CNN
+F 1 "+3.3V" H 7615 1973 50  0000 C CNN
+F 2 "" H 7600 1800 50  0001 C CNN
+F 3 "" H 7600 1800 50  0001 C CNN
+	1    7600 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7500 2100 7600 2100
+Wire Wire Line
+	7600 2100 7600 1800
+Wire Wire Line
+	7500 2200 7600 2200
+Wire Wire Line
+	7600 2200 7600 2100
+Connection ~ 7600 2100
+$Comp
+L power:+1V1 #PWR?
+U 1 1 61955737
+P 7900 1800
+F 0 "#PWR?" H 7900 1650 50  0001 C CNN
+F 1 "+1V1" H 7915 1973 50  0000 C CNN
+F 2 "" H 7900 1800 50  0001 C CNN
+F 3 "" H 7900 1800 50  0001 C CNN
+	1    7900 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7500 2000 7900 2000
+Wire Wire Line
+	7900 2000 7900 1800
+Wire Wire Line
+	7500 2400 7900 2400
+Wire Wire Line
+	7900 2400 7900 2000
+Connection ~ 7900 2000
+$Comp
+L mch2021-rescue:+3.3V-power #PWR?
+U 1 1 61961641
+P 5600 1800
+F 0 "#PWR?" H 5600 1650 50  0001 C CNN
+F 1 "+3.3V" H 5615 1973 50  0000 C CNN
+F 2 "" H 5600 1800 50  0001 C CNN
+F 3 "" H 5600 1800 50  0001 C CNN
+	1    5600 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 2400 5600 2400
+Wire Wire Line
+	5600 2400 5600 1800
+$Comp
+L mch2021-rescue:R_Small-Device R?
+U 1 1 61BC9EE1
+P 7600 3400
+AR Path="/61BC9EE1" Ref="R?"  Part="1" 
+AR Path="/5F51E414/61BC9EE1" Ref="R7"  Part="1" 
+F 0 "R7" V 7650 3250 50  0000 C CNN
+F 1 "27" V 7600 3400 35  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 7600 3400 50  0001 C CNN
+F 3 "~" H 7600 3400 50  0001 C CNN
+F 4 "" H 7600 3400 50  0001 C CNN "Price"
+F 5 "C103086" H 7600 3400 50  0001 C CNN "LCSC"
+F 6 "-" H 7600 3400 50  0001 C CNN "Mouser"
+F 7 "N" H 7600 3400 50  0001 C CNN "Sponsored"
+	1    7600 3400
+	0    -1   -1   0   
+$EndComp
+Text HLabel 7850 3400 2    50   BiDi ~ 0
+USB_D+
+$Comp
+L mch2021-rescue:GND-power #PWR?
+U 1 1 619F7FF7
+P 7600 5500
+F 0 "#PWR?" H 7600 5250 50  0001 C CNN
+F 1 "GND" H 7605 5327 50  0000 C CNN
+F 2 "" H 7600 5500 50  0001 C CNN
+F 3 "" H 7600 5500 50  0001 C CNN
+	1    7600 5500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7500 5200 7600 5200
+Wire Wire Line
+	7600 5200 7600 5400
+Wire Wire Line
+	7500 5400 7600 5400
+Connection ~ 7600 5400
+Wire Wire Line
+	7600 5400 7600 5500
+NoConn ~ 10500 1150
+Text GLabel 10500 1050 2    31   Input ~ 0
+STM32_SWCLK
+Text GLabel 10000 1050 0    31   Input ~ 0
+STM32_RESET
+Text GLabel 10500 950  2    31   Input ~ 0
+STM32_SWDIO
+Wire Wire Line
+	9950 950  9950 900 
+Wire Wire Line
+	10000 950  9950 950 
+Wire Wire Line
+	9950 1150 9950 1200
+Wire Wire Line
+	10000 1150 9950 1150
+$Comp
+L mch2021-rescue:GND-power #PWR0218
+U 1 1 5FF4E6B4
+P 9950 1200
+F 0 "#PWR0218" H 9950 950 50  0001 C CNN
+F 1 "GND" H 9955 1027 50  0000 C CNN
+F 2 "" H 9950 1200 50  0001 C CNN
+F 3 "" H 9950 1200 50  0001 C CNN
+	1    9950 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L mch2021-rescue:+3.3V-power #PWR0217
+U 1 1 5FF4D564
+P 9950 900
+F 0 "#PWR0217" H 9950 750 50  0001 C CNN
+F 1 "+3.3V" H 9965 1073 50  0000 C CNN
+F 2 "" H 9950 900 50  0001 C CNN
+F 3 "" H 9950 900 50  0001 C CNN
+	1    9950 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L mch2021-rescue:Conn_02x03_Odd_Even-Connector_Generic J8
+U 1 1 5FF4BC2C
+P 10200 1050
+F 0 "J8" H 10250 1367 50  0000 C CNN
+F 1 "JTAG" H 10250 1276 50  0000 C CNN
+F 2 "Connector:Tag-Connect_TC2030-IDC-FP_2x03_P1.27mm_Vertical" H 10200 1050 50  0001 C CNN
+F 3 "~" H 10200 1050 50  0001 C CNN
+	1    10200 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L mch2021-rescue:SPIFLASH_QSPI-spiflash U?
+U 1 1 61A75BE3
+P 9300 2750
+F 0 "U?" H 9300 3265 50  0000 C CNN
+F 1 "SPIFLASH_QSPI-spiflash" H 9300 3174 50  0000 C CNN
+F 2 "" H 9350 1900 60  0001 C CNN
+F 3 "" H 9350 1900 60  0001 C CNN
+	1    9300 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9750 2500 10000 2500
+Wire Wire Line
+	10000 2500 10000 2400
+Wire Wire Line
+	10000 2500 10000 2600
+Connection ~ 10000 2500
+Wire Wire Line
+	9750 3000 10000 3000
+Wire Wire Line
+	10000 3000 10000 2900
+Wire Wire Line
+	10000 3000 10000 3100
+Connection ~ 10000 3000
+Wire Wire Line
+	7500 3100 8200 3100
+Wire Wire Line
+	8200 3100 8200 2500
+Wire Wire Line
+	8200 2500 8850 2500
+Wire Wire Line
+	7500 3000 8850 3000
+Wire Wire Line
+	7500 2900 8850 2900
+Wire Wire Line
+	7500 2800 8850 2800
+Wire Wire Line
+	7500 2700 8850 2700
+Wire Wire Line
+	7500 2600 8850 2600
+Wire Wire Line
+	7700 3400 7850 3400
+Wire Wire Line
+	7850 4700 7500 4700
+Wire Wire Line
+	7850 4900 7500 4900
+Wire Wire Line
+	7500 4800 7850 4800
+Wire Wire Line
+	4850 3350 4650 3350
+Connection ~ 4850 3350
+Wire Wire Line
+	4850 3150 4650 3150
+Connection ~ 4850 3150
+Wire Wire Line
+	5700 3350 5700 3300
+Wire Wire Line
+	4850 3350 5700 3350
+Wire Wire Line
+	5700 3150 5700 3200
+Wire Wire Line
+	4850 3150 5700 3150
+Wire Wire Line
+	4250 3650 4250 3600
+Wire Wire Line
+	4250 3150 4350 3150
+Wire Wire Line
+	4350 3350 4250 3350
+Connection ~ 4250 3350
+Wire Wire Line
+	4250 3350 4250 3150
+Connection ~ 4250 3600
+Wire Wire Line
+	4250 3600 4250 3350
+Wire Wire Line
+	8550 4200 8450 4200
+Wire Wire Line
+	8450 4200 8450 4150
+Wire Wire Line
+	7850 4100 7500 4100
+Wire Wire Line
+	7500 4000 7850 4000
+Wire Wire Line
+	8450 4200 7500 4200
+Connection ~ 8450 4200
+Wire Wire Line
+	7850 3900 7500 3900
+Text Notes 6150 3700 0    31   ~ 0
+UART0 TX\nUART0 RX
+Text Notes 6150 3900 0    31   ~ 0
+I2C1 SDA\nI2C1 SCL
+Text Notes 6150 4100 0    31   ~ 0
+UART1 TX\nUART1 RX
+Text HLabel 5400 4800 0    50   Output ~ 0
+ESP32_BL
+$Comp
+L mch2021-rescue:R-Device R?
+U 1 1 6015B06D
+P 5550 4800
+AR Path="/5DC753C3/6015B06D" Ref="R?"  Part="1" 
+AR Path="/6015B06D" Ref="R?"  Part="1" 
+AR Path="/5E3BA64A/6015B06D" Ref="R?"  Part="1" 
+AR Path="/5F51E414/6015B06D" Ref="R23"  Part="1" 
+F 0 "R23" V 5550 4800 50  0000 C CNN
+F 1 "47" V 5500 4650 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 5480 4800 50  0001 C CNN
+F 3 "~" H 5550 4800 50  0001 C CNN
+F 4 "" H 5550 4800 50  0001 C CNN "LCSC"
+F 5 "" H 5550 4800 50  0001 C CNN "Price"
+F 6 "-" H 5550 4800 50  0001 C CNN "Mouser"
+F 7 "N" H 5550 4800 50  0001 C CNN "Sponsored"
+	1    5550 4800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4950 3250 4950 3600
+Wire Wire Line
+	4750 3600 4750 3250
+Connection ~ 4750 3600
+Wire Wire Line
+	4750 3600 4950 3600
+Wire Wire Line
+	4250 3600 4750 3600
+Wire Wire Line
+	5400 3600 5700 3600
+Wire Wire Line
+	5400 3700 5700 3700
+Wire Wire Line
+	5400 3800 5700 3800
+Wire Wire Line
+	5400 3900 5700 3900
+Wire Wire Line
+	5400 4000 5700 4000
+Wire Wire Line
+	5400 4100 5700 4100
+Wire Wire Line
+	5400 4200 5700 4200
+Wire Wire Line
+	5400 4300 5700 4300
+Wire Wire Line
+	5700 4500 5400 4500
+Wire Wire Line
+	5400 4400 5700 4400
+Wire Wire Line
+	5400 4600 5700 4600
+Wire Wire Line
+	5700 4700 5400 4700
+Wire Wire Line
+	5400 4900 5700 4900
+Wire Wire Line
+	5700 5000 5400 5000
+Wire Wire Line
+	7850 4600 7500 4600
+Wire Wire Line
+	7850 4500 7500 4500
+$Comp
+L mch2021-rescue:TestPoint-Connector TP14
+U 1 1 6173E651
+P 800 7450
+F 0 "TP14" H 742 7476 50  0000 R CNN
+F 1 "UNUSED PIN" H 742 7567 50  0000 R CNN
+F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 1000 7450 50  0001 C CNN
+F 3 "~" H 1000 7450 50  0001 C CNN
+	1    800  7450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	10400 3700 10050 3700
+Wire Wire Line
+	10050 3700 10050 3600
+Wire Wire Line
+	10050 3600 8250 3600
+Wire Wire Line
+	8250 3600 8250 3800
+Wire Wire Line
+	8250 3800 7500 3800
+Connection ~ 10400 3700
+Wire Wire Line
+	5450 2600 5700 2600
+Text Notes 3500 4850 0    50   ~ 0
+The ESP32 BL pin also serves as IRQ
+$Comp
+L mch2021-rescue:R-Device R?
+U 1 1 61CD28CF
+P 9150 1600
+AR Path="/5DC753C3/61CD28CF" Ref="R?"  Part="1" 
+AR Path="/61CD28CF" Ref="R?"  Part="1" 
+AR Path="/5E3BA64A/61CD28CF" Ref="R?"  Part="1" 
+AR Path="/5F51E414/61CD28CF" Ref="R?"  Part="1" 
+AR Path="/5FDC6C76/61CD28CF" Ref="R?"  Part="1" 
+F 0 "R?" V 9050 1600 50  0000 C CNN
+F 1 "47" V 9150 1600 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 9080 1600 50  0001 C CNN
+F 3 "~" H 9150 1600 50  0001 C CNN
+F 4 "" H 9150 1600 50  0001 C CNN "LCSC"
+F 5 "" H 9150 1600 50  0001 C CNN "Price"
+F 6 "-" H 9150 1600 50  0001 C CNN "Mouser"
+F 7 "N" H 9150 1600 50  0001 C CNN "Sponsored"
+	1    9150 1600
+	0    1    1    0   
+$EndComp
+$Comp
+L mch2021-rescue:Q_NMOS_GSD-Device Q?
+U 1 1 61CD28D9
+P 9500 1600
+AR Path="/5FDC6C76/61CD28D9" Ref="Q?"  Part="1" 
+AR Path="/5F51E414/61CD28D9" Ref="Q?"  Part="1" 
+F 0 "Q?" H 9450 1400 50  0000 C CNN
+F 1 "Q_NMOS_GSD" H 9250 1500 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 9700 1700 50  0001 C CNN
+F 3 "~" H 9500 1600 50  0001 C CNN
+F 4 "C406812" H 9500 1600 50  0001 C CNN "LCSC"
+F 5 "-" H 9500 1600 50  0001 C CNN "Mouser"
+F 6 "" H 9500 1600 50  0001 C CNN "Price"
+F 7 "N" H 9500 1600 50  0001 C CNN "Sponsored"
+	1    9500 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L mch2021-rescue:GND-power #PWR?
+U 1 1 61CD28DF
+P 9600 1950
+F 0 "#PWR?" H 9600 1700 50  0001 C CNN
+F 1 "GND" H 9605 1777 50  0000 C CNN
+F 2 "" H 9600 1950 50  0001 C CNN
+F 3 "" H 9600 1950 50  0001 C CNN
+	1    9600 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9600 1950 9600 1800
+Wire Wire Line
+	8750 1600 8950 1600
+Wire Wire Line
+	8950 1650 8950 1600
+Connection ~ 8950 1600
+Wire Wire Line
+	8950 1600 9000 1600
+Wire Wire Line
+	9600 1400 9600 1250
+Wire Wire Line
+	9600 1250 9800 1250
+Wire Wire Line
+	9800 1250 9800 2200
+Wire Wire Line
+	9800 2200 8200 2200
+Wire Wire Line
+	8200 2200 8200 2500
+Connection ~ 8200 2500
+$EndSCHEMATC
