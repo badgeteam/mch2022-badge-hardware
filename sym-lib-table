@@ -6,4 +6,5 @@
   (lib (name QN8027)(type Legacy)(uri ${KIPRJMOD}/QN8027.lib)(options "")(descr ""))
   (lib (name kliment-baseboard)(type Legacy)(uri ${KIPRJMOD}/kliment-baseboard.lib)(options "")(descr ""))
   (lib (name custom)(type Legacy)(uri ${KIPRJMOD}/custom.lib)(options "")(descr ""))
+  (lib (name RP2040)(type Legacy)(uri ${KIPRJMOD}/RP2040/RP2040.lib)(options "")(descr ""))
 )
