@@ -16,7 +16,7 @@ $EndDescr
 Text Notes 550  700  0    79   ~ 0
 I2C I/O expander
 Text HLabel 4850 2100 2    50   Output ~ 0
-STM32_BOOT0
+RP2040_BOOT
 $Comp
 L mch2021-rescue:C_Small-Device C14
 U 1 1 5F33C3B2
@@ -314,7 +314,7 @@ Wire Wire Line
 Wire Wire Line
 	5550 4150 8850 4150
 Text HLabel 4850 2000 2    50   Output ~ 0
-STM32_RESET
+RP2040_RESET
 Wire Wire Line
 	8850 3350 5650 3350
 Wire Wire Line
