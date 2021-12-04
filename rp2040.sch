@@ -136,21 +136,21 @@ Text HLabel 6450 4050 2    50   Output ~ 0
 SPI_MISO
 Text HLabel 6450 4150 2    50   Input ~ 0
 SPI_MOSI
-Text HLabel 6450 4550 2    50   Output ~ 0
+Text HLabel 6450 4350 2    50   Output ~ 0
 PWR_LED_ENABLE
-Text HLabel 6450 4850 2    50   Input ~ 0
-SENSE_VBAT
 Text HLabel 6450 4950 2    50   Input ~ 0
+SENSE_VBAT
+Text HLabel 6450 5050 2    50   Input ~ 0
 SENSE_VUSB
 Text HLabel 4000 4250 0    50   BiDi ~ 0
 SAO_IO0
 Text HLabel 4000 4350 0    50   BiDi ~ 0
 SAO_IO1
-Text HLabel 4000 4650 0    50   Output ~ 0
+Text HLabel 6450 3750 2    50   Output ~ 0
 LCD_RESET
-Text HLabel 4000 4550 0    50   Output ~ 0
+Text HLabel 6450 3850 2    50   Output ~ 0
 LCD_MODE
-Text HLabel 4000 4450 0    50   Output ~ 0
+Text HLabel 6450 3650 2    50   Output ~ 0
 LCD_BACKLIGHT
 Wire Wire Line
 	3700 2650 3800 2650
@@ -220,15 +220,15 @@ F 7 "N" H 7050 4050 50  0001 C CNN "Sponsored"
 	1    7050 4050
 	1    0    0    -1  
 $EndComp
-Text HLabel 6450 4650 2    50   Input ~ 0
+Text HLabel 6450 4450 2    50   Input ~ 0
 CHARGING
 Text HLabel 4000 3650 0    50   Output ~ 0
 ESP32_RX
 Text HLabel 4000 3750 0    50   Input ~ 0
 ESP32_TX
-Text HLabel 4000 4050 0    50   Output ~ 0
+Text HLabel 6450 4550 2    50   Output ~ 0
 FPGA_RX
-Text HLabel 4000 4150 0    50   Input ~ 0
+Text HLabel 6450 4650 2    50   Input ~ 0
 FPGA_TX
 Text HLabel 4000 5050 0    50   Output ~ 0
 ESP32_WK
@@ -238,7 +238,7 @@ Wire Wire Line
 	3700 2750 3800 2750
 Wire Wire Line
 	3800 2750 3800 2650
-Text HLabel 6450 4750 2    50   Input ~ 0
+Text HLabel 6450 4850 2    50   Input ~ 0
 BATT_TEMP
 $Comp
 L mch2021-rescue:R_Small-Device R?
@@ -458,7 +458,7 @@ Text Notes 4750 3750 0    31   ~ 0
 UART0 TX\nUART0 RX
 Text Notes 4750 3950 0    31   ~ 0
 I2C1 SDA\nI2C1 SCL
-Text Notes 4750 4150 0    31   ~ 0
+Text Notes 5400 4650 0    31   ~ 0
 UART1 TX\nUART1 RX
 Text HLabel 4000 4850 0    50   Output ~ 0
 ESP32_BL
@@ -532,16 +532,10 @@ Text GLabel 4300 2950 0    31   Input ~ 0
 RP2040_SWDIO
 Text GLabel 1750 7100 2    31   Input ~ 0
 RP2040_SWCLK
-Text GLabel 1750 7200 2    31   Input ~ 0
-RP2040_RESET
 Text GLabel 1750 7000 2    31   Input ~ 0
 RP2040_SWDIO
 Text HLabel 7600 2100 2    50   Input ~ 0
 RP2040_BOOT
-Wire Notes Line
-	7550 2100 7500 2150
-Wire Notes Line
-	7500 2150 7500 2100
 $Comp
 L mch2021-rescue:R-Device R?
 U 1 1 61CD28CF
@@ -884,92 +878,89 @@ Connection ~ 6200 6450
 Wire Wire Line
 	6200 6750 6600 6750
 Connection ~ 6200 6750
-Text HLabel 8550 4650 2    50   Input ~ 0
+Text HLabel 9550 5350 2    50   Input ~ 0
 USB_DET
 $Comp
 L mch2021-rescue:GND-power #PWR049
 U 1 1 61BCE064
-P 7950 4850
-F 0 "#PWR049" H 7950 4600 50  0001 C CNN
-F 1 "GND" H 7955 4677 50  0000 C CNN
-F 2 "" H 7950 4850 50  0001 C CNN
-F 3 "" H 7950 4850 50  0001 C CNN
-	1    7950 4850
+P 8950 5550
+F 0 "#PWR049" H 8950 5300 50  0001 C CNN
+F 1 "GND" H 8955 5377 50  0000 C CNN
+F 2 "" H 8950 5550 50  0001 C CNN
+F 3 "" H 8950 5550 50  0001 C CNN
+	1    8950 5550
 	1    0    0    -1  
 $EndComp
 $Comp
 L mch2021-rescue:+3.3V-power #PWR047
 U 1 1 61BCE06A
-P 7950 4150
-F 0 "#PWR047" H 7950 4000 50  0001 C CNN
-F 1 "+3.3V" H 7965 4323 50  0000 C CNN
-F 2 "" H 7950 4150 50  0001 C CNN
-F 3 "" H 7950 4150 50  0001 C CNN
-	1    7950 4150
+P 8950 4850
+F 0 "#PWR047" H 8950 4700 50  0001 C CNN
+F 1 "+3.3V" H 8965 5023 50  0000 C CNN
+F 2 "" H 8950 4850 50  0001 C CNN
+F 3 "" H 8950 4850 50  0001 C CNN
+	1    8950 4850
 	1    0    0    -1  
 $EndComp
 $Comp
 L mch2021-rescue:R-Device R?
 U 1 1 61BCE074
-P 7950 4300
+P 8950 5000
 AR Path="/5DC753C3/61BCE074" Ref="R?"  Part="1" 
 AR Path="/61BCE074" Ref="R?"  Part="1" 
 AR Path="/5E3BA64A/61BCE074" Ref="R?"  Part="1" 
 AR Path="/5F51E414/61BCE074" Ref="R22"  Part="1" 
-F 0 "R22" V 8050 4300 50  0000 C CNN
-F 1 "10k" V 7950 4300 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 7880 4300 50  0001 C CNN
-F 3 "~" H 7950 4300 50  0001 C CNN
-F 4 "" H 7950 4300 50  0001 C CNN "LCSC"
-F 5 "" H 7950 4300 50  0001 C CNN "Price"
-F 6 "-" H 7950 4300 50  0001 C CNN "Mouser"
-F 7 "N" H 7950 4300 50  0001 C CNN "Sponsored"
-	1    7950 4300
+F 0 "R22" V 9050 5000 50  0000 C CNN
+F 1 "10k" V 8950 5000 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 8880 5000 50  0001 C CNN
+F 3 "~" H 8950 5000 50  0001 C CNN
+F 4 "" H 8950 5000 50  0001 C CNN "LCSC"
+F 5 "" H 8950 5000 50  0001 C CNN "Price"
+F 6 "-" H 8950 5000 50  0001 C CNN "Mouser"
+F 7 "N" H 8950 5000 50  0001 C CNN "Sponsored"
+	1    8950 5000
 	-1   0    0    1   
 $EndComp
 $Comp
 L mch2021-rescue:Q_NMOS_GSD-Device Q?
 U 1 1 61BCE07F
-P 8050 4650
+P 9050 5350
 AR Path="/5FDC6C76/61BCE07F" Ref="Q?"  Part="1" 
 AR Path="/5F51E414/61BCE07F" Ref="Q5"  Part="1" 
-F 0 "Q5" H 8000 4450 50  0000 C CNN
-F 1 "Q_NMOS_GSD" H 7800 4550 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 8250 4750 50  0001 C CNN
-F 3 "~" H 8050 4650 50  0001 C CNN
-F 4 "C406812" H 8050 4650 50  0001 C CNN "LCSC"
-F 5 "-" H 8050 4650 50  0001 C CNN "Mouser"
-F 6 "" H 8050 4650 50  0001 C CNN "Price"
-F 7 "N" H 8050 4650 50  0001 C CNN "Sponsored"
-	1    8050 4650
+F 0 "Q5" H 9000 5150 50  0000 C CNN
+F 1 "Q_NMOS_GSD" H 8800 5250 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 9250 5450 50  0001 C CNN
+F 3 "~" H 9050 5350 50  0001 C CNN
+F 4 "C406812" H 9050 5350 50  0001 C CNN "LCSC"
+F 5 "-" H 9050 5350 50  0001 C CNN "Mouser"
+F 6 "" H 9050 5350 50  0001 C CNN "Price"
+F 7 "N" H 9050 5350 50  0001 C CNN "Sponsored"
+	1    9050 5350
 	-1   0    0    -1  
 $EndComp
 $Comp
 L mch2021-rescue:R-Device R?
 U 1 1 61BCE089
-P 8400 4650
+P 9400 5350
 AR Path="/5DC753C3/61BCE089" Ref="R?"  Part="1" 
 AR Path="/61BCE089" Ref="R?"  Part="1" 
 AR Path="/5E3BA64A/61BCE089" Ref="R?"  Part="1" 
 AR Path="/5F51E414/61BCE089" Ref="R27"  Part="1" 
 AR Path="/5FDC6C76/61BCE089" Ref="R?"  Part="1" 
-F 0 "R27" V 8500 4650 50  0000 C CNN
-F 1 "47" V 8400 4650 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 8330 4650 50  0001 C CNN
-F 3 "~" H 8400 4650 50  0001 C CNN
-F 4 "" H 8400 4650 50  0001 C CNN "LCSC"
-F 5 "" H 8400 4650 50  0001 C CNN "Price"
-F 6 "-" H 8400 4650 50  0001 C CNN "Mouser"
-F 7 "N" H 8400 4650 50  0001 C CNN "Sponsored"
-	1    8400 4650
+F 0 "R27" V 9500 5350 50  0000 C CNN
+F 1 "47" V 9400 5350 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 9330 5350 50  0001 C CNN
+F 3 "~" H 9400 5350 50  0001 C CNN
+F 4 "" H 9400 5350 50  0001 C CNN "LCSC"
+F 5 "" H 9400 5350 50  0001 C CNN "Price"
+F 6 "-" H 9400 5350 50  0001 C CNN "Mouser"
+F 7 "N" H 9400 5350 50  0001 C CNN "Sponsored"
+	1    9400 5350
 	0    -1   -1   0   
 $EndComp
-Connection ~ 7950 4450
-Wire Wire Line
-	6100 4450 7950 4450
-Text GLabel 6450 3750 2    39   BiDi ~ 0
+Text GLabel 4000 4450 0    39   BiDi ~ 0
 EXT_SDA
-Text GLabel 6450 3850 2    39   Input ~ 0
+Text GLabel 4000 4550 0    39   Input ~ 0
 EXT_SCL
 Wire Wire Line
 	6450 3750 6100 3750
@@ -979,7 +970,7 @@ Text Notes 5400 3850 0    31   ~ 0
 I2C0 SDA\nI2C0 SCL
 Text Notes 5400 4200 0    31   ~ 0
 SPI0 SCK\nSPI0 TX\nSPI0 RX\nSPI0 CSn
-Text GLabel 6450 3650 2    39   BiDi ~ 0
+Text GLabel 4000 4650 0    39   BiDi ~ 0
 SAO2
 Wire Wire Line
 	6100 3650 6450 3650
@@ -1020,23 +1011,14 @@ F 3 "~" H 1850 7100 50  0001 C CNN
 	1    1650 7100
 	1    0    0    -1  
 $EndComp
-$Comp
-L mch2021-rescue:TestPoint_Small-Connector TP?
-U 1 1 61E69B38
-P 1650 7200
-AR Path="/61E69B38" Ref="TP?"  Part="1" 
-AR Path="/5F51E414/61E69B38" Ref="TP16"  Part="1" 
-F 0 "TP16" H 1450 7200 50  0000 L CNN
-F 1 "LED OUT" H 1698 7155 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 1850 7200 50  0001 C CNN
-F 3 "~" H 1850 7200 50  0001 C CNN
-	1    1650 7200
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	1750 7000 1650 7000
 Wire Wire Line
 	1650 7100 1750 7100
 Wire Wire Line
-	1750 7200 1650 7200
+	6450 4450 6100 4450
+Wire Wire Line
+	6100 4350 6450 4350
+Wire Wire Line
+	6450 5050 6100 5050
 $EndSCHEMATC
