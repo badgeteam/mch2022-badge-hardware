@@ -2187,4 +2187,6 @@ Wire Wire Line
 Connection ~ 1650 1300
 Wire Wire Line
 	1650 1300 1700 1300
+Text Notes -250 -300 0    394  ~ 0
+TO DO:\n\n - Connect FPGA clock input (crystal? Or can the RP2040 generate a clock?)\n - Connect the unused GPIO pins of the RP2040 to testpads or something
 $EndSCHEMATC
