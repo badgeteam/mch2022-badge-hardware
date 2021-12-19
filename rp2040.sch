@@ -912,8 +912,6 @@ Text Notes 5400 3850 0    31   ~ 0
 I2C0 SDA\nI2C0 SCL
 Text Notes 5400 4200 0    31   ~ 0
 SPI0 SCK\nSPI0 TX\nSPI0 RX\nSPI0 CSn
-Text GLabel 4000 4650 0    39   BiDi ~ 0
-SAO2
 Wire Wire Line
 	6100 3650 6450 3650
 Wire Wire Line
@@ -934,7 +932,7 @@ P 1650 7000
 AR Path="/61E64B18" Ref="TP?"  Part="1" 
 AR Path="/5F51E414/61E64B18" Ref="TP9"  Part="1" 
 F 0 "TP9" H 1450 7000 50  0000 L CNN
-F 1 "LED OUT" H 1698 6955 50  0001 L CNN
+F 1 "SWDIO" H 1698 6955 50  0001 L CNN
 F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 1850 7000 50  0001 C CNN
 F 3 "~" H 1850 7000 50  0001 C CNN
 	1    1650 7000
@@ -947,7 +945,7 @@ P 1650 7100
 AR Path="/61E6991E" Ref="TP?"  Part="1" 
 AR Path="/5F51E414/61E6991E" Ref="TP14"  Part="1" 
 F 0 "TP14" H 1450 7100 50  0000 L CNN
-F 1 "LED OUT" H 1698 7055 50  0001 L CNN
+F 1 "SWDCLK" H 1698 7055 50  0001 L CNN
 F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 1850 7100 50  0001 C CNN
 F 3 "~" H 1850 7100 50  0001 C CNN
 	1    1650 7100
@@ -986,4 +984,45 @@ Wire Wire Line
 	3800 6450 4150 6450
 Wire Wire Line
 	3800 6750 4150 6750
+Wire Wire Line
+	4300 4050 4000 4050
+$Comp
+L mch2021-rescue:TestPoint_Small-Connector TP?
+U 1 1 61D160CB
+P 4000 4050
+AR Path="/61D160CB" Ref="TP?"  Part="1" 
+AR Path="/5F51E414/61D160CB" Ref="TP16"  Part="1" 
+F 0 "TP16" H 3800 4050 50  0000 L CNN
+F 1 "4" H 4048 4005 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 4200 4050 50  0001 C CNN
+F 3 "~" H 4200 4050 50  0001 C CNN
+	1    4000 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L mch2021-rescue:TestPoint_Small-Connector TP?
+U 1 1 61D17B0D
+P 4000 4150
+AR Path="/61D17B0D" Ref="TP?"  Part="1" 
+AR Path="/5F51E414/61D17B0D" Ref="TP17"  Part="1" 
+F 0 "TP17" H 3800 4150 50  0000 L CNN
+F 1 "5" H 4048 4105 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 4200 4150 50  0001 C CNN
+F 3 "~" H 4200 4150 50  0001 C CNN
+	1    4000 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L mch2021-rescue:TestPoint_Small-Connector TP?
+U 1 1 61E0DD7B
+P 4000 4650
+AR Path="/61E0DD7B" Ref="TP?"  Part="1" 
+AR Path="/5F51E414/61E0DD7B" Ref="TP25"  Part="1" 
+F 0 "TP25" H 3800 4650 50  0000 L CNN
+F 1 "10" H 4048 4605 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 4200 4650 50  0001 C CNN
+F 3 "~" H 4200 4650 50  0001 C CNN
+	1    4000 4650
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

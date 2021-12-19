@@ -525,7 +525,7 @@ L mch2021-rescue:TestPoint_Small-Connector TP6
 U 1 1 5FCBE4D6
 P 2950 2050
 F 0 "TP6" H 2750 2050 50  0000 L CNN
-F 1 "LCD BACKLIGHT" H 2998 2005 50  0001 L CNN
+F 1 "LB" H 2998 2005 50  0001 L CNN
 F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 3150 2050 50  0001 C CNN
 F 3 "~" H 3150 2050 50  0001 C CNN
 	1    2950 2050
@@ -537,7 +537,7 @@ L mch2021-rescue:TestPoint_Small-Connector TP5
 U 1 1 5FCBF6DF
 P 2900 2150
 F 0 "TP5" H 2700 2150 50  0000 L CNN
-F 1 "LCD RESET" H 2948 2105 50  0001 L CNN
+F 1 "LR" H 2948 2105 50  0001 L CNN
 F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 3100 2150 50  0001 C CNN
 F 3 "~" H 3100 2150 50  0001 C CNN
 	1    2900 2150
@@ -549,7 +549,7 @@ L mch2021-rescue:TestPoint_Small-Connector TP4
 U 1 1 5FCBFB06
 P 2850 2250
 F 0 "TP4" H 2650 2250 50  0000 L CNN
-F 1 "LCD MODE" H 2898 2205 50  0001 L CNN
+F 1 "LM" H 2898 2205 50  0001 L CNN
 F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 3050 2250 50  0001 C CNN
 F 3 "~" H 3050 2250 50  0001 C CNN
 	1    2850 2250
@@ -561,7 +561,7 @@ L mch2021-rescue:TestPoint_Small-Connector TP7
 U 1 1 5FCC18D1
 P 3150 2450
 F 0 "TP7" H 2950 2450 50  0000 L CNN
-F 1 "FPGA RX" H 3198 2405 50  0001 L CNN
+F 1 "RX" H 3198 2405 50  0001 L CNN
 F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 3350 2450 50  0001 C CNN
 F 3 "~" H 3350 2450 50  0001 C CNN
 	1    3150 2450
@@ -573,7 +573,7 @@ L mch2021-rescue:TestPoint_Small-Connector TP8
 U 1 1 5FCC2040
 P 3250 2550
 F 0 "TP8" H 3050 2550 50  0000 L CNN
-F 1 "FPGA TX" H 3298 2505 50  0001 L CNN
+F 1 "TX" H 3298 2505 50  0001 L CNN
 F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 3450 2550 50  0001 C CNN
 F 3 "~" H 3450 2550 50  0001 C CNN
 	1    3250 2550
@@ -585,7 +585,7 @@ L mch2021-rescue:TestPoint_Small-Connector TP10
 U 1 1 5FCC3139
 P 3450 2750
 F 0 "TP10" H 3250 2750 50  0000 L CNN
-F 1 "STM32 RESET" H 3498 2705 50  0001 L CNN
+F 1 "RR" H 3498 2705 50  0001 L CNN
 F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 3650 2750 50  0001 C CNN
 F 3 "~" H 3650 2750 50  0001 C CNN
 	1    3450 2750
@@ -597,7 +597,7 @@ L mch2021-rescue:TestPoint_Small-Connector TP11
 U 1 1 5FCC361C
 P 3550 2850
 F 0 "TP11" H 3350 2850 50  0000 L CNN
-F 1 "STM32 BOOT0" H 3598 2805 50  0001 L CNN
+F 1 "RB" H 3598 2805 50  0001 L CNN
 F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 3750 2850 50  0001 C CNN
 F 3 "~" H 3750 2850 50  0001 C CNN
 	1    3550 2850
@@ -1707,12 +1707,12 @@ Wire Wire Line
 $Comp
 L mch2021-rescue:+3.3V-power #PWR0221
 U 1 1 607F0453
-P 1800 4700
-F 0 "#PWR0221" H 1800 4550 50  0001 C CNN
-F 1 "+3.3V" H 1800 4850 50  0000 C CNN
-F 2 "" H 1800 4700 50  0001 C CNN
-F 3 "" H 1800 4700 50  0001 C CNN
-	1    1800 4700
+P 1700 4700
+F 0 "#PWR0221" H 1700 4550 50  0001 C CNN
+F 1 "+3.3V" H 1700 4850 50  0000 C CNN
+F 2 "" H 1700 4700 50  0001 C CNN
+F 3 "" H 1700 4700 50  0001 C CNN
+	1    1700 4700
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1829,10 +1829,6 @@ Wire Wire Line
 	1300 5350 1300 6300
 Wire Wire Line
 	1850 5250 1250 5250
-Wire Wire Line
-	1800 4700 1800 4750
-Wire Wire Line
-	1800 4750 1850 4750
 $Comp
 L mch2021-rescue:GND-power #PWR0225
 U 1 1 6047C3BC
@@ -1930,7 +1926,7 @@ L mch2021-rescue:Housing-Mechanical N3
 U 1 1 6002C7D5
 P 3200 5500
 F 0 "N3" H 3353 5534 50  0000 L CNN
-F 1 "May Contain Hardware" H 3353 5443 50  0000 L CNN
+F 1 "May Contain Hacks" H 3353 5443 50  0000 L CNN
 F 2 "custom:protoboard-squares" H 3250 5550 50  0001 C CNN
 F 3 "~" H 3250 5550 50  0001 C CNN
 	1    3200 5500
@@ -1952,9 +1948,7 @@ Wire Wire Line
 Wire Wire Line
 	1800 4850 1800 5400
 Wire Wire Line
-	1850 4950 1500 4950
-Wire Wire Line
-	1500 4650 1500 4950
+	1500 4650 1500 4750
 Wire Wire Line
 	2550 5000 2550 5100
 Wire Wire Line
@@ -1966,48 +1960,27 @@ Wire Wire Line
 Wire Wire Line
 	3650 1200 3550 1200
 $Comp
-L mch2021-rescue:CONN-7-conn-7 J11
-U 1 1 6015E842
-P 1850 3850
-F 0 "J11" H 2078 3896 50  0000 L CNN
-F 1 "CONN-7" H 2078 3805 50  0000 L CNN
-F 2 "custom:1x7_smd_row" H 1950 3900 60  0001 C CNN
-F 3 "" H 1950 3900 60  0001 C CNN
-	1    1850 3850
-	1    0    0    -1  
-$EndComp
-$Comp
 L mch2021-rescue:+3.3V-power #PWR0229
 U 1 1 601672C6
-P 1800 3500
-F 0 "#PWR0229" H 1800 3350 50  0001 C CNN
-F 1 "+3.3V" H 1800 3650 50  0000 C CNN
-F 2 "" H 1800 3500 50  0001 C CNN
-F 3 "" H 1800 3500 50  0001 C CNN
-	1    1800 3500
+P 1300 3400
+F 0 "#PWR0229" H 1300 3250 50  0001 C CNN
+F 1 "+3.3V" H 1300 3550 50  0000 C CNN
+F 2 "" H 1300 3400 50  0001 C CNN
+F 3 "" H 1300 3400 50  0001 C CNN
+	1    1300 3400
 	1    0    0    -1  
 $EndComp
 $Comp
 L mch2021-rescue:GND-power #PWR0230
 U 1 1 60195541
-P 1800 4200
-F 0 "#PWR0230" H 1800 3950 50  0001 C CNN
-F 1 "GND" H 1805 4027 50  0000 C CNN
-F 2 "" H 1800 4200 50  0001 C CNN
-F 3 "" H 1800 4200 50  0001 C CNN
-	1    1800 4200
+P 1100 3650
+F 0 "#PWR0230" H 1100 3400 50  0001 C CNN
+F 1 "GND" H 1105 3477 50  0000 C CNN
+F 2 "" H 1100 3650 50  0001 C CNN
+F 3 "" H 1100 3650 50  0001 C CNN
+	1    1100 3650
 	-1   0    0    -1  
 $EndComp
-Wire Wire Line
-	1800 3500 1800 3550
-Wire Wire Line
-	1800 3550 1850 3550
-Wire Wire Line
-	1800 4200 1800 3650
-Wire Wire Line
-	1800 3650 1850 3650
-Wire Wire Line
-	1850 3750 1750 3750
 Wire Wire Line
 	1600 4050 1850 4050
 Wire Wire Line
@@ -2178,8 +2151,6 @@ Wire Wire Line
 Wire Wire Line
 	2500 3000 2250 3000
 Connection ~ 2500 1600
-Text GLabel 1750 3750 0    50   BiDi ~ 0
-SAO2
 Wire Wire Line
 	1650 1600 1650 1300
 Wire Wire Line
@@ -2189,4 +2160,138 @@ Wire Wire Line
 	1650 1300 1700 1300
 Text Notes -250 -300 0    394  ~ 0
 TO DO:\n\n - Connect FPGA clock input (crystal? Or can the RP2040 generate a clock?)\n - Connect the unused GPIO pins of the RP2040 to testpads or something
+Wire Wire Line
+	1850 4950 1700 4950
+Wire Wire Line
+	1700 4950 1700 4700
+Wire Wire Line
+	1850 4750 1500 4750
+$Comp
+L mch2021-rescue:TestPoint_Small-Connector TP20
+U 1 1 61D78C6A
+P 1050 3600
+F 0 "TP20" H 850 3600 50  0000 L CNN
+F 1 "GND" H 1098 3555 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 1250 3600 50  0001 C CNN
+F 3 "~" H 1250 3600 50  0001 C CNN
+	1    1050 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L mch2021-rescue:TestPoint_Small-Connector TP19
+U 1 1 61D7AE30
+P 1050 3500
+F 0 "TP19" H 850 3500 50  0000 L CNN
+F 1 "3.3v" H 1098 3455 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 1250 3500 50  0001 C CNN
+F 3 "~" H 1250 3500 50  0001 C CNN
+	1    1050 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L mch2021-rescue:TestPoint_Small-Connector TP18
+U 1 1 61D7B76C
+P 1050 3400
+F 0 "TP18" H 850 3400 50  0000 L CNN
+F 1 "Vbatt" H 1098 3355 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 1250 3400 50  0001 C CNN
+F 3 "~" H 1250 3400 50  0001 C CNN
+	1    1050 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L mch2021-rescue:VIN-vin #PWR?
+U 1 1 61D80393
+P 1100 3350
+AR Path="/60C789DE/61D80393" Ref="#PWR?"  Part="1" 
+AR Path="/61D80393" Ref="#PWR0218"  Part="1" 
+F 0 "#PWR0218" H 1110 3350 20  0001 C CNN
+F 1 "VIN" H 1100 3446 40  0000 C CNN
+F 2 "" H 1100 3350 60  0001 C CNN
+F 3 "" H 1100 3350 60  0001 C CNN
+	1    1100 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1050 3400 1100 3400
+Wire Wire Line
+	1100 3400 1100 3350
+Wire Wire Line
+	1050 3500 1300 3500
+Wire Wire Line
+	1300 3500 1300 3400
+Wire Wire Line
+	1050 3600 1100 3600
+Wire Wire Line
+	1100 3600 1100 3650
+$Comp
+L mch2021-rescue:TestPoint_Small-Connector TP21
+U 1 1 61DF9DA8
+P 1850 3850
+F 0 "TP21" H 1650 3850 50  0000 L CNN
+F 1 "SDA" H 1898 3805 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 2050 3850 50  0001 C CNN
+F 3 "~" H 2050 3850 50  0001 C CNN
+	1    1850 3850
+	-1   0    0    1   
+$EndComp
+$Comp
+L mch2021-rescue:TestPoint_Small-Connector TP22
+U 1 1 61DF9F29
+P 1850 3950
+F 0 "TP22" H 1650 3950 50  0000 L CNN
+F 1 "SCL" H 1898 3905 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 2050 3950 50  0001 C CNN
+F 3 "~" H 2050 3950 50  0001 C CNN
+	1    1850 3950
+	-1   0    0    1   
+$EndComp
+$Comp
+L mch2021-rescue:TestPoint_Small-Connector TP23
+U 1 1 61DFA163
+P 1850 4050
+F 0 "TP23" H 1650 4050 50  0000 L CNN
+F 1 "sSDA" H 1898 4005 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 2050 4050 50  0001 C CNN
+F 3 "~" H 2050 4050 50  0001 C CNN
+	1    1850 4050
+	-1   0    0    1   
+$EndComp
+$Comp
+L mch2021-rescue:TestPoint_Small-Connector TP24
+U 1 1 61DFA34C
+P 1850 4150
+F 0 "TP24" H 1650 4150 50  0000 L CNN
+F 1 "sSCL" H 1898 4105 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 2050 4150 50  0001 C CNN
+F 3 "~" H 2050 4150 50  0001 C CNN
+	1    1850 4150
+	-1   0    0    1   
+$EndComp
+$Comp
+L mch2021-rescue:GND-power #PWR0227
+U 1 1 61E7670E
+P 1100 3950
+F 0 "#PWR0227" H 1100 3700 50  0001 C CNN
+F 1 "GND" H 1105 3777 50  0000 C CNN
+F 2 "" H 1100 3950 50  0001 C CNN
+F 3 "" H 1100 3950 50  0001 C CNN
+	1    1100 3950
+	-1   0    0    -1  
+$EndComp
+$Comp
+L mch2021-rescue:TestPoint_Small-Connector TP26
+U 1 1 61E76714
+P 1050 3900
+F 0 "TP26" H 850 3900 50  0000 L CNN
+F 1 "GND" H 1098 3855 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 1250 3900 50  0001 C CNN
+F 3 "~" H 1250 3900 50  0001 C CNN
+	1    1050 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1050 3900 1100 3900
+Wire Wire Line
+	1100 3900 1100 3950
 $EndSCHEMATC
