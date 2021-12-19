@@ -1533,8 +1533,6 @@ $EndComp
 Wire Wire Line
 	1000 6500 1000 7500
 Wire Wire Line
-	1000 6300 1300 6300
-Wire Wire Line
 	1600 7200 1600 6400
 Connection ~ 1600 6400
 Wire Wire Line
@@ -1741,17 +1739,6 @@ F 3 "" H 1800 5400 50  0001 C CNN
 	1    1800 5400
 	-1   0    0    -1  
 $EndComp
-$Comp
-L mch2021-rescue:GND-power #PWR0223
-U 1 1 600A735F
-P 5900 7500
-F 0 "#PWR0223" H 5900 7250 50  0001 C CNN
-F 1 "GND" H 5905 7327 50  0000 C CNN
-F 2 "" H 5900 7500 50  0001 C CNN
-F 3 "" H 5900 7500 50  0001 C CNN
-	1    5900 7500
-	-1   0    0    -1  
-$EndComp
 Text GLabel 5650 7500 1    50   Input ~ 0
 GND
 $Comp
@@ -1765,70 +1752,6 @@ F 3 "" H 5650 7500 50  0001 C CNN
 	1    5650 7500
 	-1   0    0    -1  
 $EndComp
-$Comp
-L mch2021-rescue:C-Device C57
-U 1 1 601E141C
-P 5900 7350
-F 0 "C57" H 5950 7450 50  0000 L CNN
-F 1 "100n" H 5900 7250 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 5938 7200 50  0001 C CNN
-F 3 "" H 5900 7350 50  0001 C CNN
-F 4 "C83056 " H 5900 7350 50  0001 C CNN "LCSC"
-	1    5900 7350
-	-1   0    0    -1  
-$EndComp
-$Comp
-L mch2021-rescue:R-Device R?
-U 1 1 601E4811
-P 6050 7350
-AR Path="/60C794CB/601E4811" Ref="R?"  Part="1" 
-AR Path="/601E4811" Ref="R75"  Part="1" 
-F 0 "R75" H 5950 7250 50  0000 C CNN
-F 1 "10k" V 6050 7350 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 5980 7350 50  0001 C CNN
-F 3 "~" H 6050 7350 50  0001 C CNN
-F 4 "" H 6050 7350 50  0001 C CNN "Price"
-F 5 "" H 6050 7350 50  0001 C CNN "LCSC"
-F 6 "-" H 6050 7350 50  0001 C CNN "Mouser"
-F 7 "N" H 6050 7350 50  0001 C CNN "Sponsored"
-	1    6050 7350
-	-1   0    0    1   
-$EndComp
-$Comp
-L mch2021-rescue:GND-power #PWR0224
-U 1 1 6020C2A6
-P 6050 7500
-F 0 "#PWR0224" H 6050 7250 50  0001 C CNN
-F 1 "GND" H 6055 7327 50  0000 C CNN
-F 2 "" H 6050 7500 50  0001 C CNN
-F 3 "" H 6050 7500 50  0001 C CNN
-	1    6050 7500
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	6050 7200 6050 7100
-Wire Wire Line
-	5900 7100 5900 7200
-Wire Wire Line
-	6050 7100 5900 7100
-Wire Wire Line
-	6000 6950 5900 6950
-Wire Wire Line
-	5900 6950 5900 7100
-Connection ~ 5900 7100
-Wire Wire Line
-	1250 6400 1250 5250
-Connection ~ 1250 6400
-Wire Wire Line
-	1250 6400 1350 6400
-Wire Wire Line
-	1000 6400 1250 6400
-Wire Wire Line
-	1850 5350 1300 5350
-Wire Wire Line
-	1300 5350 1300 6300
-Wire Wire Line
-	1850 5250 1250 5250
 $Comp
 L mch2021-rescue:GND-power #PWR0225
 U 1 1 6047C3BC
@@ -1908,8 +1831,6 @@ Text GLabel 1500 5050 0    50   BiDi ~ 0
 EXT_SDA
 Text GLabel 1500 5150 0    50   Input ~ 0
 EXT_SCL
-Text GLabel 6000 6950 2    50   Input ~ 0
-ARTWORK
 $Comp
 L mch2021-rescue:Housing-Mechanical N1
 U 1 1 600B192E
@@ -2292,4 +2213,22 @@ Wire Wire Line
 	1050 3900 1100 3900
 Wire Wire Line
 	1100 3900 1100 3950
+Wire Wire Line
+	1150 5250 1850 5250
+Wire Wire Line
+	1200 5350 1850 5350
+Wire Wire Line
+	1000 6300 1150 6300
+Wire Wire Line
+	1000 6400 1200 6400
+Wire Wire Line
+	1200 5350 1200 6400
+Connection ~ 1200 6400
+Wire Wire Line
+	1200 6400 1350 6400
+Wire Wire Line
+	1150 5250 1150 6300
+Connection ~ 1150 6300
+Wire Wire Line
+	1150 6300 1300 6300
 $EndSCHEMATC
