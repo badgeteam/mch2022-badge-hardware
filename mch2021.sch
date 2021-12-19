@@ -4,9 +4,9 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 9
-Title "MCH2021 badge - Overview"
-Date "2021-11-14"
-Rev "3"
+Title "MCH2022 badge - Overview"
+Date "2021-12-19"
+Rev "3.1415"
 Comp "BADGE.TEAM"
 Comment1 ""
 Comment2 ""
@@ -2158,8 +2158,6 @@ Wire Wire Line
 Connection ~ 1650 1300
 Wire Wire Line
 	1650 1300 1700 1300
-Text Notes -250 -300 0    394  ~ 0
-TO DO:\n\n - Connect FPGA clock input (crystal? Or can the RP2040 generate a clock?)\n - Connect the unused GPIO pins of the RP2040 to testpads or something
 Wire Wire Line
 	1850 4950 1700 4950
 Wire Wire Line
