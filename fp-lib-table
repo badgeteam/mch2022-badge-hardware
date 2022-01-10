@@ -3,4 +3,5 @@
   (lib (name SAOv2)(type KiCad)(uri ${KIPRJMOD}/SAOv2)(options "")(descr ""))
   (lib (name git)(type KiCad)(uri ${KIPRJMOD})(options "")(descr ""))
   (lib (name Simple_Addon_v2)(type KiCad)(uri ${KIPRJMOD}/SAOv2/Simple_Addon_v2.pretty)(options "")(descr ""))
+  (lib (name RP2040)(type KiCad)(uri ${KIPRJMOD}/RP2040)(options "")(descr ""))
 )

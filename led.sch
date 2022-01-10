@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 7 9
 Title ""
-Date "2021-11-14"
-Rev "3"
+Date "2021-12-19"
+Rev "3.1415"
 Comp "BADGE.TEAM"
 Comment1 ""
 Comment2 ""
@@ -264,16 +264,16 @@ F 1 "74LVC1G125" H 3600 4050 60  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-353_SC-70-5" H 3350 4150 60  0001 L CNN
 F 3 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fsn74lvc1g125" H 3350 4250 60  0001 L CNN
 F 4 "296-11604-1-ND" H 3350 4350 60  0001 L CNN "Digi-Key_PN"
-F 5 "SN74LVC1G125DCKR" H 3350 4450 60  0001 L CNN "MPN"
+F 5 "74LVC1G125GW" H 3350 4450 60  0001 L CNN "MPN"
 F 6 "Integrated Circuits (ICs)" H 3350 4550 60  0001 L CNN "Category"
 F 7 "Logic - Buffers, Drivers, Receivers, Transceivers" H 3350 4650 60  0001 L CNN "Family"
 F 8 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fsn74lvc1g125" H 3350 4750 60  0001 L CNN "DK_Datasheet_Link"
 F 9 "/product-detail/en/texas-instruments/SN74LVC1G125DCKR/296-11604-1-ND/385743" H 3350 4850 60  0001 L CNN "DK_Detail_Page"
 F 10 "IC BUF NON-INVERT 5.5V SC70-5" H 3350 4950 60  0001 L CNN "Description"
-F 11 "Texas Instruments" H 3350 5050 60  0001 L CNN "Manufacturer"
+F 11 "Nexperia" H 3350 5050 60  0001 L CNN "Manufacturer"
 F 12 "Active" H 3350 5150 60  0001 L CNN "Status"
 F 13 "N" H 3150 3950 50  0001 C CNN "Sponsored"
-F 14 "C7833" H 3150 3950 50  0001 C CNN "LCSC"
+F 14 "C703585" H 3150 3950 50  0001 C CNN "LCSC"
 F 15 "" H 3150 3950 50  0001 C CNN "Price"
 	1    3150 3950
 	1    0    0    -1  

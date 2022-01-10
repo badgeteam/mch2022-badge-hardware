@@ -4,9 +4,9 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 4 9
-Title ""
-Date "2021-11-14"
-Rev "3"
+Title "MCH2022 badge - IO expander & buttons"
+Date "2021-12-19"
+Rev "3.1415"
 Comp "BADGE.TEAM"
 Comment1 ""
 Comment2 ""
@@ -16,7 +16,7 @@ $EndDescr
 Text Notes 550  700  0    79   ~ 0
 I2C I/O expander
 Text HLabel 4850 2100 2    50   Output ~ 0
-STM32_BOOT0
+RP2040_BOOT
 $Comp
 L mch2021-rescue:C_Small-Device C14
 U 1 1 5F33C3B2
@@ -146,11 +146,13 @@ L mch2021-rescue:R_Small-Device R30
 U 1 1 5F4989F8
 P 3800 1800
 F 0 "R30" H 3859 1846 50  0000 L CNN
-F 1 "4k7" H 3859 1755 50  0000 L CNN
+F 1 "4.7k" H 3859 1755 50  0000 L CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" H 3800 1800 50  0001 C CNN
 F 3 "~" H 3800 1800 50  0001 C CNN
-F 4 "" H 3800 1800 50  0001 C CNN "LCSC"
+F 4 "C25940" H 3800 1800 50  0001 C CNN "LCSC"
 F 5 "N" H 3800 1800 50  0001 C CNN "Sponsored"
+F 6 "UNI-ROYAL" H 3800 1800 50  0001 C CNN "MANUFACTURER"
+F 7 "0402WGJ0472TCE" H 3800 1800 50  0001 C CNN "MPN"
 	1    3800 1800
 	1    0    0    -1  
 $EndComp
@@ -314,7 +316,7 @@ Wire Wire Line
 Wire Wire Line
 	5550 4150 8850 4150
 Text HLabel 4850 2000 2    50   Output ~ 0
-STM32_RESET
+RP2040_RESET
 Wire Wire Line
 	8850 3350 5650 3350
 Wire Wire Line
