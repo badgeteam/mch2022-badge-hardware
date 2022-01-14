@@ -6,7 +6,7 @@
 
   (title_block
     (title "MCH2022 badge - Overview")
-    (date "2021-12-19")
+    (date "2022-01-14")
     (rev "3.1415")
     (company "BADGE.TEAM")
   )
@@ -7389,7 +7389,7 @@
       (reference "R23") (unit 1) (value "47") (footprint "Resistor_SMD:R_0402_1005Metric")
     )
     (path "/00000000-0000-0000-0000-00005f51e414/00000000-0000-0000-0000-000061cd28cf"
-      (reference "R24") (unit 1) (value "47") (footprint "Resistor_SMD:R_0402_1005Metric")
+      (reference "R24") (unit 1) (value "1k") (footprint "Resistor_SMD:R_0402_1005Metric")
     )
     (path "/00000000-0000-0000-0000-00005f51e414/00000000-0000-0000-0000-000061c35d5c"
       (reference "R25") (unit 1) (value "1k") (footprint "Resistor_SMD:R_0402_1005Metric")
