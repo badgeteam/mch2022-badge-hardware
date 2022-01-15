@@ -6833,9 +6833,6 @@
     (path "/00000000-0000-0000-0000-000060c789de/00000000-0000-0000-0000-00005fc5fbc2"
       (reference "#PWR0162") (unit 1) (value "VUSB") (footprint "")
     )
-    (path "/00000000-0000-0000-0000-000060c789de/00000000-0000-0000-0000-00005fcc13f7"
-      (reference "#PWR0163") (unit 1) (value "GND") (footprint "")
-    )
     (path "/00000000-0000-0000-0000-000060c789de/00000000-0000-0000-0000-00005f6728a9"
       (reference "#PWR0164") (unit 1) (value "GND") (footprint "")
     )
@@ -6844,9 +6841,6 @@
     )
     (path "/00000000-0000-0000-0000-000060c789de/00000000-0000-0000-0000-00005f59ca35"
       (reference "#PWR0166") (unit 1) (value "GND") (footprint "")
-    )
-    (path "/00000000-0000-0000-0000-000060c789de/00000000-0000-0000-0000-00005fca3fda"
-      (reference "#PWR0167") (unit 1) (value "GND") (footprint "")
     )
     (path "/00000000-0000-0000-0000-000060c789de/00000000-0000-0000-0000-000060c79ccb"
       (reference "#PWR0168") (unit 1) (value "GND") (footprint "")
@@ -7313,9 +7307,6 @@
     (path "/00000000-0000-0000-0000-00005fdc6c76/00000000-0000-0000-0000-0000601ec337"
       (reference "Q2") (unit 1) (value "Q_NMOS_GSD") (footprint "Package_TO_SOT_SMD:SOT-23")
     )
-    (path "/00000000-0000-0000-0000-000060c789de/00000000-0000-0000-0000-00005fc8bd8a"
-      (reference "Q4") (unit 1) (value "Q_NMOS_GSD") (footprint "Package_TO_SOT_SMD:SOT-23")
-    )
     (path "/00000000-0000-0000-0000-00005f51e414/00000000-0000-0000-0000-000061bce07f"
       (reference "Q5") (unit 1) (value "Q_NMOS_GSD") (footprint "Package_TO_SOT_SMD:SOT-23")
     )
@@ -7471,15 +7462,6 @@
     )
     (path "/00000000-0000-0000-0000-000060c789de/00000000-0000-0000-0000-00005ff503e8"
       (reference "R52") (unit 1) (value "0") (footprint "Resistor_SMD:R_0402_1005Metric")
-    )
-    (path "/00000000-0000-0000-0000-000060c789de/00000000-0000-0000-0000-00005fce7654"
-      (reference "R53") (unit 1) (value "100k") (footprint "Resistor_SMD:R_0402_1005Metric")
-    )
-    (path "/00000000-0000-0000-0000-000060c789de/00000000-0000-0000-0000-00005fc6c186"
-      (reference "R54") (unit 1) (value "10k") (footprint "Resistor_SMD:R_0402_1005Metric")
-    )
-    (path "/00000000-0000-0000-0000-000060c789de/00000000-0000-0000-0000-00005fcb5bec"
-      (reference "R55") (unit 1) (value "10k") (footprint "Resistor_SMD:R_0402_1005Metric")
     )
     (path "/00000000-0000-0000-0000-000060c789de/00000000-0000-0000-0000-000060c79cc7"
       (reference "R56") (unit 1) (value "2k") (footprint "Resistor_SMD:R_0402_1005Metric")
