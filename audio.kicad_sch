@@ -4,6 +4,13 @@
 
   (paper "A4")
 
+  (title_block
+    (title "MCH2022 badge - Audio")
+    (date "2022-02-05")
+    (rev "3.1415")
+    (company "BADGE.TEAM")
+  )
+
   (lib_symbols
     (symbol "bambouLab:TDA2822" (in_bom yes) (on_board yes)
       (property "Reference" "U" (id 0) (at 0 5.08 0)
