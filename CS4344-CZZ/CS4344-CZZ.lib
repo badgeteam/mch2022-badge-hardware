@@ -1,0 +1,36 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#(c) SnapEDA 2016 (snapeda.com)
+#This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA) with Design Exception 1.0
+#
+# CS4344-CZZ
+#
+DEF CS4344-CZZ U 0 40 Y Y 1 L N
+F0 "U" -596 528 50 H V L BNN
+F1 "CS4344-CZZ" -607 -591 50 H V L BNN
+F2 "SOP50P490X110-10N" 0 0 50 H I L BNN
+F3 "" 0 0 50 H I L BNN
+F4 "IPC-7351B" 0 0 50 H I L BNN "STANDARD"
+F5 "F2" 0 0 50 H I L BNN "PARTREV"
+F6 "CS4344-CZZ" 0 0 50 H I L BNN "MP"
+F7 "TSSOP-10 Cirrus Logic" 0 0 50 H I L BNN "PACKAGE"
+F8 "D/A converter; 24bit; 192ksps; Channels: 2; 3÷5.25VDC; T" 0 0 50 H I L BNN "DESCRIPTION"
+F9 "None" 0 0 50 H I L BNN "PRICE"
+F10 "Unavailable" 0 0 50 H I L BNN "AVAILABILITY"
+F11 "Cirrus Logic" 0 0 50 H I L BNN "MF"
+DRAW
+S -600 -500 600 500 0 0 6 f
+X VA 9 -800 -200 200 R 40 40 0 0 I 
+X ~DEM~/SCLK 2 -800 100 200 R 40 40 0 0 I C
+X SDIN 1 -800 0 200 R 40 40 0 0 I 
+X LRCK 3 -800 300 200 R 40 40 0 0 I C
+X MCLK 4 -800 400 200 R 40 40 0 0 I C
+X GND 8 800 -400 200 L 40 40 0 0 W 
+X VQ 5 800 400 200 L 40 40 0 0 O 
+X FILT+ 6 800 -200 200 L 40 40 0 0 O 
+X AOUTL 7 800 100 200 L 40 40 0 0 O 
+X AOUTR 10 800 0 200 L 40 40 0 0 O 
+ENDDRAW
+ENDDEF
+#
+# End Library
