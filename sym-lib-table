@@ -8,4 +8,5 @@
   (lib (name "custom")(type "Legacy")(uri "${KIPRJMOD}/custom.lib")(options "")(descr ""))
   (lib (name "RP2040")(type "Legacy")(uri "${KIPRJMOD}/RP2040/RP2040.lib")(options "")(descr ""))
   (lib (name "CS4344-CZZ")(type "Legacy")(uri "${KIPRJMOD}/CS4344-CZZ/CS4344-CZZ.lib")(options "")(descr ""))
+  (lib (name "amplifier")(type "KiCad")(uri "${KIPRJMOD}/amplifier.kicad_sym")(options "")(descr ""))
 )
