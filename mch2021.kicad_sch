@@ -2992,10 +2992,10 @@
     (property "Reference" "N2" (id 0) (at 27.3812 189.0014 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "Artwork" (id 1) (at 27.3812 191.3128 0)
+    (property "Value" "" (id 1) (at 27.3812 191.3128 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "custom:prototype4_no_outline" (id 2) (at 24.765 188.595 0)
+    (property "Footprint" "" (id 2) (at 24.765 188.595 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "" (id 3) (at 24.765 188.595 0)
@@ -5093,7 +5093,7 @@
       (reference "N1") (unit 1) (value "Logo") (footprint "custom:badgeteam")
     )
     (path "/00000000-0000-0000-0000-00005ff5b20d"
-      (reference "N2") (unit 1) (value "Artwork") (footprint "custom:prototype4_no_outline")
+      (reference "N2") (unit 1) (value "Artwork") (footprint "custom:prototype4")
     )
     (path "/00000000-0000-0000-0000-00005fdc6c76/00000000-0000-0000-0000-00006005561c"
       (reference "Q1") (unit 1) (value "AP2302B") (footprint "Package_TO_SOT_SMD:SOT-23")
