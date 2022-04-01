@@ -45,7 +45,7 @@
         "silk_text_upright": false,
         "zones": {
           "45_degree_only": false,
-          "min_clearance": 0.19999999999999998
+          "min_clearance": 0.0
         }
       },
       "diff_pair_dimensions": [
@@ -55,7 +55,29 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        "clearance|-4909000|22901000|39868d62-9ae6-4055-b3a8-8fe5c0f88fc2|ba17499a-a118-42ad-8fa6-f6f231ae3f68",
+        "clearance|-5759000|25341000|24b99ca8-2a13-4aa3-bc74-ac8ef4d2a874|a7ce3f0b-16b1-4b95-b846-e44be8cbca76",
+        "clearance|-64500000|-11000000|e257e01a-83e7-4bcd-b4f8-4d6d5117f665|a8557804-ebe2-432e-90f7-e52a1abef969",
+        "clearance|35687000|33528000|71b97708-1da5-436d-a01c-1f5de990ce4e|a8557804-ebe2-432e-90f7-e52a1abef969",
+        "clearance|60706000|33274000|a3064e39-4eb1-46b1-8caa-0c7fe9709fc8|a8557804-ebe2-432e-90f7-e52a1abef969",
+        "clearance|63000000|-11000000|7c18e8d0-81c4-4a44-93c0-160b03c32aa6|a8557804-ebe2-432e-90f7-e52a1abef969",
+        "copper_edge_clearance|58392000|-19224200|0510c81c-cc6e-42d2-a106-c79ed669b23c|a8557804-ebe2-432e-90f7-e52a1abef969",
+        "silk_overlap|-17000000|-27760000|f656a274-a08d-4499-8245-beb474616c55|ea606c6a-809b-487e-84bb-2da09e36a185",
+        "silk_overlap|-17650000|-27760000|d5fec05f-99a8-472c-a775-2ec1b2b5bea9|ea606c6a-809b-487e-84bb-2da09e36a185",
+        "silk_overlap|-34863065|-44432254|ea606c6a-809b-487e-84bb-2da09e36a185|60b868e3-a9f8-4d20-ae5a-40ca53af4adb",
+        "silk_overlap|-35340000|-43440000|ea606c6a-809b-487e-84bb-2da09e36a185|bc3f6e1f-c81e-4889-865a-0e223a5a22e2",
+        "silk_overlap|-35340000|-44090000|ea606c6a-809b-487e-84bb-2da09e36a185|ab276e50-f838-4362-9aac-7d16f40393c4",
+        "silk_overlap|-38994048|-36371988|b3d89762-54ee-4dc0-8c86-98a5d2a2dca5|ea606c6a-809b-487e-84bb-2da09e36a185",
+        "silk_overlap|-39230000|-35530000|ea606c6a-809b-487e-84bb-2da09e36a185|f5bc60e0-ca9c-4444-9bc3-6e40e983addd",
+        "silk_overlap|-39230000|-36180000|ea606c6a-809b-487e-84bb-2da09e36a185|a58b425b-6fc3-4a86-ae11-a84decf83c5a",
+        "silk_overlap|-42345145|-28118814|ea606c6a-809b-487e-84bb-2da09e36a185|6af91ec1-f5c6-4c49-998d-22cb7b1bdc03",
+        "silk_overlap|-42849000|-27192000|ea606c6a-809b-487e-84bb-2da09e36a185|c50a4250-2225-4797-b4a1-1bc3d1138c0f",
+        "silk_overlap|-42849000|-27842000|ea606c6a-809b-487e-84bb-2da09e36a185|11d75bf4-5480-4a2f-baa3-58a51cac0470",
+        "silk_overlap|-50530000|-40410000|ea606c6a-809b-487e-84bb-2da09e36a185|a4372ae3-288f-4a9a-96e7-306ddba718f6",
+        "silk_overlap|-50530000|-41060000|ea606c6a-809b-487e-84bb-2da09e36a185|939bb0a1-244e-4741-90f1-d06027d85c51",
+        "silk_overlap|-50644985|-40179280|ea606c6a-809b-487e-84bb-2da09e36a185|ff870511-3a90-49f1-9990-5aec7ad35822"
+      ],
       "meta": {
         "filename": "board_design_settings.json",
         "version": 2
@@ -122,6 +144,7 @@
       "track_widths": [
         0.0,
         0.2,
+        0.25,
         0.4,
         0.6,
         0.8
@@ -383,6 +406,31 @@
         "track_width": 0.25,
         "via_diameter": 0.6,
         "via_drill": 0.3,
+        "wire_width": 6.0
+      },
+      {
+        "bus_width": 12.0,
+        "clearance": 0.15,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "RP2040_FLASH",
+        "nets": [
+          "/RP2040/RP_QSPI_CSN",
+          "/RP2040/RP_QSPI_SCLK",
+          "/RP2040/RP_QSPI_SD0",
+          "/RP2040/RP_QSPI_SD1",
+          "/RP2040/RP_QSPI_SD2",
+          "/RP2040/RP_QSPI_SD3"
+        ],
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.2,
+        "via_diameter": 0.45,
+        "via_drill": 0.2,
         "wire_width": 6.0
       },
       {
