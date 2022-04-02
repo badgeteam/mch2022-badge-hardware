@@ -987,7 +987,6 @@
     )
   )
 
-
   (junction (at 223.52 49.53) (diameter 0) (color 0 0 0 0)
     (uuid 08f0bde9-5426-4409-bb67-be4d2c620d86)
   )
@@ -3118,10 +3117,10 @@
     (property "Reference" "N3" (id 0) (at 28.0162 170.5864 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "" (id 1) (at 28.0162 172.8978 0)
+    (property "Value" "May Contain Hardware" (id 1) (at 28.0162 172.8978 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (id 2) (at 25.4 170.18 0)
+    (property "Footprint" "custom:protoboard-squares-big" (id 2) (at 25.4 170.18 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "" (id 3) (at 25.4 170.18 0)
@@ -4441,6 +4440,9 @@
     (path "/00000000-0000-0000-0000-000060c794cb/00000000-0000-0000-0000-000061828abe"
       (reference "#PWR0232") (unit 1) (value "GND") (footprint "")
     )
+    (path "/00000000-0000-0000-0000-00005f51e414/06f35d79-701d-4668-99e8-c39281eb6d67"
+      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
+    )
     (path "/00000000-0000-0000-0000-000060c789de/00000000-0000-0000-0000-00005fb6aee8"
       (reference "BT1") (unit 1) (value "LiPo") (footprint "Connector_JST:JST_PH_S3B-PH-SM4-TB_1x03-1MP_P2.00mm_Horizontal")
     )
@@ -4965,6 +4967,9 @@
     )
     (path "/8ec93f95-b65c-4f0d-a4f4-32395a9e162a/19cacd5a-46d6-46eb-8d9c-0ad1a8a5a907"
       (reference "SW8") (unit 1) (value "Switch") (footprint "Button_Switch_SMD:SW_SPDT_PCM12")
+    )
+    (path "/00000000-0000-0000-0000-00005f51e414/00feb6b8-cc6e-4a61-b51e-26371c307bb7"
+      (reference "SW?") (unit 1) (value "DNP") (footprint "custom:1TS009")
     )
     (path "/00000000-0000-0000-0000-00005fca324a"
       (reference "TP1") (unit 1) (value "Testpoint") (footprint "TestPoint:TestPoint_Pad_1.0x1.0mm")
