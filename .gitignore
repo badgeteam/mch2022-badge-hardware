@@ -27,7 +27,6 @@ fp-info-cache
 
 # Exported BOM files
 *.xml
-*.csv
 
 mch2021-backups
 \#auto_saved_files#
