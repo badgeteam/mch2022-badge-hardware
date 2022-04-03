@@ -4434,14 +4434,14 @@
     (path "/db53c6c7-6cf9-46b4-a41b-829d3870bcab"
       (reference "#PWR0221") (unit 1) (value "+3.3V") (footprint "")
     )
+    (path "/00000000-0000-0000-0000-00005f51e414/06f35d79-701d-4668-99e8-c39281eb6d67"
+      (reference "#PWR0222") (unit 1) (value "GND") (footprint "")
+    )
     (path "/00000000-0000-0000-0000-000060c794cb/00000000-0000-0000-0000-000061828aab"
       (reference "#PWR0231") (unit 1) (value "GND") (footprint "")
     )
     (path "/00000000-0000-0000-0000-000060c794cb/00000000-0000-0000-0000-000061828abe"
       (reference "#PWR0232") (unit 1) (value "GND") (footprint "")
-    )
-    (path "/00000000-0000-0000-0000-00005f51e414/06f35d79-701d-4668-99e8-c39281eb6d67"
-      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
     )
     (path "/00000000-0000-0000-0000-000060c789de/00000000-0000-0000-0000-00005fb6aee8"
       (reference "BT1") (unit 1) (value "LiPo") (footprint "Connector_JST:JST_PH_S3B-PH-SM4-TB_1x03-1MP_P2.00mm_Horizontal")
@@ -4969,7 +4969,7 @@
       (reference "SW8") (unit 1) (value "Switch") (footprint "Button_Switch_SMD:SW_SPDT_PCM12")
     )
     (path "/00000000-0000-0000-0000-00005f51e414/00feb6b8-cc6e-4a61-b51e-26371c307bb7"
-      (reference "SW?") (unit 1) (value "DNP") (footprint "custom:1TS009")
+      (reference "SW9") (unit 1) (value "DNP") (footprint "custom:1TS009")
     )
     (path "/00000000-0000-0000-0000-00005fca324a"
       (reference "TP1") (unit 1) (value "Testpoint") (footprint "TestPoint:TestPoint_Pad_1.0x1.0mm")
