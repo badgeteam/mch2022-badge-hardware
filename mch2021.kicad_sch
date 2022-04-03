@@ -12,6 +12,35 @@
   )
 
   (lib_symbols
+    (symbol "Mechanical:Fiducial" (in_bom yes) (on_board yes)
+      (property "Reference" "FID" (id 0) (at 0 5.08 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Value" "Fiducial" (id 1) (at 0 3.175 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Footprint" "" (id 2) (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Datasheet" "~" (id 3) (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_keywords" "fiducial marker" (id 4) (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_description" "Fiducial Marker" (id 5) (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_fp_filters" "Fiducial*" (id 6) (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "Fiducial_0_1"
+        (circle (center 0 0) (radius 1.27)
+          (stroke (width 0.508) (type default) (color 0 0 0 0))
+          (fill (type background))
+        )
+      )
+    )
     (symbol "custom:RGB-5050-MCH" (pin_numbers hide) (pin_names (offset 0)) (in_bom yes) (on_board yes)
       (property "Reference" "D" (id 0) (at 4.445 -2.54 0)
         (effects (font (size 1.27 1.27)) (justify left))
@@ -2942,6 +2971,23 @@
     (pin "1" (uuid 7beb2d88-d697-4f0b-8a96-ac87c66dba1b))
   )
 
+  (symbol (lib_id "Mechanical:Fiducial") (at 158.75 188.976 0) (unit 1)
+    (in_bom yes) (on_board yes) (fields_autoplaced)
+    (uuid 5ce96e35-d711-4735-bc07-243bb6042c40)
+    (property "Reference" "FID2" (id 0) (at 162.052 187.7059 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "Fiducial" (id 1) (at 162.052 190.2459 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "Fiducial:Fiducial_1mm_Mask2mm" (id 2) (at 158.75 188.976 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (id 3) (at 158.75 188.976 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+  )
+
   (symbol (lib_id "mch2021-rescue:TestPoint_Small-Connector") (at 223.52 52.07 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 68228e3a-f99c-4117-860d-ecaf773e582f)
@@ -3064,6 +3110,23 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 1acaee3e-122d-4ed9-b724-022e3f897479))
+  )
+
+  (symbol (lib_id "Mechanical:Fiducial") (at 158.75 193.802 0) (unit 1)
+    (in_bom yes) (on_board yes) (fields_autoplaced)
+    (uuid aaaaa002-a1e6-4259-8dbc-ade83d6c7ebb)
+    (property "Reference" "FID1" (id 0) (at 162.052 192.5319 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "" (id 1) (at 162.052 195.0719 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "" (id 2) (at 158.75 193.802 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (id 3) (at 158.75 193.802 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
   )
 
   (symbol (lib_id "mch2021-rescue:R-Device") (at 148.59 111.76 180) (unit 1)
@@ -4437,11 +4500,20 @@
     (path "/00000000-0000-0000-0000-00005f51e414/06f35d79-701d-4668-99e8-c39281eb6d67"
       (reference "#PWR0222") (unit 1) (value "GND") (footprint "")
     )
+    (path "/00000000-0000-0000-0000-00005fdc6c76/d254687e-1e10-4fc6-872a-5909cccd4921"
+      (reference "#PWR0223") (unit 1) (value "GND") (footprint "")
+    )
     (path "/00000000-0000-0000-0000-000060c794cb/00000000-0000-0000-0000-000061828aab"
       (reference "#PWR0231") (unit 1) (value "GND") (footprint "")
     )
     (path "/00000000-0000-0000-0000-000060c794cb/00000000-0000-0000-0000-000061828abe"
       (reference "#PWR0232") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/8ec93f95-b65c-4f0d-a4f4-32395a9e162a/2ae07992-a9c5-4cfa-84d3-0bdeceb3bdee"
+      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-000060c789de/9b5bd8ca-0199-4a85-9949-7eaebec5de91"
+      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
     )
     (path "/00000000-0000-0000-0000-000060c789de/00000000-0000-0000-0000-00005fb6aee8"
       (reference "BT1") (unit 1) (value "LiPo") (footprint "Connector_JST:JST_PH_S3B-PH-SM4-TB_1x03-1MP_P2.00mm_Horizontal")
@@ -4676,6 +4748,12 @@
     )
     (path "/00000000-0000-0000-0000-00005ff73718"
       (reference "F1") (unit 1) (value "1A") (footprint "Fuse:Fuse_0805_2012Metric")
+    )
+    (path "/aaaaa002-a1e6-4259-8dbc-ade83d6c7ebb"
+      (reference "FID1") (unit 1) (value "Fiducial") (footprint "Fiducial:Fiducial_1mm_Mask2mm")
+    )
+    (path "/5ce96e35-d711-4735-bc07-243bb6042c40"
+      (reference "FID2") (unit 1) (value "Fiducial") (footprint "Fiducial:Fiducial_1mm_Mask2mm")
     )
     (path "/8ec93f95-b65c-4f0d-a4f4-32395a9e162a/53afdeef-1c67-4034-bc72-7f3e16d277e1"
       (reference "J1") (unit 1) (value "AudioJack3") (footprint "custom:Boom-audiojack-PJ-320B")
