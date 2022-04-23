@@ -3118,10 +3118,10 @@
     (property "Reference" "FID1" (id 0) (at 162.052 192.5319 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "" (id 1) (at 162.052 195.0719 0)
+    (property "Value" "Fiducial" (id 1) (at 162.052 195.0719 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (id 2) (at 158.75 193.802 0)
+    (property "Footprint" "Fiducial:Fiducial_1mm_Mask2mm" (id 2) (at 158.75 193.802 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 158.75 193.802 0)
@@ -3812,7 +3812,7 @@
       (effects (font (size 1.27 1.27)) (justify left))
       (uuid 162e5bdd-61a8-46a3-8485-826b5d58e1a1)
     )
-    (pin "I2S_CLK" output (at 218.44 54.61 0)
+    (pin "I2S_CLK" output (at 218.44 57.15 0)
       (effects (font (size 1.27 1.27)) (justify right))
       (uuid 319c683d-aed6-4e7d-aee2-ff9871746d52)
     )
@@ -3820,7 +3820,7 @@
       (effects (font (size 1.27 1.27)) (justify right))
       (uuid 2f3fba7a-cf45-4bd8-9035-07e6fa0b4732)
     )
-    (pin "I2S_LR" output (at 218.44 57.15 0)
+    (pin "I2S_LR" output (at 218.44 54.61 0)
       (effects (font (size 1.27 1.27)) (justify right))
       (uuid cb1a49ef-0a06-4f40-9008-61d1d1c36198)
     )
@@ -4503,20 +4503,17 @@
     (path "/00000000-0000-0000-0000-00005fdc6c76/d254687e-1e10-4fc6-872a-5909cccd4921"
       (reference "#PWR0223") (unit 1) (value "GND") (footprint "")
     )
+    (path "/00000000-0000-0000-0000-000060c789de/9b5bd8ca-0199-4a85-9949-7eaebec5de91"
+      (reference "#PWR0224") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/8ec93f95-b65c-4f0d-a4f4-32395a9e162a/2ae07992-a9c5-4cfa-84d3-0bdeceb3bdee"
+      (reference "#PWR0225") (unit 1) (value "GND") (footprint "")
+    )
     (path "/00000000-0000-0000-0000-000060c794cb/00000000-0000-0000-0000-000061828aab"
       (reference "#PWR0231") (unit 1) (value "GND") (footprint "")
     )
     (path "/00000000-0000-0000-0000-000060c794cb/00000000-0000-0000-0000-000061828abe"
       (reference "#PWR0232") (unit 1) (value "GND") (footprint "")
-    )
-    (path "/8ec93f95-b65c-4f0d-a4f4-32395a9e162a/2ae07992-a9c5-4cfa-84d3-0bdeceb3bdee"
-      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
-    )
-    (path "/00000000-0000-0000-0000-000060c789de/9b5bd8ca-0199-4a85-9949-7eaebec5de91"
-      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
-    )
-    (path "/00000000-0000-0000-0000-000060c789de/00000000-0000-0000-0000-00005fb6aee8"
-      (reference "BT1") (unit 1) (value "LiPo") (footprint "Connector_JST:JST_PH_S3B-PH-SM4-TB_1x03-1MP_P2.00mm_Horizontal")
     )
     (path "/8ec93f95-b65c-4f0d-a4f4-32395a9e162a/5bd803d0-a1c4-418d-8427-0dde068d5c7b"
       (reference "C1") (unit 1) (value "1u") (footprint "Capacitor_SMD:C_0402_1005Metric")
@@ -4770,6 +4767,9 @@
     (path "/00000000-0000-0000-0000-000060c794cb/00000000-0000-0000-0000-000061828ab6"
       (reference "J5") (unit 1) (value "Micro SD card") (footprint "custom:MicroSD-SOFNG-TF-002-H18")
     )
+    (path "/00000000-0000-0000-0000-000060c789de/15caa72e-db37-4bd1-ac2d-98bcf751ed1a"
+      (reference "J6") (unit 1) (value "Battery") (footprint "custom:JST_S2B-ZR-SM4A-TF(LF)(SN)")
+    )
     (path "/00000000-0000-0000-0000-00005fdc6c76/00000000-0000-0000-0000-00005fdc876e"
       (reference "J7") (unit 1) (value "LCD") (footprint "Connector_FFC-FPC:Hirose_FH12-40S-0.5SH_1x40-1MP_P0.50mm_Horizontal")
     )
@@ -4879,16 +4879,16 @@
       (reference "R26") (unit 1) (value "10k") (footprint "Resistor_SMD:R_0402_1005Metric")
     )
     (path "/8ec93f95-b65c-4f0d-a4f4-32395a9e162a/44d2b700-098f-40c3-858b-4ad13503f5ba"
-      (reference "R27") (unit 1) (value "10k") (footprint "Resistor_SMD:R_0402_1005Metric")
+      (reference "R27") (unit 1) (value "330") (footprint "Resistor_SMD:R_0402_1005Metric")
     )
     (path "/8ec93f95-b65c-4f0d-a4f4-32395a9e162a/5bf5e658-02dc-4878-be4a-4080a49014d6"
-      (reference "R28") (unit 1) (value "10k") (footprint "Resistor_SMD:R_0402_1005Metric")
+      (reference "R28") (unit 1) (value "330") (footprint "Resistor_SMD:R_0402_1005Metric")
     )
     (path "/8ec93f95-b65c-4f0d-a4f4-32395a9e162a/73beb315-1096-496d-83a5-2f88ee053e22"
-      (reference "R29") (unit 1) (value "10k") (footprint "Resistor_SMD:R_0402_1005Metric")
+      (reference "R29") (unit 1) (value "22k") (footprint "Resistor_SMD:R_0402_1005Metric")
     )
     (path "/8ec93f95-b65c-4f0d-a4f4-32395a9e162a/1966592b-0196-424c-ad74-a45005dc90b5"
-      (reference "R30") (unit 1) (value "10k") (footprint "Resistor_SMD:R_0402_1005Metric")
+      (reference "R30") (unit 1) (value "1k") (footprint "Resistor_SMD:R_0402_1005Metric")
     )
     (path "/00000000-0000-0000-0000-00005f526357/00000000-0000-0000-0000-00005f59314f"
       (reference "R31") (unit 1) (value "10k") (footprint "Resistor_SMD:R_0402_1005Metric")
@@ -4921,7 +4921,7 @@
       (reference "R40") (unit 1) (value "4.7k") (footprint "Resistor_SMD:R_0402_1005Metric")
     )
     (path "/8ec93f95-b65c-4f0d-a4f4-32395a9e162a/a1e62b8f-8f63-465c-aeb8-0a3dbf4dc509"
-      (reference "R41") (unit 1) (value "10k") (footprint "Resistor_SMD:R_0402_1005Metric")
+      (reference "R41") (unit 1) (value "22k") (footprint "Resistor_SMD:R_0402_1005Metric")
     )
     (path "/00000000-0000-0000-0000-000060c794cb/00000000-0000-0000-0000-0000605756e5"
       (reference "R42") (unit 1) (value "45.3k") (footprint "Resistor_SMD:R_0402_1005Metric")
@@ -4933,7 +4933,7 @@
       (reference "R44") (unit 1) (value "4.7k") (footprint "Resistor_SMD:R_0402_1005Metric")
     )
     (path "/8ec93f95-b65c-4f0d-a4f4-32395a9e162a/5a40e2eb-4f0a-40eb-a728-547b61c91e78"
-      (reference "R45") (unit 1) (value "10k") (footprint "Resistor_SMD:R_0402_1005Metric")
+      (reference "R45") (unit 1) (value "1k") (footprint "Resistor_SMD:R_0402_1005Metric")
     )
     (path "/8ec93f95-b65c-4f0d-a4f4-32395a9e162a/0e885c57-8ba2-43c9-be52-96b09bc91919"
       (reference "R46") (unit 1) (value "4.7") (footprint "Resistor_SMD:R_0402_1005Metric")
