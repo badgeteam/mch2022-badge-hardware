@@ -4973,7 +4973,7 @@
       (reference "R53") (unit 1) (value "1k") (footprint "Resistor_SMD:R_0402_1005Metric")
     )
     (path "/00000000-0000-0000-0000-00005f51e414/47f01730-5386-4e84-b60e-fe45f1a7563d"
-      (reference "R54") (unit 1) (value "22") (footprint "Resistor_SMD:R_0402_1005Metric")
+      (reference "R54") (unit 1) (value "27") (footprint "Resistor_SMD:R_0402_1005Metric")
     )
     (path "/00000000-0000-0000-0000-00005f51e414/cb925ac0-73d3-4882-a49f-5147b03d9cea"
       (reference "R55") (unit 1) (value "10k") (footprint "Resistor_SMD:R_0402_1005Metric")
