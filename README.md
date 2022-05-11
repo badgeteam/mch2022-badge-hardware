@@ -21,7 +21,7 @@ This hardware design may be used under the terms of the [CERN-OHL-P](LICENSE) li
 
 ## Authors
 
-The artwork featured in this hardware design has been designed by Nikolett S. from [Tilde Industries](https://tilde.industries).
+The artwork featured in this hardware design has been designed by Nikolett S. from [tilde.industries](https://tilde.industries).
 
 The electronics have been designed by Renze Nicolai from [Nicolai Electronics](https://nicolaielectronics.nl).
 
