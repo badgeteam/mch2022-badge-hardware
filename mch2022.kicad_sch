@@ -5170,6 +5170,18 @@
     (path "/8ec93f95-b65c-4f0d-a4f4-32395a9e162a/abfd499c-5959-43bf-b69f-12101c11f5ac"
       (reference "TP35") (unit 1) (value "Testpoint") (footprint "TestPoint:TestPoint_Pad_1.0x1.0mm")
     )
+    (path "/00000000-0000-0000-0000-00005f526357/84413a10-3f8c-4f5e-84ba-b681d488fceb"
+      (reference "TP36") (unit 1) (value "TestPoint") (footprint "TestPoint:TestPoint_Pad_1.0x1.0mm")
+    )
+    (path "/00000000-0000-0000-0000-00005f526357/a20966ad-46c9-4c44-8e1e-8fd407f95c43"
+      (reference "TP37") (unit 1) (value "TestPoint") (footprint "TestPoint:TestPoint_Pad_1.0x1.0mm")
+    )
+    (path "/00000000-0000-0000-0000-00005f526357/b6dd4a85-6ce9-4b78-b949-20b6be04e614"
+      (reference "TP38") (unit 1) (value "TestPoint") (footprint "TestPoint:TestPoint_Pad_1.0x1.0mm")
+    )
+    (path "/00000000-0000-0000-0000-00005f526357/f281115d-37bb-4925-8f17-dbb11651cab6"
+      (reference "TP39") (unit 1) (value "TestPoint") (footprint "TestPoint:TestPoint_Pad_1.0x1.0mm")
+    )
     (path "/8ec93f95-b65c-4f0d-a4f4-32395a9e162a/51e1c19d-f8a7-4a1a-b1e8-cef5ae8d7825"
       (reference "U1") (unit 1) (value "MS4344") (footprint "CS4344-CZZ:SOP50P490X110-10N")
     )
